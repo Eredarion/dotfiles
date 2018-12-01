@@ -1,0 +1,4363 @@
+info_begin
+format: 2
+mpd_version: 0.21
+fs_charset: UTF-8
+tag: Artist
+tag: ArtistSort
+tag: Album
+tag: AlbumSort
+tag: AlbumArtist
+tag: AlbumArtistSort
+tag: Title
+tag: Track
+tag: Name
+tag: Genre
+tag: Date
+tag: OriginalDate
+tag: Composer
+tag: Performer
+tag: Disc
+tag: Label
+tag: MUSICBRAINZ_ARTISTID
+tag: MUSICBRAINZ_ALBUMID
+tag: MUSICBRAINZ_ALBUMARTISTID
+tag: MUSICBRAINZ_TRACKID
+tag: MUSICBRAINZ_RELEASETRACKID
+tag: MUSICBRAINZ_WORKID
+info_end
+directory: 01 - Albums
+mtime: 1539133522
+begin: 01 - Albums
+directory: 01- Hybrid Theory (2000)
+mtime: 1539133538
+begin: 01 - Albums/01- Hybrid Theory (2000)
+song_begin: 01 Papercut.flac
+Time: 184.706000
+Title: Papercut
+Artist: Linkin Park
+Album: [HYBRID THEORY]
+Date: 2000
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 1
+Format: 44100:16:2
+mtime: 1538839325
+song_end
+song_begin: 02 One Step Closer.flac
+Time: 155.666000
+Title: One Step Closer
+Artist: Linkin Park
+Album: [HYBRID THEORY]
+Date: 2000
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 2
+Format: 44100:16:2
+mtime: 1538839340
+song_end
+song_begin: 03 With You.flac
+Time: 203.266000
+Title: With You
+Artist: Linkin Park
+Album: [HYBRID THEORY]
+Date: 2000
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington/M. Simpson/J. King
+Track: 3
+Format: 44100:16:2
+mtime: 1538839450
+song_end
+song_begin: 04 Points of Authority.flac
+Time: 200.266000
+Title: Points of Authority
+Artist: Linkin Park
+Album: [HYBRID THEORY]
+Date: 2000
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 4
+Format: 44100:16:2
+mtime: 1538839524
+song_end
+song_begin: 05 Crawling.flac
+Time: 209.000000
+Title: Crawling
+Artist: Linkin Park
+Album: [HYBRID THEORY]
+Date: 2000
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 5
+Format: 44100:16:2
+mtime: 1538839298
+song_end
+song_begin: 06 Runaway.flac
+Time: 183.933000
+Title: Runaway
+Artist: Linkin Park
+Album: [HYBRID THEORY]
+Date: 2000
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington/M. Wakefield
+Track: 6
+Format: 44100:16:2
+mtime: 1538839018
+song_end
+song_begin: 07 By Myself.flac
+Time: 189.800000
+Title: By Myself
+Artist: Linkin Park
+Album: [HYBRID THEORY]
+Date: 2000
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 7
+Format: 44100:16:2
+mtime: 1538839610
+song_end
+song_begin: 08 In the End.flac
+Time: 216.293000
+Title: In the End
+Artist: Linkin Park
+Album: [HYBRID THEORY]
+Date: 2000
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 8
+Format: 44100:16:2
+mtime: 1538839324
+song_end
+song_begin: 09 A Place for My Head.flac
+Time: 184.600000
+Title: A Place for My Head
+Artist: Linkin Park
+Album: [HYBRID THEORY]
+Date: 2000
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington/M. Wakefield/D. Farrell
+Track: 9
+Format: 44100:16:2
+mtime: 1538839292
+song_end
+song_begin: 10 Forgotten.flac
+Time: 194.466000
+Title: Forgotten
+Artist: Linkin Park
+Album: [HYBRID THEORY]
+Date: 2000
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/M. Wakefield/D. Farrell
+Track: 10
+Format: 44100:16:2
+mtime: 1538839259
+song_end
+song_begin: 11 Cure for the Itch.flac
+Time: 157.200000
+Title: Cure for the Itch
+Artist: Linkin Park
+Album: [HYBRID THEORY]
+Date: 2000
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 11
+Format: 44100:16:2
+mtime: 1538839040
+song_end
+song_begin: 12 Pushing Me Away.flac
+Time: 191.800000
+Title: Pushing Me Away
+Artist: Linkin Park
+Album: [HYBRID THEORY]
+Date: 2000
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 12
+Format: 44100:16:2
+mtime: 1538839229
+song_end
+playlist_begin: Hybrid Theory (flac).cue
+mtime: 1538838793
+playlist_end
+playlist_begin: Hybrid Theory (wav).cue
+mtime: 1538838793
+playlist_end
+end: 01 - Albums/01- Hybrid Theory (2000)
+directory: 02 - Reanimation (2002)
+mtime: 1539133380
+begin: 01 - Albums/02 - Reanimation (2002)
+directory: enhanced data
+mtime: 1539133355
+begin: 01 - Albums/02 - Reanimation (2002)/enhanced data
+song_begin: ptsofathrty.mov
+Time: 222.784000
+Artist: Linkin Park
+Title: Pts.Of.Athrty
+Format: 48000:16:2
+mtime: 1538839680
+song_end
+end: 01 - Albums/02 - Reanimation (2002)/enhanced data
+song_begin: 01-Opening.flac
+Time: 67.560000
+Title: OPENING
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 1
+Format: 44100:16:2
+mtime: 1538838741
+song_end
+song_begin: 02-Pts.of.Athrty (Jay Gordon).flac
+Time: 225.520000
+Title: PTS.OF.ATHRTY//Jay Gordon
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 2
+Format: 44100:16:2
+mtime: 1538839368
+song_end
+song_begin: 03-Enth E Nd (KutMasta Kurt feat. Motion Man).flac
+Time: 239.960000
+Title: ENTH E ND//Kutmasta Kurt feat. Motion Man
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 3
+Format: 44100:16:2
+mtime: 1538839680
+song_end
+song_begin: 04-[Chali].flac
+Time: 23.746000
+Title: [CHALI]
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Track: 4
+Format: 44100:16:2
+mtime: 1538838739
+song_end
+song_begin: 05-Frgt,10 (Alchemist feat. Chali 2NA).flac
+Time: 212.373000
+Title: FRGT/10//Alchemist feat. Chali 2na
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/M. Wakefield/D. Farrell
+Track: 5
+Format: 44100:16:2
+mtime: 1538839110
+song_end
+song_begin: 06-P5hng Me Axwy (Mike Shinoda feat. Stephen Richards).flac
+Time: 277.973000
+Title: P5HNG ME A*WY//Mike Shinoda feat. Stephen Richards
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 6
+Format: 44100:16:2
+mtime: 1538839680
+song_end
+song_begin: 07-Plc.4 Mie Haed (Amp Live feat. Zion).flac
+Time: 260.746000
+Title: PLC.4 MIE HAED// Amp Live feat. Zion
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington/M. Wakefield/D. Farrell
+Track: 7
+Format: 44100:16:2
+mtime: 1538839222
+song_end
+song_begin: 08-X-ecutioner Style (The X-Ecutioners feat. Black Thought).flac
+Time: 109.493000
+Title: X-ECUTIONER STYLE//feat. Black Thought
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington/M. Wakefield/D. Farrell
+Track: 8
+Format: 44100:16:2
+mtime: 1538839119
+song_end
+song_begin: 09-H! Vltg3 (Evidence feat. Pharoahe Monch & DJ Babu).flac
+Time: 210.733000
+Title: H! VLTG3//Evidence feat. Pharoahe Monch & DJ Babu
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington/D. Murphy/L. DeChalus/M. Dixon
+Track: 9
+Format: 44100:16:2
+mtime: 1538839227
+song_end
+song_begin: 10-[Riff Raff].flac
+Time: 21.906000
+Title: [RIFF RAFF]
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Track: 10
+Format: 44100:16:2
+mtime: 1538838739
+song_end
+song_begin: 11-Wth]You (Chairman Hahn feat. Aceyalone).flac
+Time: 252.306000
+Title: WTH>YOU//Chairman Hahn feat. Aceyalone
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington/M. Simpson/J. King
+Track: 11
+Format: 44100:16:2
+mtime: 1538839512
+song_end
+song_begin: 12-Ntr-Mssion.flac
+Time: 29.400000
+Title: NTR\MSSION
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Track: 12
+Format: 44100:16:2
+mtime: 1538839172
+song_end
+song_begin: 13-Ppr-Kut (Cheapshot & Jubacca feat. Rasco & Planet Asia).flac
+Time: 206.346000
+Title: PPR:KUT//Cheapshot & Jubacca feat. Rasco & Planet Asia
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 13
+Format: 44100:16:2
+mtime: 1538839680
+song_end
+song_begin: 14-Rnw@y (Backyard Bangers feat. Phoenix Orion).flac
+Time: 193.400000
+Title: RNW@Y//Backyard Bangers feat. Phoenix Orion
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington/M. Wakefield
+Track: 14
+Format: 44100:16:2
+mtime: 1538839634
+song_end
+song_begin: 15-My[Dsmbr (Mickey P. feat. Kelli Ali).flac
+Time: 257.586000
+Title: MY<DSMBR//Mickey P. feat. Kelli Ali
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 15
+Format: 44100:16:2
+mtime: 1538839650
+song_end
+song_begin: 16-[Stef].flac
+Time: 10.026000
+Title: [STEF]
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Track: 16
+Format: 44100:16:2
+mtime: 1538838739
+song_end
+song_begin: 17-By_Myself (Josh Abraham & Mike Shinoda).flac
+Time: 222.440000
+Title: BY_MYSLF//Josh Abraham & Mike Shinoda
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 17
+Format: 44100:16:2
+mtime: 1538839280
+song_end
+song_begin: 18-Kyur4 Th ich (Chairman Hahn).flac
+Time: 152.853000
+Title: KYUR4 TH ICH//Chairman Hahn
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 18
+Format: 44100:16:2
+mtime: 1538839064
+song_end
+song_begin: 19-1Stp Klosr (The Humble Brothers feat. Jonathan Davis).flac
+Time: 346.040000
+Title: 1STP KLOSR//The Humble Brothers feat. Jonathan Davis
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 19
+Format: 44100:16:2
+mtime: 1538839609
+song_end
+song_begin: 20-Krwlng (Mike Shinoda feat. Aaron Lewis).flac
+Time: 340.253000
+Title: KRWLNG//Mike Shinoda feat. Aaron Lewis
+Artist: Linkin Park
+Album: [Reanimation]
+Date: 2002
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 20
+Format: 44100:16:2
+mtime: 1538839550
+song_end
+playlist_begin: Reanimation (wav).cue
+mtime: 1538838787
+playlist_end
+playlist_begin: Reanimation (flac).cue
+mtime: 1538838787
+playlist_end
+end: 01 - Albums/02 - Reanimation (2002)
+directory: 03 - Meteora (2003)
+mtime: 1539133328
+begin: 01 - Albums/03 - Meteora (2003)
+directory: enhanced data
+mtime: 1539133291
+begin: 01 - Albums/03 - Meteora (2003)/enhanced data
+directory: audio
+mtime: 1539133291
+begin: 01 - Albums/03 - Meteora (2003)/enhanced data/audio
+song_begin: Track01.mov
+Time: 13.400000
+Format: 44100:f:2
+mtime: 1538838738
+song_end
+song_begin: Track02.mov
+Time: 188.107000
+Format: 44100:f:2
+mtime: 1538838740
+song_end
+song_begin: Track03.mov
+Time: 213.917000
+Format: 44100:f:2
+mtime: 1538838740
+song_end
+song_begin: Track04.mov
+Time: 175.202000
+Format: 44100:f:2
+mtime: 1538838744
+song_end
+song_begin: Track05.mov
+Time: 164.283000
+Format: 44100:f:2
+mtime: 1538838740
+song_end
+song_begin: Track06.mov
+Time: 203.990000
+Format: 44100:f:2
+mtime: 1538838761
+song_end
+song_begin: Track07.mov
+Time: 162.298000
+Format: 44100:f:2
+mtime: 1538838740
+song_end
+song_begin: Track08.mov
+Time: 197.537000
+Format: 44100:f:2
+mtime: 1538838740
+song_end
+song_begin: Track09.mov
+Time: 196.048000
+Format: 44100:f:2
+mtime: 1538838740
+song_end
+song_begin: Track10.mov
+Time: 175.698000
+Format: 44100:f:2
+mtime: 1538838740
+song_end
+song_begin: Track11.mov
+Time: 178.677000
+Format: 44100:f:2
+mtime: 1538838741
+song_end
+song_begin: Track12.mov
+Time: 144.927000
+Format: 44100:f:2
+mtime: 1538838740
+song_end
+song_begin: Track13.mov
+Time: 187.610000
+Format: 44100:f:2
+mtime: 1538838761
+song_end
+end: 01 - Albums/03 - Meteora (2003)/enhanced data/audio
+song_begin: linkin_interview.mpg
+Time: 1024.183000
+Format: 44100:16:2
+mtime: 1538839657
+song_end
+song_begin: Linkin_Somewhere.mpg
+Time: 223.440000
+Format: 48000:16:2
+mtime: 1538839434
+song_end
+song_begin: lpunderground.mpg
+Time: 62.851000
+Format: 44100:16:2
+mtime: 1538839679
+song_end
+end: 01 - Albums/03 - Meteora (2003)/enhanced data
+song_begin: 01-Foreword.flac
+Time: 13.440000
+Title: Foreword
+Artist: Linkin Park
+Album: Meteora
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 1
+Format: 44100:16:2
+mtime: 1538838739
+song_end
+song_begin: 02-Don't Stay.flac
+Time: 187.933000
+Title: Don't Stay
+Artist: Linkin Park
+Album: Meteora
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 2
+Format: 44100:16:2
+mtime: 1538838846
+song_end
+song_begin: 03-Somewhere I Belong.flac
+Time: 213.933000
+Title: Somewhere I Belong
+Artist: Linkin Park
+Album: Meteora
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 3
+Format: 44100:16:2
+mtime: 1538839622
+song_end
+song_begin: 04-Lying From You.flac
+Time: 175.053000
+Title: Lying from You
+Artist: Linkin Park
+Album: Meteora
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 4
+Format: 44100:16:2
+mtime: 1538839473
+song_end
+song_begin: 05-Hit The Floor.flac
+Time: 164.213000
+Title: Hit the Floor
+Artist: Linkin Park
+Album: Meteora
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 5
+Format: 44100:16:2
+mtime: 1538839077
+song_end
+song_begin: 06-Easier To Run.flac
+Time: 204.173000
+Title: Easier to Run
+Artist: Linkin Park
+Album: Meteora
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 6
+Format: 44100:16:2
+mtime: 1538839680
+song_end
+song_begin: 07-Faint.flac
+Time: 162.106000
+Title: Faint
+Artist: Linkin Park
+Album: Meteora
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 7
+Format: 44100:16:2
+mtime: 1538839182
+song_end
+song_begin: 08-Figure.09.flac
+Time: 197.506000
+Title: Figure.09
+Artist: Linkin Park
+Album: Meteora
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 8
+Format: 44100:16:2
+mtime: 1538839522
+song_end
+song_begin: 09-Breaking The Habit.flac
+Time: 196.133000
+Title: Breaking the Habit
+Artist: Linkin Park
+Album: Meteora
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 9
+Format: 44100:16:2
+mtime: 1538839605
+song_end
+song_begin: 10-From The Inside.flac
+Time: 175.506000
+Title: From the Inside
+Artist: Linkin Park
+Album: Meteora
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 10
+Format: 44100:16:2
+mtime: 1538839664
+song_end
+song_begin: 11-Nobody's Listening.flac
+Time: 178.866000
+Title: Nobody's Listening
+Artist: Linkin Park
+Album: Meteora
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 11
+Format: 44100:16:2
+mtime: 1538839640
+song_end
+song_begin: 12-Session.flac
+Time: 144.733000
+Title: Session
+Artist: Linkin Park
+Album: Meteora
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 12
+Format: 44100:16:2
+mtime: 1538839615
+song_end
+song_begin: 13-Numb.flac
+Time: 187.520000
+Title: Numb
+Artist: Linkin Park
+Album: Meteora
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 13
+Format: 44100:16:2
+mtime: 1538839266
+song_end
+playlist_begin: Meteora (flac).cue
+mtime: 1538838793
+playlist_end
+playlist_begin: Meteora (wav).cue
+mtime: 1538838793
+playlist_end
+end: 01 - Albums/03 - Meteora (2003)
+directory: 04 - Live in Texas (2003)
+mtime: 1539133522
+begin: 01 - Albums/04 - Live in Texas (2003)
+song_begin: 01-Somewhere I Belong.flac
+Time: 217.773000
+Title: Somewhere I Belong
+Artist: Linkin Park
+Album: Live in Texas
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 1
+Format: 44100:16:2
+mtime: 1538839292
+song_end
+song_begin: 02-Lying From You.flac
+Time: 187.493000
+Title: Lying from You
+Artist: Linkin Park
+Album: Live in Texas
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 2
+Format: 44100:16:2
+mtime: 1538839667
+song_end
+song_begin: 03-Papercut.flac
+Time: 186.160000
+Title: Papercut
+Artist: Linkin Park
+Album: Live in Texas
+Date: 2003
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 3
+Format: 44100:16:2
+mtime: 1538839438
+song_end
+song_begin: 04-Points Of Authority.flac
+Time: 205.133000
+Title: Points of Authority
+Artist: Linkin Park
+Album: Live in Texas
+Date: 2003
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 4
+Format: 44100:16:2
+mtime: 1538839516
+song_end
+song_begin: 05-Runaway.flac
+Time: 187.613000
+Title: Runaway
+Artist: Linkin Park
+Album: Live in Texas
+Date: 2003
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington/M. Wakefield
+Track: 5
+Format: 44100:16:2
+mtime: 1538839061
+song_end
+song_begin: 06-Faint.flac
+Time: 167.040000
+Title: Faint
+Artist: Linkin Park
+Album: Live in Texas
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 6
+Format: 44100:16:2
+mtime: 1538839455
+song_end
+song_begin: 07-From The Inside.flac
+Time: 180.920000
+Title: From the Inside
+Artist: Linkin Park
+Album: Live in Texas
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 7
+Format: 44100:16:2
+mtime: 1538839283
+song_end
+song_begin: 08-P5hng Me Axwy.flac
+Time: 305.253000
+Title: P5HNG ME A*WY
+Artist: Linkin Park
+Album: Live in Texas
+Date: 2003
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 8
+Format: 44100:16:2
+mtime: 1538839631
+song_end
+song_begin: 09-Numb.flac
+Time: 186.773000
+Title: Numb
+Artist: Linkin Park
+Album: Live in Texas
+Date: 2003
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 9
+Format: 44100:16:2
+mtime: 1538839182
+song_end
+song_begin: 10-Crawling.flac
+Time: 213.853000
+Title: Crawling
+Artist: Linkin Park
+Album: Live in Texas
+Date: 2003
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 10
+Format: 44100:16:2
+mtime: 1538839382
+song_end
+song_begin: 11-In The End.flac
+Time: 211.760000
+Title: In the End
+Artist: Linkin Park
+Album: Live in Texas
+Date: 2003
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 11
+Format: 44100:16:2
+mtime: 1538839565
+song_end
+song_begin: 12-One Step Closer.flac
+Time: 253.120000
+Title: One Step Closer
+Artist: Linkin Park
+Album: Live in Texas
+Date: 2003
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 12
+Format: 44100:16:2
+mtime: 1538839584
+song_end
+playlist_begin: Live In Texas (flac).cue
+mtime: 1538838793
+playlist_end
+playlist_begin: Live In Texas (wav).cue
+mtime: 1538838793
+playlist_end
+end: 01 - Albums/04 - Live in Texas (2003)
+directory: 05 - Collision Course (2004)
+mtime: 1539133426
+begin: 01 - Albums/05 - Collision Course (2004)
+song_begin: 01-Dirt off your shoulder - Lying from you.flac
+Time: 244.693000
+Title: Dirt Off Your Shoulder/Lying from You
+Artist: Jay-Z/Linkin Park
+Album: Collision Course
+Date: 2004
+Genre: Mash-Up
+Composer: S. Carter/T. Mosley/C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/M. Wakefield/D. Farrell
+Track: 1
+Format: 44100:16:2
+mtime: 1538839605
+song_end
+song_begin: 02-Big pimpin' - Papercut.flac
+Time: 156.320000
+Title: Big Pimpin'/Papercut
+Artist: Jay-Z/Linkin Park
+Album: Collision Course
+Date: 2004
+Genre: Mash-Up
+Composer: S. Carter/T. Mosley/K. Joshua/C. Butler/B. Freeman/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 2
+Format: 44100:16:2
+mtime: 1538839578
+song_end
+song_begin: 03-Jigga what - Faint.flac
+Time: 211.173000
+Title: Jigga What/Faint
+Artist: Jay-Z/Linkin Park
+Album: Collision Course
+Date: 2004
+Genre: Mash-Up
+Composer: S. Carter/J. Burks/T. Mosley/C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/M. Wakefield/D. Farrell
+Track: 3
+Format: 44100:16:2
+mtime: 1538839631
+song_end
+song_begin: 04-Numb - Encore.flac
+Time: 205.280000
+Title: Numb/Encore
+Artist: Jay-Z/Linkin Park
+Album: Collision Course
+Date: 2004
+Genre: Mash-Up
+Composer: S.Carter/K.West/C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 4
+Format: 44100:16:2
+mtime: 1538839516
+song_end
+song_begin: 05-Izzo - In the end.flac
+Time: 164.866000
+Title: Izzo/In the End
+Artist: Jay-Z/Linkin Park
+Album: Collision Course
+Date: 2004
+Genre: Mash-Up
+Composer: S.Carter/K.West/B.Gordy/A.Mizell/F.Perren/D.Richards/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 5
+Format: 44100:16:2
+mtime: 1538838915
+song_end
+song_begin: 06-Points of authority - 99 problems - One step closer.flac
+Time: 295.826000
+Title: Points of Authority/99 Problems/One Step Closer
+Artist: Jay-Z/Linkin Park
+Album: Collision Course
+Date: 2004
+Genre: Mash-Up
+Composer: S.Carter/R.Rubin/N.Landsberg/F.Pappalardi/J.Ventura/L.Weinstein/W.Squier/T.Marrow/A.Henderson/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 6
+Format: 44100:16:2
+mtime: 1538839447
+song_end
+playlist_begin: Collision Course (wav).cue
+mtime: 1538838794
+playlist_end
+playlist_begin: Collision Course (flac).cue
+mtime: 1538838794
+playlist_end
+end: 01 - Albums/05 - Collision Course (2004)
+directory: 06 - Minutes to Midnight (Tour Edition) (2007)
+mtime: 1539133403
+begin: 01 - Albums/06 - Minutes to Midnight (Tour Edition) (2007)
+song_begin: 01-Wake.flac
+Time: 100.920000
+Title: Wake
+Artist: Linkin Park
+Album: Minutes to Midnight [Tour Edition]
+Date: 2007
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 1
+Format: 44100:16:2
+mtime: 1538839257
+song_end
+song_begin: 02-Given Up.flac
+Time: 189.293000
+Title: Given Up
+Artist: Linkin Park
+Album: Minutes to Midnight [Tour Edition]
+Date: 2007
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 2
+Format: 44100:16:2
+mtime: 1538839260
+song_end
+song_begin: 03-Leave All The Rest.flac
+Time: 209.306000
+Title: Leave Out All the Rest
+Artist: Linkin Park
+Album: Minutes to Midnight [Tour Edition]
+Date: 2007
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 3
+Format: 44100:16:2
+mtime: 1538839364
+song_end
+song_begin: 04-Bleed It Out.flac
+Time: 164.426000
+Title: Bleed it Out
+Artist: Linkin Park
+Album: Minutes to Midnight [Tour Edition]
+Date: 2007
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 4
+Format: 44100:16:2
+mtime: 1538839564
+song_end
+song_begin: 05-Shadow Of The Day.flac
+Time: 289.906000
+Title: Shadow of the Day
+Artist: Linkin Park
+Album: Minutes to Midnight [Tour Edition]
+Date: 2007
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 5
+Format: 44100:16:2
+mtime: 1538839591
+song_end
+song_begin: 06-What I've Done.flac
+Time: 205.226000
+Title: What I've Done
+Artist: Linkin Park
+Album: Minutes to Midnight [Tour Edition]
+Date: 2007
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 6
+Format: 44100:16:2
+mtime: 1538839387
+song_end
+song_begin: 07-Hands Held High.flac
+Time: 233.133000
+Title: Hands Held High
+Artist: Linkin Park
+Album: Minutes to Midnight [Tour Edition]
+Date: 2007
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 7
+Format: 44100:16:2
+mtime: 1538839314
+song_end
+song_begin: 08-No More Sorrow.flac
+Time: 221.693000
+Title: No More Sorrow
+Artist: Linkin Park
+Album: Minutes to Midnight [Tour Edition]
+Date: 2007
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 8
+Format: 44100:16:2
+mtime: 1538839530
+song_end
+song_begin: 09-Valentine's Day.flac
+Time: 196.840000
+Title: Valentine's Day
+Artist: Linkin Park
+Album: Minutes to Midnight [Tour Edition]
+Date: 2007
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 9
+Format: 44100:16:2
+mtime: 1538838948
+song_end
+song_begin: 10-In Between.flac
+Time: 196.746000
+Title: In Between
+Artist: Linkin Park
+Album: Minutes to Midnight [Tour Edition]
+Date: 2007
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 10
+Format: 44100:16:2
+mtime: 1538839478
+song_end
+song_begin: 11-In Pieces.flac
+Time: 218.013000
+Title: In Pieces
+Artist: Linkin Park
+Album: Minutes to Midnight [Tour Edition]
+Date: 2007
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 11
+Format: 44100:16:2
+mtime: 1538839282
+song_end
+song_begin: 12-The Little Things Give You Away.flac
+Time: 381.773000
+Title: The Little Things Give You Away
+Artist: Linkin Park
+Album: Minutes to Midnight [Tour Edition]
+Date: 2007
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 12
+Format: 44100:16:2
+mtime: 1538839632
+song_end
+song_begin: 13-No Roads Left.flac
+Time: 229.880000
+Title: No Roads Left (Bonus)
+Artist: Linkin Park
+Album: Minutes to Midnight [Tour Edition]
+Date: 2007
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 13
+Format: 44100:16:2
+mtime: 1538839094
+song_end
+song_begin: 14-What I've Done (Distorted Remix).flac
+Time: 227.986000
+Title: What I've Done (Distorted Remix)
+Artist: Linkin Park
+Album: Minutes to Midnight [Tour Edition]
+Date: 2007
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 14
+Format: 44100:16:2
+mtime: 1538839608
+song_end
+song_begin: 15-Given Up (Third Encore Session).flac
+Time: 188.773000
+Title: Given Up (Third Encore Session)
+Artist: Linkin Park
+Album: Minutes to Midnight [Tour Edition]
+Date: 2007
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 15
+Format: 44100:16:2
+mtime: 1538839180
+song_end
+playlist_begin: Minutes To Midnight (flac).cue
+mtime: 1538838790
+playlist_end
+playlist_begin: Minutes To Midnight (wav).cue
+mtime: 1538838790
+playlist_end
+end: 01 - Albums/06 - Minutes to Midnight (Tour Edition) (2007)
+directory: 07 - Road to Revolution (2008)
+mtime: 1539133351
+begin: 01 - Albums/07 - Road to Revolution (2008)
+song_begin: 01-One Step Closer.flac
+Time: 247.253000
+Title: One Step Closer
+Artist: Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 1
+Format: 44100:16:2
+mtime: 1538839636
+song_end
+song_begin: 02-From the Inside.flac
+Time: 204.573000
+Title: From the Inside
+Artist: Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 2
+Format: 44100:16:2
+mtime: 1538839606
+song_end
+song_begin: 03-No More Sorrow.flac
+Time: 306.440000
+Title: No More Sorrow
+Artist: Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 3
+Format: 44100:16:2
+mtime: 1538839648
+song_end
+song_begin: 04-Given Up.flac
+Time: 195.586000
+Title: Given Up
+Artist: Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 4
+Format: 44100:16:2
+mtime: 1538839607
+song_end
+song_begin: 05-Lying From You.flac
+Time: 199.440000
+Title: Lying from You
+Artist: Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 5
+Format: 44100:16:2
+mtime: 1538839523
+song_end
+song_begin: 06-Hands Held High.flac
+Time: 86.573000
+Title: Hands Held High
+Artist: Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 6
+Format: 44100:16:2
+mtime: 1538839556
+song_end
+song_begin: 07-Leave Out All the Rest.flac
+Time: 203.880000
+Title: Leave Out All the Rest
+Artist: Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 7
+Format: 44100:16:2
+mtime: 1538839665
+song_end
+song_begin: 08-Numb.flac
+Time: 226.120000
+Title: Numb
+Artist: Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 8
+Format: 44100:16:2
+mtime: 1538839553
+song_end
+song_begin: 09-The Little Things You Give Away.flac
+Time: 439.573000
+Title: The Little Things Give You Away
+Artist: Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 9
+Format: 44100:16:2
+mtime: 1538839221
+song_end
+song_begin: 10-Breaking the Habit.flac
+Time: 264.626000
+Title: Breaking the Habit
+Artist: Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 10
+Format: 44100:16:2
+mtime: 1538839680
+song_end
+song_begin: 11-Shadow of the Day.flac
+Time: 257.066000
+Title: Shadow of the Day
+Artist: Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 11
+Format: 44100:16:2
+mtime: 1538839566
+song_end
+song_begin: 12-Crawling.flac
+Time: 297.826000
+Title: Crawling
+Artist: Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 12
+Format: 44100:16:2
+mtime: 1538838996
+song_end
+song_begin: 13-In The End.flac
+Time: 230.413000
+Title: In the End
+Artist: Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 13
+Format: 44100:16:2
+mtime: 1538839350
+song_end
+song_begin: 14-Pushing Me Away.flac
+Time: 198.786000
+Title: Pushing Me Away
+Artist: Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 14
+Format: 44100:16:2
+mtime: 1538839550
+song_end
+song_begin: 15-What I've Done.flac
+Time: 301.760000
+Title: What I've Done
+Artist: Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 15
+Format: 44100:16:2
+mtime: 1538839095
+song_end
+song_begin: 16-Numb,Encore with Jay-Z.flac
+Time: 181.866000
+Title: Numb/Encore
+Artist: Jay-Z/Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: S.Carter/K.West/C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 16
+Format: 44100:16:2
+mtime: 1538839590
+song_end
+song_begin: 17-Jigga What,Faint with Jay-Z.flac
+Time: 310.520000
+Title: Jigga What/Faint
+Artist: Jay-Z/Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: S. Carter/J. Burks/T. Mosley/C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/M. Wakefield/D. Farrell
+Track: 17
+Format: 44100:16:2
+mtime: 1538839413
+song_end
+song_begin: 18-Bleed It Out.flac
+Time: 495.000000
+Title: Bleed it Out
+Artist: Linkin Park
+Album: Road to Revolution
+Date: 2008
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 18
+Format: 44100:16:2
+mtime: 1538839680
+song_end
+playlist_begin: Road To Revolution (flac).cue
+mtime: 1538838788
+playlist_end
+playlist_begin: Road To Revolution (wav).cue
+mtime: 1538838789
+playlist_end
+end: 01 - Albums/07 - Road to Revolution (2008)
+directory: 08 - A Thousand Suns (2010)
+mtime: 1539133450
+begin: 01 - Albums/08 - A Thousand Suns (2010)
+song_begin: 01-The Requiem.flac
+Time: 121.120000
+Title: The Requiem
+Artist: Linkin Park
+Album: A Thousand Suns
+Date: 2010
+Genre: Alternative/Experimental
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 1
+Format: 44100:16:2
+mtime: 1538839127
+song_end
+song_begin: 02-The Radiance.flac
+Time: 57.800000
+Title: The Radiance
+Artist: Linkin Park
+Album: A Thousand Suns
+Date: 2010
+Genre: Alternative/Experimental
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 2
+Format: 44100:16:2
+mtime: 1538839584
+song_end
+song_begin: 03-Burning In The Skies.flac
+Time: 253.160000
+Title: Burning In The Skies
+Artist: Linkin Park
+Album: A Thousand Suns
+Date: 2010
+Genre: Alternative/Experimental
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 3
+Format: 44100:16:2
+mtime: 1538839260
+song_end
+song_begin: 04-Empty Spaces.flac
+Time: 18.333000
+Title: Empty Spaces
+Artist: Linkin Park
+Album: A Thousand Suns
+Date: 2010
+Genre: Alternative/Experimental
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 4
+Format: 44100:16:2
+mtime: 1538838739
+song_end
+song_begin: 05-When They Come For Me.flac
+Time: 295.600000
+Title: When They Come For Me
+Artist: Linkin Park
+Album: A Thousand Suns
+Date: 2010
+Genre: Alternative/Experimental
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 5
+Format: 44100:16:2
+mtime: 1538839118
+song_end
+song_begin: 06-Robot Boy.flac
+Time: 268.986000
+Title: Robot Boy
+Artist: Linkin Park
+Album: A Thousand Suns
+Date: 2010
+Genre: Alternative/Experimental
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 6
+Format: 44100:16:2
+mtime: 1538839045
+song_end
+song_begin: 07-Jornada Del Muerto.flac
+Time: 94.906000
+Title: Jornada Del Muerto
+Artist: Linkin Park
+Album: A Thousand Suns
+Date: 2010
+Genre: Alternative/Experimental
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 7
+Format: 44100:16:2
+mtime: 1538839050
+song_end
+song_begin: 08-Waiting For The End.flac
+Time: 231.680000
+Title: Waiting For The End
+Artist: Linkin Park
+Album: A Thousand Suns
+Date: 2010
+Genre: Alternative/Experimental
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 8
+Format: 44100:16:2
+mtime: 1538839561
+song_end
+song_begin: 09-Blackout.flac
+Time: 279.453000
+Title: Blackout
+Artist: Linkin Park
+Album: A Thousand Suns
+Date: 2010
+Genre: Alternative/Experimental
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 9
+Format: 44100:16:2
+mtime: 1538839096
+song_end
+song_begin: 10-Wretches And Kings.flac
+Time: 255.293000
+Title: Wretches And Kings
+Artist: Linkin Park
+Album: A Thousand Suns
+Date: 2010
+Genre: Alternative/Experimental
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 10
+Format: 44100:16:2
+mtime: 1538839586
+song_end
+song_begin: 11-Wisdom, Justice, And Love.flac
+Time: 98.773000
+Title: Wisdom, Justice, And Love
+Artist: Linkin Park
+Album: A Thousand Suns
+Date: 2010
+Genre: Alternative/Experimental
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 11
+Format: 44100:16:2
+mtime: 1538839170
+song_end
+song_begin: 12-Iridescent.flac
+Time: 296.560000
+Title: Iridescent
+Artist: Linkin Park
+Album: A Thousand Suns
+Date: 2010
+Genre: Alternative/Experimental
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 12
+Format: 44100:16:2
+mtime: 1538839423
+song_end
+song_begin: 13-Fallout.flac
+Time: 83.053000
+Title: Fallout
+Artist: Linkin Park
+Album: A Thousand Suns
+Date: 2010
+Genre: Alternative/Experimental
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 13
+Format: 44100:16:2
+mtime: 1538839207
+song_end
+song_begin: 14-The Catalyst.flac
+Time: 339.853000
+Title: The Catalyst
+Artist: Linkin Park
+Album: A Thousand Suns
+Date: 2010
+Genre: Alternative/Experimental
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 14
+Format: 44100:16:2
+mtime: 1538839590
+song_end
+song_begin: 15-The Messenger.flac
+Time: 181.893000
+Title: The Messenger
+Artist: Linkin Park
+Album: A Thousand Suns
+Date: 2010
+Genre: Alternative/Experimental
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 15
+Format: 44100:16:2
+mtime: 1538839116
+song_end
+playlist_begin: A Thousand Suns (wav).cue
+mtime: 1538838790
+playlist_end
+playlist_begin: A Thousand Suns (flac).cue
+mtime: 1538838790
+playlist_end
+end: 01 - Albums/08 - A Thousand Suns (2010)
+directory: 09 - Living Things (2012)
+mtime: 1539133474
+begin: 01 - Albums/09 - Living Things (2012)
+directory: Australian Tour Edition
+mtime: 1539133474
+begin: 01 - Albums/09 - Living Things (2012)/Australian Tour Edition
+directory: CD 1
+mtime: 1539133473
+begin: 01 - Albums/09 - Living Things (2012)/Australian Tour Edition/CD 1
+song_begin: 01-Lost in the Echo.flac
+Time: 205.773000
+Title: Lost in the Echo
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD1
+Date: 2013
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 1
+Format: 44100:16:2
+mtime: 1538839615
+song_end
+song_begin: 02-In My Remains.flac
+Time: 200.693000
+Title: In My Remains
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD1
+Date: 2013
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 2
+Format: 44100:16:2
+mtime: 1538839249
+song_end
+song_begin: 03-Burn it Down.flac
+Time: 230.253000
+Title: Burn it Down
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD1
+Date: 2013
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 3
+Format: 44100:16:2
+mtime: 1538839524
+song_end
+song_begin: 04-Lies Greed Misery.flac
+Time: 147.160000
+Title: Lies Greed Misery
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD1
+Date: 2013
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 4
+Format: 44100:16:2
+mtime: 1538839680
+song_end
+song_begin: 05-I'll Be Gone.flac
+Time: 211.093000
+Title: I'll Be Gone
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD1
+Date: 2013
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 5
+Format: 44100:16:2
+mtime: 1538839403
+song_end
+song_begin: 06-Castle of Glass.flac
+Time: 205.453000
+Title: Castle of Glass
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD1
+Date: 2013
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 6
+Format: 44100:16:2
+mtime: 1538839639
+song_end
+song_begin: 07-Victimized.flac
+Time: 106.360000
+Title: Victimized
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD1
+Date: 2013
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 7
+Format: 44100:16:2
+mtime: 1538839623
+song_end
+song_begin: 08-Roads Untraveled.flac
+Time: 229.933000
+Title: Roads Untraveled
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD1
+Date: 2013
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 8
+Format: 44100:16:2
+mtime: 1538839238
+song_end
+song_begin: 09-Skin to Bone.flac
+Time: 168.346000
+Title: Skin to Bone
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD1
+Date: 2013
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 9
+Format: 44100:16:2
+mtime: 1538839629
+song_end
+song_begin: 10-Until it Breaks.flac
+Time: 223.400000
+Title: Until it Breaks
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD1
+Date: 2013
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 10
+Format: 44100:16:2
+mtime: 1538839271
+song_end
+song_begin: 11-Tinfoil.flac
+Time: 71.893000
+Title: Tinfoil
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD1
+Date: 2013
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 11
+Format: 44100:16:2
+mtime: 1538839561
+song_end
+song_begin: 12-Powerless.flac
+Time: 224.466000
+Title: Powerless
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD1
+Date: 2013
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 12
+Format: 44100:16:2
+mtime: 1538839666
+song_end
+playlist_begin: Living Things (flac).cue
+mtime: 1538838791
+playlist_end
+playlist_begin: Living Things (wav).cue
+mtime: 1538838791
+playlist_end
+end: 01 - Albums/09 - Living Things (2012)/Australian Tour Edition/CD 1
+directory: CD 2
+mtime: 1539133459
+begin: 01 - Albums/09 - Living Things (2012)/Australian Tour Edition/CD 2
+song_begin: 01-In the End (Live).flac
+Time: 220.520000
+Title: In the End (Live)
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD2
+Date: 2013
+Genre: Alternative
+Composer: J. Hahn/B. Delson/R. Bourdon/M. Shinoda/C. Bennington
+Track: 1
+Format: 44100:16:2
+mtime: 1538839544
+song_end
+song_begin: 02-New Divide (Live).flac
+Time: 270.186000
+Title: New Divide (Live)
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD2
+Date: 2013
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 2
+Format: 44100:16:2
+mtime: 1538839644
+song_end
+song_begin: 03-What I've Done (Live).flac
+Time: 245.880000
+Title: What I've Done (Live)
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD2
+Date: 2013
+Genre: Alternative
+Composer: C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell
+Track: 3
+Format: 44100:16:2
+mtime: 1538839423
+song_end
+song_begin: 04-Lost in the Echo (KillSonik Remix).flac
+Time: 311.000000
+Title: Lost in the Echo (KillSonik Remix)
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD2
+Date: 2013
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 4
+Format: 44100:16:2
+mtime: 1538839628
+song_end
+song_begin: 05-Burn it Down (Live Rock im Park 2012).flac
+Time: 242.120000
+Title: Burn it Down (Live Rock im Park 2012)
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD2
+Date: 2013
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 5
+Format: 44100:16:2
+mtime: 1538839680
+song_end
+song_begin: 06-Lies Greed Misery (Live Rock im Park 2012).flac
+Time: 151.120000
+Title: Lies Greed Misery (Live Rock im Park 2012)
+Artist: Linkin Park
+Album: Living Things (Australian Tour Edition) CD2
+Date: 2013
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 6
+Format: 44100:16:2
+mtime: 1538839259
+song_end
+playlist_begin: Living Things (Australian Tour Edition) CD2 (flac).cue
+mtime: 1538838794
+playlist_end
+playlist_begin: Living Things (Australian Tour Edition) CD2 (wav).cue
+mtime: 1538838794
+playlist_end
+end: 01 - Albums/09 - Living Things (2012)/Australian Tour Edition/CD 2
+end: 01 - Albums/09 - Living Things (2012)/Australian Tour Edition
+directory: European CD
+mtime: 1539133500
+begin: 01 - Albums/09 - Living Things (2012)/European CD
+song_begin: 01-Lost In The Echo.flac
+Time: 205.773000
+Title: Lost In The Echo
+Artist: Linkin Park
+Album: Living Things
+Date: 2012
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 1
+Format: 44100:16:2
+mtime: 1538839354
+song_end
+song_begin: 02-In My Remains.flac
+Time: 200.693000
+Title: In My Remains
+Artist: Linkin Park
+Album: Living Things
+Date: 2012
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 2
+Format: 44100:16:2
+mtime: 1538839479
+song_end
+song_begin: 03-Burn It Down.flac
+Time: 230.253000
+Title: Burn It Down
+Artist: Linkin Park
+Album: Living Things
+Date: 2012
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 3
+Format: 44100:16:2
+mtime: 1538839601
+song_end
+song_begin: 04-Lies Greed Misery.flac
+Time: 147.160000
+Title: Lies Greed Misery
+Artist: Linkin Park
+Album: Living Things
+Date: 2012
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 4
+Format: 44100:16:2
+mtime: 1538838986
+song_end
+song_begin: 05-I'll Be Gone.flac
+Time: 211.093000
+Title: I'll Be Gone
+Artist: Linkin Park
+Album: Living Things
+Date: 2012
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 5
+Format: 44100:16:2
+mtime: 1538839668
+song_end
+song_begin: 06-Castle Of Glass.flac
+Time: 205.453000
+Title: Castle Of Glass
+Artist: Linkin Park
+Album: Living Things
+Date: 2012
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 6
+Format: 44100:16:2
+mtime: 1538839491
+song_end
+song_begin: 07-Victimized.flac
+Time: 106.360000
+Title: Victimized
+Artist: Linkin Park
+Album: Living Things
+Date: 2012
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 7
+Format: 44100:16:2
+mtime: 1538839236
+song_end
+song_begin: 08-Roads Untraveled.flac
+Time: 229.933000
+Title: Roads Untraveled
+Artist: Linkin Park
+Album: Living Things
+Date: 2012
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 8
+Format: 44100:16:2
+mtime: 1538839524
+song_end
+song_begin: 09-Skin To Bone.flac
+Time: 168.346000
+Title: Skin To Bone
+Artist: Linkin Park
+Album: Living Things
+Date: 2012
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 9
+Format: 44100:16:2
+mtime: 1538839383
+song_end
+song_begin: 10-Until It Breaks.flac
+Time: 223.400000
+Title: Until It Breaks
+Artist: Linkin Park
+Album: Living Things
+Date: 2012
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 10
+Format: 44100:16:2
+mtime: 1538839340
+song_end
+song_begin: 11-Tinfoil.flac
+Time: 71.893000
+Title: Tinfoil
+Artist: Linkin Park
+Album: Living Things
+Date: 2012
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 11
+Format: 44100:16:2
+mtime: 1538838907
+song_end
+song_begin: 12-Powerless.flac
+Time: 224.466000
+Title: Powerless
+Artist: Linkin Park
+Album: Living Things
+Date: 2012
+Genre: Alternative
+Composer: Linkin Park (C. Bennington/J. Hahn/B. Delson/R. Bourdon/M. Shinoda/D. Farrell)
+Track: 12
+Format: 44100:16:2
+mtime: 1538839109
+song_end
+playlist_begin: Living Things (flac).cue
+mtime: 1538838793
+playlist_end
+playlist_begin: Living Things (wav).cue
+mtime: 1538838793
+playlist_end
+end: 01 - Albums/09 - Living Things (2012)/European CD
+end: 01 - Albums/09 - Living Things (2012)
+end: 01 - Albums
+directory: 2008 - System of a Down - Greatest Hits[nnm-club.ru]
+mtime: 1538414093
+begin: 2008 - System of a Down - Greatest Hits[nnm-club.ru]
+directory: CD 1
+mtime: 1539878831
+begin: 2008 - System of a Down - Greatest Hits[nnm-club.ru]/CD 1
+song_begin: (01) [System of a down] Attack.mp3
+Time: 187.193000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: Attack
+Album: Greatest Hits CD 1
+Track: 1
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414220
+song_end
+song_begin: (02) [System of a down] Innervision.mp3
+Time: 154.775000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: Innervision
+Album: Greatest Hits CD 1
+Track: 2
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414210
+song_end
+song_begin: (03) [System of a down] Revenga.mp3
+Time: 229.067000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: revenga
+Album: Greatest Hits CD 1
+Track: 3
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414227
+song_end
+song_begin: (04) [System of a down] Boom!.mp3
+Time: 135.549000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: boom!
+Album: Greatest Hits CD 1
+Track: 4
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414227
+song_end
+song_begin: (05) [System of a down] Hypnotize.mp3
+Time: 190.432000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: hypnotize
+Album: Greatest Hits CD 1
+Track: 5
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414226
+song_end
+song_begin: (06) [System of a down] Highway song.mp3
+Time: 194.716000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: highway song
+Album: Greatest Hits CD 1
+Track: 6
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414216
+song_end
+song_begin: (07) [System of a down] Chop suey!.mp3
+Time: 210.494000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: chop suey!
+Album: Greatest Hits CD 1
+Track: 7
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414219
+song_end
+song_begin: (08) [System of a down] B.Y.O.B..mp3
+Time: 256.470000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: b.y.o.b.
+Album: Greatest Hits CD 1
+Track: 8
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414228
+song_end
+song_begin: (09) [System of a down] Stealing society.mp3
+Time: 179.121000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: stealing society
+Album: Greatest Hits CD 1
+Track: 9
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414216
+song_end
+song_begin: (10) [System of a down] Spiders.mp3
+Time: 215.066000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: spiders
+Album: Greatest Hits CD 1
+Track: 10
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414227
+song_end
+song_begin: (11) [System of a down] Toxicity.mp3
+Time: 220.081000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: toxicity
+Album: Greatest Hits CD 1
+Track: 11
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414208
+song_end
+song_begin: (12) [System of a down] Bubbles.mp3
+Time: 117.890000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: bubbles
+Album: Greatest Hits CD 1
+Track: 12
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414227
+song_end
+song_begin: (13) [System of a down] War.mp3
+Time: 160.339000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: war?
+Album: Greatest Hits CD 1
+Track: 13
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414199
+song_end
+song_begin: (14) [System of a down] Radio-video.mp3
+Time: 250.253000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: radio-video
+Album: Greatest Hits CD 1
+Track: 14
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414225
+song_end
+song_begin: (15) [System of a down] Aerials.mp3
+Time: 234.187000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: aerials
+Album: Greatest Hits CD 1
+Track: 15
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414225
+song_end
+song_begin: (16) [System of a down] Snowblind.mp3
+Time: 267.441000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: snowblind
+Album: Greatest Hits CD 1
+Track: 16
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414217
+song_end
+song_begin: (17) [System of a down] She's like heroin.mp3
+Time: 165.172000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: she's like heroin
+Album: Greatest Hits CD 1
+Track: 17
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414223
+song_end
+song_begin: (18) [System of a down] Atwa.mp3
+Time: 176.875000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: atwa
+Album: Greatest Hits CD 1
+Track: 18
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414174
+song_end
+song_begin: (19) [System of a down] Know.mp3
+Time: 177.162000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: know
+Album: Greatest Hits CD 1
+Track: 19
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414219
+song_end
+song_begin: (20) [System of a down] X.mp3
+Time: 118.726000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: x
+Album: Greatest Hits CD 1
+Track: 20
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414218
+song_end
+song_begin: (21) [System of a down] Pictures.mp3
+Time: 127.294000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: pictures
+Album: Greatest Hits CD 1
+Track: 21
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414212
+song_end
+song_begin: (22) [System of a down] Fuck the system.mp3
+Time: 133.146000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: fuck th system
+Album: Greatest Hits CD 1
+Track: 22
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414229
+song_end
+song_begin: (23) [System of a down] This cocaine makes me feel like i'm on this song.mp3
+Time: 128.574000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: this cocaine makes me feel like i'm on this song
+Album: Greatest Hits CD 1
+Track: 23
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414226
+song_end
+song_begin: (24) [System of a down] Peephole.mp3
+Time: 217.286000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: peephole
+Album: Greatest Hits CD 1
+Track: 24
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414223
+song_end
+song_begin: (25) [System of a down] Suggestions.mp3
+Time: 159.686000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: suggestions
+Album: Greatest Hits CD 1
+Track: 25
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414205
+song_end
+song_begin: (26) [System of a down] Lonely day.mp3
+Time: 167.862000
+Artist: System of a down
+AlbumArtist: System of a down
+Title: lonely day
+Album: Greatest Hits CD 1
+Track: 26
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414222
+song_end
+end: 2008 - System of a Down - Greatest Hits[nnm-club.ru]/CD 1
+directory: CD 2
+mtime: 1539878828
+begin: 2008 - System of a Down - Greatest Hits[nnm-club.ru]/CD 2
+song_begin: (01) [System Of A Down] Violent Pornography.mp3
+Time: 212.453000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Violent Pornography
+Album: Greatest Hits CD 2
+Track: 1
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414205
+song_end
+song_begin: (02) [System Of A Down] Kill Rock 'N Roll.mp3
+Time: 148.924000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Kill Rock 'N Roll
+Album: Greatest Hits CD 2
+Track: 2
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414210
+song_end
+song_begin: (03) [System Of A Down] Cigaro.mp3
+Time: 132.675000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Cigaro
+Album: Greatest Hits CD 2
+Track: 3
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414228
+song_end
+song_begin: (04) [System Of A Down] Sugar.mp3
+Time: 153.756000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Sugar
+Album: Greatest Hits CD 2
+Track: 4
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414210
+song_end
+song_begin: (05) [System Of A Down] Mr. Jack.mp3
+Time: 250.357000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Mr. Jack
+Album: Greatest Hits CD 2
+Track: 5
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414226
+song_end
+song_begin: (06) [System Of A Down] The Metro.mp3
+Time: 178.285000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: The Metro
+Album: Greatest Hits CD 2
+Track: 6
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414223
+song_end
+song_begin: (07) [System Of A Down] Forest.mp3
+Time: 241.162000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Forest
+Album: Greatest Hits CD 2
+Track: 7
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414220
+song_end
+song_begin: (08) [System Of A Down] U-Fig.mp3
+Time: 176.222000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: U-Fig
+Album: Greatest Hits CD 2
+Track: 8
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414225
+song_end
+song_begin: (09) [System Of A Down] I-E-A-I-A-I-O.mp3
+Time: 188.943000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: I-E-A-I-A-I-O
+Album: Greatest Hits CD 2
+Track: 9
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414222
+song_end
+song_begin: (10) [System Of A Down] Jet Pilot.mp3
+Time: 127.190000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Jet Pilot
+Album: Greatest Hits CD 2
+Track: 10
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414195
+song_end
+song_begin: (11) [System Of A Down] Streamline.mp3
+Time: 216.999000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Streamline
+Album: Greatest Hits CD 2
+Track: 11
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414225
+song_end
+song_begin: (12) [System Of A Down] Old School Hollywood.mp3
+Time: 177.893000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Old School Hollywood
+Album: Greatest Hits CD 2
+Track: 12
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414218
+song_end
+song_begin: (13) [System Of A Down] Holy Mountains.mp3
+Time: 329.848000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Holy Mountains
+Album: Greatest Hits CD 2
+Track: 13
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414228
+song_end
+song_begin: (14) [System Of A Down] Ego Brain.mp3
+Time: 201.038000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Ego Brain
+Album: Greatest Hits CD 2
+Track: 14
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414227
+song_end
+song_begin: (15) [System Of A Down] Deer Dance.mp3
+Time: 175.568000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Deer Dance
+Album: Greatest Hits CD 2
+Track: 15
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414228
+song_end
+song_begin: (16) [System Of A Down] Science.mp3
+Time: 163.317000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Science
+Album: Greatest Hits CD 2
+Track: 16
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414218
+song_end
+song_begin: (17) [System Of A Down] Darts.mp3
+Time: 162.951000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Darts
+Album: Greatest Hits CD 2
+Track: 17
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414228
+song_end
+song_begin: (18) [System Of A Down] Sad Statue.mp3
+Time: 205.949000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Sad Statue
+Album: Greatest Hits CD 2
+Track: 18
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414221
+song_end
+song_begin: (19) [System Of A Down] Vicinity of Obscenity.mp3
+Time: 168.698000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Vicinity of Obscenity
+Album: Greatest Hits CD 2
+Track: 19
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414224
+song_end
+song_begin: (20) [System Of A Down] Bounce.mp3
+Time: 114.546000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Bounce
+Album: Greatest Hits CD 2
+Track: 20
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414214
+song_end
+song_begin: (21) [System Of A Down] Shimmy.mp3
+Time: 111.490000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Shimmy
+Album: Greatest Hits CD 2
+Track: 21
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414213
+song_end
+song_begin: (22) [System Of A Down] Ddevil.mp3
+Time: 103.497000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Ddevil
+Album: Greatest Hits CD 2
+Track: 22
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414221
+song_end
+song_begin: (23) [System Of A Down] Suite-Pee.mp3
+Time: 151.536000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Suite-Pee
+Album: Greatest Hits CD 2
+Track: 23
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414219
+song_end
+song_begin: (24) [System Of A Down] Needles.mp3
+Time: 194.168000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Needles
+Album: Greatest Hits CD 2
+Track: 24
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414224
+song_end
+song_begin: (25) [System Of A Down] A.D.D..mp3
+Time: 189.231000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: A.D.D.
+Album: Greatest Hits CD 2
+Track: 25
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414172
+song_end
+song_begin: (26) [System Of A Down] Lost In Hollywood.mp3
+Time: 313.129000
+Artist: System Of A Down
+AlbumArtist: System Of A Down
+Title: Lost In Hollywood
+Album: Greatest Hits CD 2
+Track: 26
+Date: 2010
+Genre: Alternative
+Format: 44100:24:2
+mtime: 1538414223
+song_end
+end: 2008 - System of a Down - Greatest Hits[nnm-club.ru]/CD 2
+end: 2008 - System of a Down - Greatest Hits[nnm-club.ru]
+directory: MiyaGi & Эндшпиль  - Hajime, Pt. 3 (2018)
+mtime: 1537241477
+begin: MiyaGi & Эндшпиль  - Hajime, Pt. 3 (2018)
+song_begin: 01 - Колизей.mp3
+Time: 267.702000
+Artist: MiyaGi & Эндшпиль
+AlbumArtist: MiyaGi & Эндшпиль
+Title: Колизей
+Album: Hajime, Pt. 3
+Track: 1
+Date: 2018
+Genre: Хип-хоп/рэп
+Disc: 1
+Format: 44100:24:2
+mtime: 1536158162
+song_end
+song_begin: 02 - Дама.mp3
+Time: 214.334000
+Artist: MiyaGi & Эндшпиль
+AlbumArtist: MiyaGi & Эндшпиль
+Title: Дама
+Album: Hajime, Pt. 3
+Track: 2
+Date: 2018
+Genre: Хип-хоп/рэп
+Disc: 1
+Format: 44100:24:2
+mtime: 1536158162
+song_end
+song_begin: 03 - Я хочу любить.mp3
+Time: 228.179000
+Artist: MiyaGi & Эндшпиль
+AlbumArtist: MiyaGi & Эндшпиль
+Title: Я хочу любить
+Album: Hajime, Pt. 3
+Track: 3
+Date: 2018
+Genre: Хип-хоп/рэп
+Disc: 1
+Format: 44100:24:2
+mtime: 1536158162
+song_end
+song_begin: 04 - Фея.mp3
+Time: 225.619000
+Artist: MiyaGi & Эндшпиль
+AlbumArtist: MiyaGi & Эндшпиль
+Title: Фея
+Album: Hajime, Pt. 3
+Track: 4
+Date: 2018
+Genre: Хип-хоп/рэп
+Disc: 1
+Format: 44100:24:2
+mtime: 1536158162
+song_end
+song_begin: 05 - Fire Man.mp3
+Time: 217.469000
+Artist: MiyaGi & Эндшпиль
+AlbumArtist: MiyaGi & Эндшпиль
+Title: Fire Man
+Album: Hajime, Pt. 3
+Track: 5
+Date: 2018
+Genre: Хип-хоп/рэп
+Disc: 1
+Format: 44100:24:2
+mtime: 1536158162
+song_end
+song_begin: 06 - Don't Cry (feat. Рем Дигга).mp3
+Time: 222.850000
+Artist: MiyaGi & Эндшпиль
+AlbumArtist: MiyaGi & Эндшпиль
+Title: Don't Cry (feat. Рем Дигга)
+Album: Hajime, Pt. 3
+Track: 6
+Date: 2018
+Genre: Хип-хоп/рэп
+Disc: 1
+Format: 44100:24:2
+mtime: 1536158164
+song_end
+song_begin: 07 - Fuck the Money (feat. TumaniYO).mp3
+Time: 251.480000
+Artist: MiyaGi & Эндшпиль
+AlbumArtist: MiyaGi & Эндшпиль
+Title: Fuck the Money (feat. TumaniYO)
+Album: Hajime, Pt. 3
+Track: 7
+Date: 2018
+Genre: Хип-хоп/рэп
+Disc: 1
+Format: 44100:24:2
+mtime: 1536158164
+song_end
+song_begin: 08 - Look at the Scars.mp3
+Time: 227.395000
+Artist: MiyaGi & Эндшпиль
+AlbumArtist: MiyaGi & Эндшпиль
+Title: Look at the Scars
+Album: Hajime, Pt. 3
+Track: 8
+Date: 2018
+Genre: Хип-хоп/рэп
+Disc: 1
+Format: 44100:24:2
+mtime: 1536158164
+song_end
+song_begin: 09 - Listen to Your Heart.mp3
+Time: 204.773000
+Artist: MiyaGi & Эндшпиль
+AlbumArtist: MiyaGi & Эндшпиль
+Title: Listen to Your Heart
+Album: Hajime, Pt. 3
+Track: 9
+Date: 2018
+Genre: Хип-хоп/рэп
+Disc: 1
+Format: 44100:24:2
+mtime: 1536158164
+song_end
+end: MiyaGi & Эндшпиль  - Hajime, Pt. 3 (2018)
+directory: Noize Mc
+mtime: 1539819058
+begin: Noize Mc
+directory: 2008 - The Greatest Hits Vol.1
+mtime: 1539825921
+begin: Noize Mc/2008 - The Greatest Hits Vol.1
+song_begin: 01 - Песня Для Радио.mp3
+Time: 173.165000
+Artist: Noize MC
+Title: Песня Для Радио
+Album: The Greatest Hits Vol.1
+Track: 1
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820058
+song_end
+song_begin: 02 - За Закрытой Дверью.mp3
+Time: 214.099000
+Artist: Noize MC
+Title: За Закрытой Дверью
+Album: The Greatest Hits Vol.1
+Track: 2
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819885
+song_end
+song_begin: 03 - Из Окна.mp3
+Time: 243.879000
+Artist: Noize MC
+Title: Из Окна
+Album: The Greatest Hits Vol.1
+Track: 3
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819996
+song_end
+song_begin: 04 - Москва - Не Резиновая.mp3
+Time: 187.036000
+Artist: Noize MC
+Title: Москва - Не Резиновая
+Album: The Greatest Hits Vol.1
+Track: 4
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820045
+song_end
+song_begin: 05 - Кантемировская.mp3
+Time: 200.359000
+Artist: Noize MC
+Title: Кантемировская
+Album: The Greatest Hits Vol.1
+Track: 5
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820072
+song_end
+song_begin: 06 - Жизнь Без Наркотиков (feat. Маша Макарова).mp3
+Time: 221.387000
+Artist: Noize MC
+Title: Жизнь Без Наркотиков
+Album: The Greatest Hits Vol.1
+Track: 6
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819957
+song_end
+song_begin: 07 - На Районе (3 Недели Нету Плана).mp3
+Time: 215.980000
+Artist: Noize MC
+Title: На Районе (3 Недели Нету Плана)
+Album: The Greatest Hits Vol.1
+Track: 7
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820100
+song_end
+song_begin: 08 - На Работе (Платят Бабло).mp3
+Time: 149.786000
+Artist: Noize MC
+Title: На Работе (Платят Бабло)
+Album: The Greatest Hits Vol.1
+Track: 8
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820063
+song_end
+song_begin: 09 - Кури Бамбук!.mp3
+Time: 151.222000
+Artist: Noize MC
+Title: Кури Бамбук!
+Album: The Greatest Hits Vol.1
+Track: 9
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820104
+song_end
+song_begin: 10 - Палево!.mp3
+Time: 196.231000
+Artist: Noize MC
+Title: Палево!
+Album: The Greatest Hits Vol.1
+Track: 10
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820019
+song_end
+song_begin: 11 - Блатняк.mp3
+Time: 198.896000
+Artist: Noize MC
+Title: Блатняк
+Album: The Greatest Hits Vol.1
+Track: 11
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819970
+song_end
+song_begin: 12 - 5П (Песня Похуиста Про Получение Пиздюлей).mp3
+Time: 185.600000
+Artist: Noize MC
+Title: 5П (Песня Похуиста Про Получение Пиздюлей)
+Album: The Greatest Hits Vol.1
+Track: 12
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819969
+song_end
+song_begin: 13 - Девочка-Скинхед.mp3
+Time: 218.514000
+Artist: Noize MC
+Title: Девочка-Скинхед
+Album: The Greatest Hits Vol.1
+Track: 13
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820090
+song_end
+song_begin: 14 - Наше Движение.mp3
+Time: 165.250000
+Artist: Noize MC
+Title: Наше Движение
+Album: The Greatest Hits Vol.1
+Track: 14
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820107
+song_end
+song_begin: 15 - Аренби!!!.mp3
+Time: 83.539000
+Artist: Noize MC
+Title: Аренби!!!
+Album: The Greatest Hits Vol.1
+Track: 15
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819974
+song_end
+song_begin: 16 - Поднимите Руки.mp3
+Time: 145.214000
+Artist: Noize MC
+Title: Поднимите Руки
+Album: The Greatest Hits Vol.1
+Track: 16
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820047
+song_end
+song_begin: 17 - Моё Море.mp3
+Time: 153.782000
+Artist: Noize MC
+Title: Моё Море
+Album: The Greatest Hits Vol.1
+Track: 17
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820000
+song_end
+song_begin: 18 - Выдыхай.mp3
+Time: 189.286000
+Artist: Noize MC
+Title: Выдыхай
+Album: The Greatest Hits Vol.1
+Track: 18
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819987
+song_end
+song_begin: 19 - 3П (Правдивая Песня Пиздабола) (скрытый трек).mp3
+Time: 188.633000
+Artist: Noize MC
+Title: 3П (Правдивая Песня Пиздабола) (скрытый трек)
+Album: The Greatest Hits Vol.1
+Track: 19
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820033
+song_end
+song_begin: 20 - Мы Всего Добились Сами (feat. 228) (скрытый трек).mp3
+Time: 182.076000
+Artist: Noize MC
+Title: Мы Всего Добились Сами (feat. 228) (скрытый трек)
+Album: The Greatest Hits Vol.1
+Track: 20
+Date: 2008
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820064
+song_end
+end: Noize Mc/2008 - The Greatest Hits Vol.1
+directory: 2009 - OST Розыгрыш
+mtime: 1539883681
+begin: Noize Mc/2009 - OST Розыгрыш
+song_begin: 01 - Лето В Столице.mp3
+Time: 206.106000
+Artist: Noize MC
+Title: Лето В Столице
+Album: OST Розыгрыш
+Track: 1
+Date: 2009
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819527
+song_end
+song_begin: 02 - Моё Море.mp3
+Time: 146.703000
+Artist: Noize MC
+Title: Моё Море
+Album: OST Розыгрыш
+Track: 2
+Date: 2009
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820022
+song_end
+song_begin: 03 - Утро (Он, а не я).mp3
+Time: 131.134000
+Artist: Noize MC
+Title: Утро (Он, а не я)
+Album: OST Розыгрыш
+Track: 3
+Date: 2009
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820086
+song_end
+song_begin: 04 - Выдыхай.mp3
+Time: 188.133000
+Artist: Noize MC
+Title: Выдыхай
+Album: OST Розыгрыш
+Track: 4
+Date: 2009
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820037
+song_end
+song_begin: 05 - Не Могу Найти.mp3
+Time: 204.564000
+Artist: Noize MC
+Title: Не Могу Найти
+Album: OST Розыгрыш
+Track: 5
+Date: 2009
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820064
+song_end
+song_begin: 06 - Это Был Дождь.mp3
+Time: 262.870000
+Artist: Noize MC
+Title: Это Был Дождь
+Album: OST Розыгрыш
+Track: 6
+Date: 2009
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820098
+song_end
+song_begin: 07 - Суицид.mp3
+Time: 233.822000
+Artist: Noize MC
+Title: Суицид
+Album: OST Розыгрыш
+Track: 7
+Date: 2009
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820108
+song_end
+song_begin: 08 - Давай Приколемся (feat. Чупак & 228).mp3
+Time: 209.136000
+Artist: Noize MC
+Title: Давай Приколемся
+Album: OST Розыгрыш
+Track: 8
+Date: 2009
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820082
+song_end
+song_begin: 09 - Какая Жалость.mp3
+Time: 154.880000
+Artist: Noize MC
+Title: Какая Жалость
+Album: OST Розыгрыш
+Track: 9
+Date: 2009
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819832
+song_end
+song_begin: 10 - У.Е.mp3
+Time: 162.377000
+Artist: Noize MC
+Title: У.Е.
+Album: OST Розыгрыш
+Track: 10
+Date: 2009
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819882
+song_end
+song_begin: 11 - Деньги.mp3
+Time: 154.514000
+Artist: Noize MC
+Title: Деньги
+Album: OST Розыгрыш
+Track: 11
+Date: 2009
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820092
+song_end
+song_begin: 12 - Лето В Столице (Maestro A-Sid Jungle RMX).mp3
+Time: 253.283000
+Artist: Noize MC
+Title: Лето В Столице (Maestro A-Sid Jungle RMX)
+Album: OST Розыгрыш
+Track: 12
+Date: 2009
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820107
+song_end
+song_begin: 13 - Моё Море (ЛевПрав Версия).mp3
+Time: 149.002000
+Artist: Noize MC
+Title: Моё Море (ЛевПрав Версия)
+Album: OST Розыгрыш
+Track: 13
+Date: 2009
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820027
+song_end
+song_begin: 14 - Выдыхай (ЛевПрав Версия).mp3
+Time: 187.327000
+Artist: Noize MC
+Title: Выдыхай (ЛевПрав Версия)
+Album: OST Розыгрыш
+Track: 14
+Date: 2009
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820043
+song_end
+song_begin: 15 - Мы Всего Добились Сами (feat. 228) (Maestro A-sid Rmx) (скрытый трек).mp3
+Time: 171.314000
+Artist: Noize MC
+Title: Мы Всего Добились Сами (feat. 228) (Maestro A-sid Rmx) (скрытый Трек)
+Album: OST Розыгрыш
+Track: 15
+Date: 2009
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820075
+song_end
+end: Noize Mc/2009 - OST Розыгрыш
+directory: 2010 - The Greatest Hits Vol.2
+mtime: 1539825945
+begin: Noize Mc/2010 - The Greatest Hits Vol.2
+song_begin: 01 - Песня Для Радио (Полная Версия).mp3
+Time: 179.173000
+Artist: Noize MC
+Title: Песня Для Радио (Полная Версия)
+Album: The Greatest Hits Vol.2
+Track: 1
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820067
+song_end
+song_begin: 02 - За Закрытой Дверью.mp3
+Time: 214.204000
+Artist: Noize MC
+Title: За Закрытой Дверью
+Album: The Greatest Hits Vol.2
+Track: 2
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820006
+song_end
+song_begin: 03 - Из Окна.mp3
+Time: 244.009000
+Artist: Noize MC
+Title: Из Окна
+Album: The Greatest Hits Vol.2
+Track: 3
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820060
+song_end
+song_begin: 04 - Москва - Не Резиновая.mp3
+Time: 187.141000
+Artist: Noize MC
+Title: Москва - Не Резиновая
+Album: The Greatest Hits Vol.2
+Track: 4
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819982
+song_end
+song_begin: 05 - Кантемировская.mp3
+Time: 200.489000
+Artist: Noize MC
+Title: Кантемировская
+Album: The Greatest Hits Vol.2
+Track: 5
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819999
+song_end
+song_begin: 06 - Жизнь Без Наркотиков (feat. Маша Макарова).mp3
+Time: 221.518000
+Artist: Noize MC
+Title: Жизнь Без Наркотиков (feat. Маша Макарова)
+Album: The Greatest Hits Vol.2
+Track: 6
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820087
+song_end
+song_begin: 07 - На Районе (3 Недели Нету Дудки).mp3
+Time: 216.946000
+Artist: Noize MC
+Title: На Районе (3 Недели Нету Дудки)
+Album: The Greatest Hits Vol.2
+Track: 7
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820044
+song_end
+song_begin: 08 - На Работе (Платят Бабло).mp3
+Time: 149.890000
+Artist: Noize MC
+Title: На Работе (Платят Бабло)
+Album: The Greatest Hits Vol.2
+Track: 8
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820074
+song_end
+song_begin: 09 - Кури Бамбук!.mp3
+Time: 151.327000
+Artist: Noize MC
+Title: Кури Бамбук!
+Album: The Greatest Hits Vol.2
+Track: 9
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820051
+song_end
+song_begin: 10 - Палево!.mp3
+Time: 196.336000
+Artist: Noize MC
+Title: Палево!
+Album: The Greatest Hits Vol.2
+Track: 10
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819960
+song_end
+song_begin: 11 - Блатняк.mp3
+Time: 199.000000
+Artist: Noize MC
+Title: Блатняк
+Album: The Greatest Hits Vol.2
+Track: 11
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820048
+song_end
+song_begin: 12 - 5П (Песня Пох_иста Про Получение Пи_дюлей).mp3
+Time: 185.704000
+Artist: Noize MC
+Title: 5П (Песня Пох*иста Про Получение Пи*дюлей)
+Album: The Greatest Hits Vol.2
+Track: 12
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820022
+song_end
+song_begin: 13 - Девочка-Скинхед.mp3
+Time: 218.618000
+Artist: Noize MC
+Title: Девочка-Скинхед
+Album: The Greatest Hits Vol.2
+Track: 13
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820091
+song_end
+song_begin: 14 - Наше Движение.mp3
+Time: 165.355000
+Artist: Noize MC
+Title: Наше Движение
+Album: The Greatest Hits Vol.2
+Track: 14
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820098
+song_end
+song_begin: 15 - Капитал (feat. Ляпис Трубецкой).mp3
+Time: 155.768000
+Artist: Noize MC
+Title: Капитал (feat. Ляпис Трубецкой)
+Album: The Greatest Hits Vol.2
+Track: 15
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820042
+song_end
+song_begin: 16 - Мы Всего Добились Сами (feat. 228).mp3
+Time: 183.640000
+Artist: Noize MC
+Title: Мы Всего Добились Сами (feat. 228)
+Album: The Greatest Hits Vol.2
+Track: 16
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820017
+song_end
+song_begin: 17 - Аренби!!!.mp3
+Time: 83.644000
+Artist: Noize MC
+Title: Аренби!!!
+Album: The Greatest Hits Vol.2
+Track: 17
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820025
+song_end
+song_begin: 18 - Поднимите Руки.mp3
+Time: 145.345000
+Artist: Noize MC
+Title: Поднимите Руки
+Album: The Greatest Hits Vol.2
+Track: 18
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819664
+song_end
+song_begin: 19 - Ctrl+Alt+Delete (feat. Staisha).mp3
+Time: 168.359000
+Artist: Noize MC
+Title: Ctrl+Alt+Delete (feat. Staisha)
+Album: The Greatest Hits Vol.2
+Track: 19
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819967
+song_end
+song_begin: 20 - Ниже Нуля.mp3
+Time: 159.346000
+Artist: Noize MC
+Title: Ниже Нуля
+Album: The Greatest Hits Vol.2
+Track: 20
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820027
+song_end
+song_begin: 21 - Моё Море.mp3
+Time: 153.887000
+Artist: Noize MC
+Title: Моё Море
+Album: The Greatest Hits Vol.2
+Track: 21
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819909
+song_end
+song_begin: 22 - Выдыхай.mp3
+Time: 192.653000
+Artist: Noize MC
+Title: Выдыхай
+Album: The Greatest Hits Vol.2
+Track: 22
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820070
+song_end
+song_begin: 23 - Из Окна (Ска-панк-версия).mp3
+Time: 262.426000
+Artist: Noize MC
+Title: Из Окна (Ска-панк-версия)
+Album: The Greatest Hits Vol.2
+Track: 23
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819980
+song_end
+song_begin: 24 - Кто Убил Николая.mp3
+Time: 266.422000
+Artist: Noize MC
+Title: Кто Убил Николая ****?
+Album: The Greatest Hits Vol.2
+Track: 24
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819988
+song_end
+song_begin: 25 - 3П (Правдивая Песня Пи_добола).mp3
+Time: 188.839000
+Artist: Noize MC
+Title: 3П (Правдивая Песня Пи*добола)
+Album: The Greatest Hits Vol.2
+Track: 25
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820108
+song_end
+end: Noize Mc/2010 - The Greatest Hits Vol.2
+directory: 2010 - Последний Альбом (2 CD)
+mtime: 1539819066
+begin: Noize Mc/2010 - Последний Альбом (2 CD)
+directory: CD1
+mtime: 1539879705
+begin: Noize Mc/2010 - Последний Альбом (2 CD)/CD1
+song_begin: 01 - Тыщатыщ.mp3
+Time: 211.304000
+Artist: Noize MC
+Title: Тыщатыщ
+Album: Последний Альбом
+Track: 1
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820076
+song_end
+song_begin: 02 - Устрой Дестрой (feat. Чача).mp3
+Time: 239.568000
+Artist: Noize MC
+Title: Устрой Дестрой (feat. Чача)
+Album: Последний Альбом
+Track: 2
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820025
+song_end
+song_begin: 03 - Испортить Вам Пати!.mp3
+Time: 235.493000
+Artist: Noize MC
+Title: Испортить Вам Пати!
+Album: Последний Альбом
+Track: 3
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819965
+song_end
+song_begin: 04 - Манки Бизнес.mp3
+Time: 238.942000
+Artist: Noize MC
+Title: Манки Бизнес
+Album: Последний Альбом
+Track: 4
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820068
+song_end
+song_begin: 05 - Бабки В Шапку!.mp3
+Time: 216.189000
+Artist: Noize MC
+Title: Бабки В Шапку!
+Album: Последний Альбом
+Track: 5
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820043
+song_end
+song_begin: 06 - Артист (feat. Staisha).mp3
+Time: 186.409000
+Artist: Noize MC
+Title: Артист (feat. Staisha)
+Album: Последний Альбом
+Track: 6
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820045
+song_end
+song_begin: 07 - Певец И Актриса (feat. Staisha).mp3
+Time: 263.601000
+Artist: Noize MC
+Title: Певец И Актриса (feat. Staisha)
+Album: Последний Альбом
+Track: 7
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820019
+song_end
+song_begin: 08 - Бэктон#1.mp3
+Time: 215.640000
+Artist: Noize MC
+Title: Бэктон#1
+Album: Последний Альбом
+Track: 8
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819961
+song_end
+song_begin: 09 - Ты Не Считаешь.mp3
+Time: 274.991000
+Artist: Noize MC
+Title: Ты Не Считаешь
+Album: Последний Альбом
+Track: 9
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819955
+song_end
+song_begin: 10 - Красный Октябрь.mp3
+Time: 231.392000
+Artist: Noize MC
+Title: Красный Октябрь
+Album: Последний Альбом
+Track: 10
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820008
+song_end
+song_begin: 11 - Пустые Места.mp3
+Time: 257.567000
+Artist: Noize MC
+Title: Пустые Места
+Album: Последний Альбом
+Track: 11
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820021
+song_end
+song_begin: 12 - Ругань Из-За Стены.mp3
+Time: 224.626000
+Artist: Noize MC
+Title: Ругань Из-За Стены
+Album: Последний Альбом
+Track: 12
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820102
+song_end
+song_begin: 13 - Антенны.mp3
+Time: 233.743000
+Artist: Noize MC
+Title: Антенны
+Album: Последний Альбом
+Track: 13
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820061
+song_end
+song_begin: 14 - Why The Dollar Falls (feat. Раскарандаш).mp3
+Time: 214.752000
+Artist: Noize MC
+Title: Why The Dollar Falls (feat. Раскарандаш)
+Album: Последний Альбом
+Track: 14
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820034
+song_end
+song_begin: 15 - Денежный Дождь (feat. Comme-Il-Faut).mp3
+Time: 215.666000
+Artist: Noize MC
+Title: Денежный Дождь (feat. Comme-Il-Faut)
+Album: Последний Альбом
+Track: 15
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820035
+song_end
+song_begin: 16 - Гимн Понаехавших Провинциалов.mp3
+Time: 211.382000
+Artist: Noize MC
+Title: Гимн Понаехавших Провинциалов
+Album: Последний Альбом
+Track: 16
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819949
+song_end
+song_begin: 17 - Мизантроп-Рэп.mp3
+Time: 176.718000
+Artist: Noize MC
+Title: Мизантроп-Рэп
+Album: Последний Альбом
+Track: 17
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820042
+song_end
+song_begin: 18 - Жечь Электричество!.mp3
+Time: 268.329000
+Artist: Noize MC
+Title: Жечь Электричество!
+Album: Последний Альбом
+Track: 18
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820093
+song_end
+song_begin: 19 - На Марсе Классно.mp3
+Time: 254.040000
+Artist: Noize MC
+Title: На Марсе Классно
+Album: Последний Альбом
+Track: 19
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820072
+song_end
+song_begin: 20 - Вот И Всё. Ну И Что.mp3
+Time: 177.658000
+Artist: Noize MC
+Title: Вот И Всё. Ну И Что?
+Album: Последний Альбом
+Track: 20
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819980
+song_end
+song_begin: 21 - Мерседес S666 (скрытый трек).mp3
+Time: 134.086000
+Artist: Noize MC
+Title: Мерседес S666 (скрытый трек)
+Album: Последний Альбом
+Track: 21
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819989
+song_end
+end: Noize Mc/2010 - Последний Альбом (2 CD)/CD1
+directory: CD2
+mtime: 1539879701
+begin: Noize Mc/2010 - Последний Альбом (2 CD)/CD2
+song_begin: 01 - Audiobook Underground Part 1.mp3
+Time: 3526.011000
+Artist: Noize MC
+Title: Audiobook Underground Part 1
+Album: Аудиокнига ''Underground''
+Track: 1
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820109
+song_end
+song_begin: 02 - Audiobook Underground Part 2.mp3
+Time: 2577.322000
+Artist: Noize MC
+Title: Audiobook Underground Part 2
+Album: Аудиокнига ''Underground''
+Track: 2
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820109
+song_end
+song_begin: 03 - Audiobook Underground Part 3.mp3
+Time: 3111.056000
+Artist: Noize MC
+Title: Audiobook Underground Part 3
+Album: Аудиокнига ''Underground''
+Track: 3
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820105
+song_end
+song_begin: 04 - Audiobook Underground Part 4.mp3
+Time: 3315.882000
+Artist: Noize MC
+Title: Audiobook Underground Part 4
+Album: Аудиокнига ''Underground''
+Track: 4
+Date: 2010
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820109
+song_end
+end: Noize Mc/2010 - Последний Альбом (2 CD)/CD2
+end: Noize Mc/2010 - Последний Альбом (2 CD)
+directory: 2012 - Новый Альбом
+mtime: 1539825975
+begin: Noize Mc/2012 - Новый Альбом
+song_begin: 01 - Вьетнам.mp3
+Time: 242.155000
+Artist: Noize MC
+Title: Вьетнам
+Album: Новый Альбом
+Track: 1
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820096
+song_end
+song_begin: 02 - ШлакваШаклассика.mp3
+Time: 124.656000
+Artist: Noize MC
+Title: ШлакваШаклассика
+Album: Новый Альбом
+Track: 2
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819802
+song_end
+song_begin: 03 - Я Глуп.mp3
+Time: 230.191000
+Artist: Noize MC
+Title: Я Глуп
+Album: Новый Альбом
+Track: 3
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819492
+song_end
+song_begin: 04 - Эгоизм.mp3
+Time: 164.728000
+Artist: Noize MC
+Title: Эгоизм
+Album: Новый Альбом
+Track: 4
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819771
+song_end
+song_begin: 05 - Вселенная Бесконечна_.mp3
+Time: 260.623000
+Artist: Noize MC
+Title: Вселенная Бесконечна?
+Album: Новый Альбом
+Track: 5
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820015
+song_end
+song_begin: 06 - Жадина.mp3
+Time: 137.351000
+Artist: Noize MC
+Title: Жадина
+Album: Новый Альбом
+Track: 6
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820110
+song_end
+song_begin: 07 - Yes Future.mp3
+Time: 189.231000
+Artist: Noize MC
+Title: Yes Future
+Album: Новый Альбом
+Track: 7
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819969
+song_end
+song_begin: 08 - Сам (feat. RasKar).mp3
+Time: 229.616000
+Artist: Noize MC
+Title: Сам (feat. RasKar)
+Album: Новый Альбом
+Track: 8
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820101
+song_end
+song_begin: 09 - Бассейн.mp3
+Time: 216.764000
+Artist: Noize MC
+Title: Бассейн
+Album: Новый Альбом
+Track: 9
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820085
+song_end
+song_begin: 10 - Заебались!.mp3
+Time: 260.205000
+Artist: Noize MC
+Title: Заебались!
+Album: Новый Альбом
+Track: 10
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820100
+song_end
+song_begin: 11 - Похуисты (feat. Anacondaz).mp3
+Time: 278.804000
+Artist: Noize MC
+Title: Похуисты (feat. Anacondaz)
+Album: Новый Альбом
+Track: 11
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820013
+song_end
+song_begin: 12 - Болт (feat. Ляпис Трубецкой).mp3
+Time: 217.025000
+Artist: Noize MC
+Title: Болт (feat. Ляпис Трубецкой)
+Album: Новый Альбом
+Track: 12
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820053
+song_end
+song_begin: 13 - Мы Хотим Танцевать.mp3
+Time: 284.055000
+Artist: Noize MC
+Title: Мы Хотим Танцевать
+Album: Новый Альбом
+Track: 13
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820053
+song_end
+song_begin: 14 - Школотой.mp3
+Time: 268.120000
+Artist: Noize MC
+Title: Школотой
+Album: Новый Альбом
+Track: 14
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820049
+song_end
+song_begin: 15 - Танцi! (feat. Воплi Вiдоплясова & 1Shot).mp3
+Time: 215.902000
+Artist: Noize MC
+Title: Танцi! (feat. Воплi Вiдоплясова & 1Shot)
+Album: Новый Альбом
+Track: 15
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820057
+song_end
+song_begin: 16 - Ток (feat. Вахтанг).mp3
+Time: 255.738000
+Artist: Noize MC
+Title: Ток (feat. Вахтанг)
+Album: Новый Альбом
+Track: 16
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820009
+song_end
+song_begin: 17 - Брынь-брынь-брынь.mp3
+Time: 155.951000
+Artist: Noize MC
+Title: Брынь-брынь-брынь
+Album: Новый Альбом
+Track: 17
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819801
+song_end
+song_begin: 18 - Друг Подруги Телки Брата.mp3
+Time: 110.889000
+Artist: Noize MC
+Title: Друг Подруги Телки Брата
+Album: Новый Альбом
+Track: 18
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819509
+song_end
+song_begin: 19 - Пушкинский Рэп.mp3
+Time: 150.517000
+Artist: Noize MC
+Title: Пушкинский Рэп
+Album: Новый Альбом
+Track: 19
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820030
+song_end
+song_begin: 20 - Черное_Белое (feat. Subatomic Sound System & Nomadic Wax).mp3
+Time: 190.981000
+Artist: Noize MC
+Title: Черное/Белое (feat. Subatomic Sound System & Nomadic Wax)
+Album: Новый Альбом
+Track: 20
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820102
+song_end
+song_begin: 21 - Эдем 14_88.mp3
+Time: 169.325000
+Artist: Noize MC
+Title: Эдем 14/88
+Album: Новый Альбом
+Track: 21
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820054
+song_end
+song_begin: 22 - Ф.С.Б. (bonus track).mp3
+Time: 221.983000
+Artist: Noize MC
+Title: Ф.С.Б. (bonus track)
+Album: Новый Альбом
+Track: 22
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820103
+song_end
+song_begin: 23 - Любит Наш Народ! (bonus track).mp3
+Time: 222.096000
+Artist: Noize MC
+Title: Любит Наш Народ! (bonus track)
+Album: Новый Альбом
+Track: 23
+Date: 2012
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820090
+song_end
+end: Noize Mc/2012 - Новый Альбом
+directory: 2013 - Protivo Gunz
+mtime: 1539825985
+begin: Noize Mc/2013 - Protivo Gunz
+song_begin: 01 - Рок - Это Кал! (feat. Вася Васин).mp3
+Time: 241.583000
+Artist: Noize MC
+AlbumArtist: Noize MC
+Title: Рок - Это Кал! (feat. Вася Васин)
+Album: Protivo Gunz
+Track: 1
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820099
+song_end
+song_begin: 02 - Миша Козырев (feat. Миша Козырев).mp3
+Time: 223.768000
+Artist: Noize MC
+AlbumArtist: Noize MC
+Title: Миша Козырев (feat. Миша Козырев)
+Album: Protivo Gunz
+Track: 2
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820056
+song_end
+song_begin: 03 - Накосячу!.mp3
+Time: 177.740000
+Artist: Noize MC
+AlbumArtist: Noize MC
+Title: Накосячу!
+Album: Protivo Gunz
+Track: 3
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820039
+song_end
+song_begin: 04 - Заговор.mp3
+Time: 220.581000
+Artist: Noize MC
+AlbumArtist: Noize MC
+Title: Заговор
+Album: Protivo Gunz
+Track: 4
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820041
+song_end
+song_begin: 05 - Бритни Спирс.mp3
+Time: 255.402000
+Artist: Noize MC
+AlbumArtist: Noize MC
+Title: Бритни Спирс
+Album: Protivo Gunz
+Track: 5
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820088
+song_end
+song_begin: 06 - Калифорния (with Кислый, Макс & Пашок).mp3
+Time: 120.035000
+Artist: Noize MC
+AlbumArtist: Noize MC
+Title: Калифорния (with Кислый, Макс & Пашок)
+Album: Protivo Gunz
+Track: 6
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820084
+song_end
+song_begin: 07 - С&Г (Live @ «Б2»).mp3
+Time: 191.794000
+Artist: Noize MC
+AlbumArtist: Noize MC
+Title: С&Г (Live @ «Б2»)
+Album: Protivo Gunz
+Track: 7
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819609
+song_end
+song_begin: 08 - Общага.mp3
+Time: 280.218000
+Artist: Noize MC
+AlbumArtist: Noize MC
+Title: Общага
+Album: Protivo Gunz
+Track: 8
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820067
+song_end
+song_begin: 09 - Честное Слово!.mp3
+Time: 225.570000
+Artist: Noize MC
+AlbumArtist: Noize MC
+Title: Честное Слово!
+Album: Protivo Gunz
+Track: 9
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820034
+song_end
+song_begin: 10 - Она Уходит (Rыchigy Mashыn cover) (with Кислый, Макс & Пашок).mp3
+Time: 251.066000
+Artist: Noize MC
+AlbumArtist: Noize MC
+Title: Она Уходит (Rыchigy Mashыn cover) (with Кислый, Макс & Пашок)
+Album: Protivo Gunz
+Track: 10
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820099
+song_end
+song_begin: 11 - Жирная Корова.mp3
+Time: 152.793000
+Artist: Noize MC
+AlbumArtist: Noize MC
+Title: Жирная Корова
+Album: Protivo Gunz
+Track: 11
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820029
+song_end
+song_begin: 12 - У Моей Девчонки.mp3
+Time: 172.568000
+Artist: Noize MC
+AlbumArtist: Noize MC
+Title: У Моей Девчонки
+Album: Protivo Gunz
+Track: 12
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820066
+song_end
+song_begin: 13 - Под Белым Флагом.mp3
+Time: 176.799000
+Artist: Noize MC
+AlbumArtist: Noize MC
+Title: Под Белым Флагом
+Album: Protivo Gunz
+Track: 13
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539819857
+song_end
+song_begin: 14 - Тонкий Лёд.mp3
+Time: 241.400000
+Artist: Noize MC
+AlbumArtist: Noize MC
+Title: Тонкий Лёд
+Album: Protivo Gunz
+Track: 14
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820081
+song_end
+song_begin: 15 - Жвачка (feat. Mewark).mp3
+Time: 207.964000
+Artist: Noize MC
+AlbumArtist: Noize MC
+Title: Жвачка (feat. Mewark)
+Album: Protivo Gunz
+Track: 15
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820091
+song_end
+song_begin: 16 - Нету Паспорта (feat. Давид Казарян).mp3
+Time: 234.530000
+Artist: Noize MC
+AlbumArtist: Noize MC
+Title: Нету Паспорта (feat. Давид Казарян)
+Album: Protivo Gunz
+Track: 16
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820069
+song_end
+song_begin: 17 - Х__вая Песня (bonus track).mp3
+Time: 159.115000
+Artist: Noize MC
+AlbumArtist: Noize MC
+Title: Х**вая Песня (bonus track)
+Album: Protivo Gunz
+Track: 17
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:2
+mtime: 1539820032
+song_end
+song_begin: 18 - Фиолетовый фингал (скрытый трек).mp3
+Time: 169.433000
+Artist: Noize MC
+Title: Фиолетовый фингал (скрытый трек)
+Album: Protivo Gunz
+Track: 18
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:1
+mtime: 1539820042
+song_end
+song_begin: 19 - Их мнений (скрытый трек).mp3
+Time: 117.789000
+Artist: Noize MC
+Title: Их мнений (скрытый трек)
+Album: Protivo Gunz
+Track: 19
+Date: 2013
+Genre: Hip-Hop / Alternative
+Format: 44100:24:1
+mtime: 1539819650
+song_end
+end: Noize Mc/2013 - Protivo Gunz
+end: Noize Mc
+directory: XXXTENTACION - ¿ (2018)
+mtime: 1537405632
+begin: XXXTENTACION - ¿ (2018)
+song_begin: 01. Introduction (instructions).flac
+Time: 117.482000
+Title: Introduction (instructions)
+Artist: XXXTENTACION
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 1
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405587
+song_end
+song_begin: 02. ALONE, PART 3.flac
+Time: 109.986000
+Title: ALONE, PART 3
+Artist: XXXTENTACION
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 2
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405607
+song_end
+song_begin: 03. Moonlight.flac
+Time: 135.090000
+Title: Moonlight
+Artist: XXXTENTACION
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 3
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405596
+song_end
+song_begin: 04. SAD!.flac
+Time: 166.605000
+Title: SAD!
+Artist: XXXTENTACION
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 4
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405612
+song_end
+song_begin: 05. the remedy for a broken heart (why am I so in love).flac
+Time: 160.184000
+Title: the remedy for a broken heart (why am I so in love)
+Artist: XXXTENTACION
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 5
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405615
+song_end
+song_begin: 06. Floor 555.flac
+Time: 93.447000
+Title: Floor 555
+Artist: XXXTENTACION
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 6
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405617
+song_end
+song_begin: 07. NUMB.flac
+Time: 186.267000
+Title: NUMB
+Artist: XXXTENTACION
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 7
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405572
+song_end
+song_begin: 08. infinity (888) (feat. Joey Bada$$).flac
+Time: 176.590000
+Title: infinity (888) (feat. Joey Bada$$)
+Artist: XXXTENTACION
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 8
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405626
+song_end
+song_begin: 09. going down!.flac
+Time: 115.194000
+Title: going down!
+Artist: XXXTENTACION
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 9
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405569
+song_end
+song_begin: 10. Pain = BESTFRIEND (feat. Travis Barker).flac
+Time: 101.516000
+Title: Pain = BESTFRIEND (feat. Travis Barker)
+Artist: XXXTENTACION
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 10
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405625
+song_end
+song_begin: 11. $$$.flac
+Time: 130.403000
+Title: $$$
+Artist: XXXTENTACION & Matt OX
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 11
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405626
+song_end
+song_begin: 12. love yourself (interlude).flac
+Time: 48.422000
+Title: love yourself (interlude)
+Artist: XXXTENTACION
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 12
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405588
+song_end
+song_begin: 13. SMASH! (feat. PnB Rock).flac
+Time: 109.556000
+Title: SMASH! (feat. PnB Rock)
+Artist: XXXTENTACION
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 13
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405623
+song_end
+song_begin: 14. I don’t even speak spanish lol.flac
+Time: 192.229000
+Title: I don’t even speak spanish lol
+Artist: XXXTENTACION
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 14
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405632
+song_end
+song_begin: 15. changes.flac
+Time: 121.886000
+Title: changes
+Artist: XXXTENTACION
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 15
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405557
+song_end
+song_begin: 16. Hope.flac
+Time: 110.886000
+Title: Hope
+Artist: XXXTENTACION
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 16
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405623
+song_end
+song_begin: 17. schizophrenia.flac
+Time: 80.190000
+Title: schizophrenia
+Artist: XXXTENTACION
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 17
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405618
+song_end
+song_begin: 18. before I close my eyes.flac
+Time: 99.658000
+Title: before I close my eyes
+Artist: XXXTENTACION
+AlbumArtist: XXXTENTACION
+Album: ?
+Track: 18
+Date: 2018
+Genre: Hip-Hop
+Format: 44100:16:2
+mtime: 1537405619
+song_end
+end: XXXTENTACION - ¿ (2018)

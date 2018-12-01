@@ -1,0 +1,10 @@
+#! /bin/bash
+
+# Import the colors
+. "${HOME}/.cache/wal/colors.sh"
+
+dmenu_run -i -p Search: \
+-w 350 -h 22 -x 20 -y 40 \
+-nb $background -nf $foreground \
+-sb "$color1" -sf $background \
+-fn 'SF Pro Display-11' -dim 0.3

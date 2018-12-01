@@ -1,0 +1,9 @@
+#! /bin/bash
+
+
+ rofi -modi run,run -show run \
+                -columns 1 -hide-scrollbar \
+                -show-icons -drun-icon-theme "Papirus-Dark" \
+		        -xoffset '-530' -yoffset '-290' -lines 3 -width 21 -theme $HOME/.config/rofi/colors-rofi-dark.rasi
+
+#-yoffset '-290'

@@ -1,0 +1,314 @@
+# Xresources      var      value       fallback
+set_from_resource $bg      background  #19043C
+set_from_resource $fg      foreground  #F1F1F1
+set_from_resource $black   color0      #19043C
+set_from_resource $red     color1      #EE79A9
+set_from_resource $green   color2      #8C9440
+set_from_resource $yellow  color3      #DE935F
+set_from_resource $blue    color4      #05C6F1
+set_from_resource $purple  color5      #85678F
+set_from_resource $cyan    color6      #5E8D87
+set_from_resource $grey    color7      #969CD3
+
+# class                 bd     bg  txt    ind    child_bd
+client.focused          $red $bg $fg      $red   $red
+client.unfocused        $grey  $bg $black $bg    $bg
+client.focused_inactive $grey  $bg $black $bg    $bg
+client.urgent           $red   $bg $red   $red   $red
+client.placeholder      $grey  $bg $bg    $bg    $bg
+client.background       $bg
+
+for_window [class="^.*"] border pixel 1
+
+# gaps
+gaps inner 5
+gaps outer 0
+smart_gaps on
+smart_borders on
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# font
+font pango:DejaVu Sans Mono 10
+
+# $Mod = Super or Alt?
+set $Mod Mod4
+#set $Mod Mod1
+
+# direction keys
+set $up l
+set $down k
+set $left j
+set $right semicolon
+
+set $workspace1 "1: "
+set $workspace2 "2: "
+set $workspace3 "3: "
+set $workspace4 "4: "
+set $workspace5 "5: "
+set $workspace6 "6: "
+set $workspace7 "7: "
+set $workspace8 "8: "
+set $workspace9 "9: "
+set $workspace10 "10: "
+
+# monitors
+set $Mon1 HDMI1
+set $Mon2 HDMI2
+
+#####################################################
+###############     Autostart      ##################
+#####################################################
+
+# run with reload
+exec_always --no-startup-id nitrogen --restore
+exec_always --no-startup-id xrdb -load ~/.Xresources
+exec_always --no-startup-id bash ~/.config/i3/element
+exec --no-startup-id mpd
+# If you have a numpad you may want to enable this
+# exec_always --no-startup-id numlockx on
+
+# run once
+exec --no-startup-id xfsettingsd
+
+#exec --no-startup-id compton -b --config ~/.config/compton.conf --shadow-exclude "x<=3 && x2>= 1000 && y <= 30 && y2 >=700"
+# TEST
+exec --no-startup-id compton --backend glx --vsync "opengl" --vsync-aggressive --glx-no-stencil --glx-no-rebind-pixmap --shadow-exclude "x<=3 && x2>= 1000 && y <= 30 && y2 >=700"
+
+# polkit, required for authentication
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# keyring for storing saved passwords
+exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11
+
+# pressing super key alone simulates pressing Alt-F1
+exec --no-startup-id ksuperkey -e 'Super_L=Alt_L|F1'
+exec --no-startup-id ksuperkey -e 'Super_R=Alt_L|F1'
+
+# dunst
+exec_always --no-startup-id dunst -lb "$bg" -lf "$fg" -lfr "$red" -nb "$bg" -nf "$fg" -nfr "$red" -cb "$bg" -cf "$fg" -cfr "$red" -format "<b><span foreground='$red'>%s</span></b>\n%b"
+
+###########################################################
+#############         Bindings           ##################
+###########################################################
+
+# logout script
+bindsym $Mod+Shift+q exec --no-startup-id rofr.sh -l
+
+# kill focused window
+bindsym $Mod+q kill
+
+# launchers
+bindsym Mod1+z exec i3-dmenu-desktop --dmenu='rofi -dmenu -i -lines 10 -eh 1 -width 50 -font "Droid Sans 16"'
+
+# task manager
+bindsym $mod+t exec xfce4-taskmanager
+
+# dmenu2
+bindsym $Mod+d exec --no-startup-id "bash ~/.config/i3/scripts/launcher-dmenu2"
+
+# this is needed for super key to launch rofi
+bindsym $Mod+z exec --no-startup-id rofr.sh -r
+
+# core
+bindsym $Mod+Return exec --no-startup-id urxvtc -name floating
+bindsym $Mod+Shift+Return  exec --no-startup-id urxvtc
+
+# Screenshot
+bindsym $Mod+Print exec --no-startup-id scrot_notifi
+# bindsym Shift+Print exec scrot $HOME/Screenshots/`date +%Y-%m-%d_%H:%M:%S`.png
+bindsym Shift+Print exec scrot -s $HOME/Screenshots/`date +%Y-%m-%d_%H:%M:%S`.png
+
+# audio
+bindsym $Mod+F9 exec --no-startup-id mpc toggle
+bindsym $Mod+F12 exec --no-startup-id mpc next
+bindsym $Mod+F11 exec --no-startup-id mpc prev
+bindsym $Mod+F10 exec --no-startup-id mpc stop
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 2
+bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 2
+bindsym $Mod+F8 exec --no-startup-id pamixer -t
+
+# backlight
+bindsym Mod1+k exec --no-startup-id xbacklight -inc 10
+bindsym Mod1+j exec --no-startup-id xbacklight -dec 10
+
+################################################################
+###########          Workspace Bindings          ###############
+################################################################
+
+# switch to workspace
+bindsym $mod+1 workspace $workspace1
+bindsym $mod+2 workspace $workspace2
+bindsym $mod+3 workspace $workspace3
+bindsym $mod+4 workspace $workspace4
+bindsym $mod+5 workspace $workspace5
+bindsym $mod+6 workspace $workspace6
+bindsym $mod+7 workspace $workspace7
+bindsym $mod+8 workspace $workspace8
+bindsym $mod+9 workspace $workspace9
+bindsym $mod+0 workspace $workspace10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $workspace1
+bindsym $mod+Shift+2 move container to workspace $workspace2
+bindsym $mod+Shift+3 move container to workspace $workspace3
+bindsym $mod+Shift+4 move container to workspace $workspace4
+bindsym $mod+Shift+5 move container to workspace $workspace5
+bindsym $mod+Shift+6 move container to workspace $workspace6
+bindsym $mod+Shift+7 move container to workspace $workspace7
+bindsym $mod+Shift+8 move container to workspace $workspace8
+bindsym $mod+Shift+9 move container to workspace $workspace9
+bindsym $mod+Shift+0 move container to workspace $workspace10.
+
+# nav workspace
+bindsym $Mod+Tab workspace next
+bindsym $Mod+Shift+Tab workspace prev
+
+############################################################
+##############     Reload configs           ################
+############################################################
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $Mod+Shift+r restart
+
+# reload the configuration file
+bindsym $Mod+Shift+c reload
+
+########################################################
+############      Container/Window control  ############
+########################################################
+
+# Scratchpad, Floating
+bindsym $Mod+Shift+space floating toggle
+
+#bindsym $Mod+Shift+z move scratchpad
+#bindsym $Mod+z scratchpad show
+
+# change focus
+bindsym $Mod+$left  focus left
+bindsym $Mod+$down  focus down
+bindsym $Mod+$up    focus up
+bindsym $Mod+$right focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $Mod+Left  focus left
+bindsym $Mod+Down  focus down
+bindsym $Mod+Up    focus up
+bindsym $Mod+Right focus right
+
+bindsym $Mod+p focus parent
+bindsym $Mod+c focus child
+
+# fullscreen
+bindsym $mod+f fullscreen toggle
+
+# move focused window
+bindsym $Mod+Shift+$left  move left  10px
+bindsym $Mod+Shift+$down  move down  10px
+bindsym $Mod+Shift+$up    move up    10px
+bindsym $Mod+Shift+$right move right 10px
+
+# alternatively, you can use the cursor keys:
+bindsym $Mod+Shift+Up    move up    10px
+bindsym $Mod+Shift+Down  move down  10px
+bindsym $Mod+Shift+Left  move left  10px
+bindsym $Mod+Shift+Right move right 10px
+
+# Size
+bindsym Mod1+Up    resize shrink height 10 px or 1 ppt
+bindsym Mod1+Down  resize grow   height 10 px or 1 ppt
+bindsym Mod1+Left  resize shrink width  10 px or 1 ppt
+bindsym Mod1+Right resize grow   width  10 px or 1 ppt
+
+# switch to workspace with urgent window
+for_window [urgent="latest"] focus
+focus_on_window_activation   focus
+
+# container layout
+bindsym $Mod+h split h
+bindsym $Mod+v split v
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+default_orientation horizontal
+
+######################################################
+###############      Border & Gaps     ###############
+######################################################
+
+new_window pixel
+new_float pixel  
+# normal normal
+hide_edge_borders both
+popup_during_fullscreen smart
+bindsym $Mod+shift+b border toggle
+
+# changing border style
+bindsym $Mod+n border normal
+bindsym $Mod+y border pixel 2
+bindsym $Mod+u border none
+
+# change gaps
+bindsym $Mod+plus        gaps inner current plus  5
+bindsym $Mod+minus       gaps inner current minus 5
+bindsym $Mod+Shift+plus  gaps outer current plus  5
+bindsym $Mod+Shift+minus gaps outer current minus 5
+bindsym $Mod+Control+plus        gaps inner all plus  5
+bindsym $Mod+Control+minus       gaps inner all minus 5
+bindsym $Mod+Control+Shift+plus  gaps outer all plus  5
+bindsym $Mod+Control+Shift+minus gaps outer all minus 5
+
+###################################################
+############    application settings   ############
+###################################################
+
+for_window [class="(?i)(?:qt5ct|pinentry)"] floating enable, focus
+for_window [class="(?i)(?:termite|thunar|urxvt|urxvtc)"] focus
+for_window [class="(?i)(?:geany|firefox)"] focus
+
+# open applications on specific workspaces
+assign [class="Chromium"] $workspace1
+assign [class="Google-chrome"] $workspace1
+assign [class="Firefox"] $workspace1
+assign [class="qutebrowser"] $workspace1
+assign [class="Nautilus"] $workspace3
+assign [class="Pcmanfm"] $workspace3
+assign [class="Thunar"] $workspace3
+for_window [class="URxvt" instance="floating"] floating enable border 1pixel
+assign [class="jetbrains-studio"] $workspace2
+assign [class="jetbrains-idea-ce"] $workspace2
+assign [class="Steam"] $workspace6
+assign [class="Gimp"] $workspace8
+assign [class="Telegram"] $workspace7
+assign [class="Transmission"] $workspace9
+
+# windows starting in floating mode
+for_window [title="File Transfer*"] floating enable
+for_window [class="Lightdm-gtk-greeter-settings"] floating enable border 1pixel
+for_window [title="Media viewer"] floating enable border none move up 11px
+for_window [class="Spotify"] floating enable border 1pixel
+for_window [class="Transmission"] focus
+for_window [class="Lxappearance"] floating enable border normal
+for_window [class="Xfce4-taskmanager"] floating enable border 1pixel
+for_window [class="htop"] floating enable border 2pixel
+for_window [class="Termite"] floating enable
+for_window [class="Alacritty"] floating enable
+for_window [class="Gnome-system-monitor"] floating enable border 1pixel
+for_window [class="Simplescreenrecorder"] floating enable border 1pixel
+for_window [class="Xsensors"] floating enable border 1pixel
+for_window [class="Nitrogen"] floating enable border 1pixel
+#for_window [class="Mainwindow.py"] floating enable border normal
+for_window [class="etcher"] floating enable border 1pixel
+for_window [class="Galculator"] floating enable border 1pixel
+for_window [class="Audacious"] floating enable border 1pixel
+for_window [class="Org.gnome.Weather.Application"] floating 1pixel
+#for_window [class="Photoshop.exe"] floating enable
+for_window [class="(?i)virtualbox"] floating enable border 1pixel
+for_window [class="milkytracker"] floating 1pixel
+for_window [class="Arandr"] floating 1pixel
+for_window [class="Pamac-manager"] floating 1pixel
+for_window [class="minergate"] floating enable border 1pixel
+for_window [class="Xarchiver"] floating enable
+for_window [class="TermiteFloat"] floating enable border 1pixel
+
