@@ -122,7 +122,7 @@ UXTerm*jumpScroll: true
 UXTerm*multiScroll: true
 UXTerm*toolBar: false
 
-# 2bwm
+! 2bwm
 twobwm.border_width: 7
 twobwm.outer_border: 3
 twobwm.focus_color: #E87878
