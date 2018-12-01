@@ -1,7 +1,9 @@
 
-
+- **App launcher :** rofi/dmenu2
+- **Bar :** polybar
+- **File manager :** thunar (gtk2)
+- **Notifi:** Dunst
 - **GTK Font :** SF Pro Display
-- **Terminal Font :** SF Mono
 - **Terminal Font :** SF Mono
 
 <p align="center">
