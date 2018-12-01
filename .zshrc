@@ -146,9 +146,9 @@ alias launchDebugApk="adb shell monkey -p 'aapt dump badging ./app/build/outputs
 alias buildInstallLaunchDebugApk="buildAndInstallApk && launchDebugApk"
 
 # aliases weather 
-alias weather="curl -H 'Accept-Language: ru' 'wttr.in/Губиниха?1?n'"
-alias weatherCurrent="curl -H 'Accept-Language: ru' 'wttr.in/Губиниха?0?Q'"
-alias weatherFull="curl -H 'Accept-Language: ru' 'wttr.in/Губиниха'"
+alias weather="curl -H 'Accept-Language: ru' 'wttr.in/?1?n'"
+alias weatherCurrent="curl -H 'Accept-Language: ru' 'wttr.in/?0?Q'"
+alias weatherFull="curl -H 'Accept-Language: ru' 'wttr.in/'"
 
 
 prompt spaceship
