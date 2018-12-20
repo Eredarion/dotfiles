@@ -1,6 +1,5 @@
 [global]
     font = SF Pro Display Medium 10
-
     # allow a small subset of html markup:
     # <b>bold</b>
     # <i>italic</i>
@@ -19,7 +18,7 @@
     #   %I  iconname (without its path)
     #   %p  progress value if set ([  0%] to [100%]) or nothing
     # Markup is allowed
-    format = "<b><span foreground='#3CA0B8'>%s</span></b>\n%b"
+    format = "<u><span foreground='#F7B2AE'>%s</span></u>\n%b"
  
     # Sort messages by urgency
     sort = yes
@@ -138,8 +137,8 @@
 
 
 [frame]
-    width = 1
-    color = "#3CA0B8"
+    width = 2
+    color = "#F7B2AE"
  
 [shortcuts]
     # shortcuts are specified as [modifier+][modifier+]...key
@@ -155,7 +154,7 @@
  
     # redisplay last message(s)
     # On the US keyboard layout 'grave' is normally above TAB and left of '1'.
-    history = ctrl+mod4+h
+    history = ctrl+mod1+h
  
     # context menu
     context = ctrl+shift+period
@@ -163,18 +162,18 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the '#' and following  would be interpreted as a comment.
-    background = "#07151A"
-    foreground = "#e8e5e2"
+    background = "#101423"
+    foreground = "#EEFFFF"
     timeout = 5
  
 [urgency_normal]
-    background = "#07151A"
-    foreground = "#e8e5e2"
+    background = "#101423"
+    foreground = "#EEFFFF"
     timeout = 5
  
 [urgency_critical]
-    background = "#07151A"
-    foreground = "#e8e5e2"
+    background = "#101423"
+    foreground = "#EEFFFF"
     timeout = 5
  
  

@@ -32,26 +32,28 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 locale = ru_RU.UTF-8
-font-0 = SF Pro Display:size=10:antialias=false:style=medium;1
-;font-4 = Iosevka Term Medium:size=9:antialias=true:weight=bold;1
+font-0 = SF Pro Display:size=10:style=medium;1
+;font-0 = Roboto Medium:size=9:antialias=true:weight=bold;1
 font-1 = unifont:fontformat=truetype:size=9:weight=bold:antialias=false;0
 font-2 = "Material Icons:size=11;3"
-font-3 = "FontAwesome:size=10:style=Solid;1"
+font-3 = "FontAwesome:size=9:style=Solid;1"
+;font-4 = "icomoon:size=10:antialias=false;2"
+;font-5 = "Ubuntu Nerd Font:size=10:antialias=false;2"
 
-tray-position = right
-tray-detached = false
-tray-maxsize = 18
-tray-transparent = false
-tray-background = ${colors.background}
-tray-offset-x = 0
-tray-offset-y = 0
+;tray-position = right
+;tray-detached = false
+;tray-maxsize = 18
+;tray-transparent = false
+;tray-background = ${colors.background}
+;tray-offset-x = 0
+;tray-offset-y = 0
 ;tray-padding = 0
 ;tray-scale = 1.0
 
 modules-left = = i3 mpd
 modules-center = xwindow 
-modules-right = pkg volume xkeyboard memory date
-;battery  cpu memory
+modules-right = pkg volume xkeyboard memory coreuse date 
+;battery  cpu memory 2bwm window_switch 
 
 [module/date]
 type = internal/date
@@ -60,7 +62,7 @@ date = %a
 time = %H:%M
 date-alt = %A, %d %B %Y
 time-alt = %H:%M:%S
-label = %{A1:gsimplecal & disown:}%{A3:gsimplecal & disown:}%date%  %time%%{A}%{A}
+label = %{A1:gsimplecal & disown:}%{A3:gsimplecal & disown:} %date%  %time%%{A}%{A}
 format-prefix = " "
 
 [module/i3]
@@ -180,13 +182,34 @@ label = %{A1:urxvtc -geometry 70x22  -name floating -e htop -s PERCENT_CPU & dis
 click-left = xfce4-taskmanager
 click-right = xfce4-taskmanager &
 
+;;;;;;;;;
+;; CPU ;;
+;;;;;;;;;
+[module/coreuse]
+type = internal/cpu
+interval = 3
+format-padding = 0
+format = <ramp-coreload>
+;label = %{A1:urxvtc -geometry 70x22 -name floating -e htop -s PERCENT_MEM & disown:} %percentage_used%%%{A}
+ramp-coreload-0 = ▂
+ramp-coreload-1 = ▃
+ramp-coreload-2 = ▄
+ramp-coreload-3 = ▅
+ramp-coreload-4 = ▆
+ramp-coreload-5 = ▇
+ramp-coreload-0-foreground = ${colors.blue}
+ramp-coreload-1-foreground = ${colors.blue}
+ramp-coreload-2-foreground = ${colors.green}
+ramp-coreload-3-foreground = ${colors.green}
+ramp-coreload-4-foreground = ${colors.red}
+ramp-coreload-5-foreground = ${colors.red}
 
 [module/memory]
 type = internal/memory
 interval = 3
 format = <label>
 label = %{A1:urxvtc -geometry 70x22 -name floating -e htop -s PERCENT_MEM & disown:} %percentage_used%%%{A}
-;
+;  
 
 [module/volume]
 type = internal/alsa
@@ -308,8 +331,32 @@ menu-2-1-exec = /sbin/poweroff
 type = custom/script
 exec = updates.sh
 exec-if = "ping -q -w 2 -c 1 176.34.135.167 > /dev/null"
-label = %{A1:urxvtc -geometry 70x23 -name floating -e aurman -Syyu & disown:}%{A3:urxvtc -geometry 70x23 -name floating -e aurman -Syyu & disown:}%output%%{A}%{A}
+label = %{A1:urxvtc -geometry 70x21 -name floating -e aurman -Syyu & disown:}%{A3:urxvtc -geometry 70x21 -name floating -e aurman -Syyu & disown:}%output%%{A}%{A}
 tail = true
+
+[module/2bwm]
+type           = custom/script
+interval       = 0.3
+exec           = echo $(( $(xprop -root _NET_CURRENT_DESKTOP | sed -e 's/_NET_CURRENT_DESKTOP(CARDINAL) = //') + 1))
+;exec = ~/bin/2bws.sh
+click-left     = ~/bin/wscycle.sh -r
+click-right    = ~/bin/wscycle.sh -f
+scroll-up      = ~/bin/wscycle.sh -r
+scroll-down    = ~/bin/wscycle.sh -f
+format-padding = 1
+
+;;;;;;;;;;;;;;;;;;;
+;; Window Switch ;;
+;;;;;;;;;;;;;;;;;;;
+[module/window_switch]
+type = custom/script
+interval = 5
+label = %output%
+click-left = skippy-xd
+click-right = skippy-xd
+exec = echo "  "
+format = <label>
+
 
 ;[settings]
 ;screenchange-reload = true
@@ -321,4 +368,5 @@ tail = true
 ;[global/wm]
 ;margin-top = 0
 ;margin-bottom = 0
+
 

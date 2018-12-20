@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Exec=xfce4-appfinder
+Icon=edit-find
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Utility;X-XFCE;
+Name=Application Finder
+Name[ru]=Поиск приложений
+Comment=Find and launch applications installed on your system
+Comment[ru]=Поиск и запуск установленных в вашей системе приложений
+X-XFCE-Source=file:///usr/share/applications/xfce4-appfinder.desktop

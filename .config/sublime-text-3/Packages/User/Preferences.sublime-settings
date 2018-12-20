@@ -1,0 +1,9 @@
+{
+	"color_scheme": "Packages/Theme - Arc/Arc Darker.tmTheme",
+	"font_size": 9,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Adaptive.sublime-theme"
+}

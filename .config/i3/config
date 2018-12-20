@@ -18,7 +18,7 @@ client.urgent           $red   $bg $red   $red   $red
 client.placeholder      $grey  $bg $bg    $bg    $bg
 client.background       $bg
 
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 
 # gaps
 gaps inner 5
@@ -62,10 +62,10 @@ set $Mon2 HDMI2
 #####################################################
 
 # run with reload
-exec_always --no-startup-id nitrogen --restore
+# exec_always --no-startup-id nitrogen --restore
+exec_always --no-startup-id feh --bg-fill /home/ranguel/Изображения/deletemy/1/wallhaven-724719.jpg 
 exec_always --no-startup-id xrdb -load ~/.Xresources
 exec_always --no-startup-id bash ~/.config/i3/element
-exec --no-startup-id mpd
 # If you have a numpad you may want to enable this
 # exec_always --no-startup-id numlockx on
 
@@ -74,7 +74,9 @@ exec --no-startup-id xfsettingsd
 
 #exec --no-startup-id compton -b --config ~/.config/compton.conf --shadow-exclude "x<=3 && x2>= 1000 && y <= 30 && y2 >=700"
 # TEST
-exec --no-startup-id compton --backend glx --vsync "opengl" --vsync-aggressive --glx-no-stencil --glx-no-rebind-pixmap --shadow-exclude "x<=3 && x2>= 1000 && y <= 30 && y2 >=700"
+# exec --no-startup-id compton --backend glx --vsync "opengl" --vsync-aggressive --glx-no-stencil --glx-no-rebind-pixmap --shadow-exclude "x2>= 1300 && y2 >=720"
+
+exec --no-startup-id compton --config "/home/ranguel/.config/compton.conf" --shadow-exclude "x2>= 1300 && y2 >=720"
 
 # polkit, required for authentication
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -88,6 +90,8 @@ exec --no-startup-id ksuperkey -e 'Super_R=Alt_L|F1'
 
 # dunst
 exec_always --no-startup-id dunst -lb "$bg" -lf "$fg" -lfr "$red" -nb "$bg" -nf "$fg" -nfr "$red" -cb "$bg" -cf "$fg" -cfr "$red" -format "<b><span foreground='$red'>%s</span></b>\n%b"
+
+exec --no-startup-id mpd
 
 ###########################################################
 #############         Bindings           ##################
@@ -233,6 +237,9 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 default_orientation horizontal
 
+# stiky
+bindsym  $Mod+Shift+s sticky toggle
+
 ######################################################
 ###############      Border & Gaps     ###############
 ######################################################
@@ -269,6 +276,7 @@ for_window [class="(?i)(?:geany|firefox)"] focus
 
 # open applications on specific workspaces
 assign [class="Chromium"] $workspace1
+assign [class="subl3"] $workspace2
 assign [class="Google-chrome"] $workspace1
 assign [class="Firefox"] $workspace1
 assign [class="qutebrowser"] $workspace1
@@ -283,8 +291,12 @@ assign [class="Gimp"] $workspace8
 assign [class="Telegram"] $workspace7
 assign [class="Transmission"] $workspace9
 
+
 # windows starting in floating mode
 for_window [title="File Transfer*"] floating enable
+for_window [title="mpv"] floating enable resize set 720 406 
+for_window [title="mpv"] move position mouse 
+for_window [title="Gpick"] floating enable
 for_window [class="Lightdm-gtk-greeter-settings"] floating enable border 1pixel
 for_window [title="Media viewer"] floating enable border none move up 11px
 for_window [class="Spotify"] floating enable border 1pixel
@@ -309,6 +321,7 @@ for_window [class="milkytracker"] floating 1pixel
 for_window [class="Arandr"] floating 1pixel
 for_window [class="Pamac-manager"] floating 1pixel
 for_window [class="minergate"] floating enable border 1pixel
-for_window [class="Xarchiver"] floating enable
+for_window [class="File-roller"] floating enable
+for_window [class="file-roller"] floating enable
 for_window [class="TermiteFloat"] floating enable border 1pixel
 

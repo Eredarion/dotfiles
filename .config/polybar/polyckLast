@@ -1,0 +1,319 @@
+[colors]
+background = ${xrdb:background}
+background-alt = #0A131C
+foreground = ${xrdb:foreground}
+foreground-alt = ${xrdb:foreground}
+primary = #666
+alert = #bd2c40
+red = #CC6666
+yellow = #F0C674
+green = ${xrdb:color2}
+blue = ${xrdb:color4}
+pink = #f26262
+pink2 = #f64d64
+
+[bar/example]
+monitor=LVDS-1
+width = 100%
+height = 23
+;offset-x = 1%
+;offset-y = 1%
+;radius = 6.0
+fixed-center = true
+bottom = false
+background = ${colors.background}
+foreground = ${colors.foreground}
+;line-size = 0
+;line-color = #f00
+;border-bottom-size = 1
+;border-bottom-color = ${colors.green}
+padding-left = 0
+padding-right = 1
+module-margin-left = 1
+module-margin-right = 1
+locale = ru_RU.UTF-8
+font-0 = SFMono-Light:size=9:antialias=false:weight=bold;1
+font-4 = Iosevka Term Medium:size=9:antialias=true:weight=bold;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = FontAwesome:size=10;1
+modules-left = = i3 mpd
+modules-center = date
+modules-right = pkg volume xkeyboard cpu memory temperature 
+;battery
+
+[module/date]
+type = internal/date
+interval = 1.0
+date = %a %d %b,
+time = %H:%M
+date-alt = %A, %d %B %Y
+time-alt = %H:%M:%S
+label = %{A1:gsimplecal & disown:}%{A3:gsimplecal & disown:}%date% %time%%{A}%{A}
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format = "<label>"
+format-padding = 3
+
+
+[module/i3]
+type = internal/i3
+pin-workspaces = true
+strip-wsnumbers = true
+index-sort = true
+enable-scroll = false
+format = <label-state>
+format-padding-right = 1
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-padding = 1
+label-focused-foreground = ${colors.green}
+label-focused-padding = 1
+label-urgent-foreground = ${colors.red}
+label-urgent-padding = 1
+
+[module/browser]
+type = custom/text
+content = 
+content-foreground = ${colors.foreground}
+click-left = uzbl-tabbed &
+
+[module/fx]
+type = custom/text
+content = 
+content-foreground = ${colors.foreground}
+click-left = firefox &
+
+[module/fm]
+type = custom/text
+content = 
+content-foreground = ${colors.foreground}
+click-left = gnome-terminal --geometry 110x24 -e ranger &
+click-right = pcmanfm &
+
+[module/term]
+type = custom/text
+content = 
+content-foreground = ${colors.foreground}
+click-left = urxvt &
+
+[module/editor]
+type = custom/text
+content = 
+content-foreground = ${colors.foreground}
+click-left = /opt/sublime_text/sublime_text &
+click-right = geany &
+
+;[module/chrome]
+;type = custom/text
+;content = 
+;content-foreground = ${colors.foreground}
+;click-left = google-chrome &
+
+[module/music]
+type = custom/text
+content = 
+content-foreground = ${colors.foreground}
+click-left = gnome-terminal -e ncmpcpp &
+click-right = audacious &
+
+[module/workspace]
+type = custom/script
+interval = 1
+label = %{A4:wmctrl -s "$(($(xprop -root _NET_CURRENT_DESKTOP | cut -d '=' -f 2 | cut -d ' ' -f 2)+1))":}%{A5:wmctrl -s "$(($(xprop -root _NET_CURRENT_DESKTOP | cut -d '=' -f 2 | cut -d ' ' -f 2)-1))":}%output% %{A}%{A}
+exec = echo "$(($(xprop -root _NET_CURRENT_DESKTOP | cut -d '=' -f 2 | cut -d ' ' -f 2)+1))"
+format = <label>
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+
+[module/window_count]
+type = custom/script
+interval = 1
+label = %{A1:rofi -width 30 -location 1 -xoffset 3 -show window:}%output% %{A}
+exec = echo "$(($(lsw | wc -l)-1))"
+format = <label>
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+
+[module/xtitle]
+type = custom/script
+interval = 1
+label = %output%
+label-maxlen = 40
+exec = echo "$(xtitle)"
+format = <label>
+format-background = ${colors.background-alt}
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground}
+format-padding = 1
+
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6600
+format-online = "<icon-prev>  <toggle>  <icon-next>  <label-time> | <label-song>"
+label-song =  %title:0:30:...%
+format-offline-foreground = ${colors.red}
+label-offline =  mpd is offline
+icon-play = 
+icon-pause = 
+icon-stop = 
+icon-prev = 
+icon-next = 
+icon-seekb = 
+icon-seekf = 
+icon-random = 
+icon-repeat = 
+icon-prev-foreground = ${colors.foreground-alt}
+toggle-foreground = ${colors.foreground-alt}
+icon-next-foreground = ${colors.foreground-alt}
+bar-progress-width = 10
+bar-progress-indicator = |
+bar-progress-fill = ─
+bar-progress-empty = ─
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+label-layout = %layout%
+label-indicator-foreground = ${colors.red}
+label-indicator-background = ${colors.background}
+
+[module/cpu]
+type = internal/cpu
+interval = 1
+label = %{A1:urxvt -geometry 70x22  -name floating -e htop -s PERCENT_CPU & disown:} %percentage%%%{A}
+click-left = xfce4-taskmanager
+click-right = xfce4-taskmanager &
+
+
+[module/memory]
+type = internal/memory
+interval = 3
+format = <label>
+label = %{A1:urxvt -geometry 70x22 -name floating -e htop -s PERCENT_MEM & disown:} %percentage_used%%%{A}
+
+[module/volume]
+type = internal/alsa
+format-volume = <ramp-volume> <label-volume>
+label-volume = %percentage%%
+label-volume-foreground = ${root.foreground}
+format-muted = <label-muted>
+format-muted-foreground = ${colors.foreground-alt}
+label-muted =  muted
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-foreground = ${colors.foreground-alt}
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 98
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+format-full-prefix = " "
+format-full-prefix-foreground = ${colors.blue}
+ramp-capacity-0 = 
+ramp-capacity-0-foreground = ${colors.red}
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-foreground = ${colors.foreground-alt}
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-framerate = 750
+
+[module/networkmanager]
+type = custom/text
+content = net 
+content-foreground = ${colors.foreground}
+click-left = networkmanager_dmenu
+
+[module/eth]
+type = internal/network
+interface = enp4s0
+interval = 3.0
+format-connected = <label-connected>
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.foreground-alt}
+format-disconnected = <label-disconnected>
+label-connected = %{A1:networkmanager_dmenu:}%downspeed%%{A}
+label-connected-foreground = ${colors.foreground}
+label-disconnected =
+
+[module/temperature]
+type = internal/temperature
+interval = 1
+warn-temperature = 70
+format = <ramp> <label>
+format-warn = <ramp> <label-warn>
+label = %{A1:urxvt -geometry 70x22 -name floating -e watch sensors & disown:}%temperature-c%%{A}
+label-warn = %temperature-c%
+label-warn-foreground = #e4b226
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
+
+[module/wlan]
+type = internal/network
+interface = wlan0
+interval = 3.0
+format-connected = <label-connected>
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.foreground-alt}
+format-disconnected = <label-disconnected>
+label-connected = %{A1:networkmanager_dmenu:}%downspeed%%{A}
+label-connected-foreground = ${colors.foreground}
+label-disconnected =
+
+[module/powermenu]
+type = custom/menu
+format-spacing = 1
+label-open = 
+label-open-font = 2
+label-open-foreground = ${colors.red}
+label-close = 
+label-close-foreground = ${colors.foreground}
+label-separator = |
+label-separator-foreground = ${colors.foreground-alt}
+menu-0-0 = 
+menu-0-0-foreground = ${colors.red}
+menu-0-0-exec = menu-open-1
+menu-0-1 = 
+menu-0-1-foreground = ${colors.blue}
+menu-0-1-exec = menu-open-2
+menu-1-0 = Перезапуск?
+menu-1-0-exec = /sbin/reboot
+menu-1-1 = 
+menu-1-1-exec = menu-open-0
+menu-2-0 = 
+menu-2-0-exec = menu-open-0
+menu-2-1 = Выключить?
+menu-2-1-exec = /sbin/poweroff
+
+[module/pkg]
+type = custom/script
+exec = updates.sh
+exec-if = "ping -q -w 2 -c 1 176.34.135.167 > /dev/null"
+label = %{A1:urxvt -geometry 70x22 -name floating -e aurman -Syyu & disown:}%{A3:urxvt -geometry 83x22 -name floating -e aurman -Syyu & disown:}%output%%{A}%{A}
+tail = true
+
+;[settings]
+;screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+
+;[global/wm]
+;margin-top = 0
+;margin-bottom = 0

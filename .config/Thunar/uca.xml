@@ -3,8 +3,8 @@
 <action>
 	<icon>vim</icon>
 	<name>Vim</name>
-	<unique-id>1538427706380052-1</unique-id>
-	<command>urxvt -geometry 83x22 -name floating -e nvim %f</command>
+	<unique-id>1544743141507991-4</unique-id>
+	<command>urxvtc -geometry 83x22 -name floating -e nvim %f</command>
 	<description></description>
 	<patterns>*</patterns>
 	<startup-notify/>
@@ -14,8 +14,8 @@
 <action>
 	<icon>utilities-terminal</icon>
 	<name>Open Terminal Here</name>
-	<unique-id>1499240572835265-1</unique-id>
-	<command>exo-open --launch TerminalEmulator</command>
+	<unique-id>1544743123993581-3</unique-id>
+	<command>urxvtc -name &apos;floating&apos;</command>
 	<description>Open terminal emulator in current directory</description>
 	<patterns>*</patterns>
 	<startup-notify/>

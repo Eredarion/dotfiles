@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="thunar" version="1.0">
+  <property name="last-view" type="string" value="ThunarIconView"/>
+  <property name="last-icon-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_200_PERCENT"/>
+  <property name="last-separator-position" type="int" value="156"/>
+  <property name="last-show-hidden" type="bool" value="true"/>
+  <property name="last-window-width" type="int" value="1362"/>
+  <property name="last-window-height" type="int" value="741"/>
+  <property name="last-window-maximized" type="bool" value="true"/>
+  <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_LARGEST"/>
+  <property name="last-details-view-column-widths" type="string" value="50,137,50,50,406,50,50,83,174"/>
+  <property name="last-location-bar" type="string" value="ThunarLocationEntry"/>
+  <property name="misc-single-click" type="bool" value="false"/>
+  <property name="misc-volume-management" type="bool" value="true"/>
+  <property name="last-menubar-visible" type="bool" value="true"/>
+  <property name="shortcuts-icon-emblems" type="bool" value="true"/>
+  <property name="tree-icon-emblems" type="bool" value="true"/>
+  <property name="hidden-bookmarks" type="array">
+    <value type="string" value="network:///"/>
+    <value type="string" value="file:///home/ranguel/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB"/>
+  </property>
+  <property name="last-statusbar-visible" type="bool" value="true"/>
+  <property name="last-side-pane" type="string" value="ThunarShortcutsPane"/>
+  <property name="misc-folders-first" type="bool" value="true"/>
+  <property name="misc-text-beside-icons" type="bool" value="false"/>
+  <property name="shortcuts-icon-size" type="string" value="THUNAR_ICON_SIZE_SMALLEST"/>
+  <property name="last-compact-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_SMALLEST"/>
+  <property name="default-view" type="string" value="ThunarIconView"/>
+  <property name="misc-thumbnail-mode" type="string" value="THUNAR_THUMBNAIL_MODE_ONLY_LOCAL"/>
+  <property name="misc-file-size-binary" type="bool" value="false"/>
+</channel>

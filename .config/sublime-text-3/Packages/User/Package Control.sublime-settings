@@ -1,0 +1,14 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Color Highlight",
+		"Kotlin",
+		"Package Control",
+		"Theme - Arc",
+		"Theme - Dark Material"
+	]
+}

@@ -1,0 +1,3960 @@
+{
+	"folder_history":
+	[
+	],
+	"last_version": 3176,
+	"last_window_id": 11,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 0.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"he",
+						"height"
+					],
+					[
+						"w",
+						"width"
+					],
+					[
+						"border",
+						"border_width"
+					],
+					[
+						"ro",
+						"rofi_quit"
+					],
+					[
+						"rofi",
+						"rofi_run"
+					],
+					[
+						"T",
+						"True"
+					],
+					[
+						"wo",
+						"workspaces"
+					],
+					[
+						"is",
+						"isfullscreen"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"Package Controlpackage",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: ins",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: insp",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/ranguel/.config/awesome/themes/powerarrow/theme.lua",
+				"/home/ranguel/.config/awesome/themes/holo/theme.lua",
+				"/home/ranguel/.config/awesome/rc-blue.lua",
+				"/home/ranguel/.config/awesome/themes/blue/theme.lua",
+				"/home/ranguel/.config/awesome/blue/layout-config.lua",
+				"/home/ranguel/.config/awesome/blue/env-config.lua",
+				"/home/ranguel/Загрузки/aweso/dotfiles-master/config/awesome/bars.lua",
+				"/home/ranguel/.config/awesome/config/screen.lua",
+				"/home/ranguel/.config/awesome/themes/manta/theme.lua",
+				"/home/ranguel/Загрузки/aweso/rc.lua",
+				"/home/ranguel/Документы/awesomico/dotfiles-master/.config/awesome/rc.lua",
+				"/home/ranguel/.config/awesome/config/rules.lua",
+				"/home/ranguel/.config/awesome/config/keys.lua",
+				"/home/ranguel/.config/awesome/config/init.lua",
+				"/home/ranguel/.config/awesome/rc.lua",
+				"/home/ranguel/.config/mpv/input.conf",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/.dotfiles-master/.config/awesome/rc.lua",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/.dotfiles-master/.config/awesome/config/util.lua",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/.dotfiles-master/.config/awesome/themes/blackout/theme.lua",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/.dotfiles-master/.config/awesome/config/keys_client.lua",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/.dotfiles-master/.config/awesome/config/init.lua",
+				"/home/ranguel/.config/awesome/themes/blackout/theme.lua",
+				"/home/ranguel/Загрузки/aweso/awesome/themes/dremora/theme.lua",
+				"/home/ranguel/Загрузки/aweso/dotfiles-master/config/awesome/rc.lua",
+				"/home/ranguel/.config/awesome/themes/whiteout/theme.lua",
+				"/home/ranguel/.xsession-errors",
+				"/home/ranguel/Документы/awesomico/dotfiles-master/.config/awesome/keys.lua",
+				"/home/ranguel/Загрузки/awesome-master/build/install_manifest.txt",
+				"/home/ranguel/Загрузки/awesome-master/.busted",
+				"/home/ranguel/Загрузки/awesome-master/Packaging.cmake",
+				"/home/ranguel/Загрузки/awesome-master/README.md",
+				"/home/ranguel/Загрузки/awesome-master/Makefile",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/.dotfiles-master/.config/awesome/config/keys.lua",
+				"/home/ranguel/.config/awesome/blue/keys-config.lua",
+				"/home/ranguel/.config/awesome/blue/appkeys-config.lua",
+				"/home/ranguel/.gtkrc-2.0",
+				"/home/ranguel/dead.letter",
+				"/home/ranguel/.config/awesome/helpers.lua",
+				"/home/ranguel/Загрузки/aweso/dotfiles-master/config/awesome/helpers.lua",
+				"/home/ranguel/.config/awesome/keys.lua",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/1/renpy/common/00console.rpy",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/1/game/options.rpy",
+				"/home/ranguel/.xinitrc",
+				"/home/ranguel/.config/compton (save 1.0).conf",
+				"/home/ranguel/Документы/almighty-dotfiles-master/.dwm/dwm_custom/config.h",
+				"/home/ranguel/Документы/dwm mitch/dwm/config.h",
+				"/home/ranguel/Документы/dwm mitch/config.h",
+				"/home/ranguel/Документы/suckless-master/dwm/config.mk",
+				"/home/ranguel/Документы/dwm border/dwm/transient.c",
+				"/home/ranguel/Документы/dwm border/dwm/util.c",
+				"/home/ranguel/Документы/dwm border/dwm/dwm.c",
+				"/home/ranguel/Документы/dwm border/dwm/drw.c",
+				"/home/ranguel/.config/polybar/config (2-я копия)",
+				"/home/ranguel/.config/polybar/sessions/i3-sessionfile",
+				"/home/ranguel/.config/openbox/autostart",
+				"/home/ranguel/Загрузки/2bwm-master/config.h",
+				"/home/ranguel/Документы/dwmfu-master/drawcorners.c",
+				"/home/ranguel/Документы/dwmfu-master/dwm.c",
+				"/home/ranguel/Загрузки/dwm/dwm.c",
+				"/home/ranguel/Документы/suckless-master/dwm/config.h",
+				"/home/ranguel/Загрузки/dwm/config.h",
+				"/run/media/ranguel/C644-1D01/линукс бекап/labs/openbox/autostart",
+				"/home/ranguel/.config/sxhkd/sxhkdrc",
+				"/home/ranguel/.config/bspwm/bspwmrc",
+				"/home/ranguel/Документы/dwmfu-master/Makefile",
+				"/home/ranguel/Документы/suckless-master/dwm/Makefile",
+				"/home/ranguel/Документы/dwmfu-master/PKGBUILD",
+				"/home/ranguel/Документы/dwmfu-master/config.h",
+				"/home/ranguel/Загрузки/dwm/dwm.install",
+				"/home/ranguel/Документы/dwm/config.h",
+				"/home/ranguel/.config/tint2/tint2rc",
+				"/home/ranguel/.config/ranger/rc.conf",
+				"/home/ranguel/.config/openbox/environment",
+				"/home/ranguel/.xinitrc (2-я копия)",
+				"/home/ranguel/.config/tint2/unleashed-taskbar.tint2rc",
+				"/home/ranguel/bin/wscycle.sh",
+				"/home/ranguel/bin/2bws.sh",
+				"/home/ranguel/bin/get_xres",
+				"/usr/bin/alacritty",
+				"/home/ranguel/.config/alacritty/alacritty.yml",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/English/Lesson 5/Lesson 5.txt",
+				"/home/ranguel/Документы/dotfiles/.zshrc",
+				"/home/ranguel/Документы/dotfiles/.Xresources",
+				"/home/ranguel/Документы/dotfile/.config/polybar/config",
+				"/home/ranguel/Загрузки/void-bspwm-dotfiles-master/README.md",
+				"/home/ranguel/Загрузки/my_dotfiles-master/README.md",
+				"/home/ranguel/Загрузки/almighty-dotfiles-master/README.md",
+				"/home/ranguel/Загрузки/dotfiles-master/README.md",
+				"/home/ranguel/.config/Trolltech.conf",
+				"/home/ranguel/Документы/dotfile/.config/neofetch/config.conf",
+				"/home/ranguel/.config/Thunar/uca.xml",
+				"/home/ranguel/.config/polybar/master.conf",
+				"/home/ranguel/.config/polybar/launch.sh",
+				"/home/ranguel/.config/ncmpcpp/mpdnotify",
+				"/home/ranguel/Документы/dotfile/.config/ncmpcpp/mpdnotify",
+				"/home/ranguel/Документы/dotfile/.config/ncmpcpp/config",
+				"/home/ranguel/Документы/dotfile/.config/ncmpcpp/mpdnotify.conf",
+				"/home/ranguel/.config/neofetch/test.txt",
+				"/home/ranguel/.config/mpv/mpv.conf",
+				"/home/ranguel/.config/compton (1-я копия).conf",
+				"/home/ranguel/Загрузки/my_dotfiles-master/.config/i3/config",
+				"/home/ranguel/.config/openbox/rc.xml",
+				"/home/ranguel/Загрузки/suckless-master/dwm/config.h",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/Новый текстовый документ.txt",
+				"/home/ranguel/.config/neofetch/kernVersion.sh",
+				"/home/ranguel/.config/htop/htoprc",
+				"/home/ranguel/.config/mpd/mpd.conf",
+				"/home/ranguel/.config/neofetch/cpu.sh",
+				"/home/ranguel/AndroidStudioProjects/bubble-master/app/src/main/java/com/nkanaev/comics/view/PageImageView.java",
+				"/home/ranguel/.config/Thunar/accels.scm",
+				"/home/ranguel/.config/neofetch/wtf",
+				"/home/ranguel/.cache/wal/colors.sh",
+				"/home/ranguel/AndroidStudioProjects/bubble-master/app/src/main/java/com/nkanaev/comics/view/CoverImageView.java",
+				"/home/ranguel/AndroidStudioProjects/bubble-master/app/src/main/java/com/nkanaev/comics/activity/ReaderActivity.java",
+				"/home/ranguel/.config/polybar/config.top",
+				"/home/ranguel/.themes/wal/gtk-2.0/gtkrc",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/dotfiles-master/templates/gtk2.base",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/dotfiles-fce060b45a7b43bbf85762c68dd0923ce1394a79/dotfiles/config/wpg/wp_init.sh",
+				"/home/ranguel/.themes/Vestica/gtk-2.0/main.rc",
+				"/home/ranguel/.themes/FlatStudioDark_Mod/gtk-2.0/gtkrc",
+				"/home/ranguel/.themes/Vestica/gtk-3.0/gtk.css",
+				"/home/ranguel/Загрузки/gtk-theme-collections-master/LICENSE",
+				"/home/ranguel/Загрузки/gtk-theme-collections-master/README.md",
+				"/home/ranguel/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml",
+				"/home/ranguel/Загрузки/void-bspwm-dotfiles-master/home/addy/.config/bspwm/bspwmrc",
+				"/home/ranguel/.config/.composite_enabled",
+				"/home/ranguel/Загрузки/almighty-dotfiles-master/.xrdb/fonts/tewi",
+				"/home/ranguel/Загрузки/void-bspwm-dotfiles-master/home/addy/.colors/vluvy"
+			],
+			"find":
+			{
+				"height": 24.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"mem",
+					"mpd",
+					"font",
+					"task",
+					"wallpaper",
+					"dpi",
+					"notifica",
+					"weather",
+					"weathericon",
+					"connect_signal",
+					"focus",
+					"wfocus",
+					"wibox",
+					"focus",
+					"bat_notification_charged_preset",
+					"Battery full",
+					"batter",
+					"mpd",
+					"layouts",
+					"layout",
+					"bottom_bar",
+					"mem",
+					"tag",
+					"wibox",
+					"modkey",
+					"keys",
+					"Mouse bindings",
+					"terminal",
+					"run_once",
+					"connect_for_each_screen",
+					"wibox",
+					"themes",
+					"player",
+					"float.player",
+					"volume",
+					"sticky",
+					"toggle_client_property",
+					"rounder",
+					"helper",
+					"conne",
+					"awful.key",
+					"next",
+					"textclock",
+					"time",
+					"close",
+					"134",
+					"beautiful",
+					"wibox",
+					"keys",
+					"ther",
+					"wibox",
+					"theme",
+					"maxim",
+					"wibox",
+					"maxi",
+					"border",
+					"quit",
+					"urgent_color",
+					"rule",
+					"gap",
+					"image",
+					"notif",
+					"notify",
+					"naughty",
+					"notifi",
+					"border",
+					"tab",
+					"rule",
+					"property",
+					"maxi",
+					"maxime",
+					"ontop",
+					"mod",
+					"corner",
+					"collectgarbage",
+					"corner",
+					"mpdarc_widget",
+					"time",
+					"volume",
+					"volumebar_widget",
+					"theme",
+					"collectgarbage",
+					"rule",
+					"client",
+					"client.size_hints",
+					"floa",
+					"center",
+					"terminal",
+					"position",
+					"floating",
+					"position",
+					"config.console",
+					"mod+return",
+					"core",
+					"mem",
+					"floating",
+					"floatingz",
+					"floating",
+					"1080",
+					"33",
+					"focus",
+					"horizon",
+					"resizeclient",
+					"setfullscreen",
+					"fullscreen",
+					"by",
+					"bar",
+					"mpv",
+					"drawroundedcorners",
+					"round_all",
+					"drawroundedcorners",
+					"resize",
+					"void resize",
+					"resize",
+					"manage",
+					"drawroundedcorners",
+					"round_all",
+					"corners",
+					"cornerRadius",
+					"maxi",
+					"font",
+					"mod1",
+					"mod",
+					"MOD1",
+					"mod+h",
+					"XK_t",
+					"2bwm",
+					"ratio"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 24.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 86.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 44.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 0.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"he",
+						"height"
+					],
+					[
+						"w",
+						"width"
+					],
+					[
+						"border",
+						"border_width"
+					],
+					[
+						"ro",
+						"rofi_quit"
+					],
+					[
+						"rofi",
+						"rofi_run"
+					],
+					[
+						"T",
+						"True"
+					],
+					[
+						"wo",
+						"workspaces"
+					],
+					[
+						"is",
+						"isfullscreen"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"contents": "#ffffff",
+					"file": "/home/ranguel/.config/aurman/aurman_config",
+					"file_size": 0,
+					"file_write_time": 131897266116020628,
+					"settings":
+					{
+						"buffer_size": 7,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ranguel/.config/polybar/config",
+					"settings":
+					{
+						"buffer_size": 9584,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ranguel/.Xresources",
+					"settings":
+					{
+						"buffer_size": 3614,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ranguel/tracher/backup/.config/nvim/init.vim",
+					"settings":
+					{
+						"buffer_size": 1525,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ranguel/.config/ranger/rc.conf",
+					"settings":
+					{
+						"buffer_size": 140,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ranguel/.config/gtk-3.0/bookmarks",
+					"settings":
+					{
+						"buffer_size": 346,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ranguel/.config/cava/config",
+					"settings":
+					{
+						"buffer_size": 4612,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ranguel/.cache/wal/colors.Xresources",
+					"settings":
+					{
+						"buffer_size": 1509,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ranguel/.config/awesome/rc.lua",
+					"settings":
+					{
+						"buffer_size": 13819,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ranguel/.config/awesome/config/keys.lua",
+					"settings":
+					{
+						"buffer_size": 13041,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ranguel/.config/i3/config",
+					"settings":
+					{
+						"buffer_size": 11700,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ranguel/.xinitrc",
+					"settings":
+					{
+						"buffer_size": 3196,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ranguel/.config/neofetch/config.conf",
+					"settings":
+					{
+						"buffer_size": 14350,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ranguel/.zshrc",
+					"settings":
+					{
+						"buffer_size": 6635,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"Package Controlpackage",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: ins",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: insp",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/ranguel/tracher/backup/.config/gtk-3.0/bookmarks",
+				"/home/ranguel/tracher/backup/.config/gtkrc",
+				"/home/ranguel/tracher/backup/.xprofile",
+				"/home/ranguel/tracher/backup/.config/awesome/config/keys.lua",
+				"/home/ranguel/tracher/backup/.config/awesome/rc.lua",
+				"/home/ranguel/.config/i3/config",
+				"/run/media/ranguel/111/backup/.zprofile",
+				"/run/media/ranguel/111/backup/.zshrc.pre-oh-my-zsh",
+				"/run/media/ranguel/111/backup/.zsh_history",
+				"/run/media/ranguel/111/backup/.hushlogin",
+				"/run/media/ranguel/111/backup/.esd_auth",
+				"/run/media/ranguel/111/backup/.bash_logout",
+				"/run/media/ranguel/111/backup/.bash_profile",
+				"/run/media/ranguel/111/backup/.bashrc",
+				"/home/ranguel/Загрузки/2bwm-master/config.h",
+				"/home/ranguel/.config/awesome/themes/powerarrow/theme.lua",
+				"/home/ranguel/.config/awesome/themes/holo/theme.lua",
+				"/home/ranguel/.config/awesome/rc-blue.lua",
+				"/home/ranguel/.config/awesome/themes/blue/theme.lua",
+				"/home/ranguel/.config/awesome/blue/layout-config.lua",
+				"/home/ranguel/.config/awesome/blue/env-config.lua",
+				"/home/ranguel/Загрузки/aweso/dotfiles-master/config/awesome/bars.lua",
+				"/home/ranguel/.config/awesome/config/screen.lua",
+				"/home/ranguel/.config/awesome/themes/manta/theme.lua",
+				"/home/ranguel/Загрузки/aweso/rc.lua",
+				"/home/ranguel/Документы/awesomico/dotfiles-master/.config/awesome/rc.lua",
+				"/home/ranguel/.config/awesome/config/rules.lua",
+				"/home/ranguel/.config/awesome/config/keys.lua",
+				"/home/ranguel/.config/awesome/config/init.lua",
+				"/home/ranguel/.config/awesome/rc.lua",
+				"/home/ranguel/.config/mpv/input.conf",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/.dotfiles-master/.config/awesome/rc.lua",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/.dotfiles-master/.config/awesome/config/util.lua",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/.dotfiles-master/.config/awesome/themes/blackout/theme.lua",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/.dotfiles-master/.config/awesome/config/keys_client.lua",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/.dotfiles-master/.config/awesome/config/init.lua",
+				"/home/ranguel/.config/awesome/themes/blackout/theme.lua",
+				"/home/ranguel/Загрузки/aweso/awesome/themes/dremora/theme.lua",
+				"/home/ranguel/Загрузки/aweso/dotfiles-master/config/awesome/rc.lua",
+				"/home/ranguel/.config/awesome/themes/whiteout/theme.lua",
+				"/home/ranguel/.xsession-errors",
+				"/home/ranguel/Документы/awesomico/dotfiles-master/.config/awesome/keys.lua",
+				"/home/ranguel/Загрузки/awesome-master/build/install_manifest.txt",
+				"/home/ranguel/Загрузки/awesome-master/.busted",
+				"/home/ranguel/Загрузки/awesome-master/Packaging.cmake",
+				"/home/ranguel/Загрузки/awesome-master/README.md",
+				"/home/ranguel/Загрузки/awesome-master/Makefile",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/.dotfiles-master/.config/awesome/config/keys.lua",
+				"/home/ranguel/.config/awesome/blue/keys-config.lua",
+				"/home/ranguel/.config/awesome/blue/appkeys-config.lua",
+				"/home/ranguel/.gtkrc-2.0",
+				"/home/ranguel/dead.letter",
+				"/home/ranguel/.config/awesome/helpers.lua",
+				"/home/ranguel/Загрузки/aweso/dotfiles-master/config/awesome/helpers.lua",
+				"/home/ranguel/.config/awesome/keys.lua",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/1/renpy/common/00console.rpy",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/1/game/options.rpy",
+				"/home/ranguel/.xinitrc",
+				"/home/ranguel/.config/compton (save 1.0).conf",
+				"/home/ranguel/Документы/almighty-dotfiles-master/.dwm/dwm_custom/config.h",
+				"/home/ranguel/Документы/dwm mitch/dwm/config.h",
+				"/home/ranguel/Документы/dwm mitch/config.h",
+				"/home/ranguel/Документы/suckless-master/dwm/config.mk",
+				"/home/ranguel/Документы/dwm border/dwm/transient.c",
+				"/home/ranguel/Документы/dwm border/dwm/util.c",
+				"/home/ranguel/Документы/dwm border/dwm/dwm.c",
+				"/home/ranguel/Документы/dwm border/dwm/drw.c",
+				"/home/ranguel/.config/polybar/config (2-я копия)",
+				"/home/ranguel/.config/polybar/sessions/i3-sessionfile",
+				"/home/ranguel/.config/openbox/autostart",
+				"/home/ranguel/Документы/dwmfu-master/drawcorners.c",
+				"/home/ranguel/Документы/dwmfu-master/dwm.c",
+				"/home/ranguel/Загрузки/dwm/dwm.c",
+				"/home/ranguel/Документы/suckless-master/dwm/config.h",
+				"/home/ranguel/Загрузки/dwm/config.h",
+				"/run/media/ranguel/C644-1D01/линукс бекап/labs/openbox/autostart",
+				"/home/ranguel/.config/sxhkd/sxhkdrc",
+				"/home/ranguel/.config/bspwm/bspwmrc",
+				"/home/ranguel/Документы/dwmfu-master/Makefile",
+				"/home/ranguel/Документы/suckless-master/dwm/Makefile",
+				"/home/ranguel/Документы/dwmfu-master/PKGBUILD",
+				"/home/ranguel/Документы/dwmfu-master/config.h",
+				"/home/ranguel/Загрузки/dwm/dwm.install",
+				"/home/ranguel/Документы/dwm/config.h",
+				"/home/ranguel/.config/tint2/tint2rc",
+				"/home/ranguel/.config/ranger/rc.conf",
+				"/home/ranguel/.config/openbox/environment",
+				"/home/ranguel/.xinitrc (2-я копия)",
+				"/home/ranguel/.config/tint2/unleashed-taskbar.tint2rc",
+				"/home/ranguel/bin/wscycle.sh",
+				"/home/ranguel/bin/2bws.sh",
+				"/home/ranguel/bin/get_xres",
+				"/usr/bin/alacritty",
+				"/home/ranguel/.config/alacritty/alacritty.yml",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/English/Lesson 5/Lesson 5.txt",
+				"/home/ranguel/Документы/dotfiles/.zshrc",
+				"/home/ranguel/Документы/dotfiles/.Xresources",
+				"/home/ranguel/Документы/dotfile/.config/polybar/config",
+				"/home/ranguel/Загрузки/void-bspwm-dotfiles-master/README.md",
+				"/home/ranguel/Загрузки/my_dotfiles-master/README.md",
+				"/home/ranguel/Загрузки/almighty-dotfiles-master/README.md",
+				"/home/ranguel/Загрузки/dotfiles-master/README.md",
+				"/home/ranguel/.config/Trolltech.conf",
+				"/home/ranguel/Документы/dotfile/.config/neofetch/config.conf",
+				"/home/ranguel/.config/Thunar/uca.xml",
+				"/home/ranguel/.config/polybar/master.conf",
+				"/home/ranguel/.config/polybar/launch.sh",
+				"/home/ranguel/.config/ncmpcpp/mpdnotify",
+				"/home/ranguel/Документы/dotfile/.config/ncmpcpp/mpdnotify",
+				"/home/ranguel/Документы/dotfile/.config/ncmpcpp/config",
+				"/home/ranguel/Документы/dotfile/.config/ncmpcpp/mpdnotify.conf",
+				"/home/ranguel/.config/neofetch/test.txt",
+				"/home/ranguel/.config/mpv/mpv.conf",
+				"/home/ranguel/.config/compton (1-я копия).conf",
+				"/home/ranguel/Загрузки/my_dotfiles-master/.config/i3/config",
+				"/home/ranguel/.config/openbox/rc.xml",
+				"/home/ranguel/Загрузки/suckless-master/dwm/config.h",
+				"/run/media/ranguel/3EF8C8EEF8C8A60D/вгкергтфк/Новый текстовый документ.txt",
+				"/home/ranguel/.config/neofetch/kernVersion.sh",
+				"/home/ranguel/.config/htop/htoprc",
+				"/home/ranguel/.config/mpd/mpd.conf",
+				"/home/ranguel/.config/neofetch/cpu.sh",
+				"/home/ranguel/AndroidStudioProjects/bubble-master/app/src/main/java/com/nkanaev/comics/view/PageImageView.java",
+				"/home/ranguel/.config/Thunar/accels.scm",
+				"/home/ranguel/.config/neofetch/wtf",
+				"/home/ranguel/.cache/wal/colors.sh",
+				"/home/ranguel/AndroidStudioProjects/bubble-master/app/src/main/java/com/nkanaev/comics/view/CoverImageView.java",
+				"/home/ranguel/AndroidStudioProjects/bubble-master/app/src/main/java/com/nkanaev/comics/activity/ReaderActivity.java"
+			],
+			"find":
+			{
+				"height": 40.7098121086
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"mem",
+					"mpd",
+					"font",
+					"task",
+					"wallpaper",
+					"dpi",
+					"notifica",
+					"weather",
+					"weathericon",
+					"connect_signal",
+					"focus",
+					"wfocus",
+					"wibox",
+					"focus",
+					"bat_notification_charged_preset",
+					"Battery full",
+					"batter",
+					"mpd",
+					"layouts",
+					"layout",
+					"bottom_bar",
+					"mem",
+					"tag",
+					"wibox",
+					"modkey",
+					"keys",
+					"Mouse bindings",
+					"terminal",
+					"run_once",
+					"connect_for_each_screen",
+					"wibox",
+					"themes",
+					"player",
+					"float.player",
+					"volume",
+					"sticky",
+					"toggle_client_property",
+					"rounder",
+					"helper",
+					"conne",
+					"awful.key",
+					"next",
+					"textclock",
+					"time",
+					"close",
+					"134",
+					"beautiful",
+					"wibox",
+					"keys",
+					"ther",
+					"wibox",
+					"theme",
+					"maxim",
+					"wibox",
+					"maxi",
+					"border",
+					"quit",
+					"urgent_color",
+					"rule",
+					"gap",
+					"image",
+					"notif",
+					"notify",
+					"naughty",
+					"notifi",
+					"border",
+					"tab",
+					"rule",
+					"property",
+					"maxi",
+					"maxime",
+					"ontop",
+					"mod",
+					"corner",
+					"collectgarbage",
+					"corner",
+					"mpdarc_widget",
+					"time",
+					"volume",
+					"volumebar_widget",
+					"theme",
+					"collectgarbage",
+					"rule",
+					"client",
+					"client.size_hints",
+					"floa",
+					"center",
+					"terminal",
+					"position",
+					"floating",
+					"position",
+					"config.console",
+					"mod+return",
+					"core",
+					"mem",
+					"floating",
+					"floatingz",
+					"floating",
+					"1080",
+					"33",
+					"focus",
+					"horizon",
+					"resizeclient",
+					"setfullscreen",
+					"fullscreen",
+					"by",
+					"bar",
+					"mpv",
+					"drawroundedcorners",
+					"round_all",
+					"drawroundedcorners",
+					"resize",
+					"void resize",
+					"resize",
+					"manage",
+					"drawroundedcorners",
+					"round_all",
+					"corners",
+					"cornerRadius",
+					"maxi",
+					"font",
+					"mod1",
+					"mod",
+					"MOD1",
+					"mod+h",
+					"XK_t",
+					"2bwm",
+					"ratio"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 13,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/ranguel/.config/aurman/aurman_config",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 7,
+								"regions":
+								{
+									"col_FFFFFFFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												0,
+												7
+											]
+										],
+										"scope": "col_FFFFFFFF"
+									},
+									"col_FFFFFFFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+										"regions":
+										[
+											[
+												0,
+												0
+											]
+										],
+										"scope": "col_gutter"
+									}
+								},
+								"selection":
+								[
+									[
+										7,
+										7
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 13,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/ranguel/.config/polybar/config",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 9584,
+								"regions":
+								{
+									"col_0000FFFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												219,
+												223
+											]
+										],
+										"scope": "col_0000FFFF"
+									},
+									"col_0000FFFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_0000FFFF_circle.png",
+										"regions":
+										[
+											[
+												219,
+												219
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_008000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												196,
+												201
+											]
+										],
+										"scope": "col_008000FF"
+									},
+									"col_008000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_008000FF_circle.png",
+										"regions":
+										[
+											[
+												196,
+												196
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_0A131CFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												58,
+												65
+											]
+										],
+										"scope": "col_0A131CFF"
+									},
+									"col_0A131CFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_0A131CFF_circle.png",
+										"regions":
+										[
+											[
+												41,
+												41
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_666666FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												144,
+												148
+											]
+										],
+										"scope": "col_666666FF"
+									},
+									"col_666666FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_666666FF_circle.png",
+										"regions":
+										[
+											[
+												134,
+												134
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_BD2C40FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												157,
+												164
+											]
+										],
+										"scope": "col_BD2C40FF"
+									},
+									"col_BD2C40FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_BD2C40FF_circle.png",
+										"regions":
+										[
+											[
+												149,
+												149
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_CC6666FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												171,
+												178
+											]
+										],
+										"scope": "col_CC6666FF"
+									},
+									"col_CC6666FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_CC6666FF_circle.png",
+										"regions":
+										[
+											[
+												165,
+												165
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_E4B226FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												7444,
+												7451
+											]
+										],
+										"scope": "col_E4B226FF"
+									},
+									"col_E4B226FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_E4B226FF_circle.png",
+										"regions":
+										[
+											[
+												7420,
+												7420
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_F0C674FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												188,
+												195
+											]
+										],
+										"scope": "col_F0C674FF"
+									},
+									"col_F0C674FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_F0C674FF_circle.png",
+										"regions":
+										[
+											[
+												179,
+												179
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_F26262FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												248,
+												255
+											]
+										],
+										"scope": "col_F26262FF"
+									},
+									"col_F26262FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_F26262FF_circle.png",
+										"regions":
+										[
+											[
+												241,
+												241
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_F64D64FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												264,
+												271
+											]
+										],
+										"scope": "col_F64D64FF"
+									},
+									"col_F64D64FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_F64D64FF_circle.png",
+										"regions":
+										[
+											[
+												256,
+												256
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_FF0000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												165,
+												168
+											],
+											[
+												503,
+												507
+											]
+										],
+										"scope": "col_FF0000FF"
+									},
+									"col_FF0000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FF0000FF_circle.png",
+										"regions":
+										[
+											[
+												165,
+												165
+											],
+											[
+												489,
+												489
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_FFC0CBFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												241,
+												245
+											]
+										],
+										"scope": "col_FFC0CBFF"
+									},
+									"col_FFC0CBFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FFC0CBFF_circle.png",
+										"regions":
+										[
+											[
+												241,
+												241
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_FFFF00FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												179,
+												185
+											]
+										],
+										"scope": "col_FFFF00FF"
+									},
+									"col_FFFF00FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FFFF00FF_circle.png",
+										"regions":
+										[
+											[
+												179,
+												179
+											]
+										],
+										"scope": "col_gutter"
+									}
+								},
+								"selection":
+								[
+									[
+										704,
+										704
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 156.576200418,
+								"zoom_level": 1.0
+							},
+							"stack_index": 12,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/ranguel/.Xresources",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3614,
+								"regions":
+								{
+									"col_070D1FFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												1619,
+												1626
+											]
+										],
+										"scope": "col_070D1FFF"
+									},
+									"col_070D1FFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_070D1FFF_circle.png",
+										"regions":
+										[
+											[
+												1602,
+												1602
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_101423FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												108,
+												115
+											],
+											[
+												126,
+												133
+											],
+											[
+												1610,
+												1617
+											],
+											[
+												1680,
+												1687
+											],
+											[
+												3421,
+												3428
+											],
+											[
+												3548,
+												3555
+											]
+										],
+										"scope": "col_101423FF"
+									},
+									"col_101423FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_101423FF_circle.png",
+										"regions":
+										[
+											[
+												98,
+												98
+											],
+											[
+												116,
+												116
+											],
+											[
+												1602,
+												1602
+											],
+											[
+												1656,
+												1656
+											],
+											[
+												3399,
+												3399
+											],
+											[
+												3521,
+												3521
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_17171AFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												50,
+												57
+											]
+										],
+										"scope": "col_17171AFF"
+									},
+									"col_17171AFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_17171AFF_circle.png",
+										"regions":
+										[
+											[
+												34,
+												34
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_241C35FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												761,
+												768
+											],
+											[
+												780,
+												787
+											]
+										],
+										"scope": "col_241C35FF"
+									},
+									"col_241C35FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_241C35FF_circle.png",
+										"regions":
+										[
+											[
+												750,
+												750
+											],
+											[
+												769,
+												769
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_5E5E5CFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												3478,
+												3485
+											]
+										],
+										"scope": "col_5E5E5CFF"
+									},
+									"col_5E5E5CFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_5E5E5CFF_circle.png",
+										"regions":
+										[
+											[
+												3457,
+												3457
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_939490FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												3449,
+												3456
+											]
+										],
+										"scope": "col_939490FF"
+									},
+									"col_939490FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_939490FF_circle.png",
+										"regions":
+										[
+											[
+												3429,
+												3429
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_989995FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												3513,
+												3520
+											]
+										],
+										"scope": "col_989995FF"
+									},
+									"col_989995FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_989995FF_circle.png",
+										"regions":
+										[
+											[
+												3486,
+												3486
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_A08CBFFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												396,
+												403
+											],
+											[
+												414,
+												421
+											]
+										],
+										"scope": "col_A08CBFFF"
+									},
+									"col_A08CBFFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_A08CBFFF_circle.png",
+										"regions":
+										[
+											[
+												386,
+												386
+											],
+											[
+												404,
+												404
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_AEA2B9FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												180,
+												187
+											],
+											[
+												198,
+												205
+											],
+											[
+												469,
+												476
+											],
+											[
+												488,
+												495
+											]
+										],
+										"scope": "col_AEA2B9FF"
+									},
+									"col_AEA2B9FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_AEA2B9FF_circle.png",
+										"regions":
+										[
+											[
+												170,
+												170
+											],
+											[
+												188,
+												188
+											],
+											[
+												458,
+												458
+											],
+											[
+												477,
+												477
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_D37E7EFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												216,
+												223
+											],
+											[
+												234,
+												241
+											],
+											[
+												507,
+												514
+											],
+											[
+												526,
+												533
+											]
+										],
+										"scope": "col_D37E7EFF"
+									},
+									"col_D37E7EFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_D37E7EFF_circle.png",
+										"regions":
+										[
+											[
+												206,
+												206
+											],
+											[
+												224,
+												224
+											],
+											[
+												496,
+												496
+											],
+											[
+												515,
+												515
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_D5B4D4FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												324,
+												331
+											],
+											[
+												342,
+												349
+											],
+											[
+												621,
+												628
+											],
+											[
+												640,
+												647
+											]
+										],
+										"scope": "col_D5B4D4FF"
+									},
+									"col_D5B4D4FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_D5B4D4FF_circle.png",
+										"regions":
+										[
+											[
+												314,
+												314
+											],
+											[
+												332,
+												332
+											],
+											[
+												610,
+												610
+											],
+											[
+												629,
+												629
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_EAE1EAFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												1648,
+												1655
+											]
+										],
+										"scope": "col_EAE1EAFF"
+									},
+									"col_EAE1EAFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_EAE1EAFF_circle.png",
+										"regions":
+										[
+											[
+												1629,
+												1629
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_EEFFFFFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												360,
+												367
+											],
+											[
+												378,
+												385
+											],
+											[
+												659,
+												666
+											],
+											[
+												678,
+												685
+											]
+										],
+										"scope": "col_EEFFFFFF"
+									},
+									"col_EEFFFFFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_EEFFFFFF_circle.png",
+										"regions":
+										[
+											[
+												350,
+												350
+											],
+											[
+												368,
+												368
+											],
+											[
+												648,
+												648
+											],
+											[
+												667,
+												667
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_F7B2AEFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												3391,
+												3398
+											]
+										],
+										"scope": "col_F7B2AEFF"
+									},
+									"col_F7B2AEFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_F7B2AEFF_circle.png",
+										"regions":
+										[
+											[
+												3371,
+												3371
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_FBCFB5FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												252,
+												259
+											],
+											[
+												270,
+												277
+											],
+											[
+												545,
+												552
+											],
+											[
+												564,
+												571
+											]
+										],
+										"scope": "col_FBCFB5FF"
+									},
+									"col_FBCFB5FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FBCFB5FF_circle.png",
+										"regions":
+										[
+											[
+												242,
+												242
+											],
+											[
+												260,
+												260
+											],
+											[
+												534,
+												534
+											],
+											[
+												553,
+												553
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_FCE2B9FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												288,
+												295
+											],
+											[
+												306,
+												313
+											],
+											[
+												583,
+												590
+											],
+											[
+												602,
+												609
+											]
+										],
+										"scope": "col_FCE2B9FF"
+									},
+									"col_FCE2B9FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FCE2B9FF_circle.png",
+										"regions":
+										[
+											[
+												278,
+												278
+											],
+											[
+												296,
+												296
+											],
+											[
+												572,
+												572
+											],
+											[
+												591,
+												591
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_FDD957FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												144,
+												151
+											],
+											[
+												162,
+												169
+											],
+											[
+												432,
+												439
+											],
+											[
+												450,
+												457
+											]
+										],
+										"scope": "col_FDD957FF"
+									},
+									"col_FDD957FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FDD957FF_circle.png",
+										"regions":
+										[
+											[
+												134,
+												134
+											],
+											[
+												152,
+												152
+											],
+											[
+												422,
+												422
+											],
+											[
+												440,
+												440
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_FFFFFFFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												26,
+												33
+											],
+											[
+												74,
+												81
+											]
+										],
+										"scope": "col_FFFFFFFF"
+									},
+									"col_FFFFFFFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+										"regions":
+										[
+											[
+												10,
+												10
+											],
+											[
+												58,
+												58
+											]
+										],
+										"scope": "col_gutter"
+									}
+								},
+								"selection":
+								[
+									[
+										2405,
+										2405
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 902.922755741,
+								"zoom_level": 1.0
+							},
+							"stack_index": 5,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/ranguel/tracher/backup/.config/nvim/init.vim",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1525,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										421,
+										421
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 41.7536534447,
+								"zoom_level": 1.0
+							},
+							"stack_index": 10,
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/home/ranguel/.config/ranger/rc.conf",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 140,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 9,
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/home/ranguel/.config/gtk-3.0/bookmarks",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 346,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										8,
+										8
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 8,
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "/home/ranguel/.config/cava/config",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 4612,
+								"regions":
+								{
+									"col_000000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												3098,
+												3103
+											],
+											[
+												3341,
+												3346
+											]
+										],
+										"scope": "col_000000FF"
+									},
+									"col_000000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
+										"regions":
+										[
+											[
+												3057,
+												3057
+											],
+											[
+												3326,
+												3326
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_0000FFFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												3105,
+												3109
+											]
+										],
+										"scope": "col_0000FFFF"
+									},
+									"col_0000FFFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_0000FFFF_circle.png",
+										"regions":
+										[
+											[
+												3057,
+												3057
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_008000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												3117,
+												3122
+											]
+										],
+										"scope": "col_008000FF"
+									},
+									"col_008000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_008000FF_circle.png",
+										"regions":
+										[
+											[
+												3057,
+												3057
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_0099FFFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												3691,
+												3698
+											]
+										],
+										"scope": "col_0099FFFF"
+									},
+									"col_0099FFFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_0099FFFF_circle.png",
+										"regions":
+										[
+											[
+												3669,
+												3669
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_00FFFFFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												3111,
+												3115
+											],
+											[
+												3362,
+												3366
+											]
+										],
+										"scope": "col_00FFFFFF"
+									},
+									"col_00FFFFFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_00FFFFFF_circle.png",
+										"regions":
+										[
+											[
+												3057,
+												3057
+											],
+											[
+												3347,
+												3347
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_FF0000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												3133,
+												3136
+											]
+										],
+										"scope": "col_FF0000FF"
+									},
+									"col_FF0000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FF0000FF_circle.png",
+										"regions":
+										[
+											[
+												3057,
+												3057
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_FF00FFFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												3124,
+												3131
+											]
+										],
+										"scope": "col_FF00FFFF"
+									},
+									"col_FF00FFFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FF00FFFF_circle.png",
+										"regions":
+										[
+											[
+												3057,
+												3057
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_FF3399FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												3722,
+												3729
+											]
+										],
+										"scope": "col_FF3399FF"
+									},
+									"col_FF3399FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FF3399FF_circle.png",
+										"regions":
+										[
+											[
+												3700,
+												3700
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_FFFFFFFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												3138,
+												3143
+											]
+										],
+										"scope": "col_FFFFFFFF"
+									},
+									"col_FFFFFFFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+										"regions":
+										[
+											[
+												3057,
+												3057
+											]
+										],
+										"scope": "col_gutter"
+									}
+								},
+								"selection":
+								[
+									[
+										4612,
+										4612
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 1620.04175365,
+								"zoom_level": 1.0
+							},
+							"stack_index": 6,
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"file": "/home/ranguel/.cache/wal/colors.Xresources",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1509,
+								"regions":
+								{
+									"col_0E0E10FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												81,
+												88
+											],
+											[
+												137,
+												144
+											],
+											[
+												193,
+												200
+											],
+											[
+												310,
+												317
+											],
+											[
+												338,
+												345
+											],
+											[
+												366,
+												373
+											],
+											[
+												483,
+												490
+											],
+											[
+												517,
+												524
+											],
+											[
+												535,
+												542
+											],
+											[
+												1169,
+												1176
+											],
+											[
+												1188,
+												1195
+											],
+											[
+												1260,
+												1267
+											]
+										],
+										"scope": "col_0E0E10FF"
+									},
+									"col_0E0E10FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_0E0E10FF_circle.png",
+										"regions":
+										[
+											[
+												61,
+												61
+											],
+											[
+												117,
+												117
+											],
+											[
+												173,
+												173
+											],
+											[
+												285,
+												285
+											],
+											[
+												318,
+												318
+											],
+											[
+												346,
+												346
+											],
+											[
+												458,
+												458
+											],
+											[
+												507,
+												507
+											],
+											[
+												525,
+												525
+											],
+											[
+												1158,
+												1158
+											],
+											[
+												1177,
+												1177
+											],
+											[
+												1241,
+												1241
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_A49DD5FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												661,
+												668
+											],
+											[
+												679,
+												686
+											],
+											[
+												954,
+												961
+											],
+											[
+												973,
+												980
+											]
+										],
+										"scope": "col_A49DD5FF"
+									},
+									"col_A49DD5FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_A49DD5FF_circle.png",
+										"regions":
+										[
+											[
+												651,
+												651
+											],
+											[
+												669,
+												669
+											],
+											[
+												943,
+												943
+											],
+											[
+												962,
+												962
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_A49EA5FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												805,
+												812
+											],
+											[
+												823,
+												830
+											]
+										],
+										"scope": "col_A49EA5FF"
+									},
+									"col_A49EA5FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_A49EA5FF_circle.png",
+										"regions":
+										[
+											[
+												795,
+												795
+											],
+											[
+												813,
+												813
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_D4A8D9FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												697,
+												704
+											],
+											[
+												715,
+												722
+											],
+											[
+												992,
+												999
+											],
+											[
+												1011,
+												1018
+											]
+										],
+										"scope": "col_D4A8D9FF"
+									},
+									"col_D4A8D9FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_D4A8D9FF_circle.png",
+										"regions":
+										[
+											[
+												687,
+												687
+											],
+											[
+												705,
+												705
+											],
+											[
+												981,
+												981
+											],
+											[
+												1000,
+												1000
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_DACDE9FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												733,
+												740
+											],
+											[
+												751,
+												758
+											],
+											[
+												1030,
+												1037
+											],
+											[
+												1049,
+												1056
+											]
+										],
+										"scope": "col_DACDE9FF"
+									},
+									"col_DACDE9FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_DACDE9FF_circle.png",
+										"regions":
+										[
+											[
+												723,
+												723
+											],
+											[
+												741,
+												741
+											],
+											[
+												1019,
+												1019
+											],
+											[
+												1038,
+												1038
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_DCCAAEFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												589,
+												596
+											],
+											[
+												607,
+												614
+											],
+											[
+												878,
+												885
+											],
+											[
+												897,
+												904
+											]
+										],
+										"scope": "col_DCCAAEFF"
+									},
+									"col_DCCAAEFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_DCCAAEFF_circle.png",
+										"regions":
+										[
+											[
+												579,
+												579
+											],
+											[
+												597,
+												597
+											],
+											[
+												867,
+												867
+											],
+											[
+												886,
+												886
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_E0BBB6FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												553,
+												560
+											],
+											[
+												571,
+												578
+											],
+											[
+												841,
+												848
+											],
+											[
+												859,
+												866
+											]
+										],
+										"scope": "col_E0BBB6FF"
+									},
+									"col_E0BBB6FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_E0BBB6FF_circle.png",
+										"regions":
+										[
+											[
+												543,
+												543
+											],
+											[
+												561,
+												561
+											],
+											[
+												831,
+												831
+											],
+											[
+												849,
+												849
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_E4C7C2FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												625,
+												632
+											],
+											[
+												643,
+												650
+											],
+											[
+												916,
+												923
+											],
+											[
+												935,
+												942
+											]
+										],
+										"scope": "col_E4C7C2FF"
+									},
+									"col_E4C7C2FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_E4C7C2FF_circle.png",
+										"regions":
+										[
+											[
+												615,
+												615
+											],
+											[
+												633,
+												633
+											],
+											[
+												905,
+												905
+											],
+											[
+												924,
+												924
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_EBE3ECFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												53,
+												60
+											],
+											[
+												109,
+												116
+											],
+											[
+												165,
+												172
+											],
+											[
+												221,
+												228
+											],
+											[
+												249,
+												256
+											],
+											[
+												277,
+												284
+											],
+											[
+												394,
+												401
+											],
+											[
+												422,
+												429
+											],
+											[
+												450,
+												457
+											],
+											[
+												769,
+												776
+											],
+											[
+												787,
+												794
+											],
+											[
+												1068,
+												1075
+											],
+											[
+												1087,
+												1094
+											],
+											[
+												1233,
+												1240
+											]
+										],
+										"scope": "col_EBE3ECFF"
+									},
+									"col_EBE3ECFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_EBE3ECFF_circle.png",
+										"regions":
+										[
+											[
+												33,
+												33
+											],
+											[
+												89,
+												89
+											],
+											[
+												145,
+												145
+											],
+											[
+												201,
+												201
+											],
+											[
+												229,
+												229
+											],
+											[
+												257,
+												257
+											],
+											[
+												374,
+												374
+											],
+											[
+												402,
+												402
+											],
+											[
+												430,
+												430
+											],
+											[
+												759,
+												759
+											],
+											[
+												777,
+												777
+											],
+											[
+												1057,
+												1057
+											],
+											[
+												1076,
+												1076
+											],
+											[
+												1214,
+												1214
+											]
+										],
+										"scope": "col_gutter"
+									}
+								},
+								"selection":
+								[
+									[
+										698,
+										698
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 126.30480167,
+								"zoom_level": 1.0
+							},
+							"stack_index": 7,
+							"type": "text"
+						},
+						{
+							"buffer": 8,
+							"file": "/home/ranguel/.config/awesome/rc.lua",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 13819,
+								"regions":
+								{
+									"bookmarks":
+									{
+										"flags": 144,
+										"icon": "bookmark",
+										"regions":
+										[
+											[
+												590,
+												635
+											]
+										],
+										"scope": "bookmarks"
+									}
+								},
+								"selection":
+								[
+									[
+										7870,
+										7870
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Lua/Lua.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 3248.434238,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 9,
+							"file": "/home/ranguel/.config/awesome/config/keys.lua",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 13041,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										4952,
+										4952
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Lua/Lua.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 797.494780793,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 10,
+							"file": "/home/ranguel/.config/i3/config",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 11700,
+								"regions":
+								{
+									"col_000000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												161,
+												166
+											],
+											[
+												667,
+												672
+											],
+											[
+												720,
+												725
+											]
+										],
+										"scope": "col_000000FF"
+									},
+									"col_000000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
+										"regions":
+										[
+											[
+												142,
+												142
+											],
+											[
+												631,
+												631
+											],
+											[
+												684,
+												684
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_0000FFFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												349,
+												353
+											]
+										],
+										"scope": "col_0000FFFF"
+									},
+									"col_0000FFFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_0000FFFF_circle.png",
+										"regions":
+										[
+											[
+												330,
+												330
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_008000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												255,
+												260
+											]
+										],
+										"scope": "col_008000FF"
+									},
+									"col_008000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_008000FF_circle.png",
+										"regions":
+										[
+											[
+												236,
+												236
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_00FFFFFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												443,
+												447
+											]
+										],
+										"scope": "col_00FFFFFF"
+									},
+									"col_00FFFFFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_00FFFFFF_circle.png",
+										"regions":
+										[
+											[
+												424,
+												424
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_05C6F1FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												369,
+												376
+											]
+										],
+										"scope": "col_05C6F1FF"
+									},
+									"col_05C6F1FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_05C6F1FF_circle.png",
+										"regions":
+										[
+											[
+												330,
+												330
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_19043CFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												87,
+												94
+											],
+											[
+												181,
+												188
+											]
+										],
+										"scope": "col_19043CFF"
+									},
+									"col_19043CFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_19043CFF_circle.png",
+										"regions":
+										[
+											[
+												48,
+												48
+											],
+											[
+												142,
+												142
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_5E8D87FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												463,
+												470
+											]
+										],
+										"scope": "col_5E8D87FF"
+									},
+									"col_5E8D87FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_5E8D87FF_circle.png",
+										"regions":
+										[
+											[
+												424,
+												424
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_800080FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												396,
+												402
+											]
+										],
+										"scope": "col_800080FF"
+									},
+									"col_800080FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_800080FF_circle.png",
+										"regions":
+										[
+											[
+												377,
+												377
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_808080FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												490,
+												494
+											],
+											[
+												656,
+												660
+											],
+											[
+												709,
+												713
+											],
+											[
+												816,
+												820
+											]
+										],
+										"scope": "col_808080FF"
+									},
+									"col_808080FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_808080FF_circle.png",
+										"regions":
+										[
+											[
+												471,
+												471
+											],
+											[
+												631,
+												631
+											],
+											[
+												684,
+												684
+											],
+											[
+												791,
+												791
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_85678FFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												416,
+												423
+											]
+										],
+										"scope": "col_85678FFF"
+									},
+									"col_85678FFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_85678FFF_circle.png",
+										"regions":
+										[
+											[
+												377,
+												377
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_8C9440FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												275,
+												282
+											]
+										],
+										"scope": "col_8C9440FF"
+									},
+									"col_8C9440FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_8C9440FF_circle.png",
+										"regions":
+										[
+											[
+												236,
+												236
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_969CD3FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												510,
+												517
+											]
+										],
+										"scope": "col_969CD3FF"
+									},
+									"col_969CD3FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_969CD3FF_circle.png",
+										"regions":
+										[
+											[
+												471,
+												471
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_DE935FFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												322,
+												329
+											]
+										],
+										"scope": "col_DE935FFF"
+									},
+									"col_DE935FFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_DE935FFF_circle.png",
+										"regions":
+										[
+											[
+												283,
+												283
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_EE79A9FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												228,
+												235
+											]
+										],
+										"scope": "col_EE79A9FF"
+									},
+									"col_EE79A9FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_EE79A9FF_circle.png",
+										"regions":
+										[
+											[
+												189,
+												189
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_F1F1F1FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												134,
+												141
+											]
+										],
+										"scope": "col_F1F1F1FF"
+									},
+									"col_F1F1F1FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_F1F1F1FF_circle.png",
+										"regions":
+										[
+											[
+												95,
+												95
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_FF0000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												208,
+												211
+											],
+											[
+												602,
+												605
+											],
+											[
+												620,
+												623
+											],
+											[
+												627,
+												630
+											],
+											[
+												762,
+												765
+											],
+											[
+												773,
+												776
+											],
+											[
+												780,
+												783
+											],
+											[
+												787,
+												790
+											],
+											[
+												2957,
+												2960
+											],
+											[
+												2989,
+												2992
+											],
+											[
+												3021,
+												3024
+											],
+											[
+												3057,
+												3060
+											]
+										],
+										"scope": "col_FF0000FF"
+									},
+									"col_FF0000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FF0000FF_circle.png",
+										"regions":
+										[
+											[
+												189,
+												189
+											],
+											[
+												577,
+												577
+											],
+											[
+												737,
+												737
+											],
+											[
+												2896,
+												2896
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_FFFF00FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												302,
+												308
+											]
+										],
+										"scope": "col_FFFF00FF"
+									},
+									"col_FFFF00FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FFFF00FF_circle.png",
+										"regions":
+										[
+											[
+												283,
+												283
+											]
+										],
+										"scope": "col_gutter"
+									}
+								},
+								"selection":
+								[
+									[
+										2500,
+										2500
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 1106.47181628,
+								"zoom_level": 1.0
+							},
+							"stack_index": 11,
+							"type": "text"
+						},
+						{
+							"buffer": 11,
+							"file": "/home/ranguel/.xinitrc",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3196,
+								"regions":
+								{
+									"col_264D73FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												2659,
+												2666
+											]
+										],
+										"scope": "col_264D73FF"
+									},
+									"col_264D73FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_264D73FF_circle.png",
+										"regions":
+										[
+											[
+												2637,
+												2637
+											]
+										],
+										"scope": "col_gutter"
+									}
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 4,
+							"type": "text"
+						},
+						{
+							"buffer": 12,
+							"file": "/home/ranguel/.config/neofetch/config.conf",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 14350,
+								"regions":
+								{
+									"col_0000FFFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												14114,
+												14118
+											]
+										],
+										"scope": "col_0000FFFF"
+									},
+									"col_0000FFFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_0000FFFF_circle.png",
+										"regions":
+										[
+											[
+												14093,
+												14093
+											]
+										],
+										"scope": "col_gutter"
+									}
+								},
+								"selection":
+								[
+									[
+										2021,
+										2021
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 755.741127349,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
+							"type": "text"
+						},
+						{
+							"buffer": 13,
+							"file": "/home/ranguel/.zshrc",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 6635,
+								"regions":
+								{
+									"col_FF0000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												1724,
+												1727
+											],
+											[
+												6366,
+												6369
+											],
+											[
+												6514,
+												6517
+											],
+											[
+												6539,
+												6542
+											],
+											[
+												6572,
+												6575
+											],
+											[
+												6607,
+												6610
+											]
+										],
+										"scope": "col_FF0000FF"
+									},
+									"col_FF0000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FF0000FF_circle.png",
+										"regions":
+										[
+											[
+												1682,
+												1682
+											],
+											[
+												6345,
+												6345
+											],
+											[
+												6494,
+												6494
+											],
+											[
+												6518,
+												6518
+											],
+											[
+												6543,
+												6543
+											],
+											[
+												6576,
+												6576
+											]
+										],
+										"scope": "col_gutter"
+									}
+								},
+								"selection":
+								[
+									[
+										3721,
+										3721
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1288.10020877,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 25.0521920668
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 86.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,1,0,0,0,0,0,0,0,1366,768",
+			"project": "",
+			"replace":
+			{
+				"height": 43.8413361169
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 11,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}
