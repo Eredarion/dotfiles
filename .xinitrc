@@ -1,11 +1,11 @@
 #!/bin/sh
 
-session=${1:-i3}
+session=${1:-awesome}
 #    startx ~/.xinitrc WM
 
 
 # session to run if none passed as first arg ($1)
-session=${1:-i3}
+session=${1:-awesome}
 
 # this file is executed when calling startx
 
@@ -44,18 +44,20 @@ if [[ $session == "awesome" ]]; then
         ksuperkey -e 'Super_L=Alt_L|F1' &
         ksuperkey -e 'Super_R=Alt_L|F1' &
     fi
+
+    #nitrogen --restore &
+    feh --bg-fill "/home/ranguel/Изображения/deletemy/1/wallhaven-724719.jpg"
+    urxvtd &
+    killall mpd
+    mpd &
+    compton -b --config "/home/ranguel/.config/compton.conf" --shadow-exclude "x2>= 1200 && y2 >=700" &
+    xfsettingsd &
+    dunst -config "$HOME"/.config/dunst/dunstrc &
 fi
 
-if [[ $session == "dwm" ]]; then
+if [[ $session == "2bwm" ]]; then
 
-	compton &
-	dunst &
-	mpd &
-	nitrogen --restore
-
-	bar > /dev/null 2>&1 &
-
-    # keyring for storing passwords
+     # keyring for storing passwords
     if hash gnome-keyring &>/dev/null; then
         gnome-keyring-daemon --start --components=pkcs11 &
     fi
@@ -67,9 +69,30 @@ if [[ $session == "dwm" ]]; then
 
     # simulate Alt+F1 with just pressing Super
     if hash ksuperkey &>/dev/null; then
-        ksuperkey -e 'Super_L=Alt_L|F1' &
-        ksuperkey -e 'Super_R=Alt_L|F1' &
+       ksuperkey -e 'Super_L=Alt_L|F1' &
+       ksuperkey -e 'Super_R=Alt_L|F1' &
     fi
+
+
+    xsetroot -cursor_name left_ptr &
+    # xrdb -load ~/.Xresources
+    #setxkbmap -option caps:escape
+    nitrogen --restore &
+    # urxvtd &
+    killall mpd
+    mpd
+
+    pkill polybar
+    polybar example &
+    
+    # compton -b --config "/home/ranguel/.config/compton.conf" --shadow-exclude "x<=3 && x2>= 1000 && y <= 30 && y2 >=700" &
+    compton -b --config "/home/ranguel/.config/compton.conf" --shadow-exclude "x<=3 && x2>= 1000 && y <= 30 && y2 >=700" &
+    sxhkd &
+    
+    dunst -config "$HOME"/.config/dunst/dunstrc &
+    #hsetroot -solid "#264d73"
+
+    xfsettingsd &
 fi
 
 # display timeout and sleep
@@ -86,7 +109,7 @@ urxvtd -q -f -o &
 # restore wal colors
 # wal -R &
 
-killall mpd
+# killall mpd
 
 # do NOT put commands below the exec lines
 case $session in

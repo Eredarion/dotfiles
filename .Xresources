@@ -1,13 +1,13 @@
 ! special
-*.foreground:   #EEFFFF
-*.background:   #101423
-*.cursorColor:  #EEFFFF
+*.foreground:   #FFFFFF
+*.background:   #17171A
+*.cursorColor:  #FFFFFF
 
 ! Colors 0-15.
 *.color0: #101423
 *color0:  #101423
-*.color1: #F7B2AE
-*color1:  #F7B2AE
+*.color1: #FDD957
+*color1:  #FDD957
 *.color2: #AEA2B9
 *color2:  #AEA2B9
 *.color3: #D37E7E
@@ -22,8 +22,8 @@
 *color7:  #EEFFFF
 *.color8: #A08CBF
 *color8:  #A08CBF
-*.color9: #F7B2AE
-*color9:  #F7B2AE
+*.color9: #FDD957
+*color9:  #FDD957
 *.color10: #AEA2B9
 *color10:  #AEA2B9
 *.color11: #D37E7E
@@ -41,8 +41,6 @@
 ! Black color that will not be affected by bold highlighting.
 *.color66: #241C35
 *color66:  #241C35
-
-! #FFAEB7
 ! ------------------------------------------------------------------------------
 ! rofi
 ! ------------------------------------------------------------------------------
@@ -72,7 +70,7 @@ xterm*eightBitInput: false
 
 ! URxvt #101423  #070D1F  
 !URxvt*foreground: #EAE1EA
-!URxvt*background: [95]#101423
+!URxvt*background: [100]#101423
 URxvt*saveline: 15000
 URxvt*termName: rxvt-256color
 URxvt*iso14755: false
@@ -81,13 +79,15 @@ URxvt*scrollBar: false
 URxvt*scrollBar_right: false
 URxvt*internalBorder: 15
 URxvt*externalBorder: 0
+!URxvt*letterSpace: -1
 URxvt*letterSpace: -1
-!URxvt.font: xft:DejaVu Sans Mono:size=11
-#define termfont      xft:SFMono:size=9:antialias=true
-URxvt.font: termfont:style=Regular, xft:Symbola:size=9:bold
-URxvt.boldFont: termfont:style=Semibold, xft:Symbola:size=9:bold
-URxvt.italicFont: termfont:style=italic, xft:Symbola:size=9:bold
-URxvt.boldItalicFont: termfont:style=bolditalic:antialias=true, xft:Symbola:size=9:bold
+!URxvt.font: xft:DejaVu Sans Mono:size=11 
+#define termfont      xft:Fira Code:size=8.7:antialias=true
+!#define termfont      xft: Roboto Mono for Powerline:size=9:antialias=true
+URxvt.font: termfont:style=Medium, xft:Symbola:size=8.7:style=Regular
+URxvt.boldFont: termfont:style=Semibold, xft:Symbola:size=8.7:style=Bold
+URxvt.italicFont: termfont:style=italic, xft:Symbola:size=8.7:style=Italic
+URxvt.boldItalicFont: termfont:style=bolditalic:antialias=true, xft:Symbola:size=8.7:style=Bold
 
 URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
 URxvt.copyCommand: xclip -i -selection clipboard
@@ -97,8 +97,8 @@ URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.urlLauncher: exo-open
 URxvt.underlineURLs: true
 URxvt.urlButton: 1
-!URxvt.geometry: 58x19
-URxvt.geometry: 53x15
+!URxvt.geometry: 55x20
+URxvt.geometry: 56x16
 URxvt.tabbed.tabbar-fg: 4
 URxvt.tabbed.tabbar-bg: 16
 URxvt.tabbed.tab-fg: 15
@@ -123,13 +123,13 @@ UXTerm*multiScroll: true
 UXTerm*toolBar: false
 
 ! 2bwm
-twobwm.border_width: 7
-twobwm.outer_border: 3
-twobwm.focus_color: #E87878
-twobwm.unfocus_color: #85C185
+twobwm.border_width: 3
+twobwm.outer_border: 2
+twobwm.focus_color: #F7B2AE
+twobwm.unfocus_color: #101423
 twobwm.fixed_color: #939490
 twobwm.unkill_color: #5E5E5C
 twobwm.fixed_unkill_color: #989995
-twobwm.outer_border_color: #fefefe
+twobwm.outer_border_color: #101423
 twobwm.inverted_colors: false
 twobwm.enable_compton: true

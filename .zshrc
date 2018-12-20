@@ -121,7 +121,7 @@ alias grubup='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias mirrors='sudo reflector --score 100 --fastest 25 \
     --sort rate --save /etc/pacman.d/mirrorlist --verbose'
 alias calc='bc -q'
-alias nvidia-setting='optirun -b none nvidia-settings -c :8'
+# alias nvidia-setting='optirun -b none nvidia-settings -c :8'
 
 # aliases config
 alias zshc='nvim ~/.zshrc'
@@ -132,6 +132,7 @@ alias xinitrcc='nvim ~/.xinitrc'
 alias ncmpcppc='nvim ~/.config/ncmpcpp/config'
 alias neofetchc='nvim ~/.config/neofetch/config.conf'
 alias rangerc='nvim ~/.config/ranger/rc.conf'
+alias vi='nvim'
 
 # aliases game
 alias poe='primusrun ~/Games/Pillars of Eternity/start.sh'
@@ -146,17 +147,18 @@ alias launchDebugApk="adb shell monkey -p 'aapt dump badging ./app/build/outputs
 alias buildInstallLaunchDebugApk="buildAndInstallApk && launchDebugApk"
 
 # aliases weather 
-alias weather="curl -H 'Accept-Language: ru' 'wttr.in/?1?n'"
-alias weatherCurrent="curl -H 'Accept-Language: ru' 'wttr.in/?0?Q'"
-alias weatherFull="curl -H 'Accept-Language: ru' 'wttr.in/'"
+alias weather="curl -H 'Accept-Language: ru' 'wttr.in/Губиниха?1?n'"
+alias weatherCurrent="curl -H 'Accept-Language: ru' 'wttr.in/Губиниха?0?Q'"
+alias weatherFull="curl -H 'Accept-Language: ru' 'wttr.in/Губиниха'"
 
 
+autoload -U promptinit; promptinit
 prompt spaceship
 SPACESHIP_PROMPT_ORDER=(
   #user          # Username section
   dir           # Current directory section
   host          # Hostname section
-  #git           # Git section (git_branch + git_status)
+  git           # Git section (git_branch + git_status)
   hg            # Mercurial section (hg_branch  + hg_status)
   package       # Package version
   kubecontext   # Kubectl context section
