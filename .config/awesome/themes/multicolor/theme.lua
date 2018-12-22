@@ -1,63 +1,41 @@
 --[[
-
      Multicolor Awesome WM theme 2.0
      github.com/lcpz
-
 --]]
 
 local gears = require("gears")
 local lain  = require("lain")
 local awful = require("awful")
 local wibox = require("wibox")
-local xresources = require("beautiful.xresources")
-local xrdb = xresources.get_current_theme()
-
-local xbackground = xrdb.background or  "#1E2541"
-local xforeground = xrdb.foreground or  "#EEFFFF"
-local xcolor0 = xrdb.color0 or  "#1E2541"
-local xcolor1 = xrdb.color1 or  "#F0719B"
-local xcolor2 = xrdb.color2 or  "#5AF7B0"
-local xcolor3 = xrdb.color3 or  "#FFA56B"
-local xcolor4 = xrdb.color4 or  "#57C7FF"
-local xcolor5 = xrdb.color5 or  "#C792EA"
-local xcolor6 = xrdb.color6 or  "#89DDFF"
-local xcolor7 = xrdb.color7 or  "#EEFFFF"
-local xcolor8 = xrdb.color8 or  "#354274"
-local xcolor9 = xrdb.color9 or  "#F02E6E"
-local xcolor10 = xrdb.color10 or    "#2CE592"
-local xcolor11 = xrdb.color11 or    "#FF8537"
-local xcolor12 = xrdb.color12 or    "#1DA0E2"
-local xcolor13 = xrdb.color13 or    "#A742EA"
-local xcolor14 = xrdb.color14 or    "#47BAE8"
-local xcolor15 = xrdb.color15 or    "#DEE6E7"
-
+local xresources       = require("beautiful.xresources")
+local dpi   = xresources.apply_dpi
 
 local os = os
 local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 
 local theme                                     = {}
 theme.confdir                                   = os.getenv("HOME") .. "/.config/awesome/themes/multicolor"
-theme.font                                      = "Fira Code 9"
-theme.taglist_font                              = "Fira Code Bold 9"
-theme.iconFont                                  = "Font Awesome 5 Free Regular 9"
-theme.menu_bg_normal                            = xbackground
-theme.menu_bg_focus                             = xbackground
-theme.bg_normal                                 = xbackground
-theme.bg_focus                                  = xbackground
-theme.bg_urgent                                 = xbackground
-theme.fg_normal                                 = xforeground
-theme.fg_focus                                  = xcolor1
+theme.wallpaper                                 = "/home/ranguel/Изображения/deletemy/1/wallhaven-721638.jpg"
+theme.font                                      = "Fira Code Medium 9"
+theme.font_bold                                 = theme.font .. " " .. "Bold" .. " 8"
+theme.menu_bg_normal                            = "#17171A"
+theme.menu_bg_focus                             = "#17171A"
+theme.bg_normal                                 = "#17171A"
+theme.bg_focus                                  = "#17171A"
+theme.bg_urgent                                 = "#17171A"
+theme.fg_normal                                 = "#aaaaaa"
+theme.fg_focus                                  = "#FDD957"
 theme.fg_urgent                                 = "#af1d18"
 theme.fg_minimize                               = "#ffffff"
-theme.border_width                              = 1
-theme.border_normal                             = xbackground
-theme.border_focus                              = xcolor1
+theme.border_width                              = 2
+theme.border_normal                             = "#17171A"
+theme.border_focus                              = "#FDD957"
 theme.border_marked                             = "#3ca4d8"
 theme.menu_border_width                         = 0
 theme.menu_width                                = 130
 theme.menu_submenu_icon                         = theme.confdir .. "/icons/submenu.png"
 theme.menu_fg_normal                            = "#aaaaaa"
-theme.menu_fg_focus                             = "#ff8c00"
+theme.menu_fg_focus                             = "#FDD957"
 theme.menu_bg_normal                            = "#050505dd"
 theme.menu_bg_focus                             = "#050505dd"
 theme.widget_temp                               = theme.confdir .. "/icons/temp.png"
@@ -113,26 +91,13 @@ theme.titlebar_maximized_button_focus_inactive  = theme.confdir .. "/icons/title
 theme.titlebar_maximized_button_normal_active   = theme.confdir .. "/icons/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active    = theme.confdir .. "/icons/titlebar/maximized_focus_active.png"
 
-theme.notification_position = "top_right"
-theme.notification_border_width = 1
-theme.notification_border_color = "#ff8c00"
-theme.notification_bg = xbackground
-theme.notification_fg = xforeground
-theme.notification_crit_bg = xbackground
-theme.notification_crit_fg = "#af1d18"
-theme.notification_margin = 15
-theme.notification_icon_size = 50
-theme.notification_font = "SF Pro Display Medium 10"
-theme.notification_padding = 10
-theme.notification_spacing = 10
-
 local markup = lain.util.markup
 
 -- Textclock
 os.setlocale(os.getenv("LANG")) -- to localize the clock
 local clockicon = wibox.widget.imagebox(theme.widget_clock)
-local mytextclock = wibox.widget.textclock(markup("#7788af", "%a %d %b ") .. markup("#ab7367", ">") .. markup("#de5e1e", " %H:%M "))
-mytextclock.font = theme.font
+local mytextclock = wibox.widget.textclock(markup("#FFFFFF", "%a ") .. markup("#FFFFFF", "%H:%M "))
+mytextclock.font = theme.font_bold
 
 -- Calendar
 theme.cal = lain.widget.cal({
@@ -201,7 +166,7 @@ local bat = lain.widget.bat({
         local perc = bat_now.perc ~= "N/A" and bat_now.perc .. "%" or bat_now.perc
 
         if bat_now.ac_status == 1 then
-            perc = perc .. " plug"
+            perc = perc .. " !"
         end
 
         widget:set_markup(markup.fontfg(theme.font, theme.fg_normal, perc .. " "))
@@ -210,26 +175,35 @@ local bat = lain.widget.bat({
 
 -- ALSA volume
 local volicon = wibox.widget.imagebox(theme.widget_vol)
-theme.volume = lain.widget.pulse {
+local volumewidget = lain.widget.alsa({
     settings = function()
-        vlevel = volume_now.left .. "%"
-        if volume_now.muted == "yes" then
-            vlevel = vlevel .. " M"
+        if volume_now.status == "off" then
+            volume_now.level = volume_now.level .. "M"
         end
-        widget:set_markup(lain.util.markup("#7493d2", vlevel))
-    end
-}
 
--- Net
--- local netdownicon = wibox.widget.imagebox(theme.widget_netdown)
--- local netdowninfo = wibox.widget.textbox()
--- local netupicon = wibox.widget.imagebox(theme.widget_netup)
--- local netupinfo = lain.widget.net({
---     settings = function()
---         widget:set_markup(markup.fontfg(theme.font, "#e54c62", net_now.sent .. " "))
---         netdowninfo:set_markup(markup.fontfg(theme.font, "#87af5f", net_now.received .. " "))
---     end
--- })
+        widget:set_markup(markup.fontfg(theme.font, "#7493d2", volume_now.level .. "% "))
+    end
+})
+
+volumewidget.widget:buttons(awful.util.table.join(
+
+    awful.button({}, 2, function() -- middle click
+        os.execute(string.format("%s set %s 100%%", volumewidget.cmd, volumewidget.channel))
+        volumewidget.update()
+    end),
+    awful.button({}, 3, function() -- right click
+        os.execute(string.format("%s set %s toggle", volumewidget.cmd, volumewidget.togglechannel or volumewidget.channel))
+        volumewidget.update()
+    end),
+    awful.button({}, 4, function() -- scroll up
+        os.execute(string.format("%s set %s 3%%+", volumewidget.cmd, volumewidget.channel))
+        volumewidget.update()
+    end),
+    awful.button({}, 5, function() -- scroll down
+        os.execute(string.format("%s set %s 3%%-", volumewidget.cmd, volumewidget.channel))
+        volumewidget.update()
+    end)
+))
 
 -- MEM
 local memicon = wibox.widget.imagebox(theme.widget_mem)
@@ -239,9 +213,60 @@ local memory = lain.widget.mem({
     end
 })
 
+-- MPD ----------------------------------------------------------------------------------------------------------------
+local mpdicon = wibox.widget.imagebox()
+local mpdwidget = lain.widget.mpd({
+    settings = function()
+        mpd_notification_preset = {
+            text = string.format("%s [%s] - %s\n%s", mpd_now.artist,
+                   mpd_now.album, mpd_now.date, mpd_now.title)
+        }
+
+        if mpd_now.state == "play" then
+            artist = mpd_now.artist .. " > "
+            title  = mpd_now.title .. " "
+            mpdicon:set_image(theme.widget_note_on)
+        elseif mpd_now.state == "pause" then
+            artist = "mpd "
+            title  = "paused "
+        else
+            artist = ""
+            title  = ""
+            --mpdicon:set_image() -- not working in 4.0
+            mpdicon._private.image = nil
+            mpdicon:emit_signal("widget::redraw_needed")
+            mpdicon:emit_signal("widget::layout_changed")
+        end
+        widget:set_markup(markup.fontfg(theme.font, "#e54c62", artist) .. markup.fontfg(theme.font, "#b2b2b2", title))
+    end
+})
+
+mpdwidget.widget:buttons(awful.util.table.join(
+    awful.button({}, 1, function() -- right click
+        os.execute(string.format("mpc toggle"))
+        mpdwidget.update()
+    end),
+    awful.button({}, 4, function() -- scroll up
+        os.execute(string.format("mpc next"))
+        mpdwidget.update()
+    end),
+    awful.button({}, 5, function() -- scroll down
+        os.execute(string.format("mpc prev"))
+        mpdwidget.update()
+    end)
+))
+-----------------------------------------------------------------------------------------------------------------------
+
 function theme.at_screen_connect(s)
     -- Quake application
     s.quake = lain.util.quake({ app = awful.util.terminal })
+
+    -- If wallpaper is a function, call it with the screen
+    local wallpaper = theme.wallpaper
+    if type(wallpaper) == "function" then
+        wallpaper = wallpaper(s)
+    end
+    gears.wallpaper.maximized(wallpaper, s, true)
 
     -- Tags
     awful.tag(awful.util.tagnames, s, awful.layout.layouts[1])
@@ -264,7 +289,7 @@ function theme.at_screen_connect(s)
     s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, awful.util.tasklist_buttons)
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s, height = 19, bg = theme.bg_normal, fg = theme.fg_normal })
+    s.mywibox = awful.wibar({ position = "top", screen = s, height = 20, bg = theme.bg_normal, fg = theme.fg_normal })
 
     -- Add widgets to the wibox
     s.mywibox:setup {
@@ -273,57 +298,32 @@ function theme.at_screen_connect(s)
             layout = wibox.layout.fixed.horizontal,
             --s.mylayoutbox,
             s.mytaglist,
-            s.mypromptbox,
-            -- lain.widget.mpd,
             s.mylayoutbox,
-            -- mpdicon,
-            -- theme.mpd.widget,
+            s.mypromptbox,
+            mpdicon,
+            mpdwidget,
         },
-        --s.mytasklist, -- Middle widget
-         s.mytasklist,
+        s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            wibox.widget.systray(),
             --mailicon,
             --theme.mail.widget,
-            -- netdownicon,
-            -- netdowninfo,
-            -- netupicon,
-            -- netupinfo.widget,
             volicon,
-            theme.volume.widget,
+            volumewidget,
             memicon,
             memory.widget,
             cpuicon,
             cpu.widget,
-            --fsicon,
-            --theme.fs.widget,
-            -- weathericon,
-            -- theme.weather.widget,
             tempicon,
             temp.widget,
             baticon,
             bat.widget,
             clockicon,
             mytextclock,
+            wibox.widget.systray(),
         },
     }
 
-    -- -- Create the bottom wibox
-    -- s.mybottomwibox = awful.wibar({ position = "bottom", screen = s, border_width = 0, height = 20, bg = theme.bg_normal, fg = theme.fg_normal })
-
-    -- -- Add widgets to the bottom wibox
-    -- s.mybottomwibox:setup {
-    --     layout = wibox.layout.align.horizontal,
-    --     { -- Left widgets
-    --         layout = wibox.layout.fixed.horizontal,
-    --     },
-    --     s.mytasklist, -- Middle widget
-    --     { -- Right widgets
-    --         layout = wibox.layout.fixed.horizontal,
-    --         s.mylayoutbox,
-    --     },
-    -- }
 end
 
 return theme

@@ -77,6 +77,19 @@
       <value type="string" value="3"/>
       <value type="string" value="4"/>
       <value type="string" value="5"/>
+      <value type="string" value="6"/>
+      <value type="string" value="7"/>
+      <value type="string" value="8"/>
+      <value type="string" value="9"/>
+      <value type="string" value="Рабочее место 10"/>
+      <value type="string" value="6"/>
+      <value type="string" value="7"/>
+      <value type="string" value="8"/>
+      <value type="string" value="9"/>
+      <value type="string" value="6"/>
+      <value type="string" value="7"/>
+      <value type="string" value="8"/>
+      <value type="string" value="9"/>
     </property>
     <property name="wrap_cycle" type="bool" value="true"/>
     <property name="wrap_layout" type="bool" value="true"/>

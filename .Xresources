@@ -82,7 +82,7 @@ URxvt*externalBorder: 0
 !URxvt*letterSpace: -1
 URxvt*letterSpace: -1
 !URxvt.font: xft:DejaVu Sans Mono:size=11 
-#define termfont      xft:Fira Code:size=8.7:antialias=true
+#define termfont      xft:Fira Code:size=8:antialias=true
 !#define termfont      xft: Roboto Mono for Powerline:size=9:antialias=true
 URxvt.font: termfont:style=Medium, xft:Symbola:size=8.7:style=Regular
 URxvt.boldFont: termfont:style=Semibold, xft:Symbola:size=8.7:style=Bold
@@ -98,7 +98,7 @@ URxvt.urlLauncher: exo-open
 URxvt.underlineURLs: true
 URxvt.urlButton: 1
 !URxvt.geometry: 55x20
-URxvt.geometry: 56x16
+URxvt.geometry: 56x17
 URxvt.tabbed.tabbar-fg: 4
 URxvt.tabbed.tabbar-bg: 16
 URxvt.tabbed.tab-fg: 15
@@ -123,13 +123,13 @@ UXTerm*multiScroll: true
 UXTerm*toolBar: false
 
 ! 2bwm
-twobwm.border_width: 3
+twobwm.border_width: 4
 twobwm.outer_border: 2
-twobwm.focus_color: #F7B2AE
-twobwm.unfocus_color: #101423
+twobwm.focus_color: #FDD957
+twobwm.unfocus_color: #17171A
 twobwm.fixed_color: #939490
 twobwm.unkill_color: #5E5E5C
 twobwm.fixed_unkill_color: #989995
-twobwm.outer_border_color: #101423
+twobwm.outer_border_color: #17171A
 twobwm.inverted_colors: false
 twobwm.enable_compton: true

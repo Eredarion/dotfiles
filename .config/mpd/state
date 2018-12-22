@@ -1,9 +1,9 @@
-sw_volume: 68
-audio_device_state:1:pulse audio
+sw_volume: 64
+audio_device_state:1:My Sound Card
 audio_device_state:1:toggle_visualizer
-state: play
-current: 161
-time: 4.154000
+state: pause
+current: 281
+time: 91.576000
 random: 1
 repeat: 0
 single: 0

@@ -24,7 +24,7 @@ function config.init(context)
                      keys = clientkeys,
                      buttons = clientbuttons,
                      screen = awful.screen.preferred,
-                     placement =  awful.placement.centered
+                     delayed_placement = awful.placement.centered 
      }
     },
 
@@ -69,16 +69,21 @@ function config.init(context)
           "qutebrowser" }}, properties = { tag = "1" } },
 
     { rule_any = { class = { "mpv", "feh" }},
-     properties = { placement =  awful.placement.centered, width = 720, height = 406 } },
+     properties = { width = 720, height = 406, delayed_placement = awful.placement.centered } },
 
     { rule = { class = "Thunar" },
-     properties = {  tag = "3" } },
+     properties = {  tag = awful.util.tagnames[3], } },
 
     { rule = { class = "URxvt" },
      properties = {  size_hints_honor = false } },
 
     { rule = { class = "Transmission" },
      properties = {  tag = "5", focus = true } },
+
+     { rule = { name = "Параметры торрента" },
+     properties = {  width = 900, height = 500,  delayed_placement = awful.placement.centered  } },
+
+     
 
     { rule_any = {
         class = {
@@ -87,6 +92,13 @@ function config.init(context)
           "jetbrains-idea-ce" }}, properties = { screen = 1, tag = "2"} },
      
 }
+
+ -- placement, that should be applied after setting x/y/width/height/geometry
+    function awful.rules.delayed_properties.delayed_placement(c, value, props)
+        if props.delayed_placement then
+            awful.rules.extra_properties.placement(c, props.delayed_placement, props)
+        end
+    end
 
 end
 

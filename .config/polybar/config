@@ -52,8 +52,8 @@ font-3 = "FontAwesome:size=9:style=Solid;1"
 
 modules-left = = i3 mpd
 modules-center = xwindow 
-modules-right = pkg volume xkeyboard memory coreuse date 
-;battery  cpu memory 2bwm window_switch 
+modules-right =  volume xkeyboard memory coreuse date 
+;battery  cpu memory 2bwm window_switch pkg
 
 [module/date]
 type = internal/date

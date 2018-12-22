@@ -62,7 +62,7 @@ local themes = {
     "powerarrow-dark", -- 7
     "rainbow",         -- 8
     "steamburn",       -- 9
-    "vertex",          -- 10
+    "polaroids",          -- 10
 }
 
 local chosen_theme = themes[5]
@@ -96,6 +96,7 @@ context.vars.checkupdate      = "checkupdates | sed 's/->/→/' | sort | column 
 config.keys.init(context)
 
 -- awful.util.terminal = terminal
+-- awful.util.tagnames = { "一", "二", "三", "四", "五" }
 awful.util.tagnames = { "1", "2", "3", "4", "5" }
 awful.layout.layouts = {
     awful.layout.suit.floating,
@@ -315,7 +316,7 @@ end)
 -- if beautiful.border_radius ~= 0 then
 --     client.connect_signal("manage", function (c, startup)
 --         if not c.fullscreen then
---             c.shape = helpers.rrect(5)
+--             c.shape = helpers.rrect(6)
 --         end
 --     end)
 
