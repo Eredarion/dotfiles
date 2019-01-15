@@ -29,11 +29,6 @@ fi
 # other wm already have these started elsewhere
 if [[ $session == "awesome" ]]; then
 
-    # keyring for storing passwords
-    if hash gnome-keyring &>/dev/null; then
-        gnome-keyring-daemon --start --components=pkcs11 &
-    fi
-
     # gnome polkit
     if [[ -x /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 ]]; then
         /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
@@ -45,14 +40,12 @@ if [[ $session == "awesome" ]]; then
         ksuperkey -e 'Super_R=Alt_L|F1' &
     fi
 
-    #nitrogen --restore &
-    feh --bg-fill "/home/ranguel/Изображения/deletemy/1/wallhaven-724719.jpg"
-    urxvtd &
+    xrdb -load "/home/ranguel/.Xresources" &
+    feh --bg-fill "/home/ranguel/Изображения/deletemy/1/wallhaven-732168.jpg"
     killall mpd
     mpd &
     compton -b --config "/home/ranguel/.config/compton.conf" --shadow-exclude "x2>= 1200 && y2 >=700" &
     xfsettingsd &
-    dunst -config "$HOME"/.config/dunst/dunstrc &
 fi
 
 if [[ $session == "2bwm" ]]; then
