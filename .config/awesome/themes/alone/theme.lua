@@ -4,7 +4,7 @@ local awful            = require("awful")
 local wibox            = require("wibox")
 local naughty          = require("naughty")
 local xresources       = require("beautiful.xresources")
-local xrdb = xresources.get_current_theme()
+local xrdb             = xresources.get_current_theme()
 local dpi              = xresources.apply_dpi
 local os, math, string = os, math, string
 
@@ -174,7 +174,7 @@ theme.notification_fg                           = colors.bw_8
 theme.notification_bg                           = theme.bg_normal
 theme.notification_border_color                 = theme.border_focus
 theme.notification_border_width                 = theme.border_width
-theme.notification_icon_size                    = dpi(60)
+theme.notification_icon_size                    = dpi(50)
 naughty.config.defaults['icon_size'] = dpi(50)
 theme.notification_opacity                      = 1
 theme.notification_max_width                    = dpi(300)
@@ -259,17 +259,6 @@ theme.cal = lain.widget.cal {
     icons = "",
     notification_preset = naughty.config.presets.normal,
 }
-
--- Calendar
--- theme.cal = lain.widget.cal({
---     attach_to = { mytextclock },
---     notification_preset = {
---         font = "xos4 Terminus 10",
---         fg   = theme.fg_normal,
---         bg   = theme.bg_normal
---     }
--- })
-
 
 -- CPU
 --luacheck: push ignore widget cpu_now
@@ -366,20 +355,6 @@ local bat_widget = wibox.widget {
     },
     layout = wibox.layout.align.horizontal,
 }
-
--- bat_widget:buttons(awful.button({ }, 1, function()
---     awful.spawn.easy_async(context.vars.scripts_dir .. "/show-battery-status", function(stdout, stderr, reason, exit_code)
---         if bat_widget.notification then
---             naughty.destroy(bat_widget.notification)
---         end
---         bat.update()
---         bat_widget.notification = naughty.notify {
---             title = "Battery",
---             text = string.gsub(stdout, '\n*$', ''),
---             timeout = 10,
---         }
---     end)
--- end))
 --luacheck: pop
 
 -- ALSA volume
@@ -543,6 +518,7 @@ theme.mpd_toggle:buttons(awful.util.table.join(
         vicious.force({theme.mpdwidget, theme.mpd_prev, theme.mpd_toggle, theme.mpd_next})
     end)
 ))
+--luacheck: pop
 
 -- MPD Previous
 theme.mpd_prev = wibox.widget.textbox()
@@ -563,6 +539,7 @@ theme.mpd_prev:buttons(awful.util.table.join(
         vicious.force({theme.mpdwidget, theme.mpd_prev, theme.mpd_toggle, theme.mpd_next})
     end)
 ))
+--luacheck: pop
 
 -- MPD Next
 theme.mpd_next = wibox.widget.textbox()
@@ -583,6 +560,7 @@ theme.mpd_next:buttons(awful.util.table.join(
         vicious.force({theme.mpdwidget, theme.mpd_prev, theme.mpd_toggle, theme.mpd_next})
     end)
 ))
+--luacheck: pop
 
 local terminalRun = wibox.widget.textbox("<span font=\"".. theme.iconFont .."\"></span>")
 terminalRun:buttons(awful.util.table.join(
@@ -608,25 +586,25 @@ end
 
 -----------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------
-    -- Show widget on mouse::enter on parent, hide after mouse::leave + timeout
-    show_on_mouse = function(parent, widget, timeout)
-        local timer = gears.timer {
-            timeout = timeout or 5,
-            callback = function()
-                widget:set_visible(false)
-            end,
-        }
+-- Show widget on mouse::enter on parent, hide after mouse::leave + timeout
+show_on_mouse = function(parent, widget, timeout)
+    local timer = gears.timer {
+        timeout = timeout or 5,
+        callback = function()
+            widget:set_visible(false)
+        end,
+    }
+    timer:start()
+
+    parent:connect_signal("mouse::enter", function()
+        widget:set_visible(true)
+        timer:stop()
+    end)
+
+    parent:connect_signal("mouse::leave", function()
         timer:start()
-
-        parent:connect_signal("mouse::enter", function()
-            widget:set_visible(true)
-            timer:stop()
-        end)
-
-        parent:connect_signal("mouse::leave", function()
-            timer:start()
-        end)
-    end
+    end)
+end
 -----------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------
@@ -634,13 +612,6 @@ end
 function theme.at_screen_connect(s)
     -- Quake application
     s.quake = lain.util.quake({ app = awful.util.terminal })
-
-    -- -- If wallpaper is a function, call it with the screen
-    -- local wallpaper = theme.wallpaper
-    -- if type(wallpaper) == "function" then
-    --     wallpaper = wallpaper(s)
-    -- end
-    -- gears.wallpaper.maximized(wallpaper, s, true)
 
     -- Tags
     awful.util.tagnames = { "一", "二", "三", "四", "五" }
@@ -776,8 +747,7 @@ function theme.at_screen_connect(s)
             {
                 layout = wibox.layout.align.horizontal,
                 { -- Left widgets
-                    layout = wibox.layout.fixed.horizontal,  
-                    spacing = dpi(0),
+                    layout = wibox.layout.fixed.horizontal,
                     space,
 
                     {  -- Layout box
@@ -976,33 +946,10 @@ function theme.at_screen_connect(s)
                     },
 
 
-                    -- {{  -- End...
-                    --   {
-                    --     {
-                    --       text = "",
-                    --       widget = wibox.widget.textbox
-                    --     },
-                    --   top = dpi(0),
-                    --   bottom = dpi(0),
-                    --   left = dpi(13),
-                    --   right = dpi(13),
-                    --   widget = wibox.container.margin
-                    --   },
-                    -- shape              = shape_right,
-                    -- bg                 = theme.border_focus,
-                    -- widget             = wibox.container.background
-                    -- },
-                    -- widget             = wibox.container.place
-                    -- },
-
                     space,
-
-
                 },
             },
         },
-        -- bottom = theme.border_width,
-        -- color = theme.border_focus,
         top = dpi(3),
         bottom = dpi(3),
         widget = wibox.container.margin,
