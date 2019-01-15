@@ -63,7 +63,7 @@ set $Mon2 HDMI2
 
 # run with reload
 # exec_always --no-startup-id nitrogen --restore
-exec_always --no-startup-id feh --bg-fill /home/ranguel/Изображения/deletemy/1/wallhaven-724719.jpg 
+exec_always --no-startup-id feh --bg-fill '/home/ranguel/Изображения/Wallpapers/yKmo.png'
 exec_always --no-startup-id xrdb -load ~/.Xresources
 exec_always --no-startup-id bash ~/.config/i3/element
 # If you have a numpad you may want to enable this
@@ -82,14 +82,14 @@ exec --no-startup-id compton --config "/home/ranguel/.config/compton.conf" --sha
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # keyring for storing saved passwords
-exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11
+#  exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11
 
 # pressing super key alone simulates pressing Alt-F1
 exec --no-startup-id ksuperkey -e 'Super_L=Alt_L|F1'
 exec --no-startup-id ksuperkey -e 'Super_R=Alt_L|F1'
 
 # dunst
-exec_always --no-startup-id dunst -lb "$bg" -lf "$fg" -lfr "$red" -nb "$bg" -nf "$fg" -nfr "$red" -cb "$bg" -cf "$fg" -cfr "$red" -format "<b><span foreground='$red'>%s</span></b>\n%b"
+exec_always --no-startup-id dunst -lb "$bg" -lf "$fg" -lfr "$red" -nb "$bg" -nf "$fg" -nfr "$red" -cb "$bg" -cf "$fg" -cfr "$red" -format "<u><span foreground='$red'>%s</span></u>\n%b"
 
 exec --no-startup-id mpd
 
@@ -276,7 +276,7 @@ for_window [class="(?i)(?:geany|firefox)"] focus
 
 # open applications on specific workspaces
 assign [class="Chromium"] $workspace1
-assign [class="subl3"] $workspace2
+assign [class="Subl3"] $workspace2
 assign [class="Google-chrome"] $workspace1
 assign [class="Firefox"] $workspace1
 assign [class="qutebrowser"] $workspace1
@@ -294,8 +294,9 @@ assign [class="Transmission"] $workspace9
 
 # windows starting in floating mode
 for_window [title="File Transfer*"] floating enable
-for_window [title="mpv"] floating enable resize set 720 406 
-for_window [title="mpv"] move position mouse 
+for_window [title="mpv"] floating enable resize set 720 406
+for_window [title="Параметры торрента"] floating enable resize set 900 500
+for_window [title="mpv"] move position center 
 for_window [title="Gpick"] floating enable
 for_window [class="Lightdm-gtk-greeter-settings"] floating enable border 1pixel
 for_window [title="Media viewer"] floating enable border none move up 11px

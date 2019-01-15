@@ -103,10 +103,10 @@
     separator_height = 2
  
     # padding between text and separator>
-    padding = 8
+    padding = 10
  
     # horizontal padding
-    horizontal_padding = 8
+    horizontal_padding = 10
  
     # Define a color for the separator.
     # possible values are:
@@ -137,7 +137,7 @@
 
 
 [frame]
-    width = 2
+    width = 1
     color = "#F7B2AE"
  
 [shortcuts]

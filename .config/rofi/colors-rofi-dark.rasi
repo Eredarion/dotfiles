@@ -13,23 +13,23 @@
     alternate-urgent-background: @background;
     alternate-urgent-foreground: @foreground;
 
-    selected-active-background: #D37E7E;
+    selected-active-background: @border-color;
     selected-active-foreground: @foreground;
-    selected-normal-background: #D37E7E;
-    selected-normal-foreground: @foreground;
-    selected-urgent-background: #D37E7E;
+    selected-normal-background: @border-color;
+    selected-normal-foreground: @background;
+    selected-urgent-background: @border-color;
     selected-urgent-foreground: @foreground;
 
     background-color: @background;
-    background: #101423;
-    foreground: #EEFFFF;
-    border-color: @background;
+    background: #141512;
+    foreground: #E0E0E0;
+    border-color: #E0E0E0;
     spacing: 2;
 }
 
 #window {
     background-color: @background;
-    border: 0;
+    border: 1;
     padding: 2.5ch;
 }
 
@@ -61,7 +61,7 @@ textbox-prompt-colon {
 
 #listview {
     fixed-height: 0;
-    border: 2px 0px 0px;
+    border: 0px 0px 0px;
     border-color: @border-color;
     spacing: 2px;
     scrollbar: true;

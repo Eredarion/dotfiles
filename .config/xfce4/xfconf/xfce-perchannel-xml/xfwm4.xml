@@ -72,16 +72,16 @@
     <property name="use_compositing" type="bool" value="true"/>
     <property name="workspace_count" type="int" value="5"/>
     <property name="workspace_names" type="array">
-      <value type="string" value="1"/>
-      <value type="string" value="2"/>
-      <value type="string" value="3"/>
-      <value type="string" value="4"/>
-      <value type="string" value="5"/>
+      <value type="string" value="一"/>
+      <value type="string" value="二"/>
+      <value type="string" value="三"/>
+      <value type="string" value="四"/>
+      <value type="string" value="五"/>
       <value type="string" value="6"/>
       <value type="string" value="7"/>
       <value type="string" value="8"/>
       <value type="string" value="9"/>
-      <value type="string" value="Рабочее место 10"/>
+      <value type="string" value="5"/>
       <value type="string" value="6"/>
       <value type="string" value="7"/>
       <value type="string" value="8"/>

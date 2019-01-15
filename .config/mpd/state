@@ -1,10 +1,10 @@
-sw_volume: 64
-audio_device_state:1:My Sound Card
+sw_volume: 80
+audio_device_state:1:pulse audio
 audio_device_state:1:toggle_visualizer
 state: pause
-current: 281
-time: 91.576000
-random: 1
+current: 34
+time: 50.564000
+random: 0
 repeat: 0
 single: 0
 consume: 0
@@ -12,634 +12,74 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Noize Mc/2008 - The Greatest Hits Vol.1/02 - За Закрытой Дверью.mp3
-1:Noize Mc/2008 - The Greatest Hits Vol.1/03 - Из Окна.mp3
-2:Noize Mc/2008 - The Greatest Hits Vol.1/04 - Москва - Не Резиновая.mp3
-3:Noize Mc/2008 - The Greatest Hits Vol.1/09 - Кури Бамбук!.mp3
-4:Noize Mc/2008 - The Greatest Hits Vol.1/10 - Палево!.mp3
-5:Noize Mc/2008 - The Greatest Hits Vol.1/11 - Блатняк.mp3
-6:Noize Mc/2008 - The Greatest Hits Vol.1/12 - 5П (Песня Похуиста Про Получение Пиздюлей).mp3
-7:Noize Mc/2008 - The Greatest Hits Vol.1/13 - Девочка-Скинхед.mp3
-8:Noize Mc/2008 - The Greatest Hits Vol.1/14 - Наше Движение.mp3
-9:Noize Mc/2008 - The Greatest Hits Vol.1/15 - Аренби!!!.mp3
-10:Noize Mc/2008 - The Greatest Hits Vol.1/16 - Поднимите Руки.mp3
-11:Noize Mc/2008 - The Greatest Hits Vol.1/17 - Моё Море.mp3
-12:Noize Mc/2008 - The Greatest Hits Vol.1/18 - Выдыхай.mp3
-13:Noize Mc/2008 - The Greatest Hits Vol.1/19 - 3П (Правдивая Песня Пиздабола) (скрытый трек).mp3
-14:Noize Mc/2008 - The Greatest Hits Vol.1/20 - Мы Всего Добились Сами (feat. 228) (скрытый трек).mp3
-15:Noize Mc/2009 - OST Розыгрыш/01 - Лето В Столице.mp3
-16:Noize Mc/2009 - OST Розыгрыш/02 - Моё Море.mp3
-17:Noize Mc/2009 - OST Розыгрыш/03 - Утро (Он, а не я).mp3
-18:Noize Mc/2009 - OST Розыгрыш/04 - Выдыхай.mp3
-19:Noize Mc/2009 - OST Розыгрыш/05 - Не Могу Найти.mp3
-20:Noize Mc/2009 - OST Розыгрыш/06 - Это Был Дождь.mp3
-21:Noize Mc/2009 - OST Розыгрыш/07 - Суицид.mp3
-22:Noize Mc/2009 - OST Розыгрыш/08 - Давай Приколемся (feat. Чупак & 228).mp3
-23:Noize Mc/2009 - OST Розыгрыш/09 - Какая Жалость.mp3
-24:Noize Mc/2009 - OST Розыгрыш/10 - У.Е.mp3
-25:Noize Mc/2009 - OST Розыгрыш/11 - Деньги.mp3
-26:Noize Mc/2009 - OST Розыгрыш/12 - Лето В Столице (Maestro A-Sid Jungle RMX).mp3
-27:Noize Mc/2009 - OST Розыгрыш/13 - Моё Море (ЛевПрав Версия).mp3
-28:Noize Mc/2009 - OST Розыгрыш/14 - Выдыхай (ЛевПрав Версия).mp3
-29:Noize Mc/2009 - OST Розыгрыш/15 - Мы Всего Добились Сами (feat. 228) (Maestro A-sid Rmx) (скрытый трек).mp3
-30:Noize Mc/2010 - The Greatest Hits Vol.2/01 - Песня Для Радио (Полная Версия).mp3
-31:Noize Mc/2010 - The Greatest Hits Vol.2/02 - За Закрытой Дверью.mp3
-32:Noize Mc/2010 - The Greatest Hits Vol.2/03 - Из Окна.mp3
-33:Noize Mc/2010 - The Greatest Hits Vol.2/04 - Москва - Не Резиновая.mp3
-34:Noize Mc/2010 - The Greatest Hits Vol.2/05 - Кантемировская.mp3
-35:Noize Mc/2010 - The Greatest Hits Vol.2/06 - Жизнь Без Наркотиков (feat. Маша Макарова).mp3
-36:Noize Mc/2010 - The Greatest Hits Vol.2/07 - На Районе (3 Недели Нету Дудки).mp3
-37:Noize Mc/2010 - The Greatest Hits Vol.2/08 - На Работе (Платят Бабло).mp3
-38:Noize Mc/2010 - The Greatest Hits Vol.2/09 - Кури Бамбук!.mp3
-39:Noize Mc/2010 - The Greatest Hits Vol.2/10 - Палево!.mp3
-40:Noize Mc/2010 - The Greatest Hits Vol.2/11 - Блатняк.mp3
-41:Noize Mc/2010 - The Greatest Hits Vol.2/12 - 5П (Песня Пох_иста Про Получение Пи_дюлей).mp3
-42:Noize Mc/2010 - The Greatest Hits Vol.2/13 - Девочка-Скинхед.mp3
-43:Noize Mc/2010 - The Greatest Hits Vol.2/14 - Наше Движение.mp3
-44:Noize Mc/2010 - The Greatest Hits Vol.2/15 - Капитал (feat. Ляпис Трубецкой).mp3
-45:Noize Mc/2010 - The Greatest Hits Vol.2/16 - Мы Всего Добились Сами (feat. 228).mp3
-46:Noize Mc/2010 - The Greatest Hits Vol.2/17 - Аренби!!!.mp3
-47:Noize Mc/2010 - The Greatest Hits Vol.2/18 - Поднимите Руки.mp3
-48:Noize Mc/2010 - The Greatest Hits Vol.2/19 - Ctrl+Alt+Delete (feat. Staisha).mp3
-49:Noize Mc/2010 - The Greatest Hits Vol.2/20 - Ниже Нуля.mp3
-50:Noize Mc/2010 - The Greatest Hits Vol.2/21 - Моё Море.mp3
-51:Noize Mc/2010 - The Greatest Hits Vol.2/22 - Выдыхай.mp3
-52:Noize Mc/2010 - The Greatest Hits Vol.2/23 - Из Окна (Ска-панк-версия).mp3
-53:Noize Mc/2010 - The Greatest Hits Vol.2/24 - Кто Убил Николая.mp3
-54:Noize Mc/2010 - The Greatest Hits Vol.2/25 - 3П (Правдивая Песня Пи_добола).mp3
-55:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/01 - Тыщатыщ.mp3
-56:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/02 - Устрой Дестрой (feat. Чача).mp3
-57:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/03 - Испортить Вам Пати!.mp3
-58:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/04 - Манки Бизнес.mp3
-59:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/05 - Бабки В Шапку!.mp3
-60:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/06 - Артист (feat. Staisha).mp3
-61:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/07 - Певец И Актриса (feat. Staisha).mp3
-62:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/08 - Бэктон#1.mp3
-63:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/09 - Ты Не Считаешь.mp3
-64:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/10 - Красный Октябрь.mp3
-65:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/11 - Пустые Места.mp3
-66:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/12 - Ругань Из-За Стены.mp3
-67:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/13 - Антенны.mp3
-68:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/14 - Why The Dollar Falls (feat. Раскарандаш).mp3
-69:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/15 - Денежный Дождь (feat. Comme-Il-Faut).mp3
-70:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/16 - Гимн Понаехавших Провинциалов.mp3
-71:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/17 - Мизантроп-Рэп.mp3
-72:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/18 - Жечь Электричество!.mp3
-73:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/19 - На Марсе Классно.mp3
-74:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/20 - Вот И Всё. Ну И Что.mp3
-75:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/21 - Мерседес S666 (скрытый трек).mp3
-76:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/01 - Audiobook Underground Part 1.mp3
-77:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/02 - Audiobook Underground Part 2.mp3
-78:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/03 - Audiobook Underground Part 3.mp3
-79:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/04 - Audiobook Underground Part 4.mp3
-80:Noize Mc/2012 - Новый Альбом/01 - Вьетнам.mp3
-81:Noize Mc/2012 - Новый Альбом/02 - ШлакваШаклассика.mp3
-82:Noize Mc/2012 - Новый Альбом/03 - Я Глуп.mp3
-83:Noize Mc/2012 - Новый Альбом/04 - Эгоизм.mp3
-84:Noize Mc/2012 - Новый Альбом/05 - Вселенная Бесконечна_.mp3
-85:Noize Mc/2012 - Новый Альбом/06 - Жадина.mp3
-86:Noize Mc/2012 - Новый Альбом/07 - Yes Future.mp3
-87:Noize Mc/2012 - Новый Альбом/08 - Сам (feat. RasKar).mp3
-88:Noize Mc/2012 - Новый Альбом/09 - Бассейн.mp3
-89:Noize Mc/2012 - Новый Альбом/10 - Заебались!.mp3
-90:Noize Mc/2012 - Новый Альбом/11 - Похуисты (feat. Anacondaz).mp3
-91:Noize Mc/2012 - Новый Альбом/12 - Болт (feat. Ляпис Трубецкой).mp3
-92:Noize Mc/2012 - Новый Альбом/13 - Мы Хотим Танцевать.mp3
-93:Noize Mc/2012 - Новый Альбом/14 - Школотой.mp3
-94:Noize Mc/2012 - Новый Альбом/15 - Танцi! (feat. Воплi Вiдоплясова & 1Shot).mp3
-95:Noize Mc/2012 - Новый Альбом/16 - Ток (feat. Вахтанг).mp3
-96:Noize Mc/2012 - Новый Альбом/17 - Брынь-брынь-брынь.mp3
-97:Noize Mc/2012 - Новый Альбом/18 - Друг Подруги Телки Брата.mp3
-98:Noize Mc/2012 - Новый Альбом/19 - Пушкинский Рэп.mp3
-99:Noize Mc/2012 - Новый Альбом/20 - Черное_Белое (feat. Subatomic Sound System & Nomadic Wax).mp3
-100:Noize Mc/2012 - Новый Альбом/21 - Эдем 14_88.mp3
-101:Noize Mc/2012 - Новый Альбом/22 - Ф.С.Б. (bonus track).mp3
-102:Noize Mc/2012 - Новый Альбом/23 - Любит Наш Народ! (bonus track).mp3
-103:Noize Mc/2013 - Protivo Gunz/01 - Рок - Это Кал! (feat. Вася Васин).mp3
-104:Noize Mc/2013 - Protivo Gunz/02 - Миша Козырев (feat. Миша Козырев).mp3
-105:Noize Mc/2013 - Protivo Gunz/03 - Накосячу!.mp3
-106:Noize Mc/2013 - Protivo Gunz/04 - Заговор.mp3
-107:Noize Mc/2013 - Protivo Gunz/05 - Бритни Спирс.mp3
-108:Noize Mc/2013 - Protivo Gunz/06 - Калифорния (with Кислый, Макс & Пашок).mp3
-109:Noize Mc/2013 - Protivo Gunz/07 - С&Г (Live @ «Б2»).mp3
-110:Noize Mc/2013 - Protivo Gunz/08 - Общага.mp3
-111:Noize Mc/2013 - Protivo Gunz/09 - Честное Слово!.mp3
-112:Noize Mc/2013 - Protivo Gunz/10 - Она Уходит (Rыchigy Mashыn cover) (with Кислый, Макс & Пашок).mp3
-113:Noize Mc/2013 - Protivo Gunz/11 - Жирная Корова.mp3
-114:Noize Mc/2013 - Protivo Gunz/12 - У Моей Девчонки.mp3
-115:Noize Mc/2013 - Protivo Gunz/13 - Под Белым Флагом.mp3
-116:Noize Mc/2013 - Protivo Gunz/14 - Тонкий Лёд.mp3
-117:Noize Mc/2013 - Protivo Gunz/15 - Жвачка (feat. Mewark).mp3
-118:Noize Mc/2013 - Protivo Gunz/16 - Нету Паспорта (feat. Давид Казарян).mp3
-119:Noize Mc/2013 - Protivo Gunz/17 - Х__вая Песня (bonus track).mp3
-120:Noize Mc/2013 - Protivo Gunz/18 - Фиолетовый фингал (скрытый трек).mp3
-121:Noize Mc/2013 - Protivo Gunz/19 - Их мнений (скрытый трек).mp3
-122:Noize Mc/2008 - The Greatest Hits Vol.1/01 - Песня Для Радио.mp3
-123:Noize Mc/2008 - The Greatest Hits Vol.1/02 - За Закрытой Дверью.mp3
-124:Noize Mc/2008 - The Greatest Hits Vol.1/03 - Из Окна.mp3
-125:Noize Mc/2008 - The Greatest Hits Vol.1/04 - Москва - Не Резиновая.mp3
-126:Noize Mc/2008 - The Greatest Hits Vol.1/05 - Кантемировская.mp3
-127:Noize Mc/2008 - The Greatest Hits Vol.1/06 - Жизнь Без Наркотиков (feat. Маша Макарова).mp3
-128:Noize Mc/2008 - The Greatest Hits Vol.1/07 - На Районе (3 Недели Нету Плана).mp3
-129:Noize Mc/2008 - The Greatest Hits Vol.1/08 - На Работе (Платят Бабло).mp3
-130:Noize Mc/2008 - The Greatest Hits Vol.1/09 - Кури Бамбук!.mp3
-131:Noize Mc/2008 - The Greatest Hits Vol.1/10 - Палево!.mp3
-132:Noize Mc/2008 - The Greatest Hits Vol.1/11 - Блатняк.mp3
-133:Noize Mc/2008 - The Greatest Hits Vol.1/12 - 5П (Песня Похуиста Про Получение Пиздюлей).mp3
-134:Noize Mc/2008 - The Greatest Hits Vol.1/13 - Девочка-Скинхед.mp3
-135:Noize Mc/2008 - The Greatest Hits Vol.1/14 - Наше Движение.mp3
-136:Noize Mc/2008 - The Greatest Hits Vol.1/15 - Аренби!!!.mp3
-137:Noize Mc/2008 - The Greatest Hits Vol.1/16 - Поднимите Руки.mp3
-138:Noize Mc/2008 - The Greatest Hits Vol.1/17 - Моё Море.mp3
-139:Noize Mc/2008 - The Greatest Hits Vol.1/18 - Выдыхай.mp3
-140:Noize Mc/2008 - The Greatest Hits Vol.1/19 - 3П (Правдивая Песня Пиздабола) (скрытый трек).mp3
-141:Noize Mc/2008 - The Greatest Hits Vol.1/20 - Мы Всего Добились Сами (feat. 228) (скрытый трек).mp3
-142:Noize Mc/2009 - OST Розыгрыш/01 - Лето В Столице.mp3
-143:Noize Mc/2009 - OST Розыгрыш/02 - Моё Море.mp3
-144:Noize Mc/2009 - OST Розыгрыш/03 - Утро (Он, а не я).mp3
-145:Noize Mc/2009 - OST Розыгрыш/04 - Выдыхай.mp3
-146:Noize Mc/2009 - OST Розыгрыш/05 - Не Могу Найти.mp3
-147:Noize Mc/2009 - OST Розыгрыш/06 - Это Был Дождь.mp3
-148:Noize Mc/2009 - OST Розыгрыш/07 - Суицид.mp3
-149:Noize Mc/2009 - OST Розыгрыш/08 - Давай Приколемся (feat. Чупак & 228).mp3
-150:Noize Mc/2009 - OST Розыгрыш/09 - Какая Жалость.mp3
-151:Noize Mc/2009 - OST Розыгрыш/10 - У.Е.mp3
-152:Noize Mc/2009 - OST Розыгрыш/11 - Деньги.mp3
-153:Noize Mc/2009 - OST Розыгрыш/12 - Лето В Столице (Maestro A-Sid Jungle RMX).mp3
-154:Noize Mc/2009 - OST Розыгрыш/13 - Моё Море (ЛевПрав Версия).mp3
-155:Noize Mc/2009 - OST Розыгрыш/14 - Выдыхай (ЛевПрав Версия).mp3
-156:Noize Mc/2009 - OST Розыгрыш/15 - Мы Всего Добились Сами (feat. 228) (Maestro A-sid Rmx) (скрытый трек).mp3
-157:Noize Mc/2010 - The Greatest Hits Vol.2/01 - Песня Для Радио (Полная Версия).mp3
-158:Noize Mc/2010 - The Greatest Hits Vol.2/02 - За Закрытой Дверью.mp3
-159:Noize Mc/2010 - The Greatest Hits Vol.2/03 - Из Окна.mp3
-160:Noize Mc/2010 - The Greatest Hits Vol.2/04 - Москва - Не Резиновая.mp3
-161:Noize Mc/2010 - The Greatest Hits Vol.2/05 - Кантемировская.mp3
-162:Noize Mc/2010 - The Greatest Hits Vol.2/06 - Жизнь Без Наркотиков (feat. Маша Макарова).mp3
-163:Noize Mc/2010 - The Greatest Hits Vol.2/07 - На Районе (3 Недели Нету Дудки).mp3
-164:Noize Mc/2010 - The Greatest Hits Vol.2/08 - На Работе (Платят Бабло).mp3
-165:Noize Mc/2010 - The Greatest Hits Vol.2/09 - Кури Бамбук!.mp3
-166:Noize Mc/2010 - The Greatest Hits Vol.2/10 - Палево!.mp3
-167:Noize Mc/2010 - The Greatest Hits Vol.2/11 - Блатняк.mp3
-168:Noize Mc/2010 - The Greatest Hits Vol.2/12 - 5П (Песня Пох_иста Про Получение Пи_дюлей).mp3
-169:Noize Mc/2010 - The Greatest Hits Vol.2/13 - Девочка-Скинхед.mp3
-170:Noize Mc/2010 - The Greatest Hits Vol.2/14 - Наше Движение.mp3
-171:Noize Mc/2010 - The Greatest Hits Vol.2/15 - Капитал (feat. Ляпис Трубецкой).mp3
-172:Noize Mc/2010 - The Greatest Hits Vol.2/16 - Мы Всего Добились Сами (feat. 228).mp3
-173:Noize Mc/2010 - The Greatest Hits Vol.2/17 - Аренби!!!.mp3
-174:Noize Mc/2010 - The Greatest Hits Vol.2/18 - Поднимите Руки.mp3
-175:Noize Mc/2010 - The Greatest Hits Vol.2/19 - Ctrl+Alt+Delete (feat. Staisha).mp3
-176:Noize Mc/2010 - The Greatest Hits Vol.2/20 - Ниже Нуля.mp3
-177:Noize Mc/2010 - The Greatest Hits Vol.2/21 - Моё Море.mp3
-178:Noize Mc/2010 - The Greatest Hits Vol.2/22 - Выдыхай.mp3
-179:Noize Mc/2010 - The Greatest Hits Vol.2/23 - Из Окна (Ска-панк-версия).mp3
-180:Noize Mc/2010 - The Greatest Hits Vol.2/24 - Кто Убил Николая.mp3
-181:Noize Mc/2010 - The Greatest Hits Vol.2/25 - 3П (Правдивая Песня Пи_добола).mp3
-182:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/01 - Тыщатыщ.mp3
-183:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/02 - Устрой Дестрой (feat. Чача).mp3
-184:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/03 - Испортить Вам Пати!.mp3
-185:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/04 - Манки Бизнес.mp3
-186:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/05 - Бабки В Шапку!.mp3
-187:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/06 - Артист (feat. Staisha).mp3
-188:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/07 - Певец И Актриса (feat. Staisha).mp3
-189:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/08 - Бэктон#1.mp3
-190:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/09 - Ты Не Считаешь.mp3
-191:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/10 - Красный Октябрь.mp3
-192:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/11 - Пустые Места.mp3
-193:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/12 - Ругань Из-За Стены.mp3
-194:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/13 - Антенны.mp3
-195:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/14 - Why The Dollar Falls (feat. Раскарандаш).mp3
-196:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/15 - Денежный Дождь (feat. Comme-Il-Faut).mp3
-197:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/16 - Гимн Понаехавших Провинциалов.mp3
-198:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/17 - Мизантроп-Рэп.mp3
-199:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/18 - Жечь Электричество!.mp3
-200:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/19 - На Марсе Классно.mp3
-201:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/20 - Вот И Всё. Ну И Что.mp3
-202:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/21 - Мерседес S666 (скрытый трек).mp3
-203:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/01 - Audiobook Underground Part 1.mp3
-204:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/02 - Audiobook Underground Part 2.mp3
-205:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/03 - Audiobook Underground Part 3.mp3
-206:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/04 - Audiobook Underground Part 4.mp3
-207:Noize Mc/2012 - Новый Альбом/01 - Вьетнам.mp3
-208:Noize Mc/2012 - Новый Альбом/02 - ШлакваШаклассика.mp3
-209:Noize Mc/2012 - Новый Альбом/03 - Я Глуп.mp3
-210:Noize Mc/2012 - Новый Альбом/04 - Эгоизм.mp3
-211:Noize Mc/2012 - Новый Альбом/05 - Вселенная Бесконечна_.mp3
-212:Noize Mc/2012 - Новый Альбом/06 - Жадина.mp3
-213:Noize Mc/2012 - Новый Альбом/07 - Yes Future.mp3
-214:Noize Mc/2012 - Новый Альбом/08 - Сам (feat. RasKar).mp3
-215:Noize Mc/2012 - Новый Альбом/09 - Бассейн.mp3
-216:Noize Mc/2012 - Новый Альбом/10 - Заебались!.mp3
-217:Noize Mc/2012 - Новый Альбом/11 - Похуисты (feat. Anacondaz).mp3
-218:Noize Mc/2012 - Новый Альбом/12 - Болт (feat. Ляпис Трубецкой).mp3
-219:Noize Mc/2012 - Новый Альбом/13 - Мы Хотим Танцевать.mp3
-220:Noize Mc/2012 - Новый Альбом/14 - Школотой.mp3
-221:Noize Mc/2012 - Новый Альбом/15 - Танцi! (feat. Воплi Вiдоплясова & 1Shot).mp3
-222:Noize Mc/2012 - Новый Альбом/16 - Ток (feat. Вахтанг).mp3
-223:Noize Mc/2012 - Новый Альбом/17 - Брынь-брынь-брынь.mp3
-224:Noize Mc/2012 - Новый Альбом/18 - Друг Подруги Телки Брата.mp3
-225:Noize Mc/2012 - Новый Альбом/19 - Пушкинский Рэп.mp3
-226:Noize Mc/2012 - Новый Альбом/20 - Черное_Белое (feat. Subatomic Sound System & Nomadic Wax).mp3
-227:Noize Mc/2012 - Новый Альбом/21 - Эдем 14_88.mp3
-228:Noize Mc/2012 - Новый Альбом/22 - Ф.С.Б. (bonus track).mp3
-229:Noize Mc/2012 - Новый Альбом/23 - Любит Наш Народ! (bonus track).mp3
-230:Noize Mc/2013 - Protivo Gunz/01 - Рок - Это Кал! (feat. Вася Васин).mp3
-231:Noize Mc/2013 - Protivo Gunz/02 - Миша Козырев (feat. Миша Козырев).mp3
-232:Noize Mc/2013 - Protivo Gunz/03 - Накосячу!.mp3
-233:Noize Mc/2013 - Protivo Gunz/04 - Заговор.mp3
-234:Noize Mc/2013 - Protivo Gunz/05 - Бритни Спирс.mp3
-235:Noize Mc/2013 - Protivo Gunz/06 - Калифорния (with Кислый, Макс & Пашок).mp3
-236:Noize Mc/2013 - Protivo Gunz/07 - С&Г (Live @ «Б2»).mp3
-237:Noize Mc/2013 - Protivo Gunz/08 - Общага.mp3
-238:Noize Mc/2013 - Protivo Gunz/09 - Честное Слово!.mp3
-239:Noize Mc/2013 - Protivo Gunz/10 - Она Уходит (Rыchigy Mashыn cover) (with Кислый, Макс & Пашок).mp3
-240:Noize Mc/2013 - Protivo Gunz/11 - Жирная Корова.mp3
-241:Noize Mc/2013 - Protivo Gunz/12 - У Моей Девчонки.mp3
-242:Noize Mc/2013 - Protivo Gunz/13 - Под Белым Флагом.mp3
-243:Noize Mc/2013 - Protivo Gunz/14 - Тонкий Лёд.mp3
-244:Noize Mc/2013 - Protivo Gunz/15 - Жвачка (feat. Mewark).mp3
-245:Noize Mc/2013 - Protivo Gunz/16 - Нету Паспорта (feat. Давид Казарян).mp3
-246:Noize Mc/2013 - Protivo Gunz/17 - Х__вая Песня (bonus track).mp3
-247:Noize Mc/2013 - Protivo Gunz/18 - Фиолетовый фингал (скрытый трек).mp3
-248:Noize Mc/2013 - Protivo Gunz/19 - Их мнений (скрытый трек).mp3
-249:Noize Mc/2008 - The Greatest Hits Vol.1/01 - Песня Для Радио.mp3
-250:Noize Mc/2008 - The Greatest Hits Vol.1/02 - За Закрытой Дверью.mp3
-251:Noize Mc/2008 - The Greatest Hits Vol.1/03 - Из Окна.mp3
-252:Noize Mc/2008 - The Greatest Hits Vol.1/04 - Москва - Не Резиновая.mp3
-253:Noize Mc/2008 - The Greatest Hits Vol.1/05 - Кантемировская.mp3
-254:Noize Mc/2008 - The Greatest Hits Vol.1/06 - Жизнь Без Наркотиков (feat. Маша Макарова).mp3
-255:Noize Mc/2008 - The Greatest Hits Vol.1/07 - На Районе (3 Недели Нету Плана).mp3
-256:Noize Mc/2008 - The Greatest Hits Vol.1/08 - На Работе (Платят Бабло).mp3
-257:Noize Mc/2008 - The Greatest Hits Vol.1/09 - Кури Бамбук!.mp3
-258:Noize Mc/2008 - The Greatest Hits Vol.1/10 - Палево!.mp3
-259:Noize Mc/2008 - The Greatest Hits Vol.1/11 - Блатняк.mp3
-260:Noize Mc/2008 - The Greatest Hits Vol.1/12 - 5П (Песня Похуиста Про Получение Пиздюлей).mp3
-261:Noize Mc/2008 - The Greatest Hits Vol.1/13 - Девочка-Скинхед.mp3
-262:Noize Mc/2008 - The Greatest Hits Vol.1/14 - Наше Движение.mp3
-263:Noize Mc/2008 - The Greatest Hits Vol.1/15 - Аренби!!!.mp3
-264:Noize Mc/2008 - The Greatest Hits Vol.1/16 - Поднимите Руки.mp3
-265:Noize Mc/2008 - The Greatest Hits Vol.1/17 - Моё Море.mp3
-266:Noize Mc/2008 - The Greatest Hits Vol.1/18 - Выдыхай.mp3
-267:Noize Mc/2008 - The Greatest Hits Vol.1/19 - 3П (Правдивая Песня Пиздабола) (скрытый трек).mp3
-268:Noize Mc/2008 - The Greatest Hits Vol.1/20 - Мы Всего Добились Сами (feat. 228) (скрытый трек).mp3
-269:Noize Mc/2009 - OST Розыгрыш/01 - Лето В Столице.mp3
-270:Noize Mc/2009 - OST Розыгрыш/02 - Моё Море.mp3
-271:Noize Mc/2009 - OST Розыгрыш/03 - Утро (Он, а не я).mp3
-272:Noize Mc/2009 - OST Розыгрыш/04 - Выдыхай.mp3
-273:Noize Mc/2009 - OST Розыгрыш/05 - Не Могу Найти.mp3
-274:Noize Mc/2009 - OST Розыгрыш/06 - Это Был Дождь.mp3
-275:Noize Mc/2009 - OST Розыгрыш/07 - Суицид.mp3
-276:Noize Mc/2009 - OST Розыгрыш/08 - Давай Приколемся (feat. Чупак & 228).mp3
-277:Noize Mc/2009 - OST Розыгрыш/09 - Какая Жалость.mp3
-278:Noize Mc/2009 - OST Розыгрыш/10 - У.Е.mp3
-279:Noize Mc/2009 - OST Розыгрыш/11 - Деньги.mp3
-280:Noize Mc/2009 - OST Розыгрыш/12 - Лето В Столице (Maestro A-Sid Jungle RMX).mp3
-281:Noize Mc/2009 - OST Розыгрыш/13 - Моё Море (ЛевПрав Версия).mp3
-282:Noize Mc/2009 - OST Розыгрыш/14 - Выдыхай (ЛевПрав Версия).mp3
-283:Noize Mc/2009 - OST Розыгрыш/15 - Мы Всего Добились Сами (feat. 228) (Maestro A-sid Rmx) (скрытый трек).mp3
-284:Noize Mc/2010 - The Greatest Hits Vol.2/01 - Песня Для Радио (Полная Версия).mp3
-285:Noize Mc/2010 - The Greatest Hits Vol.2/02 - За Закрытой Дверью.mp3
-286:Noize Mc/2010 - The Greatest Hits Vol.2/03 - Из Окна.mp3
-287:Noize Mc/2010 - The Greatest Hits Vol.2/04 - Москва - Не Резиновая.mp3
-288:Noize Mc/2010 - The Greatest Hits Vol.2/05 - Кантемировская.mp3
-289:Noize Mc/2010 - The Greatest Hits Vol.2/06 - Жизнь Без Наркотиков (feat. Маша Макарова).mp3
-290:Noize Mc/2010 - The Greatest Hits Vol.2/07 - На Районе (3 Недели Нету Дудки).mp3
-291:Noize Mc/2010 - The Greatest Hits Vol.2/08 - На Работе (Платят Бабло).mp3
-292:Noize Mc/2010 - The Greatest Hits Vol.2/09 - Кури Бамбук!.mp3
-293:Noize Mc/2010 - The Greatest Hits Vol.2/10 - Палево!.mp3
-294:Noize Mc/2010 - The Greatest Hits Vol.2/11 - Блатняк.mp3
-295:Noize Mc/2010 - The Greatest Hits Vol.2/12 - 5П (Песня Пох_иста Про Получение Пи_дюлей).mp3
-296:Noize Mc/2010 - The Greatest Hits Vol.2/13 - Девочка-Скинхед.mp3
-297:Noize Mc/2010 - The Greatest Hits Vol.2/14 - Наше Движение.mp3
-298:Noize Mc/2010 - The Greatest Hits Vol.2/15 - Капитал (feat. Ляпис Трубецкой).mp3
-299:Noize Mc/2010 - The Greatest Hits Vol.2/16 - Мы Всего Добились Сами (feat. 228).mp3
-300:Noize Mc/2010 - The Greatest Hits Vol.2/17 - Аренби!!!.mp3
-301:Noize Mc/2010 - The Greatest Hits Vol.2/18 - Поднимите Руки.mp3
-302:Noize Mc/2010 - The Greatest Hits Vol.2/19 - Ctrl+Alt+Delete (feat. Staisha).mp3
-303:Noize Mc/2010 - The Greatest Hits Vol.2/20 - Ниже Нуля.mp3
-304:Noize Mc/2010 - The Greatest Hits Vol.2/21 - Моё Море.mp3
-305:Noize Mc/2010 - The Greatest Hits Vol.2/22 - Выдыхай.mp3
-306:Noize Mc/2010 - The Greatest Hits Vol.2/23 - Из Окна (Ска-панк-версия).mp3
-307:Noize Mc/2010 - The Greatest Hits Vol.2/24 - Кто Убил Николая.mp3
-308:Noize Mc/2010 - The Greatest Hits Vol.2/25 - 3П (Правдивая Песня Пи_добола).mp3
-309:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/01 - Тыщатыщ.mp3
-310:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/02 - Устрой Дестрой (feat. Чача).mp3
-311:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/03 - Испортить Вам Пати!.mp3
-312:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/04 - Манки Бизнес.mp3
-313:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/05 - Бабки В Шапку!.mp3
-314:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/06 - Артист (feat. Staisha).mp3
-315:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/07 - Певец И Актриса (feat. Staisha).mp3
-316:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/08 - Бэктон#1.mp3
-317:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/09 - Ты Не Считаешь.mp3
-318:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/10 - Красный Октябрь.mp3
-319:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/11 - Пустые Места.mp3
-320:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/12 - Ругань Из-За Стены.mp3
-321:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/13 - Антенны.mp3
-322:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/14 - Why The Dollar Falls (feat. Раскарандаш).mp3
-323:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/15 - Денежный Дождь (feat. Comme-Il-Faut).mp3
-324:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/16 - Гимн Понаехавших Провинциалов.mp3
-325:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/17 - Мизантроп-Рэп.mp3
-326:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/18 - Жечь Электричество!.mp3
-327:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/19 - На Марсе Классно.mp3
-328:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/20 - Вот И Всё. Ну И Что.mp3
-329:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/21 - Мерседес S666 (скрытый трек).mp3
-330:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/01 - Audiobook Underground Part 1.mp3
-331:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/02 - Audiobook Underground Part 2.mp3
-332:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/03 - Audiobook Underground Part 3.mp3
-333:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/04 - Audiobook Underground Part 4.mp3
-334:Noize Mc/2012 - Новый Альбом/01 - Вьетнам.mp3
-335:Noize Mc/2012 - Новый Альбом/02 - ШлакваШаклассика.mp3
-336:Noize Mc/2012 - Новый Альбом/03 - Я Глуп.mp3
-337:Noize Mc/2012 - Новый Альбом/04 - Эгоизм.mp3
-338:Noize Mc/2012 - Новый Альбом/05 - Вселенная Бесконечна_.mp3
-339:Noize Mc/2012 - Новый Альбом/06 - Жадина.mp3
-340:Noize Mc/2012 - Новый Альбом/07 - Yes Future.mp3
-341:Noize Mc/2012 - Новый Альбом/08 - Сам (feat. RasKar).mp3
-342:Noize Mc/2012 - Новый Альбом/09 - Бассейн.mp3
-343:Noize Mc/2012 - Новый Альбом/10 - Заебались!.mp3
-344:Noize Mc/2012 - Новый Альбом/11 - Похуисты (feat. Anacondaz).mp3
-345:Noize Mc/2012 - Новый Альбом/12 - Болт (feat. Ляпис Трубецкой).mp3
-346:Noize Mc/2012 - Новый Альбом/13 - Мы Хотим Танцевать.mp3
-347:Noize Mc/2012 - Новый Альбом/14 - Школотой.mp3
-348:Noize Mc/2012 - Новый Альбом/15 - Танцi! (feat. Воплi Вiдоплясова & 1Shot).mp3
-349:Noize Mc/2012 - Новый Альбом/16 - Ток (feat. Вахтанг).mp3
-350:Noize Mc/2012 - Новый Альбом/17 - Брынь-брынь-брынь.mp3
-351:Noize Mc/2012 - Новый Альбом/18 - Друг Подруги Телки Брата.mp3
-352:Noize Mc/2012 - Новый Альбом/19 - Пушкинский Рэп.mp3
-353:Noize Mc/2012 - Новый Альбом/20 - Черное_Белое (feat. Subatomic Sound System & Nomadic Wax).mp3
-354:Noize Mc/2012 - Новый Альбом/21 - Эдем 14_88.mp3
-355:Noize Mc/2012 - Новый Альбом/22 - Ф.С.Б. (bonus track).mp3
-356:Noize Mc/2012 - Новый Альбом/23 - Любит Наш Народ! (bonus track).mp3
-357:Noize Mc/2013 - Protivo Gunz/01 - Рок - Это Кал! (feat. Вася Васин).mp3
-358:Noize Mc/2013 - Protivo Gunz/02 - Миша Козырев (feat. Миша Козырев).mp3
-359:Noize Mc/2013 - Protivo Gunz/03 - Накосячу!.mp3
-360:Noize Mc/2013 - Protivo Gunz/04 - Заговор.mp3
-361:Noize Mc/2013 - Protivo Gunz/05 - Бритни Спирс.mp3
-362:Noize Mc/2013 - Protivo Gunz/06 - Калифорния (with Кислый, Макс & Пашок).mp3
-363:Noize Mc/2013 - Protivo Gunz/07 - С&Г (Live @ «Б2»).mp3
-364:Noize Mc/2013 - Protivo Gunz/08 - Общага.mp3
-365:Noize Mc/2013 - Protivo Gunz/09 - Честное Слово!.mp3
-366:Noize Mc/2013 - Protivo Gunz/10 - Она Уходит (Rыchigy Mashыn cover) (with Кислый, Макс & Пашок).mp3
-367:Noize Mc/2013 - Protivo Gunz/11 - Жирная Корова.mp3
-368:Noize Mc/2013 - Protivo Gunz/12 - У Моей Девчонки.mp3
-369:Noize Mc/2013 - Protivo Gunz/13 - Под Белым Флагом.mp3
-370:Noize Mc/2013 - Protivo Gunz/14 - Тонкий Лёд.mp3
-371:Noize Mc/2013 - Protivo Gunz/15 - Жвачка (feat. Mewark).mp3
-372:Noize Mc/2013 - Protivo Gunz/16 - Нету Паспорта (feat. Давид Казарян).mp3
-373:Noize Mc/2013 - Protivo Gunz/17 - Х__вая Песня (bonus track).mp3
-374:Noize Mc/2013 - Protivo Gunz/18 - Фиолетовый фингал (скрытый трек).mp3
-375:Noize Mc/2013 - Protivo Gunz/19 - Их мнений (скрытый трек).mp3
-376:Noize Mc/2008 - The Greatest Hits Vol.1/01 - Песня Для Радио.mp3
-377:Noize Mc/2008 - The Greatest Hits Vol.1/02 - За Закрытой Дверью.mp3
-378:Noize Mc/2008 - The Greatest Hits Vol.1/03 - Из Окна.mp3
-379:Noize Mc/2008 - The Greatest Hits Vol.1/04 - Москва - Не Резиновая.mp3
-380:Noize Mc/2008 - The Greatest Hits Vol.1/05 - Кантемировская.mp3
-381:Noize Mc/2008 - The Greatest Hits Vol.1/06 - Жизнь Без Наркотиков (feat. Маша Макарова).mp3
-382:Noize Mc/2008 - The Greatest Hits Vol.1/07 - На Районе (3 Недели Нету Плана).mp3
-383:Noize Mc/2008 - The Greatest Hits Vol.1/08 - На Работе (Платят Бабло).mp3
-384:Noize Mc/2008 - The Greatest Hits Vol.1/09 - Кури Бамбук!.mp3
-385:Noize Mc/2008 - The Greatest Hits Vol.1/10 - Палево!.mp3
-386:Noize Mc/2008 - The Greatest Hits Vol.1/11 - Блатняк.mp3
-387:Noize Mc/2008 - The Greatest Hits Vol.1/12 - 5П (Песня Похуиста Про Получение Пиздюлей).mp3
-388:Noize Mc/2008 - The Greatest Hits Vol.1/13 - Девочка-Скинхед.mp3
-389:Noize Mc/2008 - The Greatest Hits Vol.1/14 - Наше Движение.mp3
-390:Noize Mc/2008 - The Greatest Hits Vol.1/15 - Аренби!!!.mp3
-391:Noize Mc/2008 - The Greatest Hits Vol.1/16 - Поднимите Руки.mp3
-392:Noize Mc/2008 - The Greatest Hits Vol.1/17 - Моё Море.mp3
-393:Noize Mc/2008 - The Greatest Hits Vol.1/18 - Выдыхай.mp3
-394:Noize Mc/2008 - The Greatest Hits Vol.1/19 - 3П (Правдивая Песня Пиздабола) (скрытый трек).mp3
-395:Noize Mc/2008 - The Greatest Hits Vol.1/20 - Мы Всего Добились Сами (feat. 228) (скрытый трек).mp3
-396:Noize Mc/2009 - OST Розыгрыш/01 - Лето В Столице.mp3
-397:Noize Mc/2009 - OST Розыгрыш/02 - Моё Море.mp3
-398:Noize Mc/2009 - OST Розыгрыш/03 - Утро (Он, а не я).mp3
-399:Noize Mc/2009 - OST Розыгрыш/04 - Выдыхай.mp3
-400:Noize Mc/2009 - OST Розыгрыш/05 - Не Могу Найти.mp3
-401:Noize Mc/2009 - OST Розыгрыш/06 - Это Был Дождь.mp3
-402:Noize Mc/2009 - OST Розыгрыш/07 - Суицид.mp3
-403:Noize Mc/2009 - OST Розыгрыш/08 - Давай Приколемся (feat. Чупак & 228).mp3
-404:Noize Mc/2009 - OST Розыгрыш/09 - Какая Жалость.mp3
-405:Noize Mc/2009 - OST Розыгрыш/10 - У.Е.mp3
-406:Noize Mc/2009 - OST Розыгрыш/11 - Деньги.mp3
-407:Noize Mc/2009 - OST Розыгрыш/12 - Лето В Столице (Maestro A-Sid Jungle RMX).mp3
-408:Noize Mc/2009 - OST Розыгрыш/13 - Моё Море (ЛевПрав Версия).mp3
-409:Noize Mc/2009 - OST Розыгрыш/14 - Выдыхай (ЛевПрав Версия).mp3
-410:Noize Mc/2009 - OST Розыгрыш/15 - Мы Всего Добились Сами (feat. 228) (Maestro A-sid Rmx) (скрытый трек).mp3
-411:Noize Mc/2010 - The Greatest Hits Vol.2/01 - Песня Для Радио (Полная Версия).mp3
-412:Noize Mc/2010 - The Greatest Hits Vol.2/02 - За Закрытой Дверью.mp3
-413:Noize Mc/2010 - The Greatest Hits Vol.2/03 - Из Окна.mp3
-414:Noize Mc/2010 - The Greatest Hits Vol.2/04 - Москва - Не Резиновая.mp3
-415:Noize Mc/2010 - The Greatest Hits Vol.2/05 - Кантемировская.mp3
-416:Noize Mc/2010 - The Greatest Hits Vol.2/06 - Жизнь Без Наркотиков (feat. Маша Макарова).mp3
-417:Noize Mc/2010 - The Greatest Hits Vol.2/07 - На Районе (3 Недели Нету Дудки).mp3
-418:Noize Mc/2010 - The Greatest Hits Vol.2/08 - На Работе (Платят Бабло).mp3
-419:Noize Mc/2010 - The Greatest Hits Vol.2/09 - Кури Бамбук!.mp3
-420:Noize Mc/2010 - The Greatest Hits Vol.2/10 - Палево!.mp3
-421:Noize Mc/2010 - The Greatest Hits Vol.2/11 - Блатняк.mp3
-422:Noize Mc/2010 - The Greatest Hits Vol.2/12 - 5П (Песня Пох_иста Про Получение Пи_дюлей).mp3
-423:Noize Mc/2010 - The Greatest Hits Vol.2/13 - Девочка-Скинхед.mp3
-424:Noize Mc/2010 - The Greatest Hits Vol.2/14 - Наше Движение.mp3
-425:Noize Mc/2010 - The Greatest Hits Vol.2/15 - Капитал (feat. Ляпис Трубецкой).mp3
-426:Noize Mc/2010 - The Greatest Hits Vol.2/16 - Мы Всего Добились Сами (feat. 228).mp3
-427:Noize Mc/2010 - The Greatest Hits Vol.2/17 - Аренби!!!.mp3
-428:Noize Mc/2010 - The Greatest Hits Vol.2/18 - Поднимите Руки.mp3
-429:Noize Mc/2010 - The Greatest Hits Vol.2/19 - Ctrl+Alt+Delete (feat. Staisha).mp3
-430:Noize Mc/2010 - The Greatest Hits Vol.2/20 - Ниже Нуля.mp3
-431:Noize Mc/2010 - The Greatest Hits Vol.2/21 - Моё Море.mp3
-432:Noize Mc/2010 - The Greatest Hits Vol.2/22 - Выдыхай.mp3
-433:Noize Mc/2010 - The Greatest Hits Vol.2/23 - Из Окна (Ска-панк-версия).mp3
-434:Noize Mc/2010 - The Greatest Hits Vol.2/24 - Кто Убил Николая.mp3
-435:Noize Mc/2010 - The Greatest Hits Vol.2/25 - 3П (Правдивая Песня Пи_добола).mp3
-436:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/01 - Тыщатыщ.mp3
-437:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/02 - Устрой Дестрой (feat. Чача).mp3
-438:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/03 - Испортить Вам Пати!.mp3
-439:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/04 - Манки Бизнес.mp3
-440:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/05 - Бабки В Шапку!.mp3
-441:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/06 - Артист (feat. Staisha).mp3
-442:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/07 - Певец И Актриса (feat. Staisha).mp3
-443:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/08 - Бэктон#1.mp3
-444:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/09 - Ты Не Считаешь.mp3
-445:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/10 - Красный Октябрь.mp3
-446:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/11 - Пустые Места.mp3
-447:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/12 - Ругань Из-За Стены.mp3
-448:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/13 - Антенны.mp3
-449:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/14 - Why The Dollar Falls (feat. Раскарандаш).mp3
-450:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/15 - Денежный Дождь (feat. Comme-Il-Faut).mp3
-451:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/16 - Гимн Понаехавших Провинциалов.mp3
-452:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/17 - Мизантроп-Рэп.mp3
-453:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/18 - Жечь Электричество!.mp3
-454:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/19 - На Марсе Классно.mp3
-455:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/20 - Вот И Всё. Ну И Что.mp3
-456:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/21 - Мерседес S666 (скрытый трек).mp3
-457:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/01 - Audiobook Underground Part 1.mp3
-458:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/02 - Audiobook Underground Part 2.mp3
-459:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/03 - Audiobook Underground Part 3.mp3
-460:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/04 - Audiobook Underground Part 4.mp3
-461:Noize Mc/2012 - Новый Альбом/01 - Вьетнам.mp3
-462:Noize Mc/2012 - Новый Альбом/02 - ШлакваШаклассика.mp3
-463:Noize Mc/2012 - Новый Альбом/03 - Я Глуп.mp3
-464:Noize Mc/2012 - Новый Альбом/04 - Эгоизм.mp3
-465:Noize Mc/2012 - Новый Альбом/05 - Вселенная Бесконечна_.mp3
-466:Noize Mc/2012 - Новый Альбом/06 - Жадина.mp3
-467:Noize Mc/2012 - Новый Альбом/07 - Yes Future.mp3
-468:Noize Mc/2012 - Новый Альбом/08 - Сам (feat. RasKar).mp3
-469:Noize Mc/2012 - Новый Альбом/09 - Бассейн.mp3
-470:Noize Mc/2012 - Новый Альбом/10 - Заебались!.mp3
-471:Noize Mc/2012 - Новый Альбом/11 - Похуисты (feat. Anacondaz).mp3
-472:Noize Mc/2012 - Новый Альбом/12 - Болт (feat. Ляпис Трубецкой).mp3
-473:Noize Mc/2012 - Новый Альбом/13 - Мы Хотим Танцевать.mp3
-474:Noize Mc/2012 - Новый Альбом/14 - Школотой.mp3
-475:Noize Mc/2012 - Новый Альбом/15 - Танцi! (feat. Воплi Вiдоплясова & 1Shot).mp3
-476:Noize Mc/2012 - Новый Альбом/16 - Ток (feat. Вахтанг).mp3
-477:Noize Mc/2012 - Новый Альбом/17 - Брынь-брынь-брынь.mp3
-478:Noize Mc/2012 - Новый Альбом/18 - Друг Подруги Телки Брата.mp3
-479:Noize Mc/2012 - Новый Альбом/19 - Пушкинский Рэп.mp3
-480:Noize Mc/2012 - Новый Альбом/20 - Черное_Белое (feat. Subatomic Sound System & Nomadic Wax).mp3
-481:Noize Mc/2012 - Новый Альбом/21 - Эдем 14_88.mp3
-482:Noize Mc/2012 - Новый Альбом/22 - Ф.С.Б. (bonus track).mp3
-483:Noize Mc/2012 - Новый Альбом/23 - Любит Наш Народ! (bonus track).mp3
-484:Noize Mc/2013 - Protivo Gunz/01 - Рок - Это Кал! (feat. Вася Васин).mp3
-485:Noize Mc/2013 - Protivo Gunz/02 - Миша Козырев (feat. Миша Козырев).mp3
-486:Noize Mc/2013 - Protivo Gunz/03 - Накосячу!.mp3
-487:Noize Mc/2013 - Protivo Gunz/04 - Заговор.mp3
-488:Noize Mc/2013 - Protivo Gunz/05 - Бритни Спирс.mp3
-489:Noize Mc/2013 - Protivo Gunz/06 - Калифорния (with Кислый, Макс & Пашок).mp3
-490:Noize Mc/2013 - Protivo Gunz/07 - С&Г (Live @ «Б2»).mp3
-491:Noize Mc/2013 - Protivo Gunz/08 - Общага.mp3
-492:Noize Mc/2013 - Protivo Gunz/09 - Честное Слово!.mp3
-493:Noize Mc/2013 - Protivo Gunz/10 - Она Уходит (Rыchigy Mashыn cover) (with Кислый, Макс & Пашок).mp3
-494:Noize Mc/2013 - Protivo Gunz/11 - Жирная Корова.mp3
-495:Noize Mc/2013 - Protivo Gunz/12 - У Моей Девчонки.mp3
-496:Noize Mc/2013 - Protivo Gunz/13 - Под Белым Флагом.mp3
-497:Noize Mc/2013 - Protivo Gunz/14 - Тонкий Лёд.mp3
-498:Noize Mc/2013 - Protivo Gunz/15 - Жвачка (feat. Mewark).mp3
-499:Noize Mc/2013 - Protivo Gunz/16 - Нету Паспорта (feat. Давид Казарян).mp3
-500:Noize Mc/2013 - Protivo Gunz/17 - Х__вая Песня (bonus track).mp3
-501:Noize Mc/2013 - Protivo Gunz/18 - Фиолетовый фингал (скрытый трек).mp3
-502:Noize Mc/2013 - Protivo Gunz/19 - Их мнений (скрытый трек).mp3
-503:Noize Mc/2008 - The Greatest Hits Vol.1/01 - Песня Для Радио.mp3
-504:Noize Mc/2008 - The Greatest Hits Vol.1/02 - За Закрытой Дверью.mp3
-505:Noize Mc/2008 - The Greatest Hits Vol.1/03 - Из Окна.mp3
-506:Noize Mc/2008 - The Greatest Hits Vol.1/04 - Москва - Не Резиновая.mp3
-507:Noize Mc/2008 - The Greatest Hits Vol.1/05 - Кантемировская.mp3
-508:Noize Mc/2008 - The Greatest Hits Vol.1/06 - Жизнь Без Наркотиков (feat. Маша Макарова).mp3
-509:Noize Mc/2008 - The Greatest Hits Vol.1/07 - На Районе (3 Недели Нету Плана).mp3
-510:Noize Mc/2008 - The Greatest Hits Vol.1/08 - На Работе (Платят Бабло).mp3
-511:Noize Mc/2008 - The Greatest Hits Vol.1/09 - Кури Бамбук!.mp3
-512:Noize Mc/2008 - The Greatest Hits Vol.1/10 - Палево!.mp3
-513:Noize Mc/2008 - The Greatest Hits Vol.1/11 - Блатняк.mp3
-514:Noize Mc/2008 - The Greatest Hits Vol.1/12 - 5П (Песня Похуиста Про Получение Пиздюлей).mp3
-515:Noize Mc/2008 - The Greatest Hits Vol.1/13 - Девочка-Скинхед.mp3
-516:Noize Mc/2008 - The Greatest Hits Vol.1/14 - Наше Движение.mp3
-517:Noize Mc/2008 - The Greatest Hits Vol.1/15 - Аренби!!!.mp3
-518:Noize Mc/2008 - The Greatest Hits Vol.1/16 - Поднимите Руки.mp3
-519:Noize Mc/2008 - The Greatest Hits Vol.1/17 - Моё Море.mp3
-520:Noize Mc/2008 - The Greatest Hits Vol.1/18 - Выдыхай.mp3
-521:Noize Mc/2008 - The Greatest Hits Vol.1/19 - 3П (Правдивая Песня Пиздабола) (скрытый трек).mp3
-522:Noize Mc/2008 - The Greatest Hits Vol.1/20 - Мы Всего Добились Сами (feat. 228) (скрытый трек).mp3
-523:Noize Mc/2009 - OST Розыгрыш/01 - Лето В Столице.mp3
-524:Noize Mc/2009 - OST Розыгрыш/02 - Моё Море.mp3
-525:Noize Mc/2009 - OST Розыгрыш/03 - Утро (Он, а не я).mp3
-526:Noize Mc/2009 - OST Розыгрыш/04 - Выдыхай.mp3
-527:Noize Mc/2009 - OST Розыгрыш/05 - Не Могу Найти.mp3
-528:Noize Mc/2009 - OST Розыгрыш/06 - Это Был Дождь.mp3
-529:Noize Mc/2009 - OST Розыгрыш/07 - Суицид.mp3
-530:Noize Mc/2009 - OST Розыгрыш/08 - Давай Приколемся (feat. Чупак & 228).mp3
-531:Noize Mc/2009 - OST Розыгрыш/09 - Какая Жалость.mp3
-532:Noize Mc/2009 - OST Розыгрыш/10 - У.Е.mp3
-533:Noize Mc/2009 - OST Розыгрыш/11 - Деньги.mp3
-534:Noize Mc/2009 - OST Розыгрыш/12 - Лето В Столице (Maestro A-Sid Jungle RMX).mp3
-535:Noize Mc/2009 - OST Розыгрыш/13 - Моё Море (ЛевПрав Версия).mp3
-536:Noize Mc/2009 - OST Розыгрыш/14 - Выдыхай (ЛевПрав Версия).mp3
-537:Noize Mc/2009 - OST Розыгрыш/15 - Мы Всего Добились Сами (feat. 228) (Maestro A-sid Rmx) (скрытый трек).mp3
-538:Noize Mc/2010 - The Greatest Hits Vol.2/01 - Песня Для Радио (Полная Версия).mp3
-539:Noize Mc/2010 - The Greatest Hits Vol.2/02 - За Закрытой Дверью.mp3
-540:Noize Mc/2010 - The Greatest Hits Vol.2/03 - Из Окна.mp3
-541:Noize Mc/2010 - The Greatest Hits Vol.2/04 - Москва - Не Резиновая.mp3
-542:Noize Mc/2010 - The Greatest Hits Vol.2/05 - Кантемировская.mp3
-543:Noize Mc/2010 - The Greatest Hits Vol.2/06 - Жизнь Без Наркотиков (feat. Маша Макарова).mp3
-544:Noize Mc/2010 - The Greatest Hits Vol.2/07 - На Районе (3 Недели Нету Дудки).mp3
-545:Noize Mc/2010 - The Greatest Hits Vol.2/08 - На Работе (Платят Бабло).mp3
-546:Noize Mc/2010 - The Greatest Hits Vol.2/09 - Кури Бамбук!.mp3
-547:Noize Mc/2010 - The Greatest Hits Vol.2/10 - Палево!.mp3
-548:Noize Mc/2010 - The Greatest Hits Vol.2/11 - Блатняк.mp3
-549:Noize Mc/2010 - The Greatest Hits Vol.2/12 - 5П (Песня Пох_иста Про Получение Пи_дюлей).mp3
-550:Noize Mc/2010 - The Greatest Hits Vol.2/13 - Девочка-Скинхед.mp3
-551:Noize Mc/2010 - The Greatest Hits Vol.2/14 - Наше Движение.mp3
-552:Noize Mc/2010 - The Greatest Hits Vol.2/15 - Капитал (feat. Ляпис Трубецкой).mp3
-553:Noize Mc/2010 - The Greatest Hits Vol.2/16 - Мы Всего Добились Сами (feat. 228).mp3
-554:Noize Mc/2010 - The Greatest Hits Vol.2/17 - Аренби!!!.mp3
-555:Noize Mc/2010 - The Greatest Hits Vol.2/18 - Поднимите Руки.mp3
-556:Noize Mc/2010 - The Greatest Hits Vol.2/19 - Ctrl+Alt+Delete (feat. Staisha).mp3
-557:Noize Mc/2010 - The Greatest Hits Vol.2/20 - Ниже Нуля.mp3
-558:Noize Mc/2010 - The Greatest Hits Vol.2/21 - Моё Море.mp3
-559:Noize Mc/2010 - The Greatest Hits Vol.2/22 - Выдыхай.mp3
-560:Noize Mc/2010 - The Greatest Hits Vol.2/23 - Из Окна (Ска-панк-версия).mp3
-561:Noize Mc/2010 - The Greatest Hits Vol.2/24 - Кто Убил Николая.mp3
-562:Noize Mc/2010 - The Greatest Hits Vol.2/25 - 3П (Правдивая Песня Пи_добола).mp3
-563:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/01 - Тыщатыщ.mp3
-564:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/02 - Устрой Дестрой (feat. Чача).mp3
-565:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/03 - Испортить Вам Пати!.mp3
-566:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/04 - Манки Бизнес.mp3
-567:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/05 - Бабки В Шапку!.mp3
-568:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/06 - Артист (feat. Staisha).mp3
-569:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/07 - Певец И Актриса (feat. Staisha).mp3
-570:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/08 - Бэктон#1.mp3
-571:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/09 - Ты Не Считаешь.mp3
-572:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/10 - Красный Октябрь.mp3
-573:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/11 - Пустые Места.mp3
-574:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/12 - Ругань Из-За Стены.mp3
-575:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/13 - Антенны.mp3
-576:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/14 - Why The Dollar Falls (feat. Раскарандаш).mp3
-577:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/15 - Денежный Дождь (feat. Comme-Il-Faut).mp3
-578:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/16 - Гимн Понаехавших Провинциалов.mp3
-579:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/17 - Мизантроп-Рэп.mp3
-580:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/18 - Жечь Электричество!.mp3
-581:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/19 - На Марсе Классно.mp3
-582:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/20 - Вот И Всё. Ну И Что.mp3
-583:Noize Mc/2010 - Последний Альбом (2 CD)/CD1/21 - Мерседес S666 (скрытый трек).mp3
-584:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/01 - Audiobook Underground Part 1.mp3
-585:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/02 - Audiobook Underground Part 2.mp3
-586:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/03 - Audiobook Underground Part 3.mp3
-587:Noize Mc/2010 - Последний Альбом (2 CD)/CD2/04 - Audiobook Underground Part 4.mp3
-588:Noize Mc/2012 - Новый Альбом/01 - Вьетнам.mp3
-589:Noize Mc/2012 - Новый Альбом/02 - ШлакваШаклассика.mp3
-590:Noize Mc/2012 - Новый Альбом/03 - Я Глуп.mp3
-591:Noize Mc/2012 - Новый Альбом/04 - Эгоизм.mp3
-592:Noize Mc/2012 - Новый Альбом/05 - Вселенная Бесконечна_.mp3
-593:Noize Mc/2012 - Новый Альбом/06 - Жадина.mp3
-594:Noize Mc/2012 - Новый Альбом/07 - Yes Future.mp3
-595:Noize Mc/2012 - Новый Альбом/08 - Сам (feat. RasKar).mp3
-596:Noize Mc/2012 - Новый Альбом/09 - Бассейн.mp3
-597:Noize Mc/2012 - Новый Альбом/10 - Заебались!.mp3
-598:Noize Mc/2012 - Новый Альбом/11 - Похуисты (feat. Anacondaz).mp3
-599:Noize Mc/2012 - Новый Альбом/12 - Болт (feat. Ляпис Трубецкой).mp3
-600:Noize Mc/2012 - Новый Альбом/13 - Мы Хотим Танцевать.mp3
-601:Noize Mc/2012 - Новый Альбом/14 - Школотой.mp3
-602:Noize Mc/2012 - Новый Альбом/15 - Танцi! (feat. Воплi Вiдоплясова & 1Shot).mp3
-603:Noize Mc/2012 - Новый Альбом/16 - Ток (feat. Вахтанг).mp3
-604:Noize Mc/2012 - Новый Альбом/17 - Брынь-брынь-брынь.mp3
-605:Noize Mc/2012 - Новый Альбом/18 - Друг Подруги Телки Брата.mp3
-606:Noize Mc/2012 - Новый Альбом/19 - Пушкинский Рэп.mp3
-607:Noize Mc/2012 - Новый Альбом/20 - Черное_Белое (feat. Subatomic Sound System & Nomadic Wax).mp3
-608:Noize Mc/2012 - Новый Альбом/21 - Эдем 14_88.mp3
-609:Noize Mc/2012 - Новый Альбом/22 - Ф.С.Б. (bonus track).mp3
-610:Noize Mc/2012 - Новый Альбом/23 - Любит Наш Народ! (bonus track).mp3
-611:Noize Mc/2013 - Protivo Gunz/01 - Рок - Это Кал! (feat. Вася Васин).mp3
-612:Noize Mc/2013 - Protivo Gunz/02 - Миша Козырев (feat. Миша Козырев).mp3
-613:Noize Mc/2013 - Protivo Gunz/03 - Накосячу!.mp3
-614:Noize Mc/2013 - Protivo Gunz/04 - Заговор.mp3
-615:Noize Mc/2013 - Protivo Gunz/05 - Бритни Спирс.mp3
-616:Noize Mc/2013 - Protivo Gunz/06 - Калифорния (with Кислый, Макс & Пашок).mp3
-617:Noize Mc/2013 - Protivo Gunz/07 - С&Г (Live @ «Б2»).mp3
-618:Noize Mc/2013 - Protivo Gunz/08 - Общага.mp3
-619:Noize Mc/2013 - Protivo Gunz/09 - Честное Слово!.mp3
-620:Noize Mc/2013 - Protivo Gunz/10 - Она Уходит (Rыchigy Mashыn cover) (with Кислый, Макс & Пашок).mp3
-621:Noize Mc/2013 - Protivo Gunz/11 - Жирная Корова.mp3
-622:Noize Mc/2013 - Protivo Gunz/12 - У Моей Девчонки.mp3
-623:Noize Mc/2013 - Protivo Gunz/13 - Под Белым Флагом.mp3
-624:Noize Mc/2013 - Protivo Gunz/14 - Тонкий Лёд.mp3
-625:Noize Mc/2013 - Protivo Gunz/15 - Жвачка (feat. Mewark).mp3
-626:Noize Mc/2013 - Protivo Gunz/16 - Нету Паспорта (feat. Давид Казарян).mp3
-627:Noize Mc/2013 - Protivo Gunz/17 - Х__вая Песня (bonus track).mp3
-628:Noize Mc/2013 - Protivo Gunz/18 - Фиолетовый фингал (скрытый трек).mp3
-629:Noize Mc/2013 - Protivo Gunz/19 - Их мнений (скрытый трек).mp3
+0:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/01. Голос & струны (Орфей).mp3
+1:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/01. Голос & струны (Орфей).mp3
+2:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/02. С нами (Орфей и Эвридика) (feat. Leila).mp3
+3:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/03. Фанфары Эллады (Немезида Пафос) (Pt. 1).mp3
+4:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/04. Кто тот герой (Фортуна и Прометей) (feat.  RE-pac).mp3
+5:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/05. Вряд ли боги соблаговолят нам (Орфей и Эвридика) (feat. Leila).mp3
+6:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/06. На вершине - мало места (Харон).mp3
+7:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/07. Спартак vs. Прометей (feat. Анастасия Александрина).mp3
+8:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/08. Прометей vs. Спартак (feat. Анастасия Александрина).mp3
+9:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/09. Нарцисс vs. Орфей (feat. Анастасия Александрина).mp3
+10:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/10. Орфей vs. Нарцисс (feat. Анастасия Александрина).mp3
+11:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/11. Прометей vs. Орфей (feat. Олег Груз, Анастасия Александрина).mp3
+12:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/12. Орфей vs. Прометей (feat. Олег Груз, Анастасия Александрина).mp3
+13:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/13. Подписание контракта (Аид, Орфей, Фортуна) (feat. Noize MC, Анастасия Александрина).mp3
+14:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/14. Романс (Эвридика и Орфей) (feat. Noize MC).mp3
+15:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/15. Камера, мотор! (Аид, Орфей, Фортуна) (feat. Noize MC, Анастасия Александрина).mp3
+16:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/16. В конце альбома (Эвридика).mp3
+17:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/17. Мастер слов и мелодий (Репрезент Орфея).mp3
+18:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/18. Не тот (Эвридика).mp3
+19:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/19. Мелкие черепки (Орфей и Эвридика) (feat. Leila).mp3
+20:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/20. Соблазн (Фортуна и Орфей) (feat. Noize MC).mp3
+21:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/21. Всё это - лишнее (Эвридика).mp3
+22:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/22. 1000 москитов (Харон и Орфей) (feat. Noize MC).mp3
+23:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/23. Фанфары Эллады (Немезида Пафос) (Pt. 2).mp3
+24:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/24. Разрыв контракта (Аид и Орфей) (feat. Noize MC).mp3
+25:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/25. Кто кого (Харон).mp3
+26:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/26. Иллюзии, сны, миражи (Харон и Орфей) (feat. Noize MC).mp3
+27:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/27. Мантра (Орфей).mp3
+28:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/28. Кошмар Эвридики (Эвридика, Морфей, Орфей) (feat. Noize MC).mp3
+29:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/29. Фанфары Эллады (Немезида Пафос) (Pt. 3).mp3
+30:Noize MC - Хипхопера_ Орфей & Эвридика (2018)/30. Без нас (Орфей и Эвридика) (feat. Leila).mp3
+31:MiyaGi & Эндшпиль - HAJIME Part.2 (2016)/01. MiyaGi & Эндшпиль feat. Симптом (НЖН) - Люби меня (Stone Heng prod.).mp3
+32:MiyaGi & Эндшпиль - HAJIME Part.2 (2016)/03. MiyaGi & Эндшпиль - ФАЯ (Stone Heng prod.).mp3
+33:MiyaGi & Эндшпиль - HAJIME Part.2 (2016)/04. MiyaGi & Эндшпиль feat. Amigo  - Самая (Stone Heng prod.).mp3
+34:MiyaGi & Эндшпиль - HAJIME Part.2 (2016)/05. MiyaGi & Эндшпиль feat. Drew  - I CAN FLY (Alchimi prod.).mp3
+35:MiyaGi & Эндшпиль - HAJIME Part.2 (2016)/02. MiyaGi & Эндшпиль  - Двигайся (Weet beat prod.).mp3
+36:MiyaGi & Эндшпиль - HAJIME Part.2 (2016)/06. MiyaGi & Эндшпиль feat. Fuze (KREC) - Нирвана (Stone Heng prod.).mp3
+37:MiyaGi & Эндшпиль - HAJIME Part.2 (2016)/07. MiyaGi & Эндшпиль feat. Brick Bazuka - Бошка (Ston Heng prod.).mp3
+38:MiyaGi & Эндшпиль - HAJIME Part.2 (2016)/08. MiyaGi & Эндшпиль feat. Рем Дигга - I Got Love (Sad Soul prod.) (BONUS track).mp3
+39:MiyaGi & Эндшпиль - HAJIME Part.1 (2016)/01. HAJIME (INTRO).mp3
+40:MiyaGi & Эндшпиль - HAJIME Part.1 (2016)/02. OneLove.mp3
+41:MiyaGi & Эндшпиль - HAJIME Part.1 (2016)/03. God Bless.mp3
+42:MiyaGi & Эндшпиль - HAJIME Part.1 (2016)/04. Санавабич.mp3
+43:MiyaGi & Эндшпиль - HAJIME Part.1 (2016)/05. Половина моя.mp3
+44:MiyaGi & Эндшпиль - HAJIME Part.1 (2016)/06. Рапапам.mp3
+45:MiyaGi & Эндшпиль - HAJIME Part.1 (2016)/07. Лабиринты.mp3
+46:MiyaGi & Эндшпиль - HAJIME Part.1 (2016)/08. Без обид.mp3
+47:MiyaGi & Эндшпиль - HAJIME Part.1 (2016)/09. Бэйба судьба.mp3
+48:MiyaGi & Эндшпиль  - Hajime, Pt. 3 (2018)/01 - Колизей.mp3
+49:MiyaGi & Эндшпиль  - Hajime, Pt. 3 (2018)/02 - Дама.mp3
+50:MiyaGi & Эндшпиль  - Hajime, Pt. 3 (2018)/03 - Я хочу любить.mp3
+51:MiyaGi & Эндшпиль  - Hajime, Pt. 3 (2018)/04 - Фея.mp3
+52:MiyaGi & Эндшпиль  - Hajime, Pt. 3 (2018)/05 - Fire Man.mp3
+53:MiyaGi & Эндшпиль  - Hajime, Pt. 3 (2018)/06 - Don't Cry (feat. Рем Дигга).mp3
+54:MiyaGi & Эндшпиль  - Hajime, Pt. 3 (2018)/07 - Fuck the Money (feat. TumaniYO).mp3
+55:MiyaGi & Эндшпиль  - Hajime, Pt. 3 (2018)/08 - Look at the Scars.mp3
+56:MiyaGi & Эндшпиль  - Hajime, Pt. 3 (2018)/09 - Listen to Your Heart.mp3
+57:Eminem - Kamikaze (2018) FLAC/01. The Ringer.flac
+58:Eminem - Kamikaze (2018) FLAC/02. Greatest.flac
+59:Eminem - Kamikaze (2018) FLAC/03. Lucky You (ft. Joyner Lucas).flac
+60:Eminem - Kamikaze (2018) FLAC/04. Paul (Skit).flac
+61:Eminem - Kamikaze (2018) FLAC/05. Normal.flac
+62:Eminem - Kamikaze (2018) FLAC/06. Em Calls Paul (Skit).flac
+63:Eminem - Kamikaze (2018) FLAC/07. Stepping Stone.flac
+64:Eminem - Kamikaze (2018) FLAC/08. Not Alike (ft. Royce da 5'9).flac
+65:Eminem - Kamikaze (2018) FLAC/09. Kamikaze.flac
+66:Eminem - Kamikaze (2018) FLAC/10. Fall.flac
+67:Eminem - Kamikaze (2018) FLAC/11. Nice Guy (ft. Jessie Reyez).flac
+68:Eminem - Kamikaze (2018) FLAC/12. Good Guy (ft. Jessie Reyez).flac
+69:Eminem - Kamikaze (2018) FLAC/13. Venom (Music From The Motion Picture).flac
 playlist_end

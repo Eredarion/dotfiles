@@ -3,13 +3,14 @@
 mpd_host = localhost
 mpd_port = 6600
 mpd_crossfade_time = 2
-#visualizer_output_name = "Visualizer feed"
+visualizer_fifo_path = /tmp/mpd.fifo
+visualizer_output_name = "Visualizer feed"
 visualizer_in_stereo = no
 #visualizer_sample_multiplier = 1
 visualizer_sync_interval = 30
 visualizer_type = spectrum
 visualizer_look = ●┃
-visualizer_color = red, green, yellow, magenta, red
+visualizer_color = cyan, green, yellow, magenta, red
 #visualizer_color = 41, 83, 119, 155, 185, 215, 209, 203, 197, 161
 #system_encoding = ""
 #playlist_disable_highlight_delay = 5
