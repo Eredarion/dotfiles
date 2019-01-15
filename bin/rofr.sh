@@ -44,7 +44,7 @@ for arg in "$@"; do
         -r|--run)
             rofi -modi run,drun -show drun -line-padding 4 \
                 -columns 1 -padding 50 -hide-scrollbar \
-                -show-icons -drun-icon-theme "Papirus-Dark" \
+                -show-icons -icon-theme "Papirus-Dark" \
 		            -lines 10 -width 31
             ;;
         -w|--window)
@@ -78,7 +78,7 @@ for arg in "$@"; do
         -l|--logout)
             ANS="$(rofi -sep "|" -dmenu -i -p 'System' -width 20 \
                 -hide-scrollbar -line-padding 4 -padding 20 \
-                -lines 4 <<< " Lock| Logout| Reboot| Shutdown")"
+                -lines 4 <<< " Lock| Logout| Reboot| Shutdown")"
             case "$ANS" in
                 *Lock) i3lock-fancy ;;
                 *Logout) session-logout || pkill -15 -t tty"$XDG_VTNR" Xorg ;;
