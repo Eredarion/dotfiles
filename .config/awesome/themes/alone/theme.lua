@@ -523,52 +523,6 @@ mem_widget:buttons(awful.button({ }, 1, function()
 end))
 --luacheck: pop
 
--- MPD ----------------------------------------------------------------------------------------------------------------
--- local mpdiconplay = wibox.widget.textbox("<span font=\"".. theme.iconFont .."\"></span> ")
--- local mpdiconpause= wibox.widget.textbox("<span font=\"".. theme.iconFont .."\"></span> ")
--- local mpdiconnext= wibox.widget.textbox("<span font=\"".. theme.iconFont .."\"></span> ")
--- local mpdiconprev = wibox.widget.textbox("<span font=\"".. theme.iconFont .."\"></span> ")
--- local mpdwidget = lain.widget.mpd({
---     settings = function()
---         mpd_notification_preset = {
---             text = string.format("%s [%s] - %s\n%s", mpd_now.artist,
---                    mpd_now.album, mpd_now.date, mpd_now.title)
---         }
-
---         if mpd_now.state == "play" then
---             artist = mpd_now.artist .. " > "
---             title  = mpd_now.title .. " "
---             mpdicon:set_image(theme.widget_note_on)
---         elseif mpd_now.state == "pause" then
---             artist = "mpd "
---             title  = "paused "
---         else
---             artist = ""
---             title  = ""
---             --mpdicon:set_image() -- not working in 4.0
---             mpdicon._private.image = nil
---             mpdicon:emit_signal("widget::redraw_needed")
---             mpdicon:emit_signal("widget::layout_changed")
---         end
---         widget:set_markup(markup.fontfg(theme.font, "#e54c62", mpdiconplay) .. markup.fontfg(theme.font, "#b2b2b2", mpdiconpause))
---     end
--- })
-
--- mpdwidget.widget:buttons(awful.util.table.join(
---     awful.button({}, 1, function() -- right click
---         os.execute(string.format("mpc toggle"))
---         mpdwidget.update()
---     end),
---     awful.button({}, 4, function() -- scroll up
---         os.execute(string.format("mpc next"))
---         mpdwidget.update()
---     end),
---     awful.button({}, 5, function() -- scroll down
---         os.execute(string.format("mpc prev"))
---         mpdwidget.update()
---     end)
--- ))
-
 -- MPD Toggle
 theme.mpd_toggle = wibox.widget.textbox()
 vicious.register(
@@ -630,30 +584,6 @@ theme.mpd_next:buttons(awful.util.table.join(
     end)
 ))
 
-local justText = wibox.widget.textbox(" <span  font=\"".. theme.iconFont .."\"></span>")
--- MPD Random
-theme.mpd_random = wibox.widget.textbox()
-vicious.register(
-    theme.mpd_random,
-    vicious.widgets.mpd,
-    function(widget, warg)
-        if warg["{random}"] == true then
-          return ("<span font=\"".. theme.iconFont .."\">1</span> ")
-        elseif warg["{random}"] == false then
-          return ("<span font=\"".. theme.iconFont .."\">0</span> ")
-        else
-          return ("<span font=\"".. theme.iconFont .."\">8</span> ")
-        end
-    end)
-
-theme.mpd_random:buttons(awful.util.table.join(
-    awful.button({}, 1, function()
-        os.execute("mpc random")
-        vicious.force({theme.mpdwidget, theme.mpd_random})
-    end)
-))
-
-local justText1 = wibox.widget.textbox(" <span font=\"".. theme.iconFont .."\"></span>")
 local terminalRun = wibox.widget.textbox("<span font=\"".. theme.iconFont .."\"></span>")
 terminalRun:buttons(awful.util.table.join(
     awful.button({}, 1, function()
@@ -893,9 +823,6 @@ function theme.at_screen_connect(s)
                           theme.mpd_prev, space,
                           theme.mpd_toggle, space,
                           theme.mpd_next, space,
-                          justText, space, 
-                          -- theme.mpd_random, space,
-                          justText1, space
                         },
                       left = dpi(13),
                       right = dpi(13),
