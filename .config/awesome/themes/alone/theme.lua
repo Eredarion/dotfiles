@@ -22,6 +22,8 @@ colors.bw_7             = xrdb.color7
 colors.bw_8             = xrdb.color8
 colors.bw_9             = xrdb.foreground
 colors.bw_10            = xrdb.color10
+colors.red_1            = "#cc241d"
+colors.red_2            = "#fb4934"
 
 local my_table          = awful.util.table or gears.table
 
@@ -812,7 +814,7 @@ function theme.at_screen_connect(s)
                     bg                 = theme.border_focus,
                     widget             = wibox.container.background
                     },
-
+              },
 
                     -- { -- Prompt box
                     --     {
@@ -827,8 +829,7 @@ function theme.at_screen_connect(s)
                     --     bg = theme.prompt_bg,
                     --     widget = wibox.container.background,
                     -- },
-              },
-
+               
 
                 -- Middle widget
                 { -- Tasklist

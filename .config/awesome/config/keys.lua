@@ -1,11 +1,3 @@
-
---[[
-
-     Awesome WM configuration
-     by alfunx (Alphonse Mariya)
-
---]]
-
 local gears = require("gears")
 local awful = require("awful")
 local beautiful = require("beautiful")
@@ -46,7 +38,7 @@ function config.init(context)
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
     ))
--- }}}
+    -- }}}
 
 
     globalkeys = gears.table.join(
@@ -109,8 +101,9 @@ function config.init(context)
             end
         end,
         {description = "go back", group = "client"}),
-
-    -- Standard program ----------------------------------------------------------------
+    
+    
+    -- Standard program --------------------------------------------------------------------------
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
 
@@ -128,7 +121,7 @@ function config.init(context)
 
     awful.key({ modkey,           }, "Print", function () awful.spawn(scrot) end,
               {description = "scrot", group = "launcher"}),
-
+    ----------------------------------------------------------------------------------------------
 
     awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
               {description = "increase master width factor", group = "layout"}),

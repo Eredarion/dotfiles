@@ -1,11 +1,3 @@
-
---[[
-
-     Awesome WM configuration
-     by alfunx (Alphonse Mariya)
-
---]]
-
 local awful = require("awful")
 local beautiful = require("beautiful")
 
