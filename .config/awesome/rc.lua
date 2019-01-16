@@ -1,4 +1,3 @@
--- {{{ Required libraries
 local awesome, client, mouse, screen, tag = awesome, client, mouse, screen, tag
 local ipairs, string, os, table, tostring, tonumber, type = ipairs, string, os, table, tostring, tonumber, type
 
@@ -10,25 +9,22 @@ local beautiful     = require("beautiful")
 local naughty       = require("naughty")
 local lain          = require("lain")
 local helpers 		= require("helpers")
---local menubar       = require("menubar")
--- local freedesktop   = require("freedesktop")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
                       require("awful.hotkeys_popup.keys")
-local my_table      = awful.util.table or gears.table -- 4.{0,1} compatibility
+local my_table      = awful.util.table or gears.table
 
 local config = {
     rules = require("config.rules"),
     keys = require("config.keys"),
 }
+
 -- Define context
 config.context = { }
 local context = config.context
+-----------------------------------------------------------------------------------------------------------------------
 
--- }}}
 
--- {{{ Error handling
--- Check if awesome encountered an error during startup and fell back to
--- another config (This code will only ever execute for the fallback config)
+-- Error handling -----------------------------------------------------------------------------------------------------
 if awesome.startup_errors then
     naughty.notify({ preset = naughty.config.presets.critical,
                      title = "Oops, there were errors during startup!",
@@ -48,21 +44,21 @@ do
         in_error = false
     end)
 end
--- }}}
+-----------------------------------------------------------------------------------------------------------------------
 
--- {{{ Variable definitions
 
+-- Variable definitions -----------------------------------------------------------------------------------------------
 local themes = {
     "blackburn",       -- 1
     "copland",         -- 2
     "dremora",         -- 3
     "holo",            -- 4
-    "alone",      -- 5
+    "alone",           -- 5
     "powerarrow",      -- 6
     "powerarrow-dark", -- 7
     "rainbow",         -- 8
     "steamburn",       -- 9
-    "polaroids",          -- 10
+    "polaroids",       -- 10
 }
 
 local chosen_theme = themes[5]
@@ -74,16 +70,11 @@ context.vars = { }
 context.vars.sloppy_focus     = false
 context.vars.update_apps      = false
 context.vars.terminal         = "urxvtc"
--- context.vars.terminal         = "kitty -1 --listen-on unix:/tmp/_kitty_" .. os.getenv("USER")
 context.vars.browser          = "chromium"
 context.vars.net_iface        = "wlp58s0"
 context.vars.cores            = 2
 context.vars.batteries        = { "BAT0" }
 context.vars.ac               = "AC"
-context.vars.scripts_dir      = os.getenv("HOME") .. "/.bin"
--- context.vars.checkupdate      = "(checkupdates & aur checkupdates) | sed 's/->/→/' | sort | column -t -c 70 -T 2,4"
-context.vars.checkupdate      = "checkupdates | sed 's/->/→/' | sort | column -t -c 70 -T 2,4"
--- context.vars.checkupdate      = "checkupdates | sort | column -t -c 70 -T 2,4"
 
 config.keys.init(context)
 
@@ -134,8 +125,7 @@ awful.util.tasklist_buttons = my_table.join(
         if c == client.focus then
             c.minimized = true
         else
-            --c:emit_signal("request::activate", "tasklist", {raise = true})<Paste>
-
+            -- c:emit_signal("request::activate", "tasklist", {raise = true})<Paste>
             -- Without this, the following
             -- :isvisible() makes no sense
             c.minimized = false
@@ -176,31 +166,10 @@ lain.layout.cascade.tile.nmaster       = 5
 lain.layout.cascade.tile.ncol          = 2
 
 beautiful.init(string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), chosen_theme))
--- }}}
+-----------------------------------------------------------------------------------------------------------------------
 
--- {{{ Menu
--- local myawesomemenu = {
---     { "hotkeys", function() return false, hotkeys_popup.show_help end },
---     { "manual", "urxvtc" .. " -e man awesome" },
---     { "edit config", string.format("%s -e %s %s", terminal, editor, awesome.conffile) },
---     { "restart", awesome.restart },
---     { "quit", function() awesome.quit() end }
--- }
--- awful.util.mymainmenu = freedesktop.menu.build({
---     icon_size = beautiful.menu_height or 16,
---     before = {
---         { "Awesome", myawesomemenu, beautiful.awesome_icon },
---         -- other triads can be put here
---     },
---     after = {
---         { "Open terminal", terminal },
---         -- other triads can be put here
---     }
--- })
---menubar.utils.terminal = terminal -- Set the Menubar terminal for applications that require it
--- }}}
 
--- {{{ Screen
+-- Screen -------------------------------------------------------------------------------------------------------------
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
 screen.connect_signal("property::geometry", function(s)
     -- Wallpaper
@@ -213,33 +182,29 @@ screen.connect_signal("property::geometry", function(s)
         gears.wallpaper.maximized(wallpaper, s, true)
     end
 end)
+
 -- Create a wibox for each screen and add it
--- awful.screen.connect_for_each_screen(function(s) beautiful.at_screen_connect(s) end)
+awful.screen.connect_for_each_screen(function(s)
+    if s.mywibox then s.mywibox:remove() end
+    beautiful.at_screen_connect(s)
+    awesome.register_xproperty("_NET_WM_NAME", "string")
+    s.mywibox:set_xproperty("_NET_WM_NAME", "Wibar")
+end)
+-----------------------------------------------------------------------------------------------------------------------
 
- -- Create a wibox for each screen and add it
-    awful.screen.connect_for_each_screen(function(s)
-        if s.mywibox then s.mywibox:remove() end
-        beautiful.at_screen_connect(s)
-        awesome.register_xproperty("_NET_WM_NAME", "string")
-        s.mywibox:set_xproperty("_NET_WM_NAME", "Wibar")
-    end)
 
--- }}}
-    config.keys.init(context)
--- }}}
+-- Init config --------------------------------------------------------------------------------------------------------
+config.keys.init(context)
+config.rules.init(context)
+-----------------------------------------------------------------------------------------------------------------------
 
--- {{{ Rules
--- Rules to apply to new clients (through the "manage" signal).
-    config.rules.init(context)
--- }}}
 
--- {{{ Signals
+-- Signals ------------------------------------------------------------------------------------------------------------
 -- Signal function to execute when a new client appears.
 client.connect_signal("manage", function (c)
     -- Set the windows at the slave,
     -- i.e. put it at the end of others instead of setting it master.
     -- if not awesome.startup then awful.client.setslave(c) end
-
     if awesome.startup and
       not c.size_hints.user_position
       and not c.size_hints.program_position then
@@ -257,18 +222,6 @@ client.connect_signal("mouse::enter", function(c)
 end)
 
 -- No border for maximized clients
--- client.connect_signal("focus",
---     function(c)
---         if c.width >= 1200 and c.height >= 700 then
---             c.border_width = 0
---             c.border_color = beautiful.border_normal
---         elseif c == 1 or layout == "max" then
---             c.border_width = 0
---         else
---             c.border_width = beautiful.border_width
---             c.border_color = beautiful.border_focus
---         end
---     end)
 client.connect_signal("focus", function(c)
         if  c == 1 or layout == "max" then
             c.border_color = beautiful.border_focus
@@ -280,4 +233,5 @@ client.connect_signal("focus", function(c)
         end
     end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+-----------------------------------------------------------------------------------------------------------------------
 
