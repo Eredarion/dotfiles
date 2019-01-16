@@ -104,7 +104,8 @@ theme.titlebar_bg_marked                        = theme.border_marked
 
 theme.hotkeys_border_width                      = theme.border_width
 theme.hotkeys_border_color                      = theme.border_focus
-theme.hotkeys_group_margin                      = dpi(50)
+theme.hotkeys_fg                                = colors.bw_9
+theme.hotkeys_group_margin                      = dpi(20)
 
 theme.prompt_bg                                 = colors.bw_0
 theme.prompt_fg                                 = theme.fg_normal
