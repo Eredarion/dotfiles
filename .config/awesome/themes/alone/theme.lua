@@ -7,52 +7,31 @@ local xresources       = require("beautiful.xresources")
 local xrdb             = xresources.get_current_theme()
 local dpi              = xresources.apply_dpi
 local os, math, string = os, math, string
-
-local vicious = require("vicious")
+local vicious          = require("vicious")
 
 local colors = { }
 
-colors.black_1          = "#282828"
-colors.black_2          = "#928374"
-colors.red_1            = "#cc241d"
-colors.red_2            = "#fb4934"
-colors.green_1          = "#98971a"
-colors.green_2          = "#b8bb26"
-colors.yellow_1         = "#d79921"
-colors.yellow_2         = "#fabd2f"
-colors.blue_1           = "#458588"
-colors.blue_2           = "#83a598"
-colors.purple_1         = "#b16286"
-colors.purple_2         = "#d3869b"
-colors.aqua_1           = "#689d6a"
-colors.aqua_2           = "#8ec07c"
-colors.white_1          = "#a89984"
-colors.white_2          = "#ebdbb2"
-colors.orange_1         = "#d65d0e"
-colors.orange_2         = "#fe8019"
-
-colors.bw_0_h           = "#1d2021"
-colors.bw_0             = xrdb.background or   "#101423"
-colors.bw_0_s           = "#32302f"
-colors.bw_1             = xrdb.color1 or "#a89984"
+colors.bw_0             = xrdb.background
+colors.bw_1             = xrdb.color1
 colors.bw_2             = "#BEBEBE"
-colors.bw_3             = "#504945"
-colors.bw_4             = "#7c6f64"
-colors.bw_5             = xrdb.foreground or    "#29518E"
-colors.bw_6             = xrdb.color4 or "#a89984"
-colors.bw_7             = xrdb.background
-colors.bw_8             = xrdb.foreground or    "#EEFFFF"
-colors.bw_9             = xrdb.foreground or    "#EEFFFF"
-colors.bw_10            = "#fbf1c7"
+colors.bw_3             = xrdb.color3
+colors.bw_4             = xrdb.color4
+colors.bw_5             = xrdb.color5
+colors.bw_6             = xrdb.color4
+colors.bw_7             = xrdb.color7
+colors.bw_8             = xrdb.color8
+colors.bw_9             = xrdb.foreground
+colors.bw_10            = xrdb.color10
 
-local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
+local my_table          = awful.util.table or gears.table
 
-local theme = { } 
-theme.name = "alone"
-theme.dir = string.format("%s/.config/awesome/themes/%s", os.getenv("HOME"), theme.name)  
-theme.wallpaper                                 = theme.dir .. "/wallpapers/wall.png"
+local theme             = { } 
+theme.name              = "alone"
+theme.dir               = string.format("%s/.config/awesome/themes/%s", os.getenv("HOME"), theme.name)  
+theme.wallpaper         = theme.dir .. "/wallpapers/wall.png"
+
+-- Font ---------------------------------------------------------------------------------------------------------------
 local font_name                                 = "SF Pro Text"
-
 local font_size                                 = "8"
 theme.font                                      = font_name .. " " .. "Medium"      .. " " .. font_size
 theme.font_bold                                 = font_name .. " " .. "Medium"      .. " " .. font_size
@@ -63,26 +42,31 @@ theme.iconFont                                  = "Font Awesome 5 Free Regular 9
 theme.iconFont8                                 = "Font Awesome 5 Free 11"
 theme.materialIconFont                          = "Material Icons Regular 10"
 theme.font_big                                  = "Material Icons Regular "  .. " 20"
+theme.taglist_font                              = "Mplus 1p Medium 8"
+-----------------------------------------------------------------------------------------------------------------------
 
 
-
-
-
+-- Border colors ------------------------------------------------------------------------------------------------------
 theme.accent                                    = colors.red_2
 theme.border_normal                             = colors.bw_2
-theme.border_focus                              = colors.bw_5
-theme.border_marked                             = colors.bw_5
+theme.border_focus                              = colors.bw_9
+theme.border_marked                             = colors.bw_9
+-----------------------------------------------------------------------------------------------------------------------
 
-theme.fg_normal                                 = colors.bw_7
+
+-- Foreground and background colors -----------------------------------------------------------------------------------
+theme.fg_normal                                 = colors.bw_0
 theme.fg_focus                                  = colors.bw_9
 theme.fg_urgent                                 = theme.accent
 theme.bg_normal                                 = colors.bw_0
 theme.bg_focus                                  = theme.border_normal
 theme.bg_urgent                                 = theme.border_normal
+-----------------------------------------------------------------------------------------------------------------------
 
-theme.taglist_font                              = "Mplus 1p Medium 8"
-theme.taglist_fg_normal                         = colors.bw_7
-theme.taglist_fg_occupied                       = colors.bw_7
+
+-- Taglist colors -----------------------------------------------------------------------------------------------------
+theme.taglist_fg_normal                         = colors.bw_0
+theme.taglist_fg_occupied                       = colors.bw_0
 theme.taglist_fg_empty                          = colors.bw_3
 theme.taglist_fg_volatile                       = colors.bw_0
 theme.taglist_fg_focus                          = colors.bw_0
@@ -93,21 +77,25 @@ theme.taglist_bg_empty                          = theme.border_focus
 theme.taglist_bg_volatile                       = theme.border_focus
 theme.taglist_bg_focus                          = colors.bw_2
 theme.taglist_bg_urgent                         = theme.border_focus
+-----------------------------------------------------------------------------------------------------------------------
 
+
+-- Tasklist colors ----------------------------------------------------------------------------------------------------
 theme.tasklist_font_normal                      = theme.font
 theme.tasklist_font_focus                       = theme.font
 theme.tasklist_font_urgent                      = theme.font
 theme.tasklist_fg_normal                        = colors.bw_3
-theme.tasklist_fg_focus                         = colors.bw_7
+theme.tasklist_fg_focus                         = colors.bw_0
 theme.tasklist_fg_minimize                      = colors.bw_2
 theme.tasklist_fg_urgent                        = theme.accent
 theme.tasklist_bg_normal                        = colors.bw_2
 theme.tasklist_bg_focus                         = theme.border_focus
 theme.tasklist_bg_urgent                        = theme.border_focus
+-----------------------------------------------------------------------------------------------------------------------
 
-theme.titlebar_fg_normal                        = colors.bw_5
-theme.titlebar_fg_focus                         = colors.bw_8
-theme.titlebar_fg_marked                        = colors.bw_8
+theme.titlebar_fg_normal                        = colors.bw_9
+theme.titlebar_fg_focus                         = colors.bw_9
+theme.titlebar_fg_marked                        = colors.bw_9
 theme.titlebar_bg_normal                        = theme.border_normal
 theme.titlebar_bg_focus                         = theme.border_focus
 theme.titlebar_bg_marked                        = theme.border_marked
@@ -118,7 +106,7 @@ theme.hotkeys_group_margin                      = dpi(50)
 
 theme.prompt_bg                                 = colors.bw_0
 theme.prompt_fg                                 = theme.fg_normal
-theme.bg_systray                                = colors.bw_8
+theme.bg_systray                                = colors.bw_9
 
 theme.border_width                              = dpi(1)
 -- theme.border_radius                             = dpi(8)
@@ -140,10 +128,6 @@ theme.snap_shape                                = function(cr, w, h)
 
 theme.menu_submenu_icon                         = theme.dir .. "/icons/submenu.png"
 theme.awesome_icon                              = theme.dir .. "/icons/awesome.png"
--- theme.taglist_squares_sel                       = theme.dir .. "/icons/square_sel.png"
--- theme.taglist_squares_unsel                     = theme.dir .. "/icons/square_unsel.png"
--- theme.taglist_squares_sel_empty                 = theme.dir .. "/icons/square_sel_empty.png"
--- theme.taglist_squares_unsel_empty               = theme.dir .. "/icons/square_unsel_empty.png"
 
 theme.layout_cascadetile                        = theme.dir .. "/layouts/cascadetile.png"
 theme.layout_centerwork                         = theme.dir .. "/layouts/centerwork.png"
@@ -170,11 +154,13 @@ theme.tooltip_bg                                = theme.titlebar_bg_normal
 theme.tooltip_border_color                      = theme.border_normal
 theme.tooltip_border_width                      = theme.border_width
 
-theme.notification_fg                           = colors.bw_8
+
+-- Notification -------------------------------------------------------------------------------------------------------
+theme.notification_fg                           = colors.bw_9
 theme.notification_bg                           = theme.bg_normal
 theme.notification_border_color                 = theme.border_focus
 theme.notification_border_width                 = theme.border_width
-theme.notification_icon_size                    = dpi(50)
+theme.notification_icon_size                    = dpi(60)
 naughty.config.defaults['icon_size'] = dpi(50)
 theme.notification_opacity                      = 1
 theme.notification_max_width                    = dpi(300)
@@ -182,9 +168,9 @@ theme.notification_max_height                   = dpi(80)
 -- theme.notification_height = dpi(80)
 -- theme.notification_width = dpi(300)
 theme.notification_margin                       = dpi(10)
-theme.notification_shape                        = function(cr, width, height)
-  gears.shape.transform(gears.shape.parallelogram) : rotate(0)(cr, width, height, width)
-end
+-- theme.notification_shape                        = function(cr, width, height)
+--   gears.shape.transform(gears.shape.parallelogram) : rotate(0)(cr, width, height, width)
+-- end
 
 naughty.config.padding                          = dpi(6)
 naughty.config.spacing                          = dpi(10)
@@ -215,9 +201,10 @@ naughty.config.presets.critical                 = {
                                                   }
 
 local markup = lain.util.markup
--- local separators = lain.util.separators
+-----------------------------------------------------------------------------------------------------------------------
 
--- Spacing
+
+-- Spacing ------------------------------------------------------------------------------------------------------------
 local space = wibox.widget {
     widget = wibox.widget.separator,
     orientation = "vertical",
@@ -233,14 +220,15 @@ local vert_sep = wibox.widget {
     border_width = 2,
     color = '#000000',
 }
+-----------------------------------------------------------------------------------------------------------------------
 
--- Textclock
+
+-- Textclock ----------------------------------------------------------------------------------------------------------
 os.setlocale(os.getenv("LANG")) -- to localize the clock
 local clock = awful.widget.watch(
-    -- "date +'%a %d %b %R'", 60,
     "date +'%R'", 5,
     function(widget, stdout)
-        widget:set_markup(markup.fontfg(theme.font_bold, colors.bw_7, stdout))
+        widget:set_markup(markup.fontfg(theme.font_bold, colors.bw_0, stdout))
     end
 )
 
@@ -259,9 +247,10 @@ theme.cal = lain.widget.cal {
     icons = "",
     notification_preset = naughty.config.presets.normal,
 }
+-----------------------------------------------------------------------------------------------------------------------
 
--- CPU
---luacheck: push ignore widget cpu_now
+
+-- CPU ----------------------------------------------------------------------------------------------------------------
 local cpu_icon = wibox.widget.textbox("<span font=\"".. theme.iconFont .."\"></span> ")
 local cpu = lain.widget.cpu {
     timeout = 5,
@@ -296,10 +285,10 @@ local cpu_widget = wibox.widget {
 cpu_widget:buttons(awful.button({ }, 1, function()
     awful.spawn("urxvtc -geometry 70x22 -e htop -s PERCENT_CPU & disown")
 end))
---luacheck: pop
+-----------------------------------------------------------------------------------------------------------------------
 
--- BAT
---luacheck: push ignore widget bat_now
+
+-- BAT ----------------------------------------------------------------------------------------------------------------
 local bat_icon = wibox.widget.textbox()
 local bat = lain.widget.bat {
     notify = "off",
@@ -355,26 +344,21 @@ local bat_widget = wibox.widget {
     },
     layout = wibox.layout.align.horizontal,
 }
---luacheck: pop
+-----------------------------------------------------------------------------------------------------------------------
 
--- ALSA volume
---luacheck: push ignore widget volume_now vol_text volume_before
+
+-- ALSA volume --------------------------------------------------------------------------------------------------------
 local vol_icon = wibox.widget.textbox()
 theme.volume = lain.widget.alsa {
-    -- togglechannel = "IEC958,3",
     settings = function()
         if volume_now.status == "off" then
-            -- vol_icon:set_image(theme.widget_vol_mute)
             vol_icon.markup = "<span font=\"".. theme.iconFont .."\"></span> "
         elseif tonumber(volume_now.level) == 0 then
-            -- vol_icon:set_image(theme.widget_vol_no)
             vol_icon.markup = "<span font=\"".. theme.iconFont .."\"></span> "
         elseif tonumber(volume_now.level) < 50 then
-            -- vol_icon:set_image(theme.widget_vol_low)
             vol_icon.markup = "<span font=\"".. theme.iconFont .."\"></span> "
         else 
             vol_icon.markup = "<span font=\"".. theme.iconFont .."\"></span> "
-            -- vol_icon:set_image(theme.widget_vol)
         end
 
         widget:set_markup(markup.fontfg(theme.font, theme.fg_normal, volume_now.level .. "%"))
@@ -402,8 +386,7 @@ theme.volume = lain.widget.alsa {
         volume_before = volume_now.status
     end,
 }
-
--- Initial notification
+-- Initial notification 
 theme.volume.manual = true
 theme.volume.update()
 
@@ -437,10 +420,10 @@ vol_widget:buttons(gears.table.join(
         end)
     end)
 ))
---luacheck: pop
+-----------------------------------------------------------------------------------------------------------------------
 
--- MEM  
---luacheck: push ignore widget mem_now
+
+-- MEM ----------------------------------------------------------------------------------------------------------------
 local mem_icon = wibox.widget.textbox("<span font=\"".. theme.iconFont .."\"></span> ")
 local mem = lain.widget.mem {
     timeout = 5,
@@ -496,9 +479,10 @@ mem_widget:buttons(awful.button({ }, 1, function()
         timeout = 7,
     }
 end))
---luacheck: pop
+-----------------------------------------------------------------------------------------------------------------------
 
--- MPD Toggle
+
+-- MPD Toggle ---------------------------------------------------------------------------------------------------------
 theme.mpd_toggle = wibox.widget.textbox()
 vicious.register(
     theme.mpd_toggle,
@@ -518,9 +502,10 @@ theme.mpd_toggle:buttons(awful.util.table.join(
         vicious.force({theme.mpdwidget, theme.mpd_prev, theme.mpd_toggle, theme.mpd_next})
     end)
 ))
---luacheck: pop
+-----------------------------------------------------------------------------------------------------------------------
 
--- MPD Previous
+
+-- MPD Previous -------------------------------------------------------------------------------------------------------
 theme.mpd_prev = wibox.widget.textbox()
 vicious.register(
     theme.mpd_prev,
@@ -539,9 +524,10 @@ theme.mpd_prev:buttons(awful.util.table.join(
         vicious.force({theme.mpdwidget, theme.mpd_prev, theme.mpd_toggle, theme.mpd_next})
     end)
 ))
---luacheck: pop
+-----------------------------------------------------------------------------------------------------------------------
 
--- MPD Next
+
+-- MPD Next -----------------------------------------------------------------------------------------------------------
 theme.mpd_next = wibox.widget.textbox()
 vicious.register(
     theme.mpd_next,
@@ -560,8 +546,10 @@ theme.mpd_next:buttons(awful.util.table.join(
         vicious.force({theme.mpdwidget, theme.mpd_prev, theme.mpd_toggle, theme.mpd_next})
     end)
 ))
---luacheck: pop
+-----------------------------------------------------------------------------------------------------------------------
 
+
+-- Ncmpcpp ------------------------------------------------------------------------------------------------------------
 local terminalRun = wibox.widget.textbox("<span font=\"".. theme.iconFont .."\"></span>")
 terminalRun:buttons(awful.util.table.join(
     awful.button({}, 1, function()
@@ -571,7 +559,10 @@ terminalRun:buttons(awful.util.table.join(
         awful.spawn("/home/ranguel/.config/ncmpcpp/mpdnotify")
     end)
 ))
+-----------------------------------------------------------------------------------------------------------------------
 
+
+-- Shape --------------------------------------------------------------------------------------------------------------
 local shape_left = function(cr, width, height)
   gears.shape.parallelogram(cr, width, height, width-10)
 end
@@ -583,10 +574,10 @@ end
 local shape_end_right = function(cr, width, height)
   gears.shape.transform(shape.isosceles_triangle) : rotate_at(35, 35, math.pi/2)(cr,width,height)
 end
+-----------------------------------------------------------------------------------------------------------------------
 
------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------
--- Show widget on mouse::enter on parent, hide after mouse::leave + timeout
+
+-- Show widget on mouse::enter on parent, hide after mouse::leave + timeout -------------------------------------------
 show_on_mouse = function(parent, widget, timeout)
     local timer = gears.timer {
         timeout = timeout or 5,
@@ -601,14 +592,16 @@ show_on_mouse = function(parent, widget, timeout)
         timer:stop()
     end)
 
-    parent:connect_signal("mouse::leave", function()
+     parent:connect_signal("mouse::leave", function()
         timer:start()
     end)
 end
 -----------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------
 
+
+-----------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 function theme.at_screen_connect(s)
     -- Quake application
     s.quake = lain.util.quake({ app = awful.util.terminal })
@@ -620,7 +613,6 @@ function theme.at_screen_connect(s)
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
     -- Create an imagebox widget which will contains an icon indicating which layout we're using.
-    -- We need one layoutbox per screen.
     s.mylayoutbox = awful.widget.layoutbox(s)
     s.mylayoutbox:buttons(my_table.join(
                            awful.button({}, 1, function () awful.layout.inc( 1) end),
@@ -748,7 +740,9 @@ function theme.at_screen_connect(s)
                 layout = wibox.layout.align.horizontal,
                 { -- Left widgets
                     layout = wibox.layout.fixed.horizontal,
+
                     space,
+
 
                     {  -- Layout box
                       {
@@ -768,7 +762,6 @@ function theme.at_screen_connect(s)
                     },
 
 
-
                     {  -- Taglist
                       {
                         {
@@ -783,7 +776,6 @@ function theme.at_screen_connect(s)
                     bg                 = theme.border_focus,
                     widget             = wibox.container.background
                     },
-
 
 
                     {  -- Mpd
@@ -804,7 +796,6 @@ function theme.at_screen_connect(s)
                     },
                   
 
-
                   {  -- Run ncmpcpp
                       {
                         {
@@ -821,7 +812,7 @@ function theme.at_screen_connect(s)
                     bg                 = theme.border_focus,
                     widget             = wibox.container.background
                     },
-              },
+
 
                     -- { -- Prompt box
                     --     {
@@ -836,7 +827,8 @@ function theme.at_screen_connect(s)
                     --     bg = theme.prompt_bg,
                     --     widget = wibox.container.background,
                     -- },
-               
+              },
+
 
                 -- Middle widget
                 { -- Tasklist
@@ -844,8 +836,6 @@ function theme.at_screen_connect(s)
                         layout = wibox.layout.flex.horizontal,
                         s._tasklist,
                     },
-                    -- shape              = shape_left,
-                    -- bg                 = theme.border_focus,
                     widget = wibox.container.background,
                 },
 
@@ -950,12 +940,12 @@ function theme.at_screen_connect(s)
                 },
             },
         },
+        -- bottom = theme.border_width,
+        -- color = theme.border_focus,
         top = dpi(3),
         bottom = dpi(3),
         widget = wibox.container.margin,
     }
-
-
 end
 
 return theme
