@@ -1,5 +1,5 @@
-local awesome, client, mouse, screen, tag = awesome, client, mouse, screen, tag
-local ipairs, string, os, table, tostring, tonumber, type = ipairs, string, os, table, tostring, tonumber, type
+local awesome, tag = awesome, client, mouse, screen, tag
+local ipairs, type = ipairs, string, os, table, tostring, tonumber, type
 
 local gears         = require("gears")
 local awful         = require("awful")
@@ -164,6 +164,9 @@ lain.layout.cascade.tile.offset_y      = 32
 lain.layout.cascade.tile.extra_padding = 5
 lain.layout.cascade.tile.nmaster       = 5
 lain.layout.cascade.tile.ncol          = 2
+
+-- Enable screen edges snapping
+-- awful.mouse.snap.edge_enabled = false
 
 beautiful.init(string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), chosen_theme))
 -----------------------------------------------------------------------------------------------------------------------
