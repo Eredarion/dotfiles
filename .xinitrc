@@ -41,10 +41,11 @@ if [[ $session == "awesome" ]]; then
     fi
 
     xrdb -load "/home/ranguel/.Xresources" &
-    feh --bg-fill "/home/ranguel/Изображения/deletemy/1/wallhaven-732168.jpg"
+    feh --bg-fill "/home/ranguel/Изображения/Wallpapers/wallpapers/nZBJAsK.jpg" &
     killall mpd
     mpd &
-    compton -b --config "/home/ranguel/.config/compton.conf" --shadow-exclude "x2>= 1200 && y2 >=700" &
+    compton -b --config "/home/ranguel/.config/compton.conf" --shadow-exclude "x<=3 && x2>= 1000 && y <= 30 && y2 >=700" &
+    #compton -b &
     xfsettingsd &
 fi
 
@@ -79,7 +80,8 @@ if [[ $session == "2bwm" ]]; then
     polybar example &
     
     # compton -b --config "/home/ranguel/.config/compton.conf" --shadow-exclude "x<=3 && x2>= 1000 && y <= 30 && y2 >=700" &
-    compton -b --config "/home/ranguel/.config/compton.conf" --shadow-exclude "x<=3 && x2>= 1000 && y <= 30 && y2 >=700" &
+    #compton -b --config "/home/ranguel/.config/compton.conf" --shadow-exclude "x<=3 && x2>= 1000 && y <= 30 && y2 >=700" &
+    compton -b &
     sxhkd &
     
     dunst -config "$HOME"/.config/dunst/dunstrc &

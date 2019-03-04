@@ -1,26 +1,26 @@
-local gears            = require("gears")
-local lain             = require("lain")
-local awful            = require("awful")
-local wibox            = require("wibox")
-local naughty          = require("naughty")
-local xresources       = require("beautiful.xresources")
-local xrdb             = xresources.get_current_theme()
-local dpi              = xresources.apply_dpi
-local os, math, string = os, math, string
-local vicious          = require("vicious")
+local gears             = require("gears")
+local lain              = require("lain")
+local awful             = require("awful")
+local wibox             = require("wibox")
+local naughty           = require("naughty")
+local xresources        = require("beautiful.xresources")
+local xrdb              = xresources.get_current_theme()
+local os, math, string  = os, math, string
+local vicious           = require("vicious")
 
 local colors = { }
 
 colors.bw_0             = xrdb.background
 colors.bw_1             = xrdb.color1
 colors.bw_2             = "#BEBEBE"
+colors.bw_2_t           = "#595959"
 colors.bw_3             = xrdb.color3
 colors.bw_4             = xrdb.color4
 colors.bw_5             = xrdb.color5
 colors.bw_6             = xrdb.color4
 colors.bw_7             = xrdb.color7
 colors.bw_8             = xrdb.color8
-colors.bw_9             = xrdb.foreground
+colors.bw_9             = xrdb.foreground 
 colors.bw_10            = xrdb.color10
 colors.red_1            = "#cc241d"
 colors.red_2            = "#fb4934"
@@ -34,23 +34,25 @@ theme.wallpaper         = theme.dir .. "/wallpapers/wall.png"
 
 -- Font ---------------------------------------------------------------------------------------------------------------
 local font_name                                 = "SF Pro Text"
+--local font_name                                 = "Rubik"
 local font_size                                 = "8"
 theme.font                                      = font_name .. " " .. "Medium"      .. " " .. font_size
 theme.font_bold                                 = font_name .. " " .. "Medium"      .. " " .. font_size
-theme.font_notification                         = font_name .. " " .. "Medium"      .. " " .. "8"
+theme.font_notification                         = font_name .. " " .. "Medium"      .. " " .. font_size
 theme.font_italic                               = font_name .. " " .. "Italic"      .. " " .. font_size
 theme.font_bold_italic                          = font_name .. " " .. "Bold Italic" .. " " .. font_size
 theme.iconFont                                  = "Font Awesome 5 Free Regular 9"
 theme.iconFont8                                 = "Font Awesome 5 Free 11"
+theme.iconFont10                                = "Font Awesome 5 Free 10"
 theme.materialIconFont                          = "Material Icons Regular 10"
 theme.font_big                                  = "Material Icons Regular "  .. " 20"
-theme.taglist_font                              = "Mplus 1p Medium 8"
+theme.taglist_font                              = "Mplus 1p Medium 8.7"
 -----------------------------------------------------------------------------------------------------------------------
 
 
 -- Border colors ------------------------------------------------------------------------------------------------------
 theme.accent                                    = colors.red_2
-theme.border_normal                             = colors.bw_2
+theme.border_normal                             = colors.bw_0
 theme.border_focus                              = colors.bw_9
 theme.border_marked                             = colors.bw_9
 -----------------------------------------------------------------------------------------------------------------------
@@ -69,7 +71,7 @@ theme.bg_urgent                                 = theme.border_normal
 -- Taglist colors -----------------------------------------------------------------------------------------------------
 theme.taglist_fg_normal                         = colors.bw_0
 theme.taglist_fg_occupied                       = colors.bw_0
-theme.taglist_fg_empty                          = colors.bw_3
+theme.taglist_fg_empty                          = colors.bw_5
 theme.taglist_fg_volatile                       = colors.bw_0
 theme.taglist_fg_focus                          = colors.bw_0
 theme.taglist_fg_urgent                         = theme.accent
@@ -86,9 +88,9 @@ theme.taglist_bg_urgent                         = theme.border_focus
 theme.tasklist_font_normal                      = theme.font
 theme.tasklist_font_focus                       = theme.font
 theme.tasklist_font_urgent                      = theme.font
-theme.tasklist_fg_normal                        = colors.bw_3
+theme.tasklist_fg_normal                        = colors.bw_2_t
 theme.tasklist_fg_focus                         = colors.bw_0
-theme.tasklist_fg_minimize                      = colors.bw_2
+theme.tasklist_fg_minimize                      = colors.bw_2_t
 theme.tasklist_fg_urgent                        = theme.accent
 theme.tasklist_bg_normal                        = colors.bw_2
 theme.tasklist_bg_focus                         = theme.border_focus
@@ -105,24 +107,24 @@ theme.titlebar_bg_marked                        = theme.border_marked
 theme.hotkeys_border_width                      = theme.border_width
 theme.hotkeys_border_color                      = theme.border_focus
 theme.hotkeys_fg                                = colors.bw_9
-theme.hotkeys_group_margin                      = dpi(20)
+theme.hotkeys_group_margin                      = 20
 
 theme.prompt_bg                                 = colors.bw_0
 theme.prompt_fg                                 = theme.fg_normal
 theme.bg_systray                                = colors.bw_9
 
-theme.border_width                              = dpi(1)
+theme.border_width                              = 1
 -- theme.border_radius                             = dpi(8)
-theme.border_radius                             = dpi(0)
+theme.border_radius                             = 0
 theme.fullscreen_hide_border                    = true
 theme.maximized_hide_border                     = true
-theme.menu_height                               = dpi(20)
-theme.menu_width                                = dpi(250)
+theme.menu_height                               = 20
+theme.menu_width                                = 250
 theme.tasklist_plain_task_name                  = true
 theme.tasklist_disable_icon                     = true
-theme.tasklist_spacing                          = dpi(0)
-theme.useless_gap                               = dpi(5)
-theme.systray_icon_spacing                      = dpi(4)
+theme.tasklist_spacing                          = 0
+theme.useless_gap                               = 5
+theme.systray_icon_spacing                      = 4
 
 theme.snap_bg                                   = theme.border_focus
 theme.snap_shape                                = function(cr, w, h)
@@ -163,20 +165,20 @@ theme.notification_fg                           = colors.bw_9
 theme.notification_bg                           = theme.bg_normal
 theme.notification_border_color                 = theme.border_focus
 theme.notification_border_width                 = theme.border_width
-theme.notification_icon_size                    = dpi(60)
-naughty.config.defaults['icon_size'] = dpi(50)
+theme.notification_icon_size                    = 60
+naughty.config.defaults['icon_size'] = 50
 theme.notification_opacity                      = 1
-theme.notification_max_width                    = dpi(300)
-theme.notification_max_height                   = dpi(80)
+theme.notification_max_width                    = 600
+theme.notification_max_height                   = 500
 -- theme.notification_height = dpi(80)
 -- theme.notification_width = dpi(300)
-theme.notification_margin                       = dpi(10)
+theme.notification_margin                       = 10
 -- theme.notification_shape                        = function(cr, width, height)
 --   gears.shape.transform(gears.shape.parallelogram) : rotate(0)(cr, width, height, width)
 -- end
 
-naughty.config.padding                          = dpi(6)
-naughty.config.spacing                          = dpi(10)
+naughty.config.padding                          = 6
+naughty.config.spacing                          = 10
 naughty.config.defaults.timeout                 = 5
 naughty.config.defaults.margin                  = theme.notification_margin
 naughty.config.defaults.border_width            = theme.notification_border_width
@@ -211,8 +213,8 @@ local markup = lain.util.markup
 local space = wibox.widget {
     widget = wibox.widget.separator,
     orientation = "vertical",
-    forced_width = dpi(3),
-    thickness = dpi(3),
+    forced_width = 3,
+    thickness = 3,
     color = "#00000000",
 }
 
@@ -235,13 +237,18 @@ local clock = awful.widget.watch(
     end
 )
 
-local clock_widget = wibox.widget {
-    {
-        clock,
-        widget = wibox.container.margin,
-    },
-    layout = wibox.layout.align.horizontal,
-}
+local clock_widget = 
+    wibox.widget {  
+                    {
+                        layout = wibox.layout.fixed.horizontal,
+                        clock,
+                    },
+                    top = 0,
+                    bottom = 0,
+                    left = 13,
+                    right = 13,
+                    widget = wibox.container.margin
+                }
 
 -- Calendar
 theme.cal = lain.widget.cal {
@@ -276,17 +283,22 @@ local cpu = lain.widget.cpu {
     end,
 }
 
-local cpu_widget = wibox.widget {
-    cpu_icon,
-    {
-        cpu.widget,
-        widget = wibox.container.margin,
-    },
-    layout = wibox.layout.align.horizontal,
-}
+local cpu_widget = 
+    wibox.widget {  
+                    {
+                        layout = wibox.layout.fixed.horizontal,
+                        cpu_icon,
+                        cpu.widget,
+                    },
+                    top = 0,
+                    bottom = 0,
+                    left = 13,
+                    right = 13,
+                    widget = wibox.container.margin
+                }
 
 cpu_widget:buttons(awful.button({ }, 1, function()
-    awful.spawn("urxvtc -geometry 70x22 -e htop -s PERCENT_CPU & disown")
+    awful.spawn("urxvtc -geometry 80x25 -e htop -s PERCENT_CPU & disown")
 end))
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -302,16 +314,16 @@ local bat = lain.widget.bat {
         local _font = theme.font
 
         if tonumber(bat_now.perc) <= 10 then
-            bat_icon.markup = "<span font=\"".. theme.iconFont .."\"></span> "
+            bat_icon.markup = "<span font=\"".. theme.iconFont8 .."\"></span> "
             _color = colors.red_2
         elseif tonumber(bat_now.perc) <= 20 then
-            bat_icon.markup = "<span font=\"".. theme.iconFont .."\"></span> "
+            bat_icon.markup = "<span font=\"".. theme.iconFont8 .."\"></span> "
             _color = colors.orange_2
         elseif tonumber(bat_now.perc) <= 30 then
-            bat_icon.markup = "<span font=\"".. theme.iconFont .."\"></span> "
+            bat_icon.markup = "<span font=\"".. theme.iconFont8 .."\"></span> "
             _color = colors.yellow_2
         elseif tonumber(bat_now.perc) <= 50 then
-            bat_icon.markup = "<span font=\"".. theme.iconFont .."\"></span> "
+            bat_icon.markup = "<span font=\"".. theme.iconFont8 .."\"></span> "
         else
             bat_icon.markup = "<span font=\"".. theme.iconFont8 .."\"></span> "
         end
@@ -339,14 +351,19 @@ local bat = lain.widget.bat {
     end,
 }
 
-local bat_widget = wibox.widget {
-    bat_icon,
-    {
-        bat.widget,
-        widget = wibox.container.margin,
-    },
-    layout = wibox.layout.align.horizontal,
-}
+local bat_widget = 
+    wibox.widget {  
+                    {
+                        layout = wibox.layout.fixed.horizontal,
+                        bat_icon,
+                        bat.widget,
+                    },
+                    top = 0,
+                    bottom = 0,
+                    left = 13,
+                    right = 13,
+                    widget = wibox.container.margin
+                }
 -----------------------------------------------------------------------------------------------------------------------
 
 
@@ -355,7 +372,7 @@ local vol_icon = wibox.widget.textbox()
 theme.volume = lain.widget.alsa {
     settings = function()
         if volume_now.status == "off" then
-            vol_icon.markup = "<span font=\"".. theme.iconFont .."\"></span> "
+            vol_icon.markup = "<span font=\"".. theme.iconFont10 .."\"></span> "
         elseif tonumber(volume_now.level) == 0 then
             vol_icon.markup = "<span font=\"".. theme.iconFont .."\"></span> "
         elseif tonumber(volume_now.level) < 50 then
@@ -393,14 +410,19 @@ theme.volume = lain.widget.alsa {
 theme.volume.manual = true
 theme.volume.update()
 
-local vol_widget = wibox.widget {
-    vol_icon,
-    {
-        theme.volume.widget,
-        widget = wibox.container.margin,
-    },
-    layout = wibox.layout.align.horizontal,
-}
+local vol_widget = 
+    wibox.widget {  
+                    {
+                        layout = wibox.layout.fixed.horizontal,
+                        vol_icon,
+                        theme.volume.widget,
+                    },
+                    top = 0,
+                    bottom = 0,
+                    left = 13,
+                    right = 13,
+                    widget = wibox.container.margin
+                }
 
 vol_widget:buttons(gears.table.join(
     awful.button({ }, 1, function()
@@ -421,6 +443,9 @@ vol_widget:buttons(gears.table.join(
         function(stdout, stderr, reason, exit_code) --luacheck: no unused args
             theme.volume.update()
         end)
+    end),
+    awful.button({}, 3, function()
+        os.execute("pulseaudio-equalizer toggle")
     end)
 ))
 -----------------------------------------------------------------------------------------------------------------------
@@ -455,14 +480,19 @@ local mem = lain.widget.mem {
     end,
 }
 
-local mem_widget = wibox.widget {
-    mem_icon,
-    {
-        mem.widget,
-        widget = wibox.container.margin,
-    },
-    layout = wibox.layout.align.horizontal,
-}
+local mem_widget = 
+    wibox.widget {  
+                    {
+                        layout = wibox.layout.fixed.horizontal,
+                        mem_icon,
+                        mem.widget,
+                    },
+                    top = 0,
+                    bottom = 0,
+                    left = 13,
+                    right = 13,
+                    widget = wibox.container.margin
+                }
 
 mem_widget:buttons(awful.button({ }, 1, function()
     if mem_widget.notification then
@@ -549,12 +579,53 @@ theme.mpd_next:buttons(awful.util.table.join(
         vicious.force({theme.mpdwidget, theme.mpd_prev, theme.mpd_toggle, theme.mpd_next})
     end)
 ))
+
+local justText = wibox.widget.textbox(" <span  font=\"".. theme.iconFont .."\"></span>")
 -----------------------------------------------------------------------------------------------------------------------
 
 
+-- MPD Random ---------------------------------------------------------------------------------------------------------
+theme.mpd_random = wibox.widget.textbox()
+vicious.register(
+    theme.mpd_random,
+    vicious.widgets.mpd,
+    function(widget, warg)
+        if warg["{random}"] == true then
+          return ("<span font=\"".. theme.iconFont .."\">1</span> ")
+        elseif warg["{random}"] == false then
+          return ("<span font=\"".. theme.iconFont .."\">0</span> ")
+        else
+          return ("<span font=\"".. theme.iconFont .."\">8</span> ")
+        end
+    end)
+
+theme.mpd_random:buttons(awful.util.table.join(
+    awful.button({}, 1, function()
+        os.execute("mpc random")
+        vicious.force({theme.mpdwidget, theme.mpd_random})
+    end)
+))
+
+local justText1 = wibox.widget.textbox(" <span font=\"".. theme.iconFont .."\"></span>")
+-----------------------------------------------------------------------------------------------------------------------
+
 -- Ncmpcpp ------------------------------------------------------------------------------------------------------------
-local terminalRun = wibox.widget.textbox("<span font=\"".. theme.iconFont .."\"></span>")
-terminalRun:buttons(awful.util.table.join(
+local ncmpcpp = wibox.widget.textbox("<span font=\"".. theme.iconFont .."\"></span>")
+
+local ncmpcpp_widget = 
+    wibox.widget {  
+                    {
+                        layout = wibox.layout.fixed.horizontal,
+                        ncmpcpp,
+                    },
+                    top = 0,
+                    bottom = 0,
+                    left = 13,
+                    right = 13,
+                    widget = wibox.container.margin
+                }
+
+ncmpcpp_widget:buttons(awful.util.table.join(
     awful.button({}, 1, function()
         os.execute("urxvtc -geometry 70x25 -e ncmpcpp")
     end),
@@ -563,7 +634,6 @@ terminalRun:buttons(awful.util.table.join(
     end)
 ))
 -----------------------------------------------------------------------------------------------------------------------
-
 
 -- Shape --------------------------------------------------------------------------------------------------------------
 local shape_left = function(cr, width, height)
@@ -633,12 +703,11 @@ function theme.at_screen_connect(s)
             screen = s,
             filter = awful.widget.tasklist.filter.currenttags,
             buttons = awful.util.tasklist_buttons,
-            bg_focus = "#FFFFFF",
             style = {
                 shape = function(cr, width, height)
                             gears.shape.parallelogram(cr, width, height, width-10) 
                 end,
-                shape_border_width = dpi(20),
+                shape_border_width = 0,
                 shape_border_color = "#a12a12",
             },
             widget_template = {
@@ -655,9 +724,8 @@ function theme.at_screen_connect(s)
                         valign = 'center',
                         widget = wibox.container.place,
                     },
-                    left = dpi(5),
-                    right = dpi(5),
-                    top = dpi(5),
+                    left = 13,
+                    right = 13,
                     widget = wibox.container.margin,
                 },
                 create_callback = function(self, c, index, objects) --luacheck: no unused args
@@ -677,9 +745,7 @@ function theme.at_screen_connect(s)
             },
             layout = {
                 layout = wibox.layout.flex.horizontal,
-                spacing = dpi(8),
                 spacing_widget = {
-                    bar_spr,
                     valign = 'center',
                     halign = 'center',
                     widget = wibox.container.place,
@@ -698,7 +764,7 @@ function theme.at_screen_connect(s)
              shape = function(cr, width, height)
                             gears.shape.parallelogram(cr, width, height, width-10) 
                 end,
-                shape_border_width = dpi(0),
+                shape_border_width = 0,
                 shape_border_color = "#a12a12",
             align = "center" }, nil, wibox.layout.flex.horizontal())
     end
@@ -721,10 +787,10 @@ function theme.at_screen_connect(s)
               layout = wibox.layout.align.horizontal,
               wibox.widget.systray(),
             },
-          left = dpi(13),
-          right = dpi(13),
-          top = dpi(0),
-          bottom = dpi(0),
+          left = 13,
+          right = 13,
+          top = 0,
+          bottom = 0,
           widget = wibox.container.margin,
           },
         shape = shape_left,
@@ -735,28 +801,28 @@ function theme.at_screen_connect(s)
     }
     show_on_mouse(s.mywibox, systray_widget, 1)
 
-     -- Add widgets to the wibox
+    -- Add widgets to the wibox
     s.mywibox:setup {
         {
             layout = wibox.layout.flex.vertical,
             {
                 layout = wibox.layout.align.horizontal,
-                { -- Left widgets
+                -- Left widgets
+                { 
                     layout = wibox.layout.fixed.horizontal,
-
                     space,
 
-
-                    {  -- Layout box
+                    -- Layout box
+                    {  
                       {
                         {
                           layout = wibox.layout.fixed.horizontal,
                           s.mylayoutbox
                         },
-                      top = dpi(2),
-                      bottom = dpi(2),
-                      left = dpi(15),
-                      right = dpi(15),
+                      top = 2,
+                      bottom = 2,
+                      left = 15,
+                      right = 15,
                       widget = wibox.container.margin
                       },
                     shape              = shape_left,
@@ -764,15 +830,15 @@ function theme.at_screen_connect(s)
                     widget             = wibox.container.background
                     },
 
-
-                    {  -- Taglist
+                    -- Taglist
+                    {  
                       {
                         {
                           layout = wibox.layout.fixed.horizontal,
                           s.mytaglist
                         },
-                      left = dpi(13),
-                      right = dpi(13),
+                      left = 13,
+                      right = 13,
                       widget = wibox.container.margin
                       },
                     shape              = shape_left,
@@ -780,17 +846,20 @@ function theme.at_screen_connect(s)
                     widget             = wibox.container.background
                     },
 
-
-                    {  -- Mpd
+                    -- Mpd
+                    { 
                       {
                         {
                           layout = wibox.layout.fixed.horizontal,
                           theme.mpd_prev, space,
                           theme.mpd_toggle, space,
                           theme.mpd_next, space,
+                          justText, space, 
+                          -- theme.mpd_random, space,
+                          justText1, space
                         },
-                      left = dpi(13),
-                      right = dpi(13),
+                      left = 13,
+                      right = 13,
                       widget = wibox.container.margin
                       },
                     shape              = shape_left,
@@ -798,24 +867,14 @@ function theme.at_screen_connect(s)
                     widget             = wibox.container.background
                     },
                   
-
-                  {  -- Run ncmpcpp
-                      {
-                        {
-                          layout = wibox.layout.fixed.horizontal,
-                          terminalRun
-                        },
-                      top = dpi(2),
-                      bottom = dpi(2),
-                      left = dpi(13),
-                      right = dpi(13),
-                      widget = wibox.container.margin
-                      },
-                    shape              = shape_left,
-                    bg                 = theme.border_focus,
-                    widget             = wibox.container.background
+                    -- Run ncmpcpp
+                    {  
+                        ncmpcpp_widget,
+                        shape              = shape_left,
+                        bg                 = theme.border_focus,
+                        widget             = wibox.container.background
                     },
-              },
+                },
 
                     -- { -- Prompt box
                     --     {
@@ -833,7 +892,7 @@ function theme.at_screen_connect(s)
                
 
                 -- Middle widget
-                { -- Tasklist
+                {   -- Tasklist
                     {
                         layout = wibox.layout.flex.horizontal,
                         s._tasklist,
@@ -841,100 +900,51 @@ function theme.at_screen_connect(s)
                     widget = wibox.container.background,
                 },
 
-                { -- Right widgets
+                -- Right widgets
+                {
                     layout = wibox.layout.fixed.horizontal,
 
                     -- Systray
                     systray_widget,
 
-
-                    {  -- Cpu
-                      {
-                        {
-                          layout = wibox.layout.fixed.horizontal,
-                          cpu_widget
-                        },
-                      top = dpi(0),
-                      bottom = dpi(0),
-                      left = dpi(13),
-                      right = dpi(13),
-                      widget = wibox.container.margin
-                      },
-                    shape              = shape_right,
-                    bg                 = theme.border_focus,
-                    widget             = wibox.container.background
+                    -- Cpu
+                    {
+                        cpu_widget,
+                        shape              = shape_right,
+                        bg                 = theme.border_focus,
+                        widget             = wibox.container.background
                     },
 
-
-                    {  -- Memory
-                      {
-                        {
-                          layout = wibox.layout.fixed.horizontal,
-                          mem_widget
-                        },
-                      top = dpi(0),
-                      bottom = dpi(0),
-                      left = dpi(13),
-                      right = dpi(13),
-                      widget = wibox.container.margin
-                      },
-                    shape              = shape_right,
-                    bg                 = theme.border_focus,
-                    widget             = wibox.container.background
+                    -- Memory
+                    {              
+                        mem_widget,
+                        shape              = shape_right,
+                        bg                 = theme.border_focus,
+                        widget             = wibox.container.background
                     },
 
-
-                    {  -- Volume
-                      {
-                        {
-                          layout = wibox.layout.fixed.horizontal,
-                          vol_widget
-                        },
-                      top = dpi(0),
-                      bottom = dpi(0),
-                      left = dpi(13),
-                      right = dpi(13),
-                      widget = wibox.container.margin
-                      },
-                    shape              = shape_right,
-                    bg                 = theme.border_focus,
-                    widget             = wibox.container.background
+                    -- Volume
+                    {  
+                        vol_widget,
+                        shape              = shape_right,
+                        bg                 = theme.border_focus,
+                        widget             = wibox.container.background
                     },
 
-
-                    {  -- Battery
-                      {
-                        {
-                          layout = wibox.layout.fixed.horizontal,
-                          bat_widget
-                        },
-                      top = dpi(0),
-                      bottom = dpi(0),
-                      left = dpi(13),
-                      right = dpi(13),
-                      widget = wibox.container.margin
-                      },
-                    shape              = shape_right,
-                    bg                 = theme.border_focus,
-                    widget             = wibox.container.background
+                    -- Battery
+                    {
+                        bat_widget,
+                        shape              = shape_right,
+                        bg                 = theme.border_focus,
+                        widget             = wibox.container.background
                     },
 
-
-                    {  -- Time
-                      {
-                        {
-                          layout = wibox.layout.fixed.horizontal,
-                          clock_widget
-                        },
-                      top = dpi(0),
-                      bottom = dpi(0),
-                      left = dpi(13),
-                      right = dpi(13),
-                      widget = wibox.container.margin
-                      },
-                    shape              = shape_right,
-                    bg                 = theme.border_focus,
-                    widget             = wibox.container.background
+                    -- Time
+                    {
+                        clock_widget,
+                        shape              = shape_right,
+                        bg                 = theme.border_focus,
+                        widget             = wibox.container.background
                     },
 
 
@@ -944,8 +954,8 @@ function theme.at_screen_connect(s)
         },
         -- bottom = theme.border_width,
         -- color = theme.border_focus,
-        top = dpi(3),
-        bottom = dpi(3),
+        top = 3,
+        bottom = 3,
         widget = wibox.container.margin,
     }
 end

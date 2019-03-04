@@ -34,7 +34,7 @@ function config.init(context)
 
     -- {{{ Mouse bindings
     root.buttons(gears.table.join(
-    -- awful.button({ }, 3, function () mymainmenu:toggle() end),
+    awful.button({ }, 3, function () naughty.destroy_all_notifications() end),
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
     ))
@@ -107,11 +107,17 @@ function config.init(context)
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
 
+    awful.key({ modkey, "Shift"   }, "Return", function () awful.spawn("st") end,
+              {description = "open a st terminal", group = "launcher"}),
+
     awful.key({ modkey,           }, "z", function () awful.spawn(rofi_run) end,
               {description = "rofi apps", group = "launcher"}),
 
     awful.key({ modkey, "Shift"   }, "q", function () awful.spawn(rofi_quit) end,
               {description = "rofi quit", group = "launcher"}),
+
+    awful.key({ altkey,           }, "t", function () awful.spawn("xfce4-taskmanager") end,
+              {description = "task manager", group = "launcher"}),
 
     awful.key({ modkey, "Control" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
@@ -290,6 +296,7 @@ end
 clientbuttons = gears.table.join(
     awful.button({ }, 1, function (c) client.focus = c; c:raise() end),
     awful.button({ modkey }, 1, awful.mouse.client.move),
+    awful.button({ modkey }, 2, function (c) c:kill() end),
     awful.button({ modkey }, 3, awful.mouse.client.resize))
 
 -- Set keys

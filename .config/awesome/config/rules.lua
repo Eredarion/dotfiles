@@ -60,7 +60,7 @@ function config.init(context)
           "Chromium",
           "qutebrowser" }}, properties = { tag = awful.util.tagnames[1], switchtotag = true } },
 
-    { rule_any = { class = { "mpv", "feh" }},
+    { rule_any = { class = { "mpv", "feh", "vlc" }},
      properties = { width = 720, height = 406, delayed_placement = awful.placement.centered } },
 
     { rule = { class = "Thunar" },
@@ -72,7 +72,7 @@ function config.init(context)
     { rule = { class = "Transmission" },
      properties = {  tag = awful.util.tagnames[5], focus = true } },
 
-     { rule = { name = "Параметры торрента" },
+    { rule = { name = "Параметры торрента" },
      properties = {  width = 900, height = 500,  delayed_placement = awful.placement.centered, switchtotag = true  } },
 
      

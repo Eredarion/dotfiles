@@ -61,4 +61,31 @@
 	<other-files/>
 	<text-files/>
 </action>
+<action>
+	<icon></icon>
+	<name>runSH</name>
+	<unique-id>1550192478422414-1</unique-id>
+	<command>urxvtc -geometry 83x22 -e ./%N</command>
+	<description></description>
+	<patterns>*</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>insert-image</icon>
+	<name>Set wallpaper</name>
+	<unique-id>1551405501792009-1</unique-id>
+	<command>feh --bg-fill %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>color-management</icon>
+	<name>Get collors</name>
+	<unique-id>1551405657924944-2</unique-id>
+	<command>wal -i %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
 </actions>
