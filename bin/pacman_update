@@ -1,0 +1,3 @@
+#!/bin/bash
+
+$1 -e sh -c "yay -Syu && awesome-client \"awesome.emit_signal('pacman_upd')\""

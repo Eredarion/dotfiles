@@ -1,0 +1,22 @@
+#!/bin/bash
+bt_state=$(upower -i $(upower -e | grep BAT) | grep state | sed 's/^ *//')
+bt_percentage=$(upower -i $(upower -e | grep BAT) | grep percentage | sed 's/^ *//')
+bt_time=$(upower -i $(upower -e | grep BAT) | grep 'time to' | sed 's/^ *//')
+
+f=3 b=4
+for j in f b; do
+  for i in {0..7}; do
+    printf -v $j$i %b "\e[${!j}${i}m"
+  done
+done
+
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+cat << EOF  
+$bold$f1[?]$f5 Battery info:
+    $f1>> $normal$f4$bt_state
+     $bold$f2>> $normal$f4$bt_percentage
+      $bold$f3>> $normal$f4$bt_time
+                                          $bold$f1 [!]
+EOF

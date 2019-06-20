@@ -1,7 +1,4 @@
 #!/bin/bash
-# Tiny colored fetch script
-# Requires Typicons Font to display the icons
-# elenapan @ github
 
 f=3 b=4
 for j in f b; do
@@ -12,6 +9,9 @@ done
 d=$'\e[1m'
 t=$'\e[0m'
 v=$'\e[7m'
+
+bold=$(tput bold)
+normal=$(tput sgr0)
 
 # Items
 sep=
@@ -42,11 +42,13 @@ upt="${upt/ minute?/m}"
 pi=
 packages="$(pacman -Qq | wc -l)"
 
-bi=
-battery=$(cat '/sys/class/power_supply/BAT0/capacity')
+bi=
+battery=$(cat '/sys/class/power_supply/BAT0/capacity')%
 
 di=
 disk=$(df -k -h /dev/sda7 | tail -1 | awk '{print $4}')
+
+memory=$(free -m | grep 'Mem:' | awk '{print $3}')MB
 # (\ /)
 # ( · ·)
 # c(")(")
@@ -61,19 +63,73 @@ disk=$(df -k -h /dev/sda7 | tail -1 | awk '{print $4}')
 #  # # # # #
 # # # # # # #
 tput clear
-cat << EOF  
-         $f1 $f7 Fetch $f1 
-    $f1
-    $f1    $d$f1$h   $t$wmname    $f1
-    $f2    $f2$k   $t$kernel      $f2
-    $f3    $f3$ui   $t$upt     $f3
-    $f4    $f4$pi   $t$packages        $f4
-    $f5
-    $f6    $f6$te   $t$terminal         $f6
-    $f5    $f5$sh  $t$shell        $f5
-    $f4
-    $f3    $f3$bi   $t$battery%       $f3
-    $f2    $f2$di   $t$disk free   $f2
-    $f1
+# cat << EOF  
+#          $f1 $f7 Fetch $f1 
+#     $f1
+#     $f1    $d$f1$h   $t$wmname    $f1
+#     $f2    $f2$k   $t$kernel      $f2
+#     $f3    $f3$ui   $t$upt    $f3
+#     $f4    $f4$pi   $t$packages        $f4
+#     $f5
+#     $f6    $f6$te   $t$terminal         $f6
+#     $f5    $f5$sh  $t$shell        $f5
+#     $f4
+#     $f3    $f3$bi   $t$battery%       $f3
+#     $f2    $f2$di   $t$disk free   $f2
+#     $f1
    
+# EOF
+# cat << EOF  
+# $f6.....................................................................
+# $f6:                                                                   $f6:
+# $f6:                                                                   $f6:
+# $f6:                     $f6 Keep it simple stupid                 $f6      :
+# $f6:                  $f7    ‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧                     $f6:
+# $f6:                                                                   $f6:
+# $f6:   $f1 OS: Archlinux   $f2 Kernel: $kernel  $f3 WM: Awesome  $f4 Terminal: st  $f6  :
+# $f6:                                                                   $f6:
+# $f6:                         $f5 Memory: $memory                         $f6  :
+# $f6:                                                                   $f6:
+# $f6:                                                          $f7  $bi $battery $f6:
+# $f6:...................................................................:
+
+# EOF
+
+# cat << EOF  
+# $f7╾───────────────────────────────────────────────────────────────────╼
+# ‧                                                                   ‧
+# |                     $f1 Keep it simple stupid           $f7            |
+# ‧                  $f7    ╾──────────────────────╼                     ‧
+# |                                                                   |
+# ‧   $f2 OS: Archlinux   $f6 Kernel: $kernel  $f3 WM: Awesome  $f4 Terminal: st $f7   ‧
+# |                                                                   |
+# ‧                         $f5 Memory: $memory                         $f7   ‧
+# |                                                                   |
+# ‧                                                          $f7  $bi $battery ‧
+# $f7╾───────────────────────────────────────────────────────────────────╼
+
+# EOF
+
+# cat << EOF  
+
+#                      $f1 Keep it simple stupid           $f7            
+#                   $f7    ╾──────────────────────╼  
+
+#    $f2 OS: Archlinux   $f6 Kernel: $kernel  $f3 WM: Awesome  $f4 Terminal: st $f7
+                                        
+#                          $f5 Memory: $memory 
+                                        
+#                                                         $f7  $bi $battery
+
+# EOF
+
+cat << EOF  
+$bold$f1[?]$f1 Sys info:
+    $f1>> $normal$f7$f1 OS:$f7 Archlinux 
+     $bold$f2>> $normal$f7$f2 Kernel:$f7 $kernel
+      $bold$f3>> $normal$f7$f3 WM:$f7 Awesome
+       $bold$f4>> $normal$f7$f4 Terminal:$f7 urxvt
+        $bold$f5>> $normal$f7$f5 Memory:$f7 $memory
+$bold$f1[!] << [end]
+
 EOF

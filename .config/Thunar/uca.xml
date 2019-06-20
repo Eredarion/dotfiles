@@ -88,4 +88,13 @@
 	<patterns>*</patterns>
 	<image-files/>
 </action>
+<action>
+	<icon>java</icon>
+	<name>run java</name>
+	<unique-id>1560887600654663-1</unique-id>
+	<command>java -jar %f</command>
+	<description></description>
+	<patterns>*.jar</patterns>
+	<other-files/>
+</action>
 </actions>

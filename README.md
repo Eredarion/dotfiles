@@ -1,13 +1,9 @@
 ## Awesome
-- **App launcher :** rofi
-- **Bar :** wibox
-- **File manager :** thunar
-- **Notification:** naughty
-- **Font :** SF Pro Text
-- **Terminal Font :** SF Mono
 <p align="center">
   <img src="https://github.com/Eredarion/dotfiles/raw/master/.screenshot/2019.06.09-20:08:30.png" alt="screenshot">
 </p>
+- **App launcher :** rofi
+- **File manager :** thunar
 
 ## i3
 - **App launcher :** rofi/dmenu2

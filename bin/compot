@@ -1,0 +1,65 @@
+#!/bin/bash
+
+
+#killall compton
+
+
+case "$1" in
+
+
+*h|*help)
+    printf "%s\n%s\n%s\n%s\n%s\n" \
+    "Options:" \
+    "------------------------" \
+    "-t  -  toggle" \
+    "-h  -  Strong-ish blur" \
+    "-m  -  Medium blur" \
+    "-n  -  Weak blur" \
+    "------------------------"
+;;
+
+# Toggle
+*t)
+    command="compton"
+    running=`ps ax | grep -v grep | grep $command | wc -l`
+
+    if [ $running -gt 0 ]; then
+        pkill $command;
+    exit 1;
+
+    else
+        compton  --config "$HOME/.config/compton.conf" \
+             --shadow-exclude "x<=3 && x2>= 1000 && y <= 30 && y2 >=700" \
+             --xrender-sync-fence \
+             --vsync-use-glfinish &
+    fi
+;; 
+
+# Strong-ish blur
+*h)
+    compton  --config "$HOME/.config/compton.conf" \
+             --shadow-exclude "x<=3 && x2>= 1000 && y <= 30 && y2 >=700" \
+             --xrender-sync-fence \
+             --blur-kern "7,7,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1" \
+             --vsync-use-glfinish &
+;;
+
+# Medium blur
+*m)
+    compton  --config "$HOME/.config/compton.conf" \
+             --shadow-exclude "x<=3 && x2>= 1000 && y <= 30 && y2 >=700" \
+             --xrender-sync-fence \
+             --blur-kern "5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1" \
+             --vsync-use-glfinish &
+;;
+
+# Weak blur (default)
+*n)
+    compton  --config "$HOME/.config/compton.conf" \
+             --shadow-exclude "x<=3 && x2>= 1000 && y <= 30 && y2 >=700" \
+             --xrender-sync-fence \
+             --vsync-use-glfinish &
+;;
+
+esac 
+

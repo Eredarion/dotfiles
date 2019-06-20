@@ -2,7 +2,7 @@
 
 type ffmpeg > /dev/null || exit
 
-path="$HOME/Recording/vid_$(date +"%s")"
+path="$HOME/Recording/video_$(date +%Y.%m.%d-%H:%M:%S)"
 iconPath="$HOME/.config/awesome/themes/skyfall/icons/screen-recorder_icon.png"
 resolution=$(xrandr | awk -F "current" '{print $2}' | head -1 | cut -d "," -f1 | tr -d " ")
 
@@ -39,7 +39,7 @@ case "$1" in
 			# NOTE: use this for firefox auto-embed compatibility, although needs ffmpeg-4.0.2+ "-pix_fmt yuv420p"
 			ffmpeg -thread_queue_size 512 \
 				   -video_size $resolution \
-				   -framerate 25 \
+				   -framerate 60 \
 				   -f x11grab \
 				   -i :0.0  \
 				   -c:v libx264 \
