@@ -32,7 +32,10 @@
 + **Browsers**: Chromium
 + **Editors**: Vim / Sublime Text
 
-
+## Cover path example
+<p align="center">
+  <img src="https://github.com/Eredarion/dotfiles/raw/master/.screenshot/2019.04.08-15:50:21.png" alt="screenshot">
+</p>
 <!-- ## i3
 - **App launcher :** rofi/dmenu2
 - **Bar :** polybar
