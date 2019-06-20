@@ -1,5 +1,5 @@
 [global]
-    font = SF Pro Display Medium 10
+    font = SF Pro Display Medium 9
     # allow a small subset of html markup:
     # <b>bold</b>
     # <i>italic</i>
@@ -63,7 +63,7 @@
     # screen width minus the width defined in within the geometry option.
     #geometry = "300x5-30+20"
     #geometry = "280x20-10+34"
-    geometry = "260x20-5+28"
+    geometry = "290x20-5+28"
     # corner_radius = 6
     # The transparency of the window. range: [0; 100]
     # This option will only work if a compositing windowmanager is present (e.g. xcompmgr, compiz, etc..)

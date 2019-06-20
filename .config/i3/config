@@ -18,7 +18,7 @@ client.urgent           $red   $bg $red   $red   $red
 client.placeholder      $grey  $bg $bg    $bg    $bg
 client.background       $bg
 
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 
 # gaps
 gaps inner 5
@@ -63,9 +63,9 @@ set $Mon2 HDMI2
 
 # run with reload
 # exec_always --no-startup-id nitrogen --restore
-exec_always --no-startup-id feh --bg-fill '/home/ranguel/Изображения/Wallpapers/yKmo.png'
+# exec_always --no-startup-id feh --bg-fill '/home/ranguel/Изображения/Wallpapers/yKmo.png'
 exec_always --no-startup-id xrdb -load ~/.Xresources
-exec_always --no-startup-id bash ~/.config/i3/element
+exec_always --no-startup-id bash ~/.config/polybar/launch_polybar
 # If you have a numpad you may want to enable this
 # exec_always --no-startup-id numlockx on
 
@@ -113,7 +113,7 @@ bindsym $mod+t exec xfce4-taskmanager
 bindsym $Mod+d exec --no-startup-id "bash ~/.config/i3/scripts/launcher-dmenu2"
 
 # this is needed for super key to launch rofi
-bindsym $Mod+z exec --no-startup-id rofr.sh -r
+bindsym $Mod+z exec --no-startup-id rofr.sh -r -bg "$bg" -fg "$fg" -border 10
 
 # core
 bindsym $Mod+Return exec --no-startup-id urxvtc -name floating
@@ -294,6 +294,7 @@ assign [class="Transmission"] $workspace9
 
 # windows starting in floating mode
 for_window [title="File Transfer*"] floating enable
+for_window [class="feh"] floating enable
 for_window [title="mpv"] floating enable resize set 720 406
 for_window [title="Параметры торрента"] floating enable resize set 900 500
 for_window [title="mpv"] move position center 

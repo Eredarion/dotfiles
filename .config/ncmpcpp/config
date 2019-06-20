@@ -107,4 +107,4 @@ alternative_ui_separator_color = magenta
 active_column_color = red
 window_border_color = yellow
 active_window_border = magenta
-execute_on_song_change = ~/.config/ncmpcpp/mpdnotify
+#execute_on_song_change = ~/.config/ncmpcpp/mpdnotify

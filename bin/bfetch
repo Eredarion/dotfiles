@@ -1,0 +1,79 @@
+#!/bin/bash
+# Tiny colored fetch script
+# Requires Typicons Font to display the icons
+# elenapan @ github
+
+f=3 b=4
+for j in f b; do
+  for i in {0..7}; do
+    printf -v $j$i %b "\e[${!j}${i}m"
+  done
+done
+d=$'\e[1m'
+t=$'\e[0m'
+v=$'\e[7m'
+
+# Items
+sep=
+s=$d$f0$sep$t
+
+h=
+wmname="$(xprop -id $(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}') -notype -f _NET_WM_NAME 8t | grep "WM_NAME" | cut -f2 -d \")"
+
+k=
+kernel="$(uname -r | cut -d '-' -f1)"
+
+r=
+resolution="$(xwininfo -root | grep geometry | awk '{print $2}' | cut -d + -f1)"
+
+sh=謹
+shell=$(basename $SHELL)
+
+te=
+terminal="st"
+
+ui=
+upt="$(uptime -p)"
+upt="${upt/up /}"
+upt="${upt/ day?/d}"
+upt="${upt/ hour?/h}"
+upt="${upt/ minute?/m}"
+
+pi=
+packages="$(pacman -Qq | wc -l)"
+
+bi=
+battery=$(cat '/sys/class/power_supply/BAT0/capacity')
+
+di=
+disk=$(df -k -h /dev/sda7 | tail -1 | awk '{print $4}')
+# (\ /)
+# ( · ·)
+# c(")(")
+
+# (\ /)
+# ( . .)
+# c(")(")
+
+# # # # # # #
+#  # # # # #
+# # # # # # #
+#  # # # # #
+# # # # # # #
+tput clear
+cat << EOF  
+         $f1 $f7 Fetch $f1 
+    $f1
+    $f1    $d$f1$h   $t$wmname    $f1
+    $f2    $f2$k   $t$kernel      $f2
+    $f3    $f3$ui   $t$upt     $f3
+    $f4    $f4$pi   $t$packages        $f4
+    $f5
+    $f6    $f6$te   $t$terminal         $f6
+    $f5    $f5$sh  $t$shell        $f5
+    $f4
+    $f3    $f3$bi   $t$battery%       $f3
+    $f2    $f2$di   $t$disk free   $f2
+    $f1
+   
+EOF

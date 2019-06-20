@@ -1,0 +1,10 @@
+# .xprofile
+# vim:ft=sh
+
+# sourced at boot by xinit
+
+[ -d /sbin ] && PATH="$PATH:/sbin"
+[ -d /usr/sbin ] && PATH="$PATH:/usr/sbin"
+[ -d "$HOME/bin" ] && PATH="$HOME/bin:$PATH"
+
+export XDG_CONFIG_HOME="$HOME/.config"

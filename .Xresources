@@ -1,21 +1,11 @@
 URxvt*internalBorder: 15
 URxvt*externalBorder: 0
-*URxvt.geometry: 59x17
+*URxvt.geometry: 54x16
 
-! ------------------------------------------------------------------------------
-! rofi
-! ------------------------------------------------------------------------------
-rofi.color-enabled: true
-rofi.font              : SF Pro Display Regular 11
-!rofi.font              : Misc Termsyn 12
-rofi.columns           : 1
-rofi.separator-style   : none
-rofi.hide-scrollbar    : true
-rofi.location          : 0
-rofi.padding           : 32
-rofi.fullscreen        : false
-rofi.width             : 300
-rofi.lines             : 6
+*.font : FantasqueSansMono Nerd Font:pixelsize=15:antialias=true:autohint=true
+!*.font : Iosevka:pixelsize=14:antialias=true:autohint=true
+*.cwscale : 0.9
+*.chscale : 1.0
 
 ! URxvt #101423  #070D1F  
 !URxvt*foreground: #EAE1EA
@@ -27,15 +17,22 @@ URxvt*depth: 32
 URxvt*scrollBar: false
 URxvt*scrollBar_right: false
 
-!URxvt*letterSpace: -1
-!URxvt*letterSpace: -1
+!URxvt.letterSpace: -1
+!URxvt*letterSpace: 1
 !URxvt.font: xft:DejaVu Sans Mono:size=11 
-!#define termfont      xft:SF Mono:size=8:antialias=false
-#define termfont      xft:Go Mono for Powerline:size=8:antialias=true
-URxvt.font: termfont:style=Medium, xft:Symbola:size=9:style=Regular
-URxvt.boldFont: termfont:style=Semibold, xft:Symbola:size=8.7:style=Bold
-URxvt.italicFont: termfont:style=italic, xft:Symbola:size=8.7:style=Italic
-URxvt.boldItalicFont: termfont:style=bolditalic:antialias=true, xft:Symbola:size=8.7:style=Bold
+#define termfont  xft:FantasqueSansMono Nerd Font:pixelsize=14:antialias=true:autohint=true
+!#define termfont      xft:mplus Nerd Font:size=8:antialias=true
+URxvt.font: termfont
+URxvt.boldFont: termfont:style=Bold
+URxvt.italicFont: termfont:style=italic
+URxvt.boldItalicFont: termfont:style=bolditalic
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: none
+Xft.hinting: true
+Xft.autohint: true
+Xft.hintstyle: hintslight
 
 URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
 URxvt.copyCommand: xclip -i -selection clipboard
@@ -58,12 +55,12 @@ URxvt*buffered: false
 ! Colors 0-15.
 *.color0: #0b1015
 *color0:  #0b1015
-*.color1: #B08C6D
-*color1:  #B08C6D
-*.color2: #73888B
-*color2:  #73888B
-*.color3: #A3A9A1
-*color3:  #A3A9A1
+*.color1: #D8AB9E
+*color1:  #D8AB9E
+*.color2: #E2C4B8
+*color2:  #E2C4B8
+*.color3: #B2C6D1
+*color3:  #B2C6D1
 *.color4: #C7C0AE
 *color4:  #C7C0AE
 *.color5: #B7CDCB
@@ -74,12 +71,12 @@ URxvt*buffered: false
 *color7:  #e4eceb
 *.color8: #9fa5a4
 *color8:  #9fa5a4
-*.color9: #B08C6D
-*color9:  #B08C6D
-*.color10: #73888B
-*color10:  #73888B
-*.color11: #A3A9A1
-*color11:  #A3A9A1
+*.color9: #D8AB9E
+*color9:  #D8AB9E
+*.color10: #E2C4B8
+*color10:  #E2C4B8
+*.color11: #B2C6D1
+*color11:  #B2C6D1
 *.color12: #C7C0AE
 *color12:  #C7C0AE
 *.color13: #B7CDCB
@@ -93,3 +90,15 @@ URxvt*buffered: false
 *.color66: #0b1015
 *color66:  #0b1015
 
+! ------------------------------------------------------------------------------
+! rofi
+! ------------------------------------------------------------------------------
+rofi.color-enabled: false
+rofi.font              : Iosevka Medium 11
+rofi.columns           : 1
+rofi.separator-style   : none
+rofi.hide-scrollbar    : true
+rofi.location          : 0
+rofi.fullscreen        : false
+rofi.width             : 300
+rofi.lines             : 6

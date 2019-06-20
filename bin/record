@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+
+type ffmpeg > /dev/null || exit
+
+path="$HOME/Recording/vid_$(date +"%s")"
+iconPath="$HOME/.config/awesome/themes/skyfall/icons/screen-recorder_icon.png"
+resolution=$(xrandr | awk -F "current" '{print $2}' | head -1 | cut -d "," -f1 | tr -d " ")
+
+case "$1" in
+
+    *h|*help)
+        printf "%s\n%s\n%s\n%s\n%s\n" \
+            "Options:" \
+            "------------------------" \
+            "--toggle     -  toggle active/paused" \
+            "<no option>  -  record"
+    ;;
+
+    *toggle)
+		command="ffmpeg"
+		running=`ps ax | grep -v grep | grep $command | wc -l`
+		if [ $running -gt 0 ]; then
+            pkill $command;
+            notify-send -u normal -i $iconPath "Recording   " "Status: <span color=\"#F94646\">OFF</span>   "
+    		exit 1;
+		else
+			# deal with passed arguments
+			if [ $# -gt 1 ]; then
+    			dur="$1"
+   		    	path=~/Recording/$2
+			elif [ $# -gt 0 ]; then
+    			dur="$1"
+			else
+    			dur="10"
+			fi
+
+    		notify-send -u normal -i $iconPath "Recording   " "Status: <span color=\"#F94646\">ON</span>   "
+			
+			# NOTE: use this for firefox auto-embed compatibility, although needs ffmpeg-4.0.2+ "-pix_fmt yuv420p"
+			ffmpeg -thread_queue_size 512 \
+				   -video_size $resolution \
+				   -framerate 25 \
+				   -f x11grab \
+				   -i :0.0  \
+				   -c:v libx264 \
+				   -preset ultrafast $path.mkv
+		fi
+	;;
+
+esac 
+
+
+# convert to webm
+#ffmpeg -i $path.mp4 -an -qmax 40 -threads 2 -c:v libvpx $path.webm
+# delete the original mp4 file
+#rm "$path.mp4"

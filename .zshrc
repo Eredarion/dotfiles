@@ -189,6 +189,7 @@ SPACESHIP_USER_COLOR=red
 SPACESHIP_CHAR_COLOR_SUCCESS=red
 SPACESHIP_CHAR_COLOR_SECONDARY=red
 
-neofetch
+#bfetch
+#neofetch
 #information
 

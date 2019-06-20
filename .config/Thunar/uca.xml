@@ -73,8 +73,8 @@
 <action>
 	<icon>insert-image</icon>
 	<name>Set wallpaper</name>
-	<unique-id>1551405501792009-1</unique-id>
-	<command>feh --bg-fill %f</command>
+	<unique-id>1554069221830005-1</unique-id>
+	<command>nitrogen --save --set-zoom-fill %f</command>
 	<description></description>
 	<patterns>*</patterns>
 	<image-files/>
