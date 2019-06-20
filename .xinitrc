@@ -26,26 +26,29 @@ if [[ $session == "awesome" ]]; then
     if [[ -x /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 ]]; then
         /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
     fi
-
-    xrdb -load "/home/ranguel/.Xresources" &
+    
     nitrogen --restore &
+    xrdb -load "/home/ranguel/.Xresources" &
     killall mpd
     mpd
+    nm-applet &
     compton  --config "/home/ranguel/.config/compton.conf" \
              --shadow-exclude "x<=3 && x2>= 1000 && y <= 30 && y2 >=700" \
              --xrender-sync-fence \
-             --vsync-use-glfinish \
-             --use-damage &
+             --vsync-use-glfinish &
+             # --use-damage 
     xfsettingsd &
 fi
 
 # display timeout and sleep
-xset s 3600 3600
-xset dpms 3600 3700 4000
+xset s 1200 1200
+xset dpms 1200 1300 1500
 
 # keyboard repeat rate
-xset r rate 400 100
-kbdrate -d 400 -r 50
+# xset r rate 400 100
+# kbdrate -d 400 -r 50
+xset r rate 200 40
+kbdrate -d 200 -r 40
 
 # urxvt deamon
 urxvtd -q -f -o &

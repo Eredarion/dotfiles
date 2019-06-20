@@ -10,7 +10,7 @@ setopt sharehistory
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/ranguel/.oh-my-zsh"
+export ZSH="/home/ranguel/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -74,6 +74,7 @@ ZSH_THEME="robbyrussell"
 plugins=(  
   zsh-autosuggestions
 )
+ZSH_AUTOSUGGEST_USE_ASYNC=true
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,7 +110,7 @@ source $ZSH/oh-my-zsh.sh
 # aliases
 alias l='ls'
 alias la='ls -A'
-alias ll='ls -lA'
+alias ll='ls -lA -h'
 alias ls='ls --color=auto'
 alias music='ncmpcpp -S visualizer'
 alias wifi='sudo create_ap wlp3s0b1 enp4s0 WiFi'
@@ -120,7 +121,7 @@ alias reloadXres='xrdb ~/.Xresources'
 alias grubup='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias mirrors='sudo reflector --score 100 --fastest 25 \
     --sort rate --save /etc/pacman.d/mirrorlist --verbose'
-alias calc='bc -q'
+alias calc='bc -q -l'
 # alias nvidia-setting='optirun -b none nvidia-settings -c :8'
 
 # aliases config
@@ -132,10 +133,6 @@ alias xinitrcc='nvim ~/.xinitrc'
 alias ncmpcppc='nvim ~/.config/ncmpcpp/config'
 alias neofetchc='nvim ~/.config/neofetch/config.conf'
 alias rangerc='nvim ~/.config/ranger/rc.conf'
-alias vi='nvim'
-
-# aliases game
-alias poe='primusrun ~/Games/Pillars of Eternity/start.sh'
 
 #aliases android 
 # export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:path/to/android_sdk/platform-tools/"
@@ -151,9 +148,12 @@ alias weather="curl -H 'Accept-Language: ru' 'wttr.in/Губиниха?1?n'"
 alias weatherCurrent="curl -H 'Accept-Language: ru' 'wttr.in/Губиниха?0?Q'"
 alias weatherFull="curl -H 'Accept-Language: ru' 'wttr.in/Губиниха'"
 
+# aliases youtube
+alias youtubeAudio="youtube-dl -x -f bestaudio"
 
 autoload -U promptinit; promptinit
 prompt spaceship
+
 SPACESHIP_PROMPT_ORDER=(
   #user          # Username section
   dir           # Current directory section
@@ -171,7 +171,7 @@ SPACESHIP_PROMPT_ORDER=(
 )
 
 SPACESHIP_RPROMPT_ORDER=(
-	#time          #
+  # battery       # Battery level and status  
 )
 
 # PROMPT
@@ -180,15 +180,22 @@ SPACESHIP_PROMPT_SEPARATE_LINE=false
 SPACESHIP_PROMPT_FIRST_PREFIX_SHOW=false
 SPACESHIP_PROMPT_PREFIXES_SHOW=false
 SPACESHIP_PROMPT_SUFFIXES_SHOW=true
-SPACESHIP_TIME_SHOW=true
-SPACESHIP_TIME_COLOR=red
 SPACESHIP_PROMPT_DEFAULT_PREFIX="${SPACESHIP_PROMPT_DEFAULT_PREFIX="via "}"
 SUFFIX="${SPACESHIP_PROMPT_DEFAULT_SUFFIX=" "}"
 SPACESHIP_DIR_COLOR=red
 SPACESHIP_USER_COLOR=red
 SPACESHIP_CHAR_COLOR_SUCCESS=red
 SPACESHIP_CHAR_COLOR_SECONDARY=red
-
+SPACESHIP_CHAR_SYMBOL="%{$fg[red]%}>%{$fg[green]%}>%{$fg[yellow]%}> "
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_TIME_COLOR=blue
+SPACESHIP_TIME_SUFFIX=""
+SPACESHIP_TIME_PREFIX=""
+SPACESHIP_BATTERY_SHOW=true
+SPACESHIP_BATTERY_SYMBOL_DISCHARGING="⇣ "
+SPACESHIP_BATTERY_SYMBOL_CHARGING="⇡ "
+SPACESHIP_BATTERY_SYMBOL_FULL="• "
+SPACESHIP_BATTERY_THRESHOLD="99"
 #bfetch
 #neofetch
 #information
