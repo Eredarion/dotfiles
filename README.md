@@ -26,6 +26,12 @@
 | Nerd Fonts | Icon font, Text font | *manta* bar icons, *skyfall* taglist icons and Iosevka for text |
 | [openweathermap](https://openweathermap.org/) key | Provides weather data | weather widgets |
 
+## Some recommended applications
++ **Terminals**: urxvtd / st
++ **File managers**: Thunar
++ **Browsers**: Chromium
++ **Editors**: Vim / Sublime Text
+
 
 ## i3
 - **App launcher :** rofi/dmenu2
