@@ -10,18 +10,17 @@
 | `xorg-xbacklight` | Gets/Sets screen brightness (intel GPU only) | brightness widget |
 | `lm_sensors` | CPU temperature sensor | CPU temperature widget |
 | `upower` | Abstraction for enumerating power devices, listening to device events and more | battery widget |
-| `pulseaudio`, `libpulse` | Sound system **(You probably already have these)** | volume widget, [bin/volume-control.sh](./bin/volume-control.sh) script |
-| [bin/volume-control.sh](./bin/volume-control.sh) in your `$PATH` | Commands to control your volume | volume buttons, volume widget |
+| `pulseaudio`, `libpulse` | Sound system **(You probably already have these)** | volume widget |
 | `jq` | Parses `json` output | weather widget |
 | `fortune-mod` | Displays random quotations (fortune cookies) | fortune widget |
 | `mpd` | Server-side application for playing music | **sidebar** music widget |
 | `mpc` | Minimalist command line interface to MPD | **sidebar** music widget |
 | `i3lock` | Screen locker | exit screen lock command |
 | `maim` | Takes screenshots (improved `scrot`) | [bin/screenshot.sh](./bin/screenshot.sh) script |
-| [bin/screenshot.sh](./bin/screenshot.sh) in your `$PATH` | Commands to take/view screenshots | screenshot button |
+| [bin/screenshot](./bin/screenshot) in your `$PATH` | Commands to take/view screenshots | screenshot button |
 | `feh` | Image viewer and wallpaper setter | screenshot previews, wallpapers |
 | Font Awesome | Icon font | text exit screen, *skyfall* bar |
-| Any *Nerd Font* | Icon font | *manta* bar icons, *skyfall* taglist icons |
+| Nerd Fonts | Icon font, Text font | *manta* bar icons, *skyfall* taglist icons and Iosevka for text |
 | [openweathermap](https://openweathermap.org/) key | Provides weather data | weather widgets |
 
 ## i3
