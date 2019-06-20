@@ -6,11 +6,7 @@
 - **Font :** SF Pro Text
 - **Terminal Font :** SF Mono
 <p align="center">
-  <img src="https://github.com/Eredarion/dotfiles/raw/master/.screenshot/2019-01-13_23:15:43.png" alt="screenshot">
-</p>
-
-<p align="center">
-  <img src="https://github.com/Eredarion/dotfiles/raw/master/.screenshot/2019-03-04_03:56:54.png" alt="screenshot">
+  <img src="https://github.com/Eredarion/dotfiles/raw/master/.screenshot/2019.06.09-20:08:30.png" alt="screenshot">
 </p>
 
 ## i3
