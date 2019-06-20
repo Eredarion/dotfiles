@@ -4,6 +4,7 @@
 </p>
 <!--suppress HtmlDeprecatedAttribute --><p align="center"><a href="https://youtu.be/RTlJb5z7kyU">Old demo video</a></p>
 
+## Dependencies
 | Dependency | Description | Why/Where is it needed? |
 | --- | --- | --- |
 | `awesome` v4.2+ | Window manager | (explains itself) |
@@ -24,6 +25,7 @@
 | Font Awesome | Icon font | text exit screen, *skyfall* bar |
 | Nerd Fonts | Icon font, Text font | *manta* bar icons, *skyfall* taglist icons and Iosevka for text |
 | [openweathermap](https://openweathermap.org/) key | Provides weather data | weather widgets |
+
 
 ## i3
 - **App launcher :** rofi/dmenu2
