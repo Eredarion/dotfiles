@@ -23,7 +23,7 @@
 | [bin/screenshot](./bin/screenshot) in your `$PATH` | Commands to take/view screenshots | screenshot button |
 | `feh` | Image viewer and wallpaper setter | screenshot previews, wallpapers |
 | Font Awesome | Icon font | text exit screen, *skyfall* bar |
-| Nerd Fonts | Icon font, Text font | *manta* bar icons, *skyfall* taglist icons and Iosevka for text |
+| Nerd Fonts | Icon font, Text font | *skyfall* taglist, *skyfall* bar and Iosevka for text |
 | [openweathermap](https://openweathermap.org/) key | Provides weather data | weather widgets |
 
 ## Some recommended applications

@@ -44,24 +44,25 @@ local temperature_bar = wibox.widget{
   widget        = wibox.widget.progressbar,
 }
 
-local temperature_t = awful.tooltip {
-    objects        = { temperature_bar },
-    mode           = "outside",
-    margin_leftright = dpi(8),
-    margin_topbottom = dpi(5),
-    bg             = beautiful.xbackground,
-    fg             = beautiful.xforeground,
-}
+-- local temperature_t = awful.tooltip {
+--     objects        = { temperature_bar },
+--     mode           = "outside",
+--     margin_leftright = dpi(8),
+--     margin_topbottom = dpi(5),
+--     bg             = beautiful.xbackground,
+--     fg             = beautiful.xforeground,
+-- }
 
 local function update_widget(temp)
   temperature_bar.value = tonumber(temp)
-  temperature_t.markup = "CPU temperature: <span color=\"" .. "#FF6FC4" .. "\">" .. temp:gsub("%s+", "") .. "</span>"
+  -- temperature_t.markup = "CPU temperature: <span color=\"" .. "#FF6FC4" .. "\">" .. temp:gsub("%s+", "") .. "°C</span>"
 end
 
 local temp_script = [[
   bash -c "
   sensors | grep Package | awk '{print $4}' | cut -c 2-3
   "]]
+
 
 awful.widget.watch(temp_script, update_interval, function(widget, stdout)
                     local temp = stdout

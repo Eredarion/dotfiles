@@ -162,6 +162,7 @@ dock_activator = awful.popup {
 }
 ------------------------------------------------------------
 
+
 dock_activator:connect_signal("mouse::enter", function ()
                                  dock.visible = true
                                  dock_activator.ontop = false

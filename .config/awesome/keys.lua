@@ -264,15 +264,15 @@ keys.globalkeys = gears.table.join(
         -- awful.spawn(terminal, {floating = true})
     end, {description = "spawn floating terminal", group = "launcher"}),
 
-    -- Spawn floating terminal (custom geometry)
+    -- Draw terminal
     awful.key({ superkey,          }, "e", function()
         awful.spawn.easy_async_with_shell(
                 [[bash -c '
                     read -r X Y W H < <(slop -f "%x %y %w %h" -t 0 -q)
 
                     # Depends on font width & height
-                    (( W /= 7 ))
-                    (( H /= 16 ))
+                    (( W /= ]] .. terminal_font_width .. [[ ))
+                    (( H /= ]] .. terminal_font_height .. [[ ))
 
                     g=${W}x${H}+${X}+${Y}
                     echo $X@@$Y@ "##"$g"##"
@@ -292,7 +292,7 @@ keys.globalkeys = gears.table.join(
 
                 collectgarbage()
         end)
-    end, {description = "spawn floating terminal (custom geometry)", group = "launcher"}),
+    end, {description = "draw terminal", group = "launcher"}),
 
     awful.key({ superkey, shiftkey }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),

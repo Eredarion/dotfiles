@@ -83,7 +83,7 @@ music_directory="Music"
 -- Weather widget сonfiguration
 -- Get your key and find your city id at https://openweathermap.org/
 -- You will need to make an account!
-api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  
 city_id = "xxxxxx"
 
 local setwallpaper = false
@@ -142,6 +142,10 @@ editor = "subl3" -- superkey + F2
 editor_cmd = terminal.." -e nvim" -- shift + superkey + e
 filemanager = "thunar" -- superkey + F3
 tmux = terminal .. " -e tmux new "
+
+-- Font width and height for drawing terminal
+terminal_font_width = 7
+terminal_font_height = 16
 
 rofi_script = [[bash -c "
     rofi -modi run,drun -show drun -line-padding 4 \
