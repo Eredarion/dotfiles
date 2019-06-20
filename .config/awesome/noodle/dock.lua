@@ -5,7 +5,9 @@ local beautiful = require("beautiful")
 local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 
--- init tasklist buttons
+
+-- Init tasklist buttons
+------------------------------------------------------------
 local tasklist_buttons = gears.table.join(
                      awful.button({ }, 1, 
                         function (c)
@@ -34,8 +36,11 @@ local tasklist_buttons = gears.table.join(
                                               awful.client.focus.byidx(1)
                     end)
 )
+------------------------------------------------------------
 
--- shapes
+
+-- Shapes
+------------------------------------------------------------
 local dosk_bg_shape = function(cr, width, height)
   gears.shape.partially_rounded_rect(cr, width, height, true, true, false, false, 6)
 end
@@ -44,9 +49,11 @@ local focus_bg_shape = function(cr, width, height)
    gears.shape.transform(gears.shape.rounded_rect) : translate(47, 30)
 : rotate_at(35,35,math.pi) (cr,dpi(5),dpi(5))
 end
+------------------------------------------------------------
 
--- Create the dock  -----------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------
+
+-- Create the dock 
+------------------------------------------------------------
 dock = awful.popup {
     widget = { 
       awful.widget.tasklist {
@@ -115,26 +122,18 @@ dock = awful.popup {
     placement    = awful.placement.bottom,
     shape        = dosk_bg_shape
 }
+------------------------------------------------------------
 
 
-
-dock:buttons(gears.table.join(
-                  -- Middle click - Hide sidebar
-                  -- awful.button({ }, 2, function ()
-                  --     dock.visible = false
-                  -- end)
-                  -- Right click - Hide sidebar
-                  -- awful.button({ }, 3, function ()
-                  -- end)
-))
-
+-- Hide dock
 dock:connect_signal("mouse::leave", function ()
                           dock.visible = false
                           dock_activator.ontop = true
 end)
 
 
--- create dock activator
+-- Create dock activator
+------------------------------------------------------------
 dock_activator = awful.popup {
     widget = { 
       awful.widget.tasklist {
@@ -161,6 +160,7 @@ dock_activator = awful.popup {
     opacity      = 0,
     placement    = awful.placement.bottom,
 }
+------------------------------------------------------------
 
 dock_activator:connect_signal("mouse::enter", function ()
                                  dock.visible = true
@@ -180,6 +180,3 @@ dock_activator:buttons(
           awful.tag.viewnext()
     end)
 ))
-
--------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------
