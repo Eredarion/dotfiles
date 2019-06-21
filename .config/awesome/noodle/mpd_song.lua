@@ -70,6 +70,7 @@ local bar_timer = gears.timer {
 -- Poster (image)
 ------------------------------------------------------------
 local box_image = wibox.widget.imagebox()
+box_image.image = beautiful.music_icon
 local image_cont = wibox.widget {
   box_image,
   shape              = bar_shape,
