@@ -404,7 +404,7 @@ updates.font = text_font .. " medium 14"
 
 local update_icon = wibox.widget.imagebox(beautiful.update_icon)
 update_icon.resize = true
---update_icon.forced_width = dpi(42)
+update_icon.forced_width = dpi(38)
 update_icon.forced_height = dpi(38)
 
 local updates_widget = wibox.widget{
