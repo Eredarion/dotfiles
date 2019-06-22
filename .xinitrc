@@ -28,7 +28,7 @@ if [[ $session == "awesome" ]]; then
     fi
     
     nitrogen --restore &
-    xrdb -load "/home/ranguel/.Xresources" &
+    xrdb -load "$HOME/.Xresources" &
     killall mpd
     mpd
     nm-applet &
