@@ -13,7 +13,7 @@
 | `upower` | Abstraction for enumerating power devices, listening to device events and more | battery widget |
 | `pulseaudio`, `libpulse` | Sound system **(You probably already have these)** | volume widget |
 | `jq` | Parses `json` output | weather widget |
-| `pacman-contrib` [bin/pacman_update](./bin/pacman_update) in your $PATH | Check updates | updates widget |
+| `pacman-contrib` [bin/pacman_update](./bin/pacman_update) in your `$PATH` | Check updates | updates widget |
 | `lain` | Layouts, widgets and utilities for Awesome | network widget |
 | `mpd` | Server-side application for playing music | **sidebar** music widget |
 | `mpc` | Minimalist command line interface to MPD | **sidebar** music widget |
