@@ -247,9 +247,9 @@ theme.exit_screen_font = main_font .. " medium 20"
 theme.exit_screen_icon_size = dpi(180)
 
 -- Other icons (mostly used in sidebar and menu)
-theme.playerctl_toggle_icon = icon_path .. "playerctl_toggle.png"
-theme.playerctl_prev_icon = icon_path .. "playerctl_prev.png"
-theme.playerctl_next_icon = icon_path .. "playerctl_next.png"
+theme.playerctl_toggle_icon = icon_path .. "playerctl_toggle.svg"
+theme.playerctl_prev_icon = icon_path .. "playerctl_prev.svg"
+theme.playerctl_next_icon = icon_path .. "playerctl_next.svg"
 theme.stats_icon = icon_path .. "stats.png"
 theme.search_icon = icon_path .. "search.png"
 theme.volume_icon = icon_path .. "volume.png"
