@@ -32,7 +32,7 @@ if [[ $session == "awesome" ]]; then
     killall mpd
     mpd
     nm-applet &
-    compton  --config "/home/ranguel/.config/compton.conf" \
+    compton  --config "$HOME/.config/compton.conf" \
              --shadow-exclude "x<=3 && x2>= 1000 && y <= 30 && y2 >=700" \
              --xrender-sync-fence \
              --vsync-use-glfinish &
