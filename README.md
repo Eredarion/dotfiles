@@ -1,4 +1,3 @@
-## Awesome
 <p align="center">
   <img src="https://github.com/Eredarion/dotfiles/raw/master/.screenshot/2019.06.09-20:08:30.png" alt="screenshot">
 </p>
@@ -26,7 +25,7 @@
 | Nerd Fonts | Icon font, Text font | *skyfall* taglist, *skyfall* bar and Iosevka for text |
 | [openweathermap](https://openweathermap.org/) key | Provides weather data | weather widgets |
 
-## Some recommended applications
+#### Some recommended applications
 + **Terminals**: urxvtd / st
 + **File managers**: Thunar
 + **Browsers**: Chromium
