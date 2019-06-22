@@ -13,8 +13,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 fi
 
 # user init scripts and settings
-[ -f /etc/X11/xinit/.Xmodmap ] && xmodmap /etc/X11/xinit/.Xmodmap
-[ -f ~/.Xmodmap ] && xmodmap ~/.Xmodmap
 [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
 [ -f ~/.xprofile ] && source ~/.xprofile
 
@@ -28,11 +26,10 @@ if [[ $session == "awesome" ]]; then
     fi
     
     nitrogen --restore &
-    xrdb -load "/home/ranguel/.Xresources" &
     killall mpd
     mpd
     nm-applet &
-    compton  --config "/home/ranguel/.config/compton.conf" \
+    compton  --config "$HOME/.config/compton.conf" \
              --shadow-exclude "x<=3 && x2>= 1000 && y <= 30 && y2 >=700" \
              --xrender-sync-fence \
              --vsync-use-glfinish &
