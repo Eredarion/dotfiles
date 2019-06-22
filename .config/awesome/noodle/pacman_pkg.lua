@@ -108,6 +108,7 @@ local function update_pacman_data()
 end
 
 awesome.connect_signal("pacman_upd", function ()
+  updates.markup = "Update..."
   update_pacman_data()
 end)
 ------------------------------------------------------------

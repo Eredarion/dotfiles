@@ -97,7 +97,7 @@ local resetCover = function ()
 end
 
 
-local playerctl_toggle_icon = wibox.widget.imagebox("/home/ranguel/Downloads/closetest.svg")
+local playerctl_toggle_icon = wibox.widget.imagebox(beautiful.playerctl_toggle_icon)
 playerctl_toggle_icon:buttons(gears.table.join(
                          awful.button({ }, 1, function ()
                              awful.spawn.with_shell("mpc toggle")
@@ -114,7 +114,7 @@ playerctl_toggle_icon:buttons(gears.table.join(
                          end)
 ))
 
-local playerctl_prev_icon = wibox.widget.imagebox("/home/ranguel/Downloads/backward.svg")
+local playerctl_prev_icon = wibox.widget.imagebox(beautiful.playerctl_prev_icon)
 playerctl_prev_icon:buttons(gears.table.join(
                          awful.button({ }, 1, function ()
                              awful.spawn.with_shell("mpc prev")
@@ -126,7 +126,7 @@ playerctl_prev_icon:buttons(gears.table.join(
 ))
 
 
-local playerctl_next_icon = wibox.widget.imagebox("/home/ranguel/Downloads/reward.svg")
+local playerctl_next_icon = wibox.widget.imagebox(beautiful.playerctl_next_icon)
 playerctl_next_icon:buttons(gears.table.join(
                          awful.button({ }, 1, function ()
                              awful.spawn.with_shell("mpc next")
