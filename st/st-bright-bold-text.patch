@@ -1,0 +1,95 @@
+--- a/config.def.h
++++ b/config.def.h
+@@ -114,9 +114,10 @@ static const char *colorname[] = {
+ 
+ /*
+  * Default colors (colorname index)
+- * foreground, background, cursor, reverse cursor
++ * foreground, default color for bold text, background, cursor, reverse cursor
+  */
+ unsigned int defaultfg = 7;
++unsigned int defaultbd = 15;
+ unsigned int defaultbg = 0;
+ static unsigned int defaultcs = 256;
+ static unsigned int defaultrcs = 257;
+diff --git a/st.c b/st.c
+index ede7ae6..6e3fabe 100644
+--- a/st.c
++++ b/st.c
+@@ -1351,6 +1351,7 @@ tsetattr(int *attr, int l)
+ 	for (i = 0; i < l; i++) {
+ 		switch (attr[i]) {
+ 		case 0:
++			term.c.attr.colored = 0;
+ 			term.c.attr.mode &= ~(
+ 				ATTR_BOLD       |
+ 				ATTR_FAINT      |
+@@ -1365,6 +1366,8 @@ tsetattr(int *attr, int l)
+ 			break;
+ 		case 1:
+ 			term.c.attr.mode |= ATTR_BOLD;
++			if (!term.c.attr.colored)
++				term.c.attr.fg = defaultbd;
+ 			break;
+ 		case 2:
+ 			term.c.attr.mode |= ATTR_FAINT;
+@@ -1391,6 +1395,8 @@ tsetattr(int *attr, int l)
+ 			break;
+ 		case 22:
+ 			term.c.attr.mode &= ~(ATTR_BOLD | ATTR_FAINT);
++			if (!term.c.attr.colored)
++				term.c.attr.fg = defaultfg;
+ 			break;
+ 		case 23:
+ 			term.c.attr.mode &= ~ATTR_ITALIC;
+@@ -1411,11 +1416,17 @@ tsetattr(int *attr, int l)
+ 			term.c.attr.mode &= ~ATTR_STRUCK;
+ 			break;
+ 		case 38:
+-			if ((idx = tdefcolor(attr, &i, l)) >= 0)
++			if ((idx = tdefcolor(attr, &i, l)) >= 0) {
++				term.c.attr.colored = 1;
+ 				term.c.attr.fg = idx;
++			}
+ 			break;
+ 		case 39:
+-			term.c.attr.fg = defaultfg;
++			term.c.attr.colored = 0;
++			if (term.c.attr.mode & ATTR_BOLD)
++				term.c.attr.fg = defaultbd;
++			else
++				term.c.attr.fg = defaultfg;
+ 			break;
+ 		case 48:
+ 			if ((idx = tdefcolor(attr, &i, l)) >= 0)
+@@ -1426,10 +1437,12 @@ tsetattr(int *attr, int l)
+ 			break;
+ 		default:
+ 			if (BETWEEN(attr[i], 30, 37)) {
++				term.c.attr.colored = 1;
+ 				term.c.attr.fg = attr[i] - 30;
+ 			} else if (BETWEEN(attr[i], 40, 47)) {
+ 				term.c.attr.bg = attr[i] - 40;
+ 			} else if (BETWEEN(attr[i], 90, 97)) {
++				term.c.attr.colored = 1;
+ 				term.c.attr.fg = attr[i] - 90 + 8;
+ 			} else if (BETWEEN(attr[i], 100, 107)) {
+ 				term.c.attr.bg = attr[i] - 100 + 8;
+diff --git a/st.h b/st.h
+index 4da3051..06de8ac 100644
+--- a/st.h
++++ b/st.h
+@@ -65,6 +65,7 @@ typedef struct {
+ 	ushort mode;      /* attribute flags */
+ 	uint32_t fg;      /* foreground  */
+ 	uint32_t bg;      /* background  */
++	int colored;      /* tell if the text color set explicitly */
+ } Glyph;
+ 
+ typedef Glyph *Line;
+@@ -119,4 +120,5 @@ extern int allowaltscreen;
+ extern char *termname;
+ extern unsigned int tabspaces;
+ extern unsigned int defaultfg;
++extern unsigned int defaultbd;
+ extern unsigned int defaultbg;

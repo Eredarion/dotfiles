@@ -27,6 +27,7 @@ if [[ $session == "awesome" ]]; then
     
     nitrogen --restore &
     killall mpd
+    xrdb -load "$HOME/.Xresources"
     mpd
     nm-applet &
     compton  --config "$HOME/.config/compton.conf" \

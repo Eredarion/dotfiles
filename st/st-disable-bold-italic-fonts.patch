@@ -1,0 +1,47 @@
+--- a/config.def.h
++++ b/config.def.h
+@@ -8,6 +8,10 @@
+ static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+ static int borderpx = 2;
+ 
++/* disable bold and italic font styles */
++int disablebold = 0;
++int disableitalic = 0;
++
+ /*
+  * What program is execed by st depends of these precedence rules:
+  * 1: program passed with -e
+diff --git a/x.c b/x.c
+index 5828a3b..c433c58 100644
+--- a/x.c
++++ b/x.c
+@@ -244,6 +244,10 @@ static char *opt_title = NULL;
+ 
+ static int oldbutton = 3; /* button event on startup: 3 = release */
+ 
++/* declared in config.h */
++extern int disablebold;
++extern int disableitalic;
++
+ void
+ clipcopy(const Arg *dummy)
+ {
+@@ -1177,13 +1181,15 @@ xmakeglyphfontspecs(XftGlyphFontSpec *specs, const Glyph *glyphs, int len, int x
+ 			frcflags = FRC_NORMAL;
+ 			runewidth = win.cw * ((mode & ATTR_WIDE) ? 2.0f : 1.0f);
+ 			if ((mode & ATTR_ITALIC) && (mode & ATTR_BOLD)) {
+-				font = &dc.ibfont;
++				if (!disableitalic && !disablebold) font = &dc.ibfont;
++				if (disableitalic && !disablebold) font = &dc.bfont;
++				if (!disableitalic && disablebold) font = &dc.ifont;
+ 				frcflags = FRC_ITALICBOLD;
+ 			} else if (mode & ATTR_ITALIC) {
+-				font = &dc.ifont;
++				if (!disableitalic) font = &dc.ifont;
+ 				frcflags = FRC_ITALIC;
+ 			} else if (mode & ATTR_BOLD) {
+-				font = &dc.bfont;
++				if (!disablebold) font = &dc.bfont;
+ 				frcflags = FRC_BOLD;
+ 			}
+ 			yp = winy + font->ascent;

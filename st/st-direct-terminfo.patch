@@ -1,0 +1,19 @@
+diff --git a/st.info b/st.info
+index 52fc617..5a024c2 100644
+--- a/st.info
++++ b/st.info
+@@ -205,6 +205,14 @@ st-256color| simpleterm with 256 colors,
+ 	setab=\E[%?%p1%{8}%<%t4%p1%d%e%p1%{16}%<%t10%p1%{8}%-%d%e48;5;%p1%d%;m,
+ 	setaf=\E[%?%p1%{8}%<%t3%p1%d%e%p1%{16}%<%t9%p1%{8}%-%d%e38;5;%p1%d%;m,
+ 
++st-direct| simpleterm with full color,
++	use=st,
++	ccc,
++	rgb,
++	oc=\E]104\007,
++	setab=\E[48;%?%p1%{16}%<%t5;%p1%d%e2;%p1%{65536}%/%d;%p1%{256}%/%{255}%&%d;%p1%{255}%&%d%;m,
++	setaf=\E[38;%?%p1%{16}%<%t5;%p1%d%e2;%p1%{65536}%/%d;%p1%{256}%/%{255}%&%d;%p1%{255}%&%d%;m,
++
+ st-meta| simpleterm with meta key,
+ 	use=st,
+ 	km,

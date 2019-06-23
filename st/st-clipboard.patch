@@ -1,0 +1,24 @@
+diff --git a/x.c b/x.c
+index 5828a3b..84c4f03 100644
+--- a/x.c
++++ b/x.c
+@@ -631,6 +631,8 @@ setsel(char *str, Time t)
+ 	XSetSelectionOwner(xw.dpy, XA_PRIMARY, xw.win, t);
+ 	if (XGetSelectionOwner(xw.dpy, XA_PRIMARY) != xw.win)
+ 		selclear();
++
++	clipcopy(NULL);
+ }
+ 
+ void
+@@ -647,7 +649,9 @@ brelease(XEvent *e)
+ 		return;
+ 	}
+ 
+-	if (e->xbutton.button == Button2)
++	if (e->xbutton.button == Button3)
++		clippaste(NULL);
++	else if (e->xbutton.button == Button2)
+ 		selpaste(NULL);
+ 	else if (e->xbutton.button == Button1)
+ 		mousesel(e, 1);
