@@ -6,7 +6,7 @@
 ## Dependencies
 | Dependency | Description | Why/Where is it needed? |
 | --- | --- | --- |
-| `awesome` v4.2+ | Window manager | (explains itself) |
+| `awesome` (git master branch) | Window manager | (explains itself) |
 | `rofi` | Window switcher, application launcher and dmenu replacement | (explains itself) |
 | `xorg-xbacklight` | Gets/Sets screen brightness (intel GPU only) | brightness widget |
 | `lm_sensors` | CPU temperature sensor | CPU temperature widget |
