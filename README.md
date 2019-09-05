@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="https://github.com/Eredarion/dotfiles/raw/master/.screenshot/2019.06.09-20:08:30.png" alt="screenshot">
+  <img src="https://github.com/Eredarion/dotfiles/raw/master/.screenshot/2019.09.05-22:31:55.png" alt="screenshot">
 </p>
-<!--suppress HtmlDeprecatedAttribute --><p align="center"><a href="https://youtu.be/RTlJb5z7kyU">Old demo video</a></p>
+<!--suppress HtmlDeprecatedAttribute --><p align="center"><a href="https://youtu.be/3PHaO8cdRPw">Old demo video</a></p>
 
 ## Dependencies
 | Dependency | Description | Why/Where is it needed? |
@@ -11,7 +11,7 @@
 | `xorg-xbacklight` | Gets/Sets screen brightness (intel GPU only) | brightness widget |
 | `lm_sensors` | CPU temperature sensor | CPU temperature widget |
 | `upower` | Abstraction for enumerating power devices, listening to device events and more | battery widget |
-| `pulseaudio`, `libpulse` | Sound system **(You probably already have these)** | volume widget |
+| `pulseaudio`, `pamixer` | Sound system **(You probably already have these)** | volume widget |
 | `jq` | Parses `json` output | weather widget |
 | `pacman-contrib` [bin/pacman_update](./bin/pacman_update) in your `$PATH` | Check updates | updates widget |
 | `lain` | Layouts, widgets and utilities for Awesome | network widget |
