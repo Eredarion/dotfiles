@@ -2,11 +2,11 @@
 
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="oomox-xresources3"/>
-    <property name="IconThemeName" type="string" value="oomox-xresources3"/>
+    <property name="ThemeName" type="string" value="oomox-xresources2"/>
+    <property name="IconThemeName" type="string" value="oomox-xresources2"/>
     <property name="DoubleClickTime" type="int" value="1000"/>
     <property name="DoubleClickDistance" type="int" value="5"/>
-    <property name="DndDragThreshold" type="empty"/>
+    <property name="DndDragThreshold" type="int" value="4"/>
     <property name="CursorBlink" type="empty"/>
     <property name="CursorBlinkTime" type="empty"/>
     <property name="SoundThemeName" type="empty"/>
@@ -17,14 +17,14 @@
     <property name="DPI" type="int" value="-1"/>
     <property name="Antialias" type="int" value="1"/>
     <property name="Hinting" type="int" value="1"/>
-    <property name="HintStyle" type="string" value="hintfull"/>
+    <property name="HintStyle" type="string" value="hintslight"/>
     <property name="RGBA" type="string" value="rgb"/>
   </property>
   <property name="Gtk" type="empty">
     <property name="CanChangeAccels" type="bool" value="false"/>
     <property name="ColorPalette" type="empty"/>
-    <property name="FontName" type="string" value="Iosevka Medium 10"/>
-    <property name="MonospaceFontName" type="string" value="Fira Code 10"/>
+    <property name="FontName" type="string" value="Iosevka 10"/>
+    <property name="MonospaceFontName" type="string" value="RobotoMono Nerd Font Mono Light 10"/>
     <property name="IconSizes" type="empty"/>
     <property name="KeyThemeName" type="empty"/>
     <property name="ToolbarStyle" type="string" value="icons"/>
@@ -35,6 +35,9 @@
     <property name="CursorThemeName" type="string" value="Adwaita"/>
     <property name="CursorThemeSize" type="empty"/>
     <property name="DecorationLayout" type="empty"/>
+  </property>
+  <property name="Gdk" type="empty">
+    <property name="WindowScalingFactor" type="empty"/>
   </property>
   <property name="Xfce" type="empty">
     <property name="LastCustomDPI" type="int" value="96"/>

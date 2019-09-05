@@ -33,25 +33,26 @@ theme.wallpaper = os.getenv("HOME") .. "/.config/awesome/themes/" .. theme_name 
 theme.font          = main_font .. " medium 11"
 
 -- Get colors from .Xresources and set fallback colors
-theme.xbackground = xrdb.background or "#282F37"
-theme.xbgpure     = xrdb.background or "#282F37"
-theme.xforeground = xrdb.foreground or "#F1FCF9"
-theme.xcolor0     = xrdb.color0     or "#20262C"
-theme.xcolor1     = xrdb.color1     or "#DB86BA"
-theme.xcolor2     = xrdb.color2     or "#74DD91"
-theme.xcolor3     = xrdb.color3     or "#E49186"
-theme.xcolor4     = xrdb.color4     or "#75DBE1"
-theme.xcolor5     = xrdb.color5     or "#B4A1DB"
-theme.xcolor6     = xrdb.color6     or "#9EE9EA"
-theme.xcolor7     = xrdb.color7     or "#F1FCF9"
-theme.xcolor8     = xrdb.color8     or "#465463"
-theme.xcolor9     = xrdb.color9     or "#D04E9D"
-theme.xcolor10    = xrdb.color10    or "#4BC66D"
-theme.xcolor11    = xrdb.color11    or "#DB695B"
-theme.xcolor12    = xrdb.color12    or "#3DBAC2"
-theme.xcolor13    = xrdb.color13    or "#825ECE"
-theme.xcolor14    = xrdb.color14    or "#62CDCD"
-theme.xcolor15    = xrdb.color15    or "#E0E5E5"
+theme.xbackground   = xrdb.background or "#282F37"
+theme.xbgpure       = xrdb.background or "#282F37"
+theme.xbackgroundtp = xrdb.background -- .. "E6"
+theme.xforeground   = xrdb.foreground or "#F1FCF9"
+theme.xcolor0       = xrdb.color0     or "#20262C"
+theme.xcolor1       = xrdb.color1     or "#DB86BA"
+theme.xcolor2       = xrdb.color2     or "#74DD91"
+theme.xcolor3       = xrdb.color3     or "#E49186"
+theme.xcolor4       = xrdb.color4     or "#75DBE1"
+theme.xcolor5       = xrdb.color5     or "#B4A1DB"
+theme.xcolor6       = xrdb.color6     or "#9EE9EA"
+theme.xcolor7       = xrdb.color7     or "#F1FCF9"
+theme.xcolor8       = xrdb.color8     or "#465463"
+theme.xcolor9       = xrdb.color9     or "#D04E9D"
+theme.xcolor10      = xrdb.color10    or "#4BC66D"
+theme.xcolor11      = xrdb.color11    or "#DB695B"
+theme.xcolor12      = xrdb.color12    or "#3DBAC2"
+theme.xcolor13      = xrdb.color13    or "#825ECE"
+theme.xcolor14      = xrdb.color14    or "#62CDCD"
+theme.xcolor15      = xrdb.color15    or "#E0E5E5"
 
 
 -- Transparent  ---------------------------------------------------------------------------------------------
@@ -73,11 +74,11 @@ local set_transparent = true
   ]]
 
 if set_transparent then
-  theme.xbackground = xrdb.background .. "E6"
-  theme.xcolor0 = xrdb.color0 .. "E6"
-  theme.exit_screen_bg = theme.xcolor0
+  theme.xbackgroundtp = xrdb.background .. "F2"
+  theme.xcolor0 = xrdb.color0 .. "F2"
+  theme.exit_screen_bg = theme.background
 else
-  theme.exit_screen_bg = theme.xcolor0 .. "CC"
+  theme.exit_screen_bg = theme.background .. "CC"
 end
 -------------------------------------------------------------------------------------------------------------
 
@@ -114,16 +115,16 @@ theme.border_radius = dpi(0)
 -- Titlebars
 -- (Titlebar items can be customized in titlebars.lua)
 theme.titlebars_enabled = true
-theme.titlebar_size = dpi(24)
+theme.titlebar_size = dpi(8)
 theme.titlebar_title_enabled = true
-theme.titlebar_font = main_font.. " medium 10"
+theme.titlebar_font = main_font .. " medium 10"
 -- Window title alignment: left, right, center
 theme.titlebar_title_align = "center"
 -- Titlebar position: top, bottom, left, right
 theme.titlebar_position = "top"
 -- Use 4 titlebars around the window to imitate borders
 theme.titlebars_imitate_borders = false
-theme.titlebar_bg = theme.xcolor0
+theme.titlebar_bg = xrdb.background
 -- theme.titlebar_bg_focus = theme.xcolor5
 -- theme.titlebar_bg_normal = theme.xcolor13
 theme.titlebar_fg_focus = theme.xcolor7
@@ -137,7 +138,7 @@ theme.notification_position = "top_right" -- BUG: some notifications appear at t
 theme.notification_border_width = dpi(0)
 theme.notification_border_radius = theme.border_radius
 theme.notification_border_color = theme.xcolor1
-theme.notification_bg = theme.xcolor0
+theme.notification_bg = theme.xbackgroundtp
 theme.notification_fg = theme.xcolor7
 theme.notification_crit_bg = theme.xcolor3
 theme.notification_crit_fg = theme.xcolor0
@@ -185,7 +186,7 @@ theme.wibar_position = "top"
 theme.wibar_detached = false
 theme.wibar_height = dpi(24)
 theme.wibar_fg = theme.xcolor7
-theme.wibar_bg = theme.xcolor0
+theme.wibar_bg = theme.xbackgroundtp
 --theme.wibar_opacity = 0.7
 theme.wibar_border_color = theme.xcolor0
 theme.wibar_border_width = dpi(0)
@@ -215,11 +216,11 @@ theme.prefix_fg = theme.xcolor8
  --Tasklist
 theme.tasklist_disable_icon = true
 theme.tasklist_plain_task_name = true
-theme.tasklist_bg_focus = theme.xcolor4
+theme.tasklist_bg_focus = theme.xcolor8 .. "B3"
 theme.tasklist_fg_focus = theme.xcolor4
 theme.tasklist_bg_normal = theme.xcolor0 .. "00"
 theme.tasklist_fg_normal = theme.xcolor15
-theme.tasklist_bg_minimize = theme.xcolor3 
+theme.tasklist_bg_minimize = theme.xcolor3 .. "B3"
 theme.tasklist_fg_minimize = theme.fg_minimize
 theme.tasklist_bg_urgent = theme.xcolor1
 theme.tasklist_fg_urgent = theme.xcolor3
@@ -369,7 +370,7 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 theme.menu_submenu_icon = icon_path.."submenu.png"
 theme.menu_height = dpi(35)
 theme.menu_width  = dpi(180)
-theme.menu_bg_normal = theme.xcolor0
+theme.menu_bg_normal = theme.xbackground
 theme.menu_fg_normal= theme.xcolor7
 theme.menu_bg_focus = theme.xcolor8 .. "55"
 theme.menu_fg_focus= theme.xcolor7
@@ -470,6 +471,12 @@ theme.titlebar_maximized_button_focus_active_hover  = tip .. "titlebutton-maximi
 -------------------------------------------------------------------------------------------------------------
 
 
+theme.hotkeys_bg = theme.xbackground
+theme.hotkeys_fg = theme.xforeground .. "cc"
+theme.hotkeys_modifiers_fg = theme.xforeground
+theme.hotkeys_border_width = dpi(3)
+theme.hotkeys_border_color = theme.xcolor0
+
 -- You can use your own layout icons like this:
 theme.layout_fairh = layout_icon_path .. "fairh.png"
 theme.layout_fairv = layout_icon_path .. "fairv.png"
@@ -499,6 +506,10 @@ theme.layout_cornerse = layout_icon_path .. "cornerse.png"
 -- theme.desktop_mode_text_floating = "f"
 -- theme.desktop_mode_text_tile = "t"
 -- theme.desktop_mode_text_max = "m"
+
+
+theme.bar_background = theme.xcolor8 .. "80"
+theme.colored_bar = false
 
 -- Minimal tasklist widget variables
 theme.minimal_tasklist_visible_clients_color = theme.xcolor4

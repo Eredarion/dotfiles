@@ -57,6 +57,7 @@ local notyfi = awful.popup {
     y            = awful.screen.focused().geometry.height / 2,
     x            = (awful.screen.focused().geometry.width / 2) - (dpi(200) / 2),
     shape        = notyfi_shape,
+    bg           = beautiful.xbackgroundtp,
     type		 = "dock",
     ontop        = true,
     visible      = false,
@@ -90,6 +91,15 @@ timer_die:connect_signal("timeout", function()
 
 N.show = show
 ------------------------------------------------------------
+
+function light_control(value)
+    awful.spawn.easy_async_with_shell("xbacklight " .. value .. " ; xbacklight -get", function(stdout)
+        awesome.emit_signal("brightness_changed")
+        local light = stdout:match'[^.]*'
+        show(beautiful.redshift_icon, tonumber(light), "#FDC198")
+        collectgarbage()
+    end)
+end
 
 
 return N

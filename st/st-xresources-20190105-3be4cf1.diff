@@ -1,18 +1,19 @@
-From 9ba79c106145759de6b436dac2e4b8ff5a12bc2e Mon Sep 17 00:00:00 2001
-From: "Devin J. Pohly" <djpohly@gmail.com>
-Date: Fri, 9 Mar 2018 14:56:34 -0600
-Subject: [PATCH] Port Xresources patch by @dcat to st-git
+From 9f80f67b6238c58d2e3e209ed1c4f872d9ea7ccd Mon Sep 17 00:00:00 2001
+From: Sai Praneeth Reddy <spr.mora04@gmail.com>
+Date: Sat, 5 Jan 2019 18:13:04 +0530
+Subject: [PATCH] Update base patch to 0.8.1
 
+Read borderpx from Xresources too
 ---
- config.def.h | 35 +++++++++++++++++++++++++++
- x.c          | 78 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++----
- 2 files changed, 109 insertions(+), 4 deletions(-)
+ config.def.h | 36 ++++++++++++++++++++++++
+ x.c          | 78 +++++++++++++++++++++++++++++++++++++++++++++++++---
+ 2 files changed, 110 insertions(+), 4 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
-index 82b1b09..471fe57 100644
+index 823e79f..f960cac 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -150,6 +150,41 @@ static unsigned int mousebg = 0;
+@@ -150,6 +150,42 @@ static unsigned int mousebg = 0;
   */
  static unsigned int defaultattr = 11;
  
@@ -47,6 +48,7 @@ index 82b1b09..471fe57 100644
 +		{ "blinktimeout", INTEGER, &blinktimeout },
 +		{ "bellvolume",   INTEGER, &bellvolume },
 +		{ "tabspaces",    INTEGER, &tabspaces },
++		{ "borderpx",     INTEGER, &borderpx },
 +		{ "cwscale",      FLOAT,   &cwscale },
 +		{ "chscale",      FLOAT,   &chscale },
 +};
@@ -55,7 +57,7 @@ index 82b1b09..471fe57 100644
   * Internal mouse shortcuts.
   * Beware that overloading Button1 will disable the selection.
 diff --git a/x.c b/x.c
-index d43a529..7f29cc2 100644
+index 0422421..6e9b061 100644
 --- a/x.c
 +++ b/x.c
 @@ -14,6 +14,7 @@
@@ -86,7 +88,7 @@ index d43a529..7f29cc2 100644
  /* X modifiers */
  #define XK_ANY_MOD    UINT_MAX
  #define XK_NO_MOD     0
-@@ -778,8 +792,8 @@ xclear(int x1, int y1, int x2, int y2)
+@@ -783,8 +797,8 @@ xclear(int x1, int y1, int x2, int y2)
  void
  xhints(void)
  {
@@ -97,16 +99,16 @@ index d43a529..7f29cc2 100644
  	XWMHints wm = {.flags = InputHint, .input = 1};
  	XSizeHints *sizeh;
  
-@@ -999,8 +1013,6 @@ xinit(int cols, int rows)
+@@ -1005,8 +1019,6 @@ xinit(int cols, int rows)
  	pid_t thispid = getpid();
  	XColor xmousefg, xmousebg;
  
 -	if (!(xw.dpy = XOpenDisplay(NULL)))
--		die("Can't open display\n");
+-		die("can't open display\n");
  	xw.scr = XDefaultScreen(xw.dpy);
  	xw.vis = XDefaultVisual(xw.dpy, xw.scr);
  
-@@ -1864,6 +1876,59 @@ run(void)
+@@ -1870,6 +1882,59 @@ run(void)
  	}
  }
  
@@ -166,8 +168,8 @@ index d43a529..7f29cc2 100644
  void
  usage(void)
  {
-@@ -1937,6 +2002,11 @@ run:
- 	}
+@@ -1943,6 +2008,11 @@ run:
+ 
  	setlocale(LC_CTYPE, "");
  	XSetLocaleModifiers("");
 +
@@ -179,4 +181,4 @@ index d43a529..7f29cc2 100644
  	rows = MAX(rows, 1);
  	tnew(cols, rows);
 -- 
-2.16.2
+2.20.1

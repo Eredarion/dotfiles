@@ -36,7 +36,7 @@ else
             "Name: <span color=\"#EA9090\">$TIMESTAMP.png</span>  " \
             -t $NOTIFY_TIME \
             --urgency low  \
-            -i $PHOTO_ICON_PATH && sleep 0.5
+            -i $PHOTO_ICON_PATH \
+            && sleep 0.5
     maim -u -m 3 $FILENAME
-
 fi 

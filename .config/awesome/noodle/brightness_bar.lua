@@ -6,8 +6,17 @@ local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 
 -- Set colors
-local active_color = beautiful.brightness_bar_active_color or "#5AA3CC"
-local background_color = beautiful.brightness_bar_background_color or "#222222"
+local active_color
+local background_color
+
+if (colored_bar) then
+  active_color = beautiful.brightness_bar_active_color or "#5AA3CC"
+  background_color = beautiful.brightness_bar_background_color or "#222222"
+else
+  active_color = beautiful.xcolor5
+  background_color = beautiful.bar_background
+end
+
 
 local brightness_bar = wibox.widget{
   max_value     = 100,
@@ -18,8 +27,8 @@ local brightness_bar = wibox.widget{
     bottom = dpi(8),
   },
   forced_width  = dpi(200),
-  shape         = gears.shape.rounded_bar,
-  bar_shape     = gears.shape.rounded_bar,
+  shape         = bar_shape,
+  bar_shape     = bar_shape,
   color         = active_color,
   background_color = background_color,
   border_width  = 0,

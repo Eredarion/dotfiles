@@ -12,7 +12,7 @@ local pad = helpers.pad
 -- Icon font ------------------------------------------------------------------------------------------------
 local icon_font = "Font Awesome 5 Free Regular 24"
 local icon_font_small = "Font Awesome 5 Free Regular 18"
-local icon_font_nerd = "Tinos Nerd Font 18"
+local icon_font_nerd = "Tinos Nerd Font 20"
 local icon_font_big = "Font Awesome 5 Free Bold 30" 
 local icon_font_tiny = "Font Awesome 5 Free Regular 15"
 -------------------------------------------------------------------------------------------------------------
@@ -40,6 +40,14 @@ local function send_notification(title, text, icon)
   last_notification_id = notification.id
 end
 -------------------------------------------------------------------------------------------------------------
+
+
+-- Bar shape ------------------------------------------------------------------------------------------------
+bar_shape = function(cr, width, height)
+  gears.shape.parallelogram(cr, width, height, width-10)
+end
+-------------------------------------------------------------------------------------------------------------
+
 
 -------------------------------------------------------------------------------------------------------------
 -- Item configuration ---------------------------------------------------------------------------------------
@@ -69,24 +77,24 @@ exit:buttons(gears.table.join(
 
 
 -- Weather widget -------------------------------------------------------------------------------------------
-local weather_widget = require("noodle.weather")
-local weather_widget_icon = weather_widget:get_all_children()[1]
-weather_widget_icon.forced_width = dpi(30)
-weather_widget_icon.forced_height = icon_size
-local weather_widget_text = weather_widget:get_all_children()[2]
-weather_widget_text.font = text_font .. " medium 16"
+-- local weather_widget = require("noodle.weather")
+-- local weather_widget_icon = weather_widget:get_all_children()[1]
+-- weather_widget_icon.forced_width = dpi(30)
+-- weather_widget_icon.forced_height = icon_size
+-- local weather_widget_text = weather_widget:get_all_children()[2]
+-- weather_widget_text.font = text_font .. " medium 16"
 
--- Dummy weather_widget for testing
--- (avoid making requests with every awesome restart)
--- local weather_widget = wibox.widget.textbox("[i] bla bla bla!")
+-- -- Dummy weather_widget for testing
+-- -- (avoid making requests with every awesome restart)
+-- -- local weather_widget = wibox.widget.textbox("[i] bla bla bla!")
 
-local weather = wibox.widget{
-    nil,
-    weather_widget,
-    nil,
-    layout = wibox.layout.align.horizontal,
-    expand = "none"
-}
+-- local weather = wibox.widget{
+--     nil,
+--     weather_widget,
+--     nil,
+--     layout = wibox.layout.align.horizontal,
+--     expand = "none"
+-- }
 -------------------------------------------------------------------------------------------------------------
 
 
@@ -149,6 +157,7 @@ temperature_icon.forced_width = icon_size
 temperature_icon.forced_height = icon_size
 local temperature_bar = require("noodle.temperature_bar")
 temperature_bar.forced_width = progress_bar_width
+local temperature_bar_text = temperature_bar:get_all_children()[2]:get_all_children()[1]
 -- temperature_bar.margins.top = progress_bar_margins
 -- temperature_bar.margins.bottom = progress_bar_margins
 local temperature = wibox.widget{
@@ -184,36 +193,8 @@ temperature:buttons(
 
 
 -- Battery widget -------------------------------------------------------------------------------------------
-local battery_icon = 
-        wibox.widget.textbox("<span font=\"".. icon_font_small .."\" color=\"" .. beautiful.xcolor6 .. "\"></span>")
-battery_icon.resize = true
-battery_icon.forced_width = icon_size
-battery_icon.forced_height = icon_size
-awesome.connect_signal(
-  "charger_plugged", function(c)
-    battery_icon.image = beautiful.battery_charging_icon
-end)
-awesome.connect_signal(
-  "charger_unplugged", function(c)
-    battery_icon.image = beautiful.battery_icon
-end)
-local battery_bar = require("noodle.battery_bar")
-battery_bar.forced_width = progress_bar_width
--- battery_bar.margins.top = progress_bar_margins
--- battery_bar.margins.bottom = progress_bar_margins
-local battery = wibox.widget{
-  nil,
-  {
-    battery_icon,
-    pad(1),
-    battery_bar,
-    pad(1),
-    layout = wibox.layout.fixed.horizontal
-  },
-  nil,
-  expand = "none",
-  layout = wibox.layout.align.horizontal
-}
+battery = require("noodle.battery_bar")
+
 local script_Bt = [[bash -c "
   battery_level=`upower -i $(upower -e | grep BAT) | grep percentage | awk '{print $2}'`
   battery_status=`upower -i $(upower -e | grep BAT) | grep state | awk '{print $2}'`
@@ -286,6 +267,8 @@ ram_icon.forced_width = icon_size
 ram_icon.forced_height = icon_size
 local ram_bar = require("noodle.ram_bar")
 ram_bar.forced_width = progress_bar_width
+local ram_bar_text = ram_bar:get_all_children()[2]:get_all_children()[1]
+
 -- ram_bar.margins.top = progress_bar_margins
 -- ram_bar.margins.bottom = progress_bar_margins
 local ram = wibox.widget{
@@ -341,18 +324,22 @@ date.font = text_font .. " medium 20"
 
 
 -- Disk space widget ----------------------------------------------------------------------------------------
-local disk_space = require("noodle.disk")
-disk_space.font = text_font .. " medium 14"
-local disk_icon = 
-        wibox.widget.textbox("<span font=\"".. icon_font_nerd .."\" color=\"" .. beautiful.xcolor7 .. "\"></span>")
-disk_icon.resize = true
-disk_icon.forced_width = dpi(30)
-disk_icon.forced_height = icon_size
-local disk = wibox.widget{
+local disk_bar_icon = 
+        wibox.widget.textbox("<span font=\"".. icon_font_nerd .."\" color=\"" .. beautiful.xcolor6 .. "\"></span>")
+disk_bar_icon.resize = true
+disk_bar_icon.forced_width = icon_size + 7
+disk_bar_icon.forced_height = icon_size 
+local disk_bar = require("noodle.disk_bar")
+disk_bar.forced_width = progress_bar_width
+local disk_bar_text = disk_bar:get_all_children()[2]:get_all_children()[1]
+
+local disk_bar_widget = wibox.widget{
   nil,
   {
-    disk_icon,
-    disk_space,
+    disk_bar_icon,
+    -- pad(1),
+    disk_bar,
+    pad(1),
     layout = wibox.layout.fixed.horizontal
   },
   nil,
@@ -360,7 +347,7 @@ local disk = wibox.widget{
   layout = wibox.layout.align.horizontal
 }
 
-disk:buttons(gears.table.join(
+disk_bar_widget:buttons(gears.table.join(
                        awful.button({ }, 1, function ()
                            awful.spawn(filemanager, {floating = true})
                        end),
@@ -410,8 +397,8 @@ update_icon.forced_height = dpi(38)
 local updates_widget = wibox.widget{
   nil,
   {
-    update_icon,
-    pad(1),
+    -- update_icon,
+    -- pad(1),
     updates,
     layout = wibox.layout.fixed.horizontal
   },
@@ -420,7 +407,7 @@ local updates_widget = wibox.widget{
   layout = wibox.layout.align.horizontal
 }
 
-updates_widget:buttons(gears.table.join(
+updates:buttons(gears.table.join(
                 awful.button({ }, 1, function ()
                     local matcher = function (c)
                       return awful.rules.match(c, {name = 'upd'})
@@ -436,29 +423,7 @@ updates_widget:buttons(gears.table.join(
 
 
 -- Volume widget --------------------------------------------------------------------------------------------
-local volume_icon = 
-        wibox.widget.textbox("<span font=\"".. icon_font_small .."\" color=\"" .. beautiful.xcolor7 .. "\"></span>")
-volume_icon.resize = true
-volume_icon.forced_width = icon_size
-volume_icon.forced_height = icon_size
-local volume_bar = require("noodle.volume_bar")
-volume_bar.forced_width = progress_bar_width
--- volume_bar.shape = gears.shape.circle
--- volume_bar.margins.top = progress_bar_margins
--- volume_bar.margins.bottom = progress_bar_margins
-local volume = wibox.widget{
-  nil,
-  {
-    volume_icon,
-    pad(1),
-    volume_bar,
-    pad(1),
-    layout = wibox.layout.fixed.horizontal
-  },
-  nil,
-  expand = "none",
-  layout = wibox.layout.align.horizontal
-}
+local volume = require("noodle.volume_bar")
 
 volume:buttons(gears.table.join(
                  -- Left click - Mute / Unmute
@@ -501,23 +466,143 @@ local network = wibox.widget{
 -------------------------------------------------------------------------------------------------------------
 
 
+-- Area -----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+
+-- Mpd area -------------------------------------------------------------------------------------------------
+local mpd_area = wibox.layout.align.vertical()
+mpd_area:set_top(nil)
+mpd_area:set_middle(wibox.container.margin(mpd_song, dpi(14), dpi(10), 0, 0))
+mpd_area:set_bottom(nil)
+-------------------------------------------------------------------------------------------------------------
+
+
+-- System info area -----------------------------------------------------------------------------------------
+local sys_info_area = wibox.layout.fixed.vertical()
+sys_info_area:add(volume)
+sys_info_area:add(cpu)
+sys_info_area:add(ram)
+sys_info_area:add(temperature)
+sys_info_area:add(brightness)
+sys_info_area:add(disk_bar_widget)
+sys_info_area:add(battery)
+-------------------------------------------------------------------------------------------------------------
+
+
+-- User info area -------------------------------------------------------------------------------------------
+local user_text = wibox.widget.textbox()
+user_text.font = text_font .. " medium 14"
+
+local username = os.getenv("USER")
+awful.spawn.easy_async_with_shell("hostname", function(out)
+    -- Remove trailing whitespaces
+    out = out:gsub('^%s*(.-)%s*$', '%1')
+    user_text.markup = helpers.colorize_text(username.."@"..out, beautiful.xcolor7)
+end)
+
+local kernel_text = wibox.widget.textbox()
+kernel_text.font = text_font .. " medium 14"
+awful.spawn.easy_async_with_shell("uname -r | cut -d '-' -f1", function(out)
+    -- Remove trailing whitespaces
+    kernel_text.markup = helpers.colorize_text("Kernel: " .. out, beautiful.xcolor7)
+end)
+
+
+local user_info_area = wibox.layout.align.vertical()
+user_info_area:set_top(wibox.container.constraint(user_text, "exact", nil, dpi(26)))
+user_info_area:set_middle(wibox.container.constraint(kernel_text, "exact", nil, dpi(26)))
+user_info_area:set_bottom(updates)
+
+local user_picture_container = wibox.container.background()
+user_picture_container.shape = gears.shape.circle
+-- user_picture_container.shape = helpers.prrect(30, true, true, false, true)
+user_picture_container.forced_height = dpi(100)
+user_picture_container.forced_width = dpi(100)
+local user_picture = wibox.widget {
+    wibox.widget.imagebox(os.getenv("HOME").."/.config/awesome/profile.png"),
+    widget = user_picture_container
+}
+
+
+local user_area = wibox.layout.fixed.horizontal()
+--user_area:add(wibox.container.margin(user_picture, dpi(14), dpi(14), 0, 0))
+--user_area:add(wibox.container.margin(user_info_area, dpi(10), dpi(10), 0, 0))
+user_area:add(wibox.container.margin(user_picture, dpi(14), dpi(14), 0, 0))
+user_area:add(user_info_area)
+-------------------------------------------------------------------------------------------------------------
+
+
+-- Network and button area ----------------------------------------------------------------------------------
+local btn_area = wibox.layout.fixed.horizontal()
+btn_area:add(search)
+btn_area:add(pad(5))
+btn_area:add(exit)
+btn_area:add(pad(2))
+
+local btn_align = wibox.layout.align.horizontal()
+btn_align:set_expand("none")
+btn_align:set_middle(btn_area)
+btn_align:set_right(nil)
+btn_align:set_left(nil)
+
+local bottom_area = wibox.layout.fixed.vertical()
+bottom_area:add(wibox.container.margin(network, dpi(0), dpi(0), dpi(13), dpi(22)))
+bottom_area:add(btn_align)
+-------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+
+-- Get screen geometry
+local screen_width = awful.screen.focused().geometry.width
+local screen_height = awful.screen.focused().geometry.height
+local wi_bg = beautiful.xbackground
+local margin = beautiful.useless_gap + beautiful.screen_margin
+-- local free_screen_height = screen_height - beautiful.wibar_height - margin * 5
+local free_screen_height = screen_height - beautiful.wibar_height - margin * 7
+
+local vis = false
+
+function round(number)
+  if (number - (number % 0.1)) - (number - (number % 1)) < 0.5 then
+    number = number - (number % 1)
+  else
+    number = (number - (number % 1)) + 1
+  end
+ return number
+end
+
+
 -------------------------------------------------------------------------------------------------------------
 -- Create the sidebar  --------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------
-sidebar = wibox({x = 0, y = 0, visible = false, ontop = true, type = "dock"})
-sidebar.bg = beautiful.sidebar_bg or beautiful.wibar_bg or "#111111"
+local notyfi_shape = function(cr, width, height)
+  gears.shape.rounded_rect(cr, width, height, 6)
+end
+
+local sidebar_shape = function(cr, width, height)
+  gears.shape.partially_rounded_rect(cr, width, height, false, true, true, false, 6)
+end
+
+local border_color = beautiful.xforeground
+local container_border_color = beautiful.xforeground
+
+sidebar = wibox({x = 0, y = 0, visible = false, ontop = true, type = "dock", screen = 1 })
+sidebar.bg = beautiful.xbackgroundtp or beautiful.wibar_bg or "#111111"
 sidebar.fg = beautiful.sidebar_fg or beautiful.wibar_fg or "#FFFFFF"
 sidebar.opacity = beautiful.sidebar_opacity or 1
-sidebar.height = beautiful.sidebar_height or awful.screen.focused().geometry.height
-sidebar.width = beautiful.sidebar_width or dpi(300)
-sidebar.y = beautiful.sidebar_y or 0
+-- sidebar.border_width = dpi(1)
+-- sidebar.border_color = border_color
+sidebar.height = beautiful.sidebar_height - beautiful.wibar_height - margin * 2 or awful.screen.focused().geometry.height
+sidebar.width = beautiful.sidebar_width + margin * 2 or dpi(300)
+sidebar.y = beautiful.wibar_height + margin
 local radius = beautiful.sidebar_border_radius or 0
 if beautiful.sidebar_position == "right" then
   sidebar.x = awful.screen.focused().geometry.width - sidebar.width
   sidebar.shape = helpers.prrect(radius, true, false, false, true)
 else
   sidebar.x = beautiful.sidebar_x or 0
-  sidebar.shape = helpers.prrect(radius, false, true, true, false)
+  sidebar.shape = sidebar_shape
 end
 -- sidebar.shape = helpers.rrect(radius)
 
@@ -536,109 +621,113 @@ sidebar:buttons(gears.table.join(
 -- Hide sidebar when mouse leaves
 if beautiful.sidebar_hide_on_mouse_leave then
   sidebar:connect_signal("mouse::leave", function ()
-                           sidebar.visible = false
+          if (sidebar.visible) then
+              sidebar.visible = false
+          end
   end)
 end
 -- Activate sidebar by moving the mouse at the edge of the screen
-if beautiful.sidebar_hide_on_mouse_leave then
-  local sidebar_activator = wibox({y = sidebar.y, width = 1, visible = true, ontop = false, opacity = 0, below = true})
-  sidebar_activator.height = sidebar.height
-  -- sidebar_activator.height = sidebar.height - beautiful.wibar_height
-  sidebar_activator:connect_signal("mouse::enter", function ()
-                                     sidebar.visible = true
-  end)
+-- if beautiful.sidebar_hide_on_mouse_leave then
+--   local sidebar_activator = wibox({y = sidebar.y, width = 1, visible = true, ontop = false, opacity = 0, below = true})
+--   sidebar_activator.height = sidebar.height
+--   -- sidebar_activator.height = sidebar.height - beautiful.wibar_height
+--   sidebar_activator:connect_signal("mouse::enter", function ()
+--                             --sidebar.visible = true
+--       -- time_date_wibox.visible = true
+--       -- mpd_wibox.visible = true
+--       -- sys_info_wibox.visible = true
+--       -- bottom_wibox.visible = true
+--   end)
 
-  if beautiful.sidebar_position == "right" then
-    sidebar_activator.x = awful.screen.focused().geometry.width - sidebar_activator.width
-  else
-    sidebar_activator.x = 0
+--   if beautiful.sidebar_position == "right" then
+--     sidebar_activator.x = awful.screen.focused().geometry.width - sidebar_activator.width
+--   else
+--     sidebar_activator.x = 0
+--   end
+
+--   sidebar_activator:buttons(
+--     gears.table.join(
+--       -- awful.button({ }, 2, function ()
+--       --     start_screen_show()
+--       --     -- sidebar.visible = not sidebar.visible
+--       -- end),
+--       awful.button({ }, 4, function ()
+--           awful.tag.viewprev()
+--       end),
+--       awful.button({ }, 5, function ()
+--           awful.tag.viewnext()
+--       end)
+--   ))
+-- end
+
+check_text_bars_visible = function()
+  if (ram_bar_text.visible == true) then
+    ram_bar_text.visible = false
   end
 
-  sidebar_activator:buttons(
-    gears.table.join(
-      -- awful.button({ }, 2, function ()
-      --     start_screen_show()
-      --     -- sidebar.visible = not sidebar.visible
-      -- end),
-      awful.button({ }, 4, function ()
-          awful.tag.viewprev()
-      end),
-      awful.button({ }, 5, function ()
-          awful.tag.viewnext()
-      end)
-  ))
+  if (temperature_bar_text.visible == true) then
+    temperature_bar_text.visible = false
+  end
+
+  if (disk_bar_text.visible == true) then
+    disk_bar_text.visible = false
+  end
+
 end
+
+awesome.connect_signal("hide_bar_hover", function ()
+                  ram_bar_text.visible = false
+                  temperature_bar_text.visible = false
+                  disk_bar_text.visible = false
+end)
+
+-- rectangle
+local container = function(widget, shape_border_color, margin_bot, margin_left, height)
+  return {
+      {
+        {
+          nil,
+          widget,
+          nil,
+          expand = "none",
+          layout = wibox.layout.align.vertical
+        },
+        forced_height = round(height),
+        shape = notyfi_shape,
+        shape_border_width = dpi(0),
+        shape_border_color = container_border_color,
+        bg = beautiful.xbackground .. "A6",
+        widget = wibox.container.background
+      },
+      left = margin,
+      right = margin,
+      --bottom = margin_bot,
+      widget = wibox.container.margin,
+    }
+end
+
+
+local space = function(height)
+  return {
+      forced_height = height,
+      widget = wibox.widget.textbox
+    }
+end
+
 
 -- Item placement
 sidebar:setup {
-  { ----------- TOP GROUP -----------
-    -- pad(1),
-    pad(1),
-    time,
-    date,
-    -- pad(1),
-    weather,
-    --pad(1),
-    --pad(1),
-    layout = wibox.layout.fixed.vertical
-  },
-  { ----------- MIDDLE GROUP -----------
-    {
-      -- Put some padding at the left and right edge so that
-      pad(2),
-      {
-        mpd_song,
-        top = dpi(24),
-        bottom = dpi(24),
-        widget = wibox.container.margin
-      },
-      pad(2),
-      layout = wibox.layout.align.horizontal,
-    },
-    --pad(1),
-    --pad(1),
-    volume,
-    cpu,
-    ram,
-    temperature,
-    brightness,
-    battery,
-    --pad(1),
-    {
-      updates_widget,
-      top = dpi(14),
-      bottom = dpi(14),
-      widget = wibox.container.margin
-    },
-    --pad(1),
-    network,
-    pad(1),
-    -- updates_widget,
-    layout = wibox.layout.fixed.vertical
-  },
-  { ----------- BOTTOM GROUP -----------
-    -- {
-    --   updates_widget,
-    --   pad(1),
-    --   layout = wibox.layout.fixed.vertical
-    -- },
-    { -- Search and exit screen
-      nil,
-      {
-        search,
-        pad(5),
-        exit,
-        pad(2),
-        layout = wibox.layout.fixed.horizontal
-      },
-      nil,
-      layout = wibox.layout.align.horizontal,
-      expand = "none"
-    },
-    pad(1),
-    layout = wibox.layout.fixed.vertical
-  },
-  layout = wibox.layout.align.vertical,
+    --space(beautiful.wibar_height + margin),
+    space(margin),
+    container(user_area, beautiful.xcolor1, 0, 0, free_screen_height * 0.18),
+    space(margin),
+    container(mpd_area, beautiful.xcolor2, 0, 0, free_screen_height * 0.19),
+    space(margin),
+    container(sys_info_area, beautiful.xcolor3, 0, 0, free_screen_height * 0.41),
+    space(margin),
+    container(bottom_area, beautiful.xcolor5, margin, 0, free_screen_height * 0.22),
+    space(margin),
+  layout = wibox.layout.fixed.vertical
   -- expand = "none"
 }
 -------------------------------------------------------------------------------------------------------------

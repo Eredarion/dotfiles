@@ -1,36 +1,37 @@
 * {
-    active-background: #e77b2f;
+    active-background: #A199A9;
     active-foreground: @foreground;
-    normal-background: @background;
+    normal-background: @border-color;
     normal-foreground: @foreground;
-    urgent-background: #19e55d;
+    urgent-background: #738A97;
     urgent-foreground: @foreground;
 
     alternate-active-background: @background;
     alternate-active-foreground: @foreground;
-    alternate-normal-background: @background;
+    alternate-normal-background: @border-color;
     alternate-normal-foreground: @foreground;
     alternate-urgent-background: @background;
     alternate-urgent-foreground: @foreground;
 
-    selected-active-background: @border-color;
-    selected-active-foreground: @foreground;
-    selected-normal-background: @border-color;
-    selected-normal-foreground: @background;
-    selected-urgent-background: @border-color;
+    selected-active-background: #ffffff;
+    selected-active-foreground: #191726;
+    selected-normal-background: #D56C6D;
+    selected-normal-foreground: #191726;
+    selected-urgent-background: #9AACC3;
     selected-urgent-foreground: @foreground;
 
-    background-color: @background;
-    background: #0b1015;
-    foreground: #e4eceb;
-    border-color: #e4eceb;
+    background-color: #12151A00;
+    background: #12151AD9;
+    //background: #12151A;
+    foreground: #ffffff;
+    border-color: @background-color;
     spacing: 2;
 }
 
 #window {
     background-color: @background;
-    border: 1;
-    padding: 2.5ch;
+    border: 0;
+    padding: 3.0ch;
 }
 
 #mainbox {
@@ -48,11 +49,11 @@
     text-color: @foreground;
 }
 
-inputbar {
+#inputbar {
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
 }
 
-textbox-prompt-colon {
+#textbox-prompt-colon {
     expand: false;
     str: ":";
     margin: 0px 0.3em 0em 0em;
@@ -61,10 +62,10 @@ textbox-prompt-colon {
 
 #listview {
     fixed-height: 0;
-    border: 0px 0px 0px;
+    border: 2px 0px 0px;
     border-color: @border-color;
     spacing: 2px;
-    scrollbar: true;
+    scrollbar: false;
     padding: 2px 0px 0px;
 }
 

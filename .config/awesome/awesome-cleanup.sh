@@ -11,3 +11,4 @@ ps aux | grep "mpc idleloop player" | grep -v grep | awk '{print $2}' | xargs ki
 #ps aux | grep "mpc idle player" | grep -v grep | awk '{print $2}' | xargs kill
 # Volume widget
 ps aux | grep "pactl subscribe" | grep -v grep | awk '{print $2}' | xargs kill
+

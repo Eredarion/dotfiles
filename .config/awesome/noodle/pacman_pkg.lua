@@ -29,8 +29,9 @@ end
 
 -- Create widget
 local updates = wibox.widget {
-    align  = 'center',
-    valign = 'center',
+    -- align  = 'center',
+    -- valign = 'center',
+    text   = 'Update...',
     widget = wibox.widget.textbox
 }
 
@@ -79,9 +80,9 @@ awful.widget.watch(upd_script, update_interval, function(widget, stdout)
           else
             if show_notification then
               send_notification("Pacman   ",
-                                "New " .. "<span color=\"" .. "#FFC756" .. "\">" .. upd_pkg .. "</span> pkg   ")
+                                "New " .. "<span color=\"" .. beautiful.xcolor3 .. "\">" .. upd_pkg .. "</span> pkg   ")
             end
-            upd_pkg = "New <span color=\"" .. "#FFC756" .. "\">".. upd_pkg  .. "</span> pkg"
+            upd_pkg = "New <span color=\"" .. beautiful.xcolor3 .. "\">".. upd_pkg  .. "</span> pkg"
           end
                      
           update_widget(upd_pkg)
@@ -100,7 +101,7 @@ local function update_pacman_data()
       elseif upd_pkg == "Offline" then
         upd_pkg = "Network error"
       else
-        upd_pkg = "New <span color=\"" .. "#FFC756" .. "\">".. upd_pkg  .. "</span> pkg"
+        upd_pkg = "New pkg: <span color=\"" .. beautiful.xcolor3 .. "\">".. upd_pkg  .. "</span>"
       end
 
         update_widget(upd_pkg)

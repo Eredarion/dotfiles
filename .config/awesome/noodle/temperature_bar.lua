@@ -7,11 +7,19 @@ local dpi = xresources.apply_dpi
 local naughty = require("naughty")
 
 -- Set colors
-local active_color = beautiful.temperature_bar_active_color or "#5AA3CC"
-local background_color = beautiful.temperature_bar_background_color or "#222222"
+local active_color
+local background_color
+
+if (colored_bar) then
+  active_color = beautiful.temperature_bar_active_color or "#5AA3CC"
+  background_color = beautiful.temperature_bar_background_color or "#222222"
+else
+  active_color = beautiful.xcolor4
+  background_color = beautiful.bar_background
+end
 
 -- Configuration
-local update_interval = 15            -- in seconds
+local update_interval = 10            -- in seconds
 
 local heat_notify = false
 local last_notification_id
@@ -35,14 +43,49 @@ local temperature_bar = wibox.widget{
     bottom = dpi(8),
   },
   forced_width  = dpi(200),
-  shape         = gears.shape.rounded_bar,
-  bar_shape     = gears.shape.rounded_bar,
+  shape         = bar_shape,
+  bar_shape     = bar_shape,
   color         = active_color,
   background_color = background_color,
   border_width  = 0,
   border_color  = beautiful.border_color,
   widget        = wibox.widget.progressbar,
 }
+
+local temperature_text = wibox.widget {
+      align = "center",
+      valign = "center",
+      forced_height = dpi(10),
+      font   = text_font ..  " medium 10",
+      widget = wibox.widget.textbox
+}
+
+local temperature_hover = wibox.widget {
+      temperature_text,
+      visible = false,
+      shape  = bar_shape,
+      bg     = beautiful.xbgpure .. "80",
+      widget = wibox.container.background
+}
+
+local temperature_widget = wibox.widget {
+  temperature_bar,
+  {
+  temperature_hover,
+  top = dpi(8),
+  bottom = dpi(8),
+  widget = wibox.container.margin
+  },
+  layout = wibox.layout.stack
+}
+
+temperature_widget:connect_signal("mouse::enter", function ()
+                                 temperature_hover.visible = true
+end)
+
+temperature_widget:connect_signal("mouse::leave", function ()
+                                 temperature_hover.visible = false
+end)
 
 -- local temperature_t = awful.tooltip {
 --     objects        = { temperature_bar },
@@ -55,6 +98,7 @@ local temperature_bar = wibox.widget{
 
 local function update_widget(temp)
   temperature_bar.value = tonumber(temp)
+  temperature_text.markup = "<span font=\"".. text_font .. " bold" .."\" color=\"" ..  beautiful.xforeground .. "\">" .. temp:gsub("%s+", "") .. "°C</span>"
   -- temperature_t.markup = "CPU temperature: <span color=\"" .. "#FF6FC4" .. "\">" .. temp:gsub("%s+", "") .. "°C</span>"
 end
 
@@ -81,4 +125,4 @@ awful.widget.watch(temp_script, update_interval, function(widget, stdout)
                     update_widget(temp)
 end)
 
-return temperature_bar
+return temperature_widget

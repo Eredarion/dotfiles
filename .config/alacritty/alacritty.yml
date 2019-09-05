@@ -18,7 +18,7 @@ window:
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
   dimensions:
-    columns: 60
+    columns: 70
     lines: 19
 
   # Window position (changes require restart)
@@ -34,8 +34,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 5
-    y: 5
+    x: 0
+    y: 0
 
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: false
@@ -49,7 +49,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background, but no title bar buttons
-  decorations: none
+  decorations: full
 
   # Startup Mode (changes require restart)
   #
@@ -108,32 +108,32 @@ font:
     #   - (macOS) Menlo
     #   - (Linux) monospace
     #   - (Windows) Consolas
-    family: FantasqueSansMono Nerd Font
+    family: Iosevka
 
     # The `style` can be specified to pick a specific face.
-    #style: Regular
+    style: Regular
 
   # Bold font face
-  #bold:
+  bold:
     # Font family
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: Iosevka
 
     # The `style` can be specified to pick a specific face.
-    #style: Bold
+    style: Medium
 
   # Italic font face
-  #italic:
+  italic:
     # Font family
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: Iosevka
 
     # The `style` can be specified to pick a specific face.
-    #style: Italic
+    style: Italic
 
   # Point size
   size: 10.0
@@ -165,17 +165,18 @@ font:
   #
   # This is a global setting and will require a log out or restart to take
   # effect.
-  use_thin_strokes: true
+  use_thin_strokes: false
+
 
 # If `true`, bold text is drawn using the bright color variants.
-draw_bold_text_with_bright_colors: true
+draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night Bright)
 colors:
   # Default colors
   primary:
     background: '0x12151A'
-    foreground: '0xF9F9F9'
+    foreground: '0xf9f9f9'
 
     # Bright and dim foreground colors
     #
@@ -189,9 +190,9 @@ colors:
   #
   # Colors which should be used to draw the terminal cursor. If these are unset,
   # the cursor color will be the inverse of the cell color.
-  #cursor:
-  #  text: '0x000000'
-  #  cursor: '0xffffff'
+  cursor:
+    text: '0x12151A'
+    cursor: '0xeff0eb'
 
   # Selection colors
   #
@@ -204,7 +205,7 @@ colors:
 
   # Normal colors
   normal:
-    black:   '0x12151A'
+    black:   '0x3B4252'
     red:     '0xD56C6D'
     green:   '0x74DD91'
     yellow:  '0xFFF176'
@@ -215,7 +216,7 @@ colors:
 
   # Bright colors
   bright:
-    black:   '0x84889B'
+    black:   '0x4C566A'
     red:     '0xD56C6D'
     green:   '0x4BC66D'
     yellow:  '0xFFF176'
@@ -278,7 +279,7 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.90
+background_opacity: 0.95
 
 # Mouse bindings
 #
@@ -509,8 +510,8 @@ debug:
 #   - AppKeypad
 key_bindings:
   # (Windows/Linux only)
-  - { key: V,        mods: Alt, action: Paste            }
-  - { key: C,        mods: Alt, action: Copy             }
+  #- { key: V,        mods: Control|Shift, action: Paste            }
+  #- { key: C,        mods: Control|Shift, action: Copy             }
   #- { key: Insert,   mods: Shift,         action: PasteSelection   }
   #- { key: Key0,     mods: Control,       action: ResetFontSize    }
   #- { key: Equals,   mods: Control,       action: IncreaseFontSize }
@@ -554,8 +555,8 @@ key_bindings:
   - { key: PageDown, mods: Alt,     chars: "\x1b[6;3~"                       }
   - { key: PageDown,                chars: "\x1b[6~"                         }
   - { key: Tab,      mods: Shift,   chars: "\x1b[Z"                          }
-  #- { key: Back,                    chars: "\x7f"                            }
-  #- { key: Back,     mods: Alt,     chars: "\x1b\x7f"                        }
+  - { key: Back,                    chars: "\x7f"                            }
+  - { key: Back,     mods: Alt,     chars: "\x1b\x7f"                        }
   - { key: Insert,                  chars: "\x1b[2~"                         }
   - { key: Delete,                  chars: "\x1b[3~"                         }
   - { key: Left,     mods: Shift,   chars: "\x1b[1;2D"                       }

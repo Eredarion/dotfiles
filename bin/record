@@ -54,3 +54,13 @@ esac
 #ffmpeg -i $path.mp4 -an -qmax 40 -threads 2 -c:v libvpx $path.webm
 # delete the original mp4 file
 #rm "$path.mp4"
+
+## WITH AUDIO ####################################################
+# ffmpeg -thread_queue_size 512 \
+#                                    -video_size 1366x768 \
+#                                    -framerate 30 \
+#                                    -f x11grab \
+#                                    -i :0.0  \
+#                                    -f alsa -ac 2 -i hw:0 \
+#                                    -preset ultrafast $path.mkv
+##################################################################

@@ -2,7 +2,7 @@
 
 <channel name="xfce4-settings-manager" version="1.0">
   <property name="last" type="empty">
-    <property name="window-width" type="int" value="850"/>
-    <property name="window-height" type="int" value="600"/>
+    <property name="window-width" type="int" value="904"/>
+    <property name="window-height" type="int" value="563"/>
   </property>
 </channel>

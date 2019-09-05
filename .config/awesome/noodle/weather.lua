@@ -36,7 +36,7 @@ local function update_widget(icon_code, weather_details)
   elseif string.find(icon_code, "01n") then
     weather_icon.markup = helpers.colorize_text(beautiful.star_icon , beautiful.xcolor6)
   elseif string.find(icon_code, "02d") then
-    weather_icon.markup = beautiful.dcloud_icon
+    weather_icon.markup = helpers.colorize_text(beautiful.dcloud_icon , beautiful.xcolor2)
   elseif string.find(icon_code, "02n") then
     weather_icon.markup = beautiful.ncloud_icon
   elseif string.find(icon_code, "03") or string.find(icon_code, "04") then

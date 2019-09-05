@@ -110,26 +110,27 @@ tput clear
 
 # EOF
 
-# cat << EOF  
-
-#                      $f1 Keep it simple stupid           $f7            
-#                   $f7    ╾──────────────────────╼  
-
-#    $f2 OS: Archlinux   $f6 Kernel: $kernel  $f3 WM: Awesome  $f4 Terminal: st $f7
-                                        
-#                          $f5 Memory: $memory 
-                                        
-#                                                         $f7  $bi $battery
-
-# EOF
 
 cat << EOF  
-$bold$f1[?]$f1 Sys info:
-    $f1>> $normal$f7$f1 OS:$f7 Archlinux 
-     $bold$f2>> $normal$f7$f2 Kernel:$f7 $kernel
-      $bold$f3>> $normal$f7$f3 WM:$f7 Awesome
-       $bold$f4>> $normal$f7$f4 Terminal:$f7 urxvt
-        $bold$f5>> $normal$f7$f5 Memory:$f7 $memory
-$bold$f1[!] << [end]
+
+                     $f1 Keep it simple stupid           $f7            
+                  $f7    ╾──────────────────────╼  
+
+   $f2 OS: Archlinux   $f6 Kernel: $kernel  $f3 WM: Awesome  $f4 Terminal: st $f7
+                                        
+                         $f5 Memory: $memory 
+                                        
+                                                        $f7  $bi $battery
 
 EOF
+
+# cat << EOF  
+# $bold$f1[?]$f1 Sys info:
+#     $f1>> $normal$f7$f1 OS:$f7 Archlinux 
+#      $bold$f2>> $normal$f7$f2 Kernel:$f7 $kernel
+#       $bold$f3>> $normal$f7$f3 WM:$f7 Awesome
+#        $bold$f4>> $normal$f7$f4 Terminal:$f7 urxvt
+#         $bold$f5>> $normal$f7$f5 Memory:$f7 $memory
+# $bold$f1[!] << [end]
+
+# EOF

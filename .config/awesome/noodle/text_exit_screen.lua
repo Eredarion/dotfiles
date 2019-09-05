@@ -12,7 +12,7 @@ local keygrabber = require("awful.keygrabber")
 -- Appearance
 local icon_size = beautiful.exit_screen_icon_size or 140
 local text_font = beautiful.exit_screen_font or "sans 14"
-local icon_font = "Font Awesome 5 Free 60"
+local icon_font = "Tinos Nerd Font 60"
 local poweroff_text_icon = ""
 local reboot_text_icon = ""
 local suspend_text_icon = ""
@@ -227,18 +227,23 @@ function exit_screen_show()
   exit_screen_grabber = awful.keygrabber.run(function(_, key, event)
       if event == "release" then return end
 
-      if     key == 's'    then
+      if     key == 's' or key == 'ы'   then
         suspend_command()
       -- 'e' for exit
-      elseif key == 'e'    then
+      elseif key == 'e' or key == 'у'   then
         exit_command()
-      elseif key == 'l'    then
+      elseif key == 'l' or key == 'д'   then
         lock_command()
-      elseif key == 'p' or key == 'q' then
+      elseif key == 'p' or 
+      	     key == 'q' or 
+      	     key == 'з' or 
+      	     key == "й" 				then
         poweroff_command()
-      elseif key == 'r'    then
+      elseif key == 'r' or key == 'к'   then
         reboot_command()
-      elseif key == 'Escape' or key == 'x' then
+      elseif key == 'Escape' or 
+      		 key == 'x' or 
+      		 key == 'ч' 				then
         exit_screen_hide()
       -- else awful.keygrabber.stop(exit_screen_grabber)
       end

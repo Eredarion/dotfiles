@@ -5,7 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FantasqueSansMono Nerd Font:pixelsize=14";
+// static char *font = "FantasqueSansMono Nerd Font:pixelsize=14";
+static char *font = "Iosevka Custom:pixelsize=12";
 static int borderpx = 5;
 
 /*
@@ -94,12 +95,13 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-float alpha = 0.80;
+//float alpha = 1.00;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#12151A",  /*  0: black    */
+	//"#12151A",  /*  0: black    */
+    "#40434E",
 	"#D56C6D",  /*  1: red      */
 	"#74DD91",  /*  2: green    */
 	"#FFF176",  /*  3: yellow   */
@@ -109,19 +111,19 @@ static const char *colorname[] = {
 	"#eff0eb",  /*  7: white    */
 
 	/* 8 bright colors */
-	"#84889B",  /*  8: brblack  */
+	"#56687E",  /*  8: brblack  */
 	"#D56C6D",  /*  9: brred    */
 	"#4BC66D",  /* 10: brgreen  */
 	"#FFF176",  /* 11: bryellow */
 	"#57c7ff",  /* 12: brblue   */
 	"#825ECE",  /* 13: brmagenta*/
 	"#62CDCD",  /* 14: brcyan   */
-	"#F9F9F9",  /* 15: brwhite  */
+	"#eff0eb",  /* 15: brwhite  */
 
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#12151A",   /* 256 -> bg */
-	"white",   /* 257 -> fg */
+	"#F9F9F9",   /* 257 -> fg */
 };
 
 

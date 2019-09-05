@@ -77,9 +77,9 @@ local function update_widget(icon_code, weather_details)
   elseif string.find(icon_code, "01n") then
     weather_icon.markup = helpers.colorize_text(moon_icon, beautiful.xcolor6)
   elseif string.find(icon_code, "02d") then
-    weather_icon.markup = helpers.colorize_text(dcloud_icon, beautiful.xforeground)
+    weather_icon.markup = helpers.colorize_text(dcloud_icon, beautiful.xcolor2)
   elseif string.find(icon_code, "02n") then
-    weather_icon.markup = helpers.colorize_text(ncloud_icon, beautiful.xforeground)
+    weather_icon.markup = helpers.colorize_text(ncloud_icon, beautiful.xcolor4)
   elseif string.find(icon_code, "03") or string.find(icon_code, "04") then
     weather_icon.markup = helpers.colorize_text(cloud_icon, beautiful.xforeground)
   elseif string.find(icon_code, "09") or string.find(icon_code, "10") then

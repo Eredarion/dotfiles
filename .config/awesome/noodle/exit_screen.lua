@@ -219,18 +219,22 @@ function exit_screen_show()
   exit_screen_grabber = awful.keygrabber.run(function(_, key, event)
       if event == "release" then return end
 
-      if     key == 's'    then
+      if     key == 's' or key == 'ы'    then
         suspend_command()
       -- 'e' for exit
-      elseif key == 'e'    then
+      elseif key == 'e' or key == 'у'    then
         exit_command()
-      elseif key == 'l'    then
+      elseif key == 'l' or key == 'д'    then
         lock_command()
-      elseif key == 'p'    then
+      elseif key == 'p' or key == 'з'    then
         poweroff_command()
-      elseif key == 'r'    then
+      elseif key == 'r' or key == 'к'    then
         reboot_command()
-      elseif key == 'Escape' or key == 'q' or key == 'x' then
+      elseif key == 'Escape' or 
+             key == 'q' or 
+             key == 'x' or
+             key == 'й' or 
+             key == 'ч' then
         exit_screen_hide()
       -- else awful.keygrabber.stop(exit_screen_grabber)
       end

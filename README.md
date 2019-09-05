@@ -35,14 +35,11 @@
 <p align="center">
   <img src="https://github.com/Eredarion/dotfiles/raw/master/.screenshot/2019.04.08-15:50:21.png" alt="screenshot">
 </p>
-<!-- ## i3
-- **App launcher :** rofi/dmenu2
-- **Bar :** polybar
-- **File manager :** thunar (gtk2)
-- **Notification:** Dunst
-- **GTK Font :** SF Pro Display
-- **Terminal Font :** SF Mono
-<p align="center">
-  <img src="https://github.com/Eredarion/dotfiles/raw/master/.screenshot/2018-11-19_00:44:06.png" alt="screenshot">
-</p> -->
 
+### More screenshot
+<p align="center">
+  <img src="https://github.com/Eredarion/dotfiles/raw/master/.screenshot/busy.png" alt="screenshot">
+</p>
+<p align="center">
+  <img src="https://github.com/Eredarion/dotfiles/raw/master/.screenshot/file_manager.png" alt="screenshot">
+</p>

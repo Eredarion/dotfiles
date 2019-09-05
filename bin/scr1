@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
 
-ffmpeg -loglevel debug -thread_queue_size 512  \
-    -device /dev/dri/card0 -f x11grab -i $DISPLAY \
-    -vaapi_device /dev/dri/renderD128 -vf 'hwmap=derive_device=vaapi,scale_vaapi=w=1366:h=768:format=nv12' \
-    -c:v h264_vaapi -qp:v 19 -bf 4 -threads 4 -aspect 16:10 \
-    -f mpegts - | nc -l -p 9000
+space=$(grep /dev/root <<< "$(df -h)" | awk  '{print $2 " / " $4 " " "("$5")"}')
+      echo -en "\ue1bb$space"

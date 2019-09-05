@@ -29,6 +29,14 @@ local function send_notification(title, text, icon)
   last_notification_id = notification.id
 end
 
+
+local function toggle_titlebars(c)
+    awful.titlebar.toggle(c, "top")
+    awful.titlebar.toggle(c, "left")
+    awful.titlebar.toggle(c, "right")
+    awful.titlebar.toggle(c, "bottom")
+end
+
 -- {{{ Mouse bindings on desktop
 keys.desktopbuttons = gears.table.join(
     awful.button({ }, 1, function ()
@@ -128,16 +136,16 @@ keys.globalkeys = gears.table.join(
         {description = "focus previous by index", group = "client"}
     ),
     -- Focus client by index (cycle through clients)
-    awful.key({ superkey }, "Tab",
-      function() awful.client.focus.byidx(1) end,
-      {description = "focus next by index", group = "client"}),
+    -- awful.key({ superkey }, "Tab",
+    --   function() awful.client.focus.byidx(1) end,
+    --   {description = "focus next by index", group = "client"}),
     
-    awful.key({ superkey, shiftkey }, "Tab",
-      function ()
-        awful.client.focus.byidx(-1)
-      end,
-      {description = "focus previous by index", group = "client"}
-    ),
+    -- awful.key({ superkey, shiftkey }, "Tab",
+    --   function ()
+    --     awful.client.focus.byidx(-1)
+    --   end,
+    --   {description = "focus previous by index", group = "client"}
+    -- ),
     awful.key({ superkey, shiftkey }, "minus",
         function ()
             awful.tag.incgap(5, nil)
@@ -478,6 +486,13 @@ keys.globalkeys = gears.table.join(
         exit_screen_show()
       end,
       {description = "exit screen", group = "launcher"}),
+
+    -- Run dmenu
+    awful.key({ superkey }, "r",
+      function()
+        awful.spawn.with_shell(dmenu_script)
+      end,
+      {description = "dmenu launcher", group = "launcher"}),
     
     -- Run lua code
     --awful.key({ superkey }, "r",
@@ -652,7 +667,11 @@ keys.globalkeys = gears.table.join(
               {description = "gotop", group = "launcher"}),
 
     -- Toggle sidebar
-    awful.key({ superkey }, "grave", function() sidebar.visible = not sidebar.visible end,
+    awful.key({ superkey }, "grave", function() 
+            sidebar.visible = not sidebar.visible
+            check_text_bars_visible()
+            --awesome.emit_signal("hide_bar_hover")
+        end,
               {description = "show or hide sidebar", group = "awesome"}),
 
     -- Toggle dock
@@ -759,7 +778,7 @@ keys.clientkeys = gears.table.join(
         function (c)
             -- Don't toggle if titlebars are used as borders
             if not beautiful.titlebars_imitate_borders then
-                awful.titlebar.toggle(c)
+                toggle_titlebars(c)
             end
         end,
         {description = "toggle titlebar", group = "client"}),
@@ -771,7 +790,7 @@ keys.clientkeys = gears.table.join(
             for _, c in pairs(clients) do
                 -- Don't toggle if titlebars are used as borders
                 if not beautiful.titlebars_imitate_borders then
-                    awful.titlebar.toggle(c)
+                    toggle_titlebars(c)
                 end
             end
         end,

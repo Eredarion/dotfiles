@@ -1,4 +1,4 @@
-<?xml encoding="UTF-8" version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <actions>
 <action>
 	<icon>vim</icon>
@@ -74,7 +74,7 @@
 	<icon>insert-image</icon>
 	<name>Set wallpaper</name>
 	<unique-id>1554069221830005-1</unique-id>
-	<command>nitrogen --save --set-zoom-fill %f</command>
+	<command>feh --bg-fill %f</command>
 	<description></description>
 	<patterns>*</patterns>
 	<image-files/>

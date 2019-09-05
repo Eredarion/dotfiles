@@ -7,8 +7,16 @@ local dpi = xresources.apply_dpi
 local naughty = require("naughty")
 
 -- Set colors
-local active_color = beautiful.ram_bar_active_color or "#5AA3CC"
-local background_color = beautiful.ram_bar_background_color or "#222222"
+local active_color
+local background_color
+
+if (colored_bar) then
+  active_color = beautiful.ram_bar_active_color or "#5AA3CC"
+  background_color = beautiful.ram_bar_background_color or "#222222"
+else
+  active_color = beautiful.xcolor3
+  background_color = beautiful.bar_background
+end
 
 local last_notification_id
 local function send_notification(title, text)
@@ -25,7 +33,7 @@ end
 local large_memory_usage_notify = false
 
 -- Configuration
-local update_interval = 10            -- in seconds
+local update_interval = 5            -- in seconds
 
 -- local ram_bar = wibox.widget {
 --   {
@@ -64,8 +72,8 @@ local ram_bar = wibox.widget {
       bottom = dpi(8),
     },
     forced_width  = dpi(200),
-    shape         = gears.shape.rounded_bar,
-    bar_shape     = gears.shape.rounded_bar,
+    shape         = bar_shape,
+    bar_shape     = bar_shape,
     color         = active_color,
     background_color = background_color,
     border_width  = 0,
@@ -74,21 +82,25 @@ local ram_bar = wibox.widget {
 }
 
 local bar_text = wibox.widget {
-      align = "center",
+      align  = "center",
       valign = "center",
-      visible = false,
+      forced_height = dpi(10),
+      font   = text_font ..  " medium 10",
       widget = wibox.widget.textbox
+}
+
+local bar_hover = wibox.widget {
+      bar_text,
+      visible = false,
+      shape  = bar_shape,
+      bg     = beautiful.xbgpure .. "80",
+      widget = wibox.container.background
 }
 
 local widget_mew = wibox.widget {
   ram_bar,
   {
-    {
-      bar_text,
-      shape  = gears.shape.rounded_bar,
-      bg     = beautiful.xbgpure .. "80",
-      widget = wibox.container.background
-    },
+  bar_hover,
   top = dpi(8),
   bottom = dpi(8),
   widget = wibox.container.margin
@@ -97,12 +109,13 @@ local widget_mew = wibox.widget {
 }
 
 widget_mew:connect_signal("mouse::enter", function ()
-                                 bar_text.visible = true
+                  bar_hover.visible = true
 end)
 
 widget_mew:connect_signal("mouse::leave", function ()
-                                 bar_text.visible = false
+                  bar_hover.visible = false
 end)
+
 
 local function update_widget(used_ram_percentage, available, total)
   ram_bar.value = used_ram_percentage
@@ -112,13 +125,11 @@ end
 
 local used_ram_script = [[
   bash -c "
-  free -m | grep 'Mem:' | awk '{printf \"%d@@%d@##%d##\", $7, $2, $3}'
+  free -m | grep 'Mem:' | awk '{printf \"%d %d %d\", $7, $2, $3}'
 "]]
 
 awful.widget.watch(used_ram_script, update_interval, function(widget, stdout)
-                    local available = stdout:match('(.*)@@')
-                    local total = stdout:match('@@(.*)@')
-                    local free = stdout:match('##(.*)##')
+                    local s, e, available, total, used = string.find(stdout, "(%d+)[^%d]*(%d+)[^%d]*(%d+)") 
                     local used_ram_percentage = (total - available) / total * 100
                      
                     if ( used_ram_percentage >= 85 and large_memory_usage_notify == false ) then
@@ -132,7 +143,7 @@ awful.widget.watch(used_ram_script, update_interval, function(widget, stdout)
                         large_memory_usage_notify = false
                     end
                      
-                    update_widget(used_ram_percentage, free, total)
+                    update_widget(used_ram_percentage, used, total)
 end)
 
 return widget_mew

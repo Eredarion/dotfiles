@@ -25,9 +25,9 @@ if [[ $session == "awesome" ]]; then
         /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
     fi
     
-    nitrogen --restore &
+    ~/.fehbg &
     killall mpd
-    xrdb -load "$HOME/.Xresources"
+    xrdb -load "$HOME/.Xresources" &
     mpd
     nm-applet &
     compton  --config "$HOME/.config/compton.conf" \
@@ -36,6 +36,7 @@ if [[ $session == "awesome" ]]; then
              --vsync-use-glfinish &
              # --use-damage 
     xfsettingsd &
+    xfce4-power-manager &
 fi
 
 # display timeout and sleep

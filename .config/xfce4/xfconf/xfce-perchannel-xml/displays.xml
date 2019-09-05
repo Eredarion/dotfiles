@@ -34,11 +34,12 @@
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="true"/>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="1440"/>
+        <property name="X" type="int" value="0"/>
         <property name="Y" type="int" value="0"/>
       </property>
+      <property name="EDID" type="string" value="cc6be25509e1dc048b296aee400b660dc24c052b"/>
     </property>
-    <property name="VGA1" type="string" value="2. LG 19&quot;">
+    <property name="VGA1" type="string" value="LG 19&quot;">
       <property name="Active" type="bool" value="true"/>
       <property name="Resolution" type="string" value="1440x900"/>
       <property name="RefreshRate" type="double" value="59.887445"/>
@@ -49,7 +50,38 @@
         <property name="X" type="int" value="0"/>
         <property name="Y" type="int" value="0"/>
       </property>
+      <property name="EDID" type="string" value="fe01038193853eefb33ff5a443c3d495c9e8574d"/>
     </property>
   </property>
   <property name="Notify" type="bool" value="true"/>
+  <property name="ActiveProfile" type="string" value="Default"/>
+  <property name="f0a1ce6f80112d72f7276457fd261d671b827567" type="string" value="lg">
+    <property name="LVDS1" type="string" value="Ноутбук">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="cc6be25509e1dc048b296aee400b660dc24c052b"/>
+      <property name="Resolution" type="string" value="1366x768"/>
+      <property name="RefreshRate" type="double" value="59.996023"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="VGA1" type="string" value="LG 19&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="fe01038193853eefb33ff5a443c3d495c9e8574d"/>
+      <property name="Resolution" type="string" value="1440x900"/>
+      <property name="RefreshRate" type="double" value="59.887445"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1366"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+  </property>
+  <property name="AutoEnableProfiles" type="bool" value="true"/>
 </channel>

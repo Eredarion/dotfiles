@@ -1,7 +1,7 @@
 !-- URxvt -------------------------------------------------------------------------
 ! URxvt #101423  #070D1F  
-!URxvt*foreground: #EAE1EA
-URxvt*background: [90]#12151A
+URxvt*foreground: #ECEFF4
+URxvt*background: [100]#20242b
 URxvt*saveline: 15000
 URxvt*termName: rxvt-256color
 URxvt*iso14755: false
@@ -10,14 +10,15 @@ URxvt*scrollBar: false
 URxvt*scrollBar_right: false
 URxvt*internalBorder: 5
 URxvt*externalBorder: 0
-*URxvt.geometry: 64x20
+*URxvt.geometry: 68x18
+URxvt.iconFile: /home/ranguel/Downloads/terminal-icon_34340.png
 
-!-- Font -------------------
-URxvt.letterSpace: -1
-#define termfont  xft:FantasqueSansMono Nerd Font:pixelsize=14:antialias=true:autohint=true
-!#define termfont  xft:mplus Nerd Font Mono:pixelsize=14:antialias=true:autohint=true
+!-- Font -------------------:style=Medium
+!URxvt.letterSpace: -1
+#define termfont  xft:Iosevka Term:pixelsize=14:antialias=true:autohint=true
+!#define termfont  xft:Iosevka:pixelsize=14:antialias=true:autohint=true
 URxvt.font: termfont
-URxvt.boldFont: termfont:style=Bold
+URxvt.boldFont: termfont:style=Medium
 URxvt.italicFont: termfont:style=italic
 URxvt.boldItalicFont: termfont:style=bolditalic
 !---------------------------
@@ -52,15 +53,22 @@ URxvt*buffered: false
 
 !-- Old ---------------------
 ! bg -> #191726 #0A0F13 #0B181D #84889B #12151A
-! fg -> #ffffff #f1f1f1
+! fg -> #ffffff #f1f1f1 #EBEEF7 #F9F9F9
 !----------------------------
+
+!*background:   #12151A
+!*foreground:   #F9F9F9
+!*cursorColor:  #F9F9F9
+
+!*color0:      #1c2129
+!*color8:      #3B4252
 
 *background:   #12151A
 *foreground:   #F9F9F9
 *cursorColor:  #F9F9F9
 
-*color0:      #12151A
-*color8:      #84889B
+*color0:      #3B4252
+*color8:      #4C566A
 *color1:      #D56C6D
 *color9:      #D56C6D
 *color2:      #74DD91
@@ -90,7 +98,10 @@ rofi.separator-style   : none
 rofi.hide-scrollbar    : true
 rofi.location          : 0
 rofi.fullscreen        : false
-rofi.width             : 300
+rofi.width             : 450
+rofi.lines			   : 10
+rofi.padding           : 20
+rofi.line-padding	   : 4
 rofi.bw                : 0
 
 rofi.color-enabled: true

@@ -1,0 +1,99 @@
+#!/bin/zsh
+
+# A fast, clean, and informative zsh prompt written by Nathaniel Maia
+
+autoload -U colors && colors
+
+_defaults_()
+{
+    : ${GIT_PROMPT_SOURCE="$HOME/.zsh/themes/git_prompt/git_prompt.zsh"}
+    : ${PROMPT_USERFMT=""}
+    : ${PROMPT_TIMEFMT="%*"}
+    local tempv=$'\n'
+    : ${PROMPT_MULTILINE="$tempv"}
+    unset tempv
+    : ${PROMPT_WRAPCOL="%F{magenta}"}
+    : ${PROMPT_USERCOL="%(!,%F{red},%F{cyan})"}
+    : ${PROMPT_ECODE="%(?,, %F{red}%?)"}
+    : ${PROMPT_SUBSHELLCOL="%F{blue}"}
+    : ${PROMPT_VIINSCOL="%F{cyan}"}
+    : ${PROMPT_VICMDCOL="%F{red}"}
+    [[ $(whoami) == 'root' && -z $PROMPT_USER_FMT ]] && PROMPT_USER_FMT=" %n "
+
+    if [[ -z $PROMPT_MULTILINE ]]; then
+        : ${PROMPT_LNBR1=">"}
+        PROMPT_LNBR1="${PROMPT_WRAPCOL}${PROMPT_LNBR1}%f"
+    else
+        : ${PROMPT_ARROW=">"} # ➜ ➤ ► ▻ ▸ ▹ ❯
+        : ${PROMPT_LNBR1="┌"} # ┌ ┏ ╓ ╒
+        : ${PROMPT_LNBR2="└--"} # └ ┗ ╙ ╘
+        PROMPT_ARROW="${PROMPT_WRAPCOL}${PROMPT_ARROW}%f"
+        PROMPT_LNBR1="${PROMPT_WRAPCOL}${PROMPT_LNBR1}%f"
+        PROMPT_LNBR2="${PROMPT_WRAPCOL}${PROMPT_LNBR2}%f"
+    fi
+}
+
+_prompt_precmd_title()
+{
+    print -n "\e]2;$USER@zsh - $PWD\a"
+}
+
+_prompt_preexec_title()
+{
+    print -n "\e]2;$USER@zsh - $PWD: " && print -n "${(q)1}\a"
+}
+
+_prompt_()
+{
+    print -n "${PROMPT_LNBR1}${PROMPT_ECODE}${PROMPT_USERCOL}${PROMPT_USERFMT} ${PROMPT_WRAPCOL}"
+
+    if [[ -z $PROMPT_MULTILINE && ${COLUMNS:-$(tput cols)} -gt 60 ]]; then
+        print -n '%-45<...<%~%<<'
+    elif [[ ${COLUMNS:-$(tput cols)} -gt 30 ]]; then
+        print -n '%-2<...<%~%<<'
+    elif [[ $PWD == "$HOME" || ${PWD%/*} == '' ]]; then
+        print -n '%1~'
+    else
+        print -n '..%1~'
+    fi
+
+    if [[ $RANGER_LEVEL ]]; then
+        print -n " $PROMPT_SUBSHELLCOL(ranger)%f"
+    elif ps -o command= $PPID | grep -qw 'nnn'; then
+        print -n " $PROMPT_SUBSHELLCOL(nnn)%f"
+    fi
+
+    print -n "${PROMPT_MULTILINE}${PROMPT_LNBR2}${PROMPT_ARROW} "
+
+    [[ $KEYMAP =~ vicmd ]] && print -n "$PROMPT_VICMDCOL" || print -n "$PROMPT_VIINSCOL"
+
+    print -n '%#%f '
+}
+
+_rprompt_()
+{
+    _git_status
+    if [[ $PROMPT_TIMEFMT ]]; then
+        (( (${COLUMNS:-$(tput cols)} / 4) / 4 > 2 )) && print -n " $PROMPT_TIMEFMT"
+    fi
+}
+
+_defaults_
+
+if ! { . $GIT_PROMPT_SOURCE && type _git_status; } >/dev/null 2>&1; then
+    _git_status()
+    {
+        git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (%F{magenta}\1%f)/'
+    }
+fi
+
+if [[ $TERM =~ (xterm|rxvt|st) ]]; then
+    precmd_functions+=(_prompt_precmd_title)
+    preexec_functions+=(_prompt_preexec_title)
+fi
+
+PROMPT='$(_prompt_)'
+RPROMPT='$(_rprompt_)'
+PS2='%_ ==> '
+PS3='choose: '
+PS4='+%N:%I:%_ ==> '

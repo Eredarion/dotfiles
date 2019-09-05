@@ -5,13 +5,30 @@ local beautiful = require("beautiful")
 local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 local naughty = require("naughty")
+local helpers = require("helpers")
+local pad = helpers.pad
+
 
 local twenty_percent_notify = false
 local two_percent_notify = false
 
+local icon_font = "Tinos Nerd Font 20"
+local icon_size = dpi(36)
+local progress_bar_width = dpi(215)
+
+
 -- Set colors
-local active_color = beautiful.battery_bar_active_color or "#5AA3CC"
-local background_color = beautiful.battery_bar_background_color or "#222222"
+local active_color
+local background_color
+
+if (colored_bar) then
+  active_color = beautiful.battery_bar_active_color or "#5AA3CC"
+  background_color = beautiful.battery_bar_background_color or "#222222"
+else
+  active_color = beautiful.xcolor7
+  background_color = beautiful.bar_background
+end
+
 
 -- Configuration
 local update_interval = 20            -- in seconds
@@ -38,8 +55,8 @@ local battery_bar = wibox.widget{
       bottom = dpi(8),
     },
     forced_width  = dpi(200),
-  shape         = gears.shape.rounded_bar,
-  bar_shape     = gears.shape.rounded_bar,
+  shape         = bar_shape,
+  bar_shape     = bar_shape,
   color         = active_color,
   background_color = background_color,
   border_width  = 0,
@@ -47,39 +64,57 @@ local battery_bar = wibox.widget{
   widget        = wibox.widget.progressbar,
 }
 
--- Mouse control
--- battery_bar:buttons(gears.table.join(
---     -- 
---     awful.button({ }, 1, function ()
---     end),
---     -- 
---     awful.button({ }, 2, function () 
---     end),
---     -- 
---     awful.button({ }, 3, function () 
---     end),
---     -- 
---     awful.button({ }, 4, function () 
---     end),
---     awful.button({ }, 5, function () 
---     end)
--- ))
+local battery_icon = 
+        wibox.widget.textbox("<span font=\"".. icon_font .."\" color=\"" .. active_color .. "\"></span>")
+battery_icon.resize = true
+battery_icon.forced_width = icon_size
+battery_icon.forced_height = icon_size
+
+battery_bar.forced_width = progress_bar_width
+
+local battery_widget = wibox.widget{
+  nil,
+  {
+    battery_icon,
+    pad(1),
+    battery_bar,
+    pad(1),
+    layout = wibox.layout.fixed.horizontal
+  },
+  nil,
+  expand = "none",
+  layout = wibox.layout.align.horizontal
+}
+
 
 local function update_widget(bat)
   battery_bar.value = tonumber(bat)
 end
 
+
 local bat_script = [[
   bash -c "
-  upower -i $(upower -e | grep BAT) | grep percentage | awk '{print $2}'
+  upower -i $(upower -e | grep BAT)
   "]]
 
+
 awful.widget.watch(bat_script, update_interval, function(widget, stdout)
-                    local bat = stdout:gsub("%%", "")
+                    local percentage = string.match(stdout, 'percentage:%s*(%S+)')
+                    local state = string.match(stdout, 'state:%s*(%S+)')
+
+                    local bat = percentage:gsub("%%", "")
                     -- local batlevel = bat:gsub("%s+", "")
                     -- bat = bat:gsub("%s+", "")
                     local batlevel = tonumber(bat)
                     
+                    -- Icon --
+                    if (state == "discharging") then
+                        battery_icon.markup = "<span font=\"".. icon_font .."\" color=\"" .. active_color .. "\"></span>"
+                    else
+                        battery_icon.markup = "<span font=\"".. icon_font .."\" color=\"" .. active_color .. "\"></span>"
+                    end
+                    ----------
+
                     if ( batlevel <= 20 and twenty_percent_notify == false ) then
                         send_notification("Warning!~",
                                           "Battery level: <span color=\"" .. "#ef5350" .. "\">" .. batlevel .. "%</span>   ",
@@ -103,4 +138,4 @@ awful.widget.watch(bat_script, update_interval, function(widget, stdout)
                     update_widget(bat)
 end)
 
-return battery_bar
+return battery_widget

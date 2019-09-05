@@ -83,10 +83,9 @@ music_directory="Music"
 -- Weather widget сonfiguration
 -- Get your key and find your city id at https://openweathermap.org/
 -- You will need to make an account!
-api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  
-city_id = "xxxxxx"
+api_key = "075f3847543e881a3e781ed924d9d114"
+city_id = "707928"
 
-local setwallpaper = false
 -------------------------------------------------------------------------------------------------------------
 
 
@@ -99,7 +98,9 @@ local titlebars = require("titlebars")
 local bars = require("bar_themes."..bar_theme_name)
 local sidebar = require("noodle.sidebar")
 local dock = require("noodle.dock")
-local exit_screen = require("noodle.text_exit_screen")
+local exit_screen = require("noodle.exit_screen_v2")
+local layout_popup = require("noodle.layout_popup")
+local layout_popup = require("noodle.task_popup")
 -- local exit_screen = require("noodle.exit_screen")
 -- local start_screen = require("noodle.start_screen")
 -- local tag_notifications = require("noodle.tag_notifications")
@@ -131,12 +132,13 @@ end
 -------------------------------------------------------------------------------------------------------------
 
 
--- Variable definitions -------------------------------------------------------------------------------------
+-- Variable definitions 
+-------------------------------------------------------------------------------------------------------------
 terminal = "urxvtc"
 -- -geometry
 terminal_geometry = "-g 85x33"
 -- Some terminals do not respect spawn callbacks
-floating_terminal = "st" -- clients with class "fst" are set to be floating (check awful.rules below)
+floating_terminal = "alacritty" -- clients with class "fst" are set to be floating (check awful.rules below)
 browser = "chromium"  -- superkey + F1
 editor = "subl3" -- superkey + F2
 editor_cmd = terminal.." -e nvim" -- shift + superkey + e
@@ -145,14 +147,30 @@ tmux = terminal .. " -e tmux new "
 
 -- Font width and height for drawing terminal
 terminal_font_width = 7
-terminal_font_height = 16
+terminal_font_height = 19
 
-rofi_script = [[bash -c "
+local setwallpaper = true
+
+dmenu_script = [[
+dmenu_run \
+    -p 'Launch application: '               \
+    -fn ']] .. text_font .. "-11" ..    [[' \
+    -nb ']] .. beautiful.xbackground .. [[' \
+    -nf ']] .. beautiful.xforeground .. [[' \
+    -sb ']] .. beautiful.xcolor2     .. [[' \
+    -sf ']] .. beautiful.xbackground .. [[' \
+    -h ]] .. beautiful.wibar_height ..  [[  \
+    -class 'dmenu'
+]]
+
+
+rofi_script = [[
+bash -c "
     rofi -modi run,drun -show drun -line-padding 4 \
-         -columns 1 -padding 20 -hide-scrollbar \
-         -show-icons -icon-theme 'Papirus-Dark' \
-         -lines 10 -width 31
-"]]
+         -columns 1 -padding 20 -hide-scrollbar    \
+         -show-icons -icon-theme 'Papirus-Dark'    \
+         -lines 10 -width 31"
+]]
 
 -- Get screen geometry
 screen_width = awful.screen.focused().geometry.width
@@ -178,6 +196,7 @@ awful.layout.layouts = {
     --awful.layout.suit.corner.sw,
     --awful.layout.suit.corner.se,
 }
+
 -------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------
 
@@ -203,7 +222,7 @@ naughty.config.defaults.border_width = beautiful.notification_border_width
 naughty.config.presets.normal = {
     font         = beautiful.notification_font,
     fg           = beautiful.notification_fg,
-    bg           = beautiful.notification_bg,
+    bg           = beautiful.xbackgroundtp,
     border_width = beautiful.notification_border_width,
     margin       = beautiful.notification_margin,
     position     = beautiful.notification_position
@@ -212,7 +231,7 @@ naughty.config.presets.normal = {
 naughty.config.presets.low = {
     font         = beautiful.notification_font,
     fg           = beautiful.notification_fg,
-    bg           = beautiful.notification_bg,
+    bg           = beautiful.xbackgroundtp,
     border_width = beautiful.notification_border_width,
     margin       = beautiful.notification_margin,
     position     = beautiful.notification_position
@@ -305,8 +324,8 @@ local function set_wallpaper(s)
             -- gears.wallpaper.maximized(wallpaper, s, true)
 
             -- Method 2: Set theme's wallpaper with feh
-            awful.spawn.with_shell("feh --bg-fill " .. wallpaper)
-
+            -- awful.spawn.with_shell("feh --bg-fill " .. wallpaper)
+            awful.spawn.with_shell("$HOME/.fehbg")
             -- Method 3: Set last wallpaper with feh
             -- awful.spawn.with_shell(os.getenv("HOME") .. "/.fehbg")
         end
@@ -331,49 +350,51 @@ awful.screen.connect_for_each_screen(function(s)
     -- Tag names
     local tagnames = beautiful.tagnames or { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }
 
+    local scr = 1
+    
     -- Create tags
     awful.tag.add(tagnames[1], {
         layout = layouts[1],
-        screen = s,
+        screen = scr,
         selected = true,
     })
     awful.tag.add(tagnames[2], {
         layout = layouts[2],
-        screen = s,
+        screen = scr,
     })
     awful.tag.add(tagnames[3], {
         layout = layouts[3],
-        screen = s,
+        screen = scr,
     })
     awful.tag.add(tagnames[4], {
         layout = layouts[4],
         master_width_factor = 0.6,
-        screen = s,
+        screen = scr,
     })
     awful.tag.add(tagnames[5], {
         layout = layouts[5],
         master_width_factor = 0.65,
-        screen = s,
+        screen = scr,
     })
     awful.tag.add(tagnames[6], {
         layout = layouts[6],
-        screen = s,
+        screen = scr,
     })
     awful.tag.add(tagnames[7], {
         layout = layouts[7],
-        screen = s,
+        screen = scr,
     })
     awful.tag.add(tagnames[8], {
         layout = layouts[8],
-        screen = s,
+        screen = scr,
     })
     awful.tag.add(tagnames[9], {
         layout = layouts[9],
-        screen = s,
+        screen = scr,
     })
     awful.tag.add(tagnames[10], {
         layout = layouts[10],
-        screen = s,
+        screen = scr,
     })
 
     -- Create all tags at once (without seperate configuration for each tag)
@@ -381,6 +402,19 @@ awful.screen.connect_for_each_screen(function(s)
 end)
 -------------------------------------------------------------------------------------------------------------
 
+local function show_titlebars(c, show)
+    if show then
+        awful.titlebar.show(c, "top")
+        awful.titlebar.show(c, "left")
+        awful.titlebar.show(c, "right")
+        awful.titlebar.show(c, "bottom")
+    else
+        awful.titlebar.hide(c, "top")
+        awful.titlebar.hide(c, "left")
+        awful.titlebar.hide(c, "right")
+        awful.titlebar.hide(c, "bottom")
+    end
+end
 
 -- Rules ----------------------------------------------------------------------------------------------------
 -- Rules to apply to new clients (through the "manage" signal).
@@ -474,14 +508,16 @@ awful.rules.rules = {
     { rule_any = {
         class = {
             "qutebrowser",
-            "Sublime_text",
-            "Subl3",
             "Transmission",
             "discord",
             "TelegramDesktop",
             "Firefox",
             "Steam",
             "Lutris",
+            "MComix",
+            "Pulseaudio-equalizer-gtk",
+            "Oomox",
+            "File-roller",
             "Thunar",
             "Chromium",
             "Thunderbird",
@@ -492,7 +528,8 @@ awful.rules.rules = {
     }, properties = {},
     callback = function (c)
         if not beautiful.titlebars_imitate_borders then
-            awful.titlebar.hide(c)
+            --awful.titlebar.hide(c)
+            show_titlebars(c, false)
         end
     end
     },
@@ -512,7 +549,8 @@ awful.rules.rules = {
         }
     }, properties = {},
     callback = function (c)
-        awful.titlebar.show(c)
+        --awful.titlebar.show(c)
+        show_titlebars(c, true)
     end
     },
 
@@ -525,7 +563,34 @@ awful.rules.rules = {
     },
 
     -- Fixed terminal geometry
-    { rule = { class = "URxvt" },   properties = {  size_hints_honor = false } },
+    { rule = { class = "URxvt" },   properties = {  size_hints_honor = false  },
+    },
+
+
+    -- Icons
+    -------------------------------------------------------------
+    -- { rule = { class = "URxvt" },   properties = { },
+    -- callback = function (c)
+    --     local icon = gears.surface(beautiful.terminal_icon)
+    --     c.icon = icon._native
+    --     icon:finish()
+    -- end },
+
+    -- { rule = { class = "Alacritty" },   properties = { },
+    -- callback = function (c)
+    --     local icon = gears.surface(beautiful.terminal_icon)
+    --     c.icon = icon._native
+    --     icon:finish()
+    -- end },
+
+    -- { rule = { class = "st-256color" },   properties = { },
+    -- callback = function (c)
+    --     local icon = gears.surface(beautiful.terminal_icon)
+    --     c.icon = icon._native
+    --     icon:finish()
+    -- end },
+    ------------------------------------------------------------- 
+
 
     -- Pavucontrol
     { rule_any = {
@@ -557,7 +622,8 @@ awful.rules.rules = {
     callback = function (c)
         awful.placement.centered(c,{honor_workarea=true})
         if not beautiful.titlebars_imitate_borders then
-            awful.titlebar.hide(c)
+            --awful.titlebar.hide(c)
+            show_titlebars(c, false)
         end
     end
     },
@@ -569,7 +635,8 @@ awful.rules.rules = {
         },
     }, properties = { border_width = 0, floating = true, ontop = true },
     callback = function (c)
-        awful.titlebar.hide(c)
+        --awful.titlebar.hide(c)
+        show_titlebars(c, false)
         awful.placement.centered(c,{honor_workarea=true})
     end
     },
@@ -767,7 +834,8 @@ end)
 -- Hide titlebars if required by the theme
 client.connect_signal("manage", function (c)
     if not beautiful.titlebars_enabled then
-        awful.titlebar.hide(c)
+        --awful.titlebar.hide(c)
+        show_titlebars(c, false)
     end
 end)
 

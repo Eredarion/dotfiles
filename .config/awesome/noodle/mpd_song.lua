@@ -25,6 +25,8 @@ local paused_color = beautiful.mpd_song_paused_color or beautiful.normal_fg
 local artist_fg
 local artist_bg 
 
+local seek_state = false
+
 -- Control icons
 local icon_font_nerd = "Tinos Nerd Font 18"
 
@@ -37,8 +39,12 @@ local notification_icon = beautiful.music_icon
 
 -- Progressbar
 ------------------------------------------------------------
-local bar_shape = function(cr, width, height)
+local poster_shape = function(cr, width, height)
   gears.shape.rounded_rect(cr, width, height, 6)
+end
+
+local bar_shape = function(cr, width, height)
+  gears.shape.parallelogram(cr, width, height, width-5)
 end
 
 local bar = wibox.widget {
@@ -73,7 +79,7 @@ local box_image = wibox.widget.imagebox()
 box_image.image = beautiful.music_icon
 local image_cont = wibox.widget {
   box_image,
-  shape              = bar_shape,
+  shape              = poster_shape,
   bg                 = beautiful.xcolor8 .. "33",
   widget             = wibox.container.background
 }
@@ -148,11 +154,23 @@ local main_wd = wibox.widget {
 -- Buttons
 ------------------------------------------------------------
 bar:buttons(gears.table.join(
+                         awful.button({ }, 1, function ()
+                             seek_state = true
+                             awful.spawn.with_shell("mpc seek +6%")
+                             bar_timer:emit_signal("timeout")
+                         end),
+                         awful.button({ }, 3, function ()
+                             seek_state = true
+                             awful.spawn.with_shell("mpc seek -6%")
+                             bar_timer:emit_signal("timeout")
+                         end),
                          awful.button({ }, 4, function ()
+                             seek_state = true
                              awful.spawn.with_shell("mpc seek +3%")
                              bar_timer:emit_signal("timeout")
                          end),
                          awful.button({ }, 5, function ()
+                             seek_state = true
                              awful.spawn.with_shell("mpc seek -3%")
                              bar_timer:emit_signal("timeout")
                          end)
@@ -212,6 +230,8 @@ local script = [[bash -c '
     cover="$(find "$art/" -maxdepth 1 -type f | egrep -i -m1 "$IMG_REG")"
   fi
   cover="${cover:=$DEFAULT_ART}"
+
+  # convert "$cover" -resize 250x250 "resize.$cover"
 
   echo $info"##"$cover"##"
 ']]
@@ -282,7 +302,11 @@ local mpd_script = [[
 
 awful.spawn.with_line_callback(mpd_script, {
                                  stdout = function(line)
-                                   update_widget()
+                                  if (seek_state) then
+                                    seek_state = false 
+                                  else
+                                    update_widget()                      
+                                  end
                                  end
 })
 ------------------------------------------------------------

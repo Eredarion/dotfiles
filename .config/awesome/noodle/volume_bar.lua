@@ -9,11 +9,18 @@ local wibox = require("wibox")
 local beautiful = require("beautiful")
 local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
+local helpers = require("helpers")
+local pad = helpers.pad
+
+
+local icon_font = "Font Awesome 5 Free Regular 18"
+local icon_size = dpi(36)
+local progress_bar_width = dpi(215)
 
 -- Set colors
-local active_color = beautiful.volume_bar_active_color or "#5AA3CC"
+local active_color = beautiful.xcolor1 or "#5AA3CC"
 local muted_color = beautiful.volume_bar_muted_color or "#666666"
-local active_background_color = beautiful.volume_bar_active_background_color or "#222222"
+local active_background_color = beautiful.bar_background or "#222222"
 local muted_background_color = beautiful.volume_bar_muted_background_color or "#222222"
 
 local volume_bar = wibox.widget{
@@ -25,8 +32,8 @@ local volume_bar = wibox.widget{
       bottom = dpi(8),
     },
     forced_width  = dpi(200),
-    shape         = gears.shape.rounded_bar,
-    bar_shape     = gears.shape.rounded_bar,
+    shape         = bar_shape,
+    bar_shape     = bar_shape,
     color         = active_color,
     background_color = active_background_color,
     border_width  = 0,
@@ -34,19 +41,67 @@ local volume_bar = wibox.widget{
     widget        = wibox.widget.progressbar,
 }
 
+
+local volume_icon = 
+        wibox.widget.textbox("<span font=\"".. icon_font .."\" color=\"" .. active_color .. "\"></span>")
+volume_icon.resize = true
+volume_icon.forced_width = icon_size
+volume_icon.forced_height = icon_size
+
+volume_bar.forced_width = progress_bar_width
+
+local volume = wibox.widget{
+  nil,
+  {
+    volume_icon,
+    pad(1),
+    volume_bar,
+    pad(1),
+    layout = wibox.layout.fixed.horizontal
+  },
+  nil,
+  expand = "none",
+  layout = wibox.layout.align.horizontal
+}
+
+-- local function update_widget()
+--   awful.spawn.easy_async({"sh", "-c", "pactl list sinks"},
+--     function(stdout)
+--       local volume = stdout:match('(%d+)%% /')
+--       local muted = stdout:match('' .. volume_muted .. ':(%s+)[yes]')
+--       local fill_color
+--       local bg_color
+--       if muted ~= nil then
+--         fill_color = muted_color
+--         bg_color = muted_background_color
+--         volume_icon.markup = "<span font=\"".. icon_font .."\" color=\"" .. muted_color .. "\"></span>"
+--       else
+--         fill_color = active_color
+--         bg_color = active_background_color
+--         volume_icon.markup = "<span font=\"".. icon_font .."\" color=\"" .. active_color .. "\"></span>"
+--       end
+--       volume_bar.value = tonumber(volume)
+--       volume_bar.color = fill_color
+--       volume_bar.background_color = bg_color
+--     end
+--   )
+-- end
+
 local function update_widget()
-  awful.spawn.easy_async({"sh", "-c", "pactl list sinks"},
+  awful.spawn.easy_async({"sh", "-c", "pamixer --get-volume --get-mute"},
     function(stdout)
-      local volume = stdout:match('(%d+)%% /')
-      local muted = stdout:match('' .. volume_muted .. ':(%s+)[yes]')
+      local volume = stdout:match "%d+"
+      local muted = stdout:match "%a+" 
       local fill_color
       local bg_color
-      if muted ~= nil then
+      if muted == "true" then
         fill_color = muted_color
         bg_color = muted_background_color
+        volume_icon.markup = "<span font=\"".. icon_font .."\" color=\"" .. muted_color .. "\"></span>"
       else
         fill_color = active_color
         bg_color = active_background_color
+        volume_icon.markup = "<span font=\"".. icon_font .."\" color=\"" .. active_color .. "\"></span>"
       end
       volume_bar.value = tonumber(volume)
       volume_bar.color = fill_color
@@ -69,4 +124,4 @@ awful.spawn.with_line_callback(volume_script, {
                                  end
 })
 
-return volume_bar
+return volume

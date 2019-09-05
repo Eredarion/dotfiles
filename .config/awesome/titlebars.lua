@@ -4,15 +4,37 @@ local beautiful = require("beautiful")
 local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 local wibox = require("wibox")
+local abutton = require("awful.button")
+
 
 local helpers = require("helpers")
 local titlebars = {}
 local pad = helpers.pad
 
-local icon_font = "Font Awesome 5 Free Bold 24"
-local icon_font_small = "Font Awesome 5 Free Regular 22"
+local capi = {
+    client = client
+}
+
+
+-- Disable popup tooltip on titlebar button hover
+awful.titlebar.enable_tooltip = false
+
+
+-- Colors 
+------------------------------------------------------------
+local btn_close_color = "#D56C6D"
+local btn_close_hover_color = "#d32f2f"
+
+local btn_minimized_color = "#FFF176"
+local btn_minimized_hover_color = "#FBC02D"
+
+local btn_maximized_color = "#74DD91"
+local btn_maximized_hover_color = "#43A047"
+------------------------------------------------------------
+
 
 -- Mouse buttons
+------------------------------------------------------------
 titlebars.buttons = gears.table.join(
     -- Left button - move
     -- (Double tap - Toggle maximize) -- A little BUGGY
@@ -21,17 +43,6 @@ titlebars.buttons = gears.table.join(
         client.focus = c
         c:raise()
         awful.mouse.client.move(c)
-
-        -- local function single_tap()
-        --   awful.mouse.client.move(c)
-        -- end
-        -- local function double_tap()
-        --   gears.timer.delayed_call(function()
-        --       c.maximized = not c.maximized
-        --   end)
-        -- end
-        -- helpers.single_double_tap(single_tap, double_tap)
-        -- helpers.single_double_tap(nil, double_tap)
     end),
     -- Middle button - close
     awful.button({ }, 2, function ()
@@ -61,106 +72,166 @@ titlebars.buttons = gears.table.join(
         c.ontop = not c.ontop
     end)
 )
+------------------------------------------------------------
 
--- Disable popup tooltip on titlebar button hover
-awful.titlebar.enable_tooltip = false
 
-local prev_image = wibox.widget.imagebox(beautiful.music_icon)
-prev_image.forced_width = dpi(300)
---prev_image.forced_height = dpi(300)
-prev_image.resize = true
-prev_image.align = "center"
-prev_image.valign = "center"
+------------------------------------------------------------
+local instances = {}
 
-local script = [[bash -c '
-  IMG_REG="(front|cover|art)\.(jpg|jpeg|png|gif)$"
-  DEFAULT_ART="$HOME/.config/awesome/themes/skyfall/icons/music.png"
-
-  file=`mpc current -f %file%`
- 
-  art="$HOME/]] .. music_directory .. [[/${file%/*}"
-
-  if ]] .. "[[ -d $art ]];" .. [[ then
-    cover="$(find "$art/" -maxdepth 1 -type f | egrep -i -m1 "$IMG_REG")"
-  fi
-  cover="${cover:=$DEFAULT_ART}"
-
-  echo "##"$cover"##"
-']]
-
-local resetCover = function ()
-    awful.spawn.easy_async(script, 
-                function(stdout)
-                    prev_image.image = stdout:match('##(.*)##')
+local function update_on_signal(c, signal, widget)
+    local sig_instances = instances[signal]
+    if sig_instances == nil then
+        sig_instances = setmetatable({}, { __mode = "k" })
+        instances[signal] = sig_instances
+        capi.client.connect_signal(signal, function(cl)
+            local widgets = sig_instances[cl]
+            if widgets then
+                for _, w in pairs(widgets) do
+                    w.update()
                 end
-            )
+            end
+        end)
+    end
+    local widgets = sig_instances[c]
+    if widgets == nil then
+        widgets = setmetatable({}, { __mode = "v" })
+        sig_instances[c] = widgets
+    end
+    table.insert(widgets, widget)
+end
+------------------------------------------------------------
+
+
+-- Create button
+------------------------------------------------------------
+local bar_shape = function(cr, width, height)
+  gears.shape.parallelogram(cr, width, height, width-5)
 end
 
 
-local playerctl_toggle_icon = wibox.widget.imagebox(beautiful.playerctl_toggle_icon)
-playerctl_toggle_icon:buttons(gears.table.join(
-                         awful.button({ }, 1, function ()
-                             awful.spawn.with_shell("mpc toggle")
-                         end),
-                         awful.button({ }, 3, function ()
-                             awful.spawn.with_shell("mpvc toggle")
-                         end),
-                         awful.button({ }, 8, function ()
-                             sidebar.visible = false
-                             awful.spawn.with_shell("~/scr/Rofi/rofi_mpvtube")
-                         end),
-                         awful.button({ }, 9, function ()
-                             awful.spawn.with_shell("~/scr/info/mpv-query.sh")
-                         end)
-))
+function btn(c, name, selector, action, color, hover_color)
+    local ret = wibox.widget{
+  max_value     = 100,
+  value         = 100,
+  forced_width  = dpi(30),
+  shape         = bar_shape,
+  bar_shape     = bar_shape,
+  color         = color,
+  background_color = color,
+  widget        = wibox.widget.progressbar,
+}
 
-local playerctl_prev_icon = wibox.widget.imagebox(beautiful.playerctl_prev_icon)
-playerctl_prev_icon:buttons(gears.table.join(
-                         awful.button({ }, 1, function ()
-                             awful.spawn.with_shell("mpc prev")
-                             resetCover()
-                         end),
-                         awful.button({ }, 3, function ()
-                             awful.spawn.with_shell("mpvc prev")
-                         end)
-))
+    local function update()
+        local img = selector(c)
+        local cc = beautiful.xcolor0
+        if type(img) ~= "nil" then
+            -- Convert booleans automatically
+            if type(img) == "boolean" then
+                if img then
+                    img = "active"
+                    --cc = hover_color
+                else
+                    img = "inactive"
+                    cc = beautiful.xcolor0
+                end
+            end
+            local prefix = "normal"
+            if capi.client.focus == c then
+                prefix = "focus"
+                cc = color
+            end
+            if img ~= "" then
+                prefix = prefix .. "_"
+            end
+            local state = ret.state
+            if state ~= "" then
+                state = "_" .. state
+                cc = hover_color
+            end
+        end
+        --ret:set_image(img)
+        --ret:set_color(cc)
+        ret.color = cc
+        ret.background_color = cc
+    end
+    ret.state = ""
+    if action then
+        ret:buttons(abutton({ }, 1, nil, function()
+            ret.state = ""
+            update()
+            action(c, selector(c))
+        end))
+    else
+        ret:buttons(abutton({ }, 1, nil, function()
+            ret.state = ""
+            update()
+        end))
+    end
+    ret:connect_signal("mouse::enter", function()
+        ret.state = "hover"
+        update()
+    end)
+    ret:connect_signal("mouse::leave", function()
+        ret.state = ""
+        update()
+    end)
+    ret:connect_signal("button::press", function(_, _, _, b)
+        if b == 1 then
+            ret.state = "press"
+            update()
+        end
+    end)
+    ret.update = update
+    update()
 
+    -- We do magic based on whether a client is focused above, so we need to
+    -- connect to the corresponding signal here.
+    update_on_signal(c, "focus", ret)
+    update_on_signal(c, "unfocus", ret)
 
-local playerctl_next_icon = wibox.widget.imagebox(beautiful.playerctl_next_icon)
-playerctl_next_icon:buttons(gears.table.join(
-                         awful.button({ }, 1, function ()
-                             awful.spawn.with_shell("mpc next")
-                             resetCover()
-                         end),
-                         awful.button({ }, 3, function ()
-                             awful.spawn.with_shell("mpvc next")
-                         end)
-))
-
-
-local container = function ( widget )
-    return { 
-                widget,
-                top = dpi(5),
-                bottom = dpi(5),
-                left = dpi(3),
-                right = dpi(3),
-                widget = wibox.container.margin
-            }
+    return ret
 end
 
-local container_for_buttons = function ( widget )
-    return { 
-                widget,
-                top = dpi(4),
-                bottom = dpi(4),
-                left = dpi(6),
-                right = dpi(6),
-                widget = wibox.container.margin
-            }
+
+function btn_close(c)
+    return btn(c, 
+               "close",
+               function() return "" end,
+               function(cl) cl:kill() end, 
+               btn_close_color, 
+               btn_close_hover_color)
 end
+
+function btn_minimized(c)
+    local widget = btn(c, 
+                       "minimize",
+                       function() return "" end,
+                       function(cl) cl.minimized = not cl.minimized end,
+                       btn_minimized_color,
+                       btn_minimized_hover_color)
+    update_on_signal(c, "property::minimized", widget)
+    return widget
+end
+
+function btn_maximized(c)
+    local widget = btn(c, 
+                       "maximized",
+                       function(cl)
+                           return cl.maximized
+                       end,
+                       function(cl, state)
+                           cl.maximized = not state
+                       end,
+                       btn_maximized_color,
+                       btn_maximized_hover_color)
+    update_on_signal(c, "property::maximized", widget)
+    return widget
+end
+------------------------------------------------------------
+
 
 -- Add a titlebar
+------------------------------------------------------------
 client.connect_signal("request::titlebars", function(c)
     local buttons = titlebars.buttons
 
@@ -173,6 +244,17 @@ client.connect_signal("request::titlebars", function(c)
         title_widget = wibox.widget.textbox("")
     end
 
+    if beautiful.titlebars_imitate_borders then
+        --helpers.create_titlebar(c, buttons, "top", beautiful.titlebar_size)
+        helpers.create_titlebar(c, buttons, "bottom", dpi(3))
+        helpers.create_titlebar(c, buttons, "left", dpi(3))
+        helpers.create_titlebar(c, buttons, "right", dpi(3))
+    end
+
+    helpers.create_titlebar(c, buttons, "bottom", dpi(3))
+    helpers.create_titlebar(c, buttons, "left", dpi(3))
+    helpers.create_titlebar(c, buttons, "right", dpi(3))
+
     local titlebar_item_layout
     local titlebar_layout
     if beautiful.titlebar_position == "left" or beautiful.titlebar_position == "right" then
@@ -183,125 +265,32 @@ client.connect_signal("request::titlebars", function(c)
         titlebar_layout = wibox.layout.align.horizontal
     end
 
-    -- Create 4 dummy titlebars around the window to imitate borders
-    if beautiful.titlebars_imitate_borders then
-        helpers.create_titlebar(c, buttons, "top", beautiful.titlebar_size)
-        helpers.create_titlebar(c, buttons, "bottom", beautiful.titlebar_size)
-        helpers.create_titlebar(c, buttons, "left", beautiful.titlebar_size)
-        helpers.create_titlebar(c, buttons, "right", beautiful.titlebar_size)
-    else -- Single titlebar
-        -- Custom titlebar for music terminal (usually ncmpcpp)
-        -- if c.class == "music" then
-        if c.class == "ncmpcpp" or c.name == "ncmpcpp" then
-            resetCover()
-
-            -- Music titlebar items
-            awful.titlebar(c, {font = beautiful.titlebar_font, position = "top", size = dpi(300)}) : setup {
-                nil,
-                {
-                    nil,
-                    { -- Music player buttons
-                        -- playerctl_prev_icon,
-                        -- pad(1),
-                        prev_image,
-                        -- pad(1),
-                        -- playerctl_next_icon,
-                        layout = wibox.layout.fixed.horizontal
-                    },
-                    nil,
-                    expand = "none",
-                    layout = wibox.layout.align.vertical,
-                },
-                nil,
+    -- Default window titlebar beautiful.titlebar_size
+    awful.titlebar(c, {font = beautiful.titlebar_font, position = beautiful.titlebar_position, size = beautiful.titlebar_size}) : setup {
+            -- Titlebar items
+            { -- Left
+                layout  = titlebar_item_layout
+            },
+            { -- Middle
                 buttons = buttons,
-                expand = "none",
-                layout = wibox.layout.align.horizontal,
-            }
-
-            awful.titlebar(c, {font = beautiful.titlebar_font, position = "bottom", size = dpi(40)}) : setup {
-                nil,
+                layout  = wibox.layout.flex.horizontal
+            },
+            { -- Right
+                btn_minimized(c),
+                btn_maximized(c),
                 {
-                 {
-                    nil,
-                    { -- Music player buttons
-                        container_for_buttons(playerctl_prev_icon),
-                        pad(1),
-                        { 
-                            playerctl_toggle_icon,
-                            top = dpi(2),
-                            bottom = dpi(2),
-                            left = dpi(6),
-                            right = dpi(6),
-                            widget = wibox.container.margin
-                        },
-                        pad(1),
-                        container_for_buttons(playerctl_next_icon),
-                        layout = wibox.layout.fixed.horizontal
-                    },
-                    nil,
-                    expand = "none",
-                    layout = wibox.layout.align.vertical,
-                 },
-                valign = 'center',
-                halign = 'center',
-                widget = wibox.container.place,
+                    btn_close(c),
+                    right = dpi(2),
+                    widget = wibox.container.margin,
                 },
-                nil,
-                buttons = buttons,
-                expand = "none",
-                layout = wibox.layout.align.horizontal,
-            }
-        else -- Default window titlebar
-            awful.titlebar(c, {font = beautiful.titlebar_font, position = beautiful.titlebar_position, size = beautiful.titlebar_size}) : setup {
-                -- Titlebar items
-                { -- Left
-                    -- In the presence of buttons, use padding to center the title if needed.
-                    --pad(10),
-                    -- Clickable buttons
-                    -- awful.titlebar.widget.closebutton    (c),
-                    -- awful.titlebar.widget.minimizebutton   (c),
-                    -- awful.titlebar.widget.maximizedbutton(c),         
-                    { 
-                        {
-                            container(awful.titlebar.widget.ontopbutton(c)),
-                            container(awful.titlebar.widget.stickybutton(c)),
-                            layout  = wibox.layout.flex.horizontal
-                        },
-                        left = dpi(1),
-                        right = dpi(3),
-                        widget = wibox.container.margin
-                    }, 
-                    -- awful.titlebar.widget.floatingbutton (c),
-                    -- buttons = buttons,
-                    --awful.titlebar.widget.iconwidget(c),
-
-                    layout  = titlebar_item_layout
-                },
-                { -- Middle
-                    --{ -- Title
-                        --align  = beautiful.titlebar_title_align,
-                        --widget = title_widget
-                    --},
-                    title_widget,
-                    buttons = buttons,
-                    layout  = wibox.layout.flex.horizontal
-                },
-                { -- Right
-                    -- awful.titlebar.widget.stickybutton   (c),
-                    -- awful.titlebar.widget.ontopbutton    (c),
-                    pad(1),
-                    container(awful.titlebar.widget.minimizebutton(c)),
-                    container(awful.titlebar.widget.maximizedbutton(c)),
-                    container(awful.titlebar.widget.closebutton(c)),
-       
-                    -- buttons = buttons,
-                    layout = titlebar_item_layout
-                },
-                layout = titlebar_layout
-                --layout = wibox.layout.align.horizontal
-            }
-        end
-    end
+                -- buttons = buttons,
+                layout = titlebar_item_layout
+            },
+            layout = titlebar_layout
+            --layout = wibox.layout.align.horizontal
+        }
 end)
+------------------------------------------------------------
+
 
 return titlebars
