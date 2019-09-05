@@ -26,15 +26,10 @@
 | [openweathermap](https://openweathermap.org/) key | Provides weather data | weather widgets |
 
 ### Some recommended applications
-+ **Terminals**: urxvtd / st
++ **Terminals**: urxvtd / st / alacritty
 + **File managers**: Thunar
 + **Browsers**: Chromium
-+ **Editors**: Vim / Sublime Text
-
-### Cover path example
-<p align="center">
-  <img src="https://github.com/Eredarion/dotfiles/raw/master/.screenshot/2019.04.08-15:50:21.png" alt="screenshot">
-</p>
++ **Editors**: Nvim / Sublime Text
 
 ### More screenshot
 <p align="center">
@@ -42,4 +37,9 @@
 </p>
 <p align="center">
   <img src="https://github.com/Eredarion/dotfiles/raw/master/.screenshot/file_manager.png" alt="screenshot">
+</p>
+
+### Cover path example
+<p align="center">
+  <img src="https://github.com/Eredarion/dotfiles/raw/master/.screenshot/2019.04.08-15:50:21.png" alt="screenshot">
 </p>
