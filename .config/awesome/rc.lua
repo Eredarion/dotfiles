@@ -71,9 +71,9 @@ awful.spawn.with_shell("~/.config/awesome/awesome-cleanup.sh")
 root_disk = "/dev/sda7"
 
 -- Look in the terminal (command - pactl list sinks). May not need to change anything.
--- (your shell language) default: russian:"аудиоприёмника №0" english:"sink #0"
+-- (your shell language) default: english:"sink #0"
 volume_sink_name="аудиоприёмника №1"
--- Need for parse (your shell language) russian:"Звук выключен" english:"Mute"
+-- Need for parse (your shell language)  english:"Mute"
 volume_muted="Звук выключен"
 
 -- Your music directory name. Need for search cover. For example my ~/Music
@@ -82,9 +82,9 @@ music_directory="Music"
 
 -- Weather widget сonfiguration
 -- Get your key and find your city id at https://openweathermap.org/
--- You will need to make an account!
-api_key = "075f3847543e881a3e781ed924d9d114"
-city_id = "707928"
+-- You will need to make an account! 
+api_key = "################################"
+city_id = "######"
 
 -------------------------------------------------------------------------------------------------------------
 
